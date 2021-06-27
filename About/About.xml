@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Annelitrice 2.0</name>
+	<author>Verniy709</author>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+   <packageId>Verniy709.Annelitrice2.0</packageId>
+	<description>
+</description>
+<modDependencies>
+	<li>
+		<packageId>brrainz.harmony</packageId>
+		<displayName>Harmony</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+	</li>
+	<li>
+		<packageId>erdelf.HumanoidAlienRaces</packageId>
+		<displayName>Humanoid Alien Races 2.0</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>velc.HatsDisplaySelection</packageId>
+		<displayName>Hats Display Selection</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/1542291825</steamWorkshopUrl>
+	</li>
+</modDependencies>
+<loadAfter>
+	<li>brrainz.harmony</li>
+	<li>Ludeon.RimWorld</li>
+	<li>erdelf.HumanoidAlienRaces</li>
+	<li>velc.HatsDisplaySelection</li>
+</loadAfter>
+
+</ModMetaData>

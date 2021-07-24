@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<SavedPawnis>Saved pawn is: {0}</SavedPawnis>
+
+	<isUnavailable>is unavailable</isUnavailable>
+
+	<HAR_AT_Infection_Success_Message>Infestation finishes. {0}'s life is taken and a new Anneltrice born.</HAR_AT_Infection_Success_Message>
+
+	<HAR_AT_Infection_Failure_Message>Infestation finishes. {0}'s life is taken and everything comsumed by the greedy worms.</HAR_AT_Infection_Failure_Message>
+
+	<HAR_AT_Infest_Cast_Failure>{0} can't reach targets with {1}. Invalid targets.</HAR_AT_Infest_Cast_Failure>
+
+
+</LanguageData>

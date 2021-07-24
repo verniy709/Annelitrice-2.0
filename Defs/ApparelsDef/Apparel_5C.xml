@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Yorha_5C" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Yorha</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_Mask_A-->
+	<ThingDef ParentName="Anneli_Yorha_5C">
+		<defName>Anneli_Yorha_Mask_A</defName>
+		<description>Anneli_Yorha_Mask_A</description>
+		<label>Anneli_Yorha_Mask_A</label>
+		<graphicData>
+			<texPath>5C/Anneli_Yorha_Mask_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5C/Anneli_Yorha_Mask_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Command</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_Mask_B-->
+	<ThingDef ParentName="Anneli_Yorha_5C">
+		<defName>Anneli_Yorha_Mask_B</defName>
+		<description>Anneli_Yorha_Mask_B</description>
+		<label>Anneli_Yorha_Mask_B</label>
+		<graphicData>
+			<texPath>5C/Anneli_Yorha_Mask_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5C/Anneli_Yorha_Mask_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Combat</li>
+				<li>Anneli_Yorha_Support</li>
+				<li>Anneli_Yorha_Heavy</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+		
+</Defs>

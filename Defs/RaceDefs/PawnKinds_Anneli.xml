@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="Anneli_KindBase" Abstract="True">
+		<race>Annelitrice</race>
+		<combatPower>80</combatPower>
+		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
+		<chemicalAddictionChance>0.0</chemicalAddictionChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<maxGenerationAge>80</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
+		<invNutrition>4.5</invNutrition>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>25~99</initialResistanceRange>
+		<styleItemTags>
+			<li>
+				<tag>Anneli</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<apparelColor>(240,240,240)</apparelColor>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_KindBase">
+		<defName>Anneli_Player</defName>
+		<label>Annelitrice Colonist</label>
+		<defaultFactionType>Anneli_Faction_Player</defaultFactionType>
+		<apparelMoney>
+			<min>500</min>
+			<max>1000</max>
+		</apparelMoney>
+		<isFighter>true</isFighter>
+		<backstoryCategories>
+			<li>Anneli_Story</li>
+		</backstoryCategories>
+	</PawnKindDef>
+
+</Defs>

@@ -8,7 +8,7 @@
 		<summary>You woke up from a cryptosleep sarcophagus, and found some resources in a hiddle storage room.</summary>
 		<playerFaction>
 		<def>PlayerFaction</def>
-		<factionDef>Annelitrice_P_Faction</factionDef>
+		<factionDef>Anneli_Faction_Player</factionDef>
 		</playerFaction>
 			<parts>
 				<!-- Config pages -->

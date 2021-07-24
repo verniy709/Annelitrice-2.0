@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--Childhood-->
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_NormalWorm</defName>
+		<title>Annelitrice Normal Worm</title>
+		<titleShort>Normal Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] was not a special one in the culture chamber.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_ActiveWorm</defName>
+		<title>Annelitrice Active Worm</title>
+		<titleShort>Active Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] was a little too energetic.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_FriendlyWorm</defName>
+		<title>Annelitrice Friendly Worm</title>
+		<titleShort>Friendly Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] liked to make friends with the foods.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_CreativeWorm</defName>
+		<title>Annelitrice Creative Worm</title>
+		<titleShort>Creative Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] could draw Mona Lisa with digestive juices.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_DiggingWorm</defName>
+		<title>Annelitrice Digging Worm</title>
+		<titleShort>Digging Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] drilled well-organized holes on solid media.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_FastGrowingWorm</defName>
+		<title>Annelitrice Fast-Growing Worm</title>
+		<titleShort>Fast-Growing Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] had an insatiable appetite.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Cooking</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_BellicoseWorm</defName>
+		<title>Annelitrice Bellicose Worm</title>
+		<titleShort>Bellicose Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] loved to start a fight.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_NerdyWorm</defName>
+		<title>Annelitrice Nerdy Worm</title>
+		<titleShort>Nerdy Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] was fascinated with the history of agriculture.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_ShrewdWorm</defName>
+		<title>Annelitrice Shrewd Worm</title>
+		<titleShort>Shrewd Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] knew how to arm itself at any time.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>1</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>1</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_ImitatingWorm</defName>
+		<title>Annelitrice Imitating Worm</title>
+		<titleShort>Imitating Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] loved to simulate humans.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_BizarreWorm</defName>
+		<title>Annelitrice Bizarre Worm</title>
+		<titleShort>Bizarre Worm</titleShort>
+		<baseDescription>[PAWN_nameDef] was always in a deep meditation.</baseDescription>
+		<slot>Childhood</slot>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Anneli_Story</li>
+		</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+
+
+<!--Adulthood-->
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_Shopkeeper</defName>
+		<title>Annelitrice Shopkeeper</title>
+		<titleShort>Shopkeeper</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a shopkeeper at a local farm market. [PAWN_nameDef]'s most important shot was hiding under a table while the main character had a gunfight with killing drones from the future.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_KillingDrones</defName>
+		<title>Annelitrice Killing Drones</title>
+		<titleShort>Killing Drones</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a killing drone from the future. [PAWN_nameDef]'s job was to fire barrage at the main characters, but not to hurt them.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-10</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_KungFuMaster</defName>
+		<title>Annelitrice Kung Fu Masterr</title>
+		<titleShort>Kung Fu Master</titleShort>
+		<baseDescription>[PAWN_nameDef] is the main character of a Kung Fu action movie. The new EX movie studio never had substitutes and all the fighting scenes were real, so [PAWN_pronoun] even got killed a couple of times in the production.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Medicine</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_BattleSister</defName>
+		<title>Annelitrice Battle Sister</title>
+		<titleShort>Battle Sister</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as an assassin. [PAWN_nameDef] always dressed up as a sister and obsessed with using explosives in all the missions</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Construction</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_KindScientist</defName>
+		<title>Annelitrice Kind Scientist</title>
+		<titleShort>Kind Scientist</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a scientist of a biotech company that performs unethical human experiments. [PAWN_nameDef]'s most important shot was being suffocated by a security officer after [PAWN_nameDef] released a test subject.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_EvilCEO</defName>
+		<title>Annelitrice Evil CEO</title>
+		<titleShort>Evil CEO</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a CEO of a biotech company that performs unethical human experiments. [PAWN_nameDef] had a dream of dominating humanity using the latest bio-weapon made by the company, but [PAWN_pronoun] was killed by the creation.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>6</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_UnluckySurgeon</defName>
+		<title>Annelitrice Unlucky Surgeon</title>
+		<titleShort>Unlucky Surgeon</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a surgeon of a expedition group in Antarctica who encounters aliens. [PAWN_nameDef]'s most important shot was being mutilated by a infested team member when [PAWN_nameDef] was performing a dissection.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_LineInfantry</defName>
+		<title>Annelitrice Line Infantry</title>
+		<titleShort>Line Infantry</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a line infantry in a great war. [PAWN_nameDef]'s most important shot was yelling "Vive l'empereur" and then running away from the battle.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_Sergeant</defName>
+		<title>Annelitrice Sergeant</title>
+		<titleShort>Sergeant</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a sergeant in a great war. [PAWN_nameDef] did not had important dialogues or plots, but [PAWN_pronoun] never complained.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Shooting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_CombatMedic</defName>
+		<title>Annelitrice Combat Medic</title>
+		<titleShort>Combat Medic</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as the only sane person of a squad full of freaks. [PAWN_nameDef]'s most important shot was being blasted into pieces to show some cruelty of war in a comedy movie.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Social</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Medicine</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_Deserter</defName>
+		<title>Annelitrice Deserter</title>
+		<titleShort>Deserter</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a deserter of the army. [PAWN_nameDef] was an enthusiastic cook and [PAWN_pronoun] spent most the time in the war as a camper instead of a soldier</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Shooting</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_DesperateMiner</defName>
+		<title>Annelitrice Desperate Miner</title>
+		<titleShort>Desperate Miner</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a miner in a dystopia. [PAWN_nameDef]'s most important shot was being beaten to death by some city guards after [PAWN_pronoun] stole some water and foods</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Construction</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Crafting</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_CityGuard</defName>
+		<title>Annelitrice City Guard</title>
+		<titleShort>City Guard</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a guard of a city in the desert. [PAWN_nameDef]'s most important job was to arrest refugees and sell them as slaves.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Plants</defName>
+				<amount>-2</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Mining</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_MedievalFarmer</defName>
+		<title>Annelitrice Medieval Farmer</title>
+		<titleShort>Medieval Farmer</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a medieval farmer. [PAWN_nameDef] was very smart because [PAWN_pronoun] figured out a way to tell if someone was a witch.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>-8</amount>
+			</li>
+			<li>
+				<defName>Animals</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Cooking</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>4</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_MedievalKnight</defName>
+		<title>Annelitrice Medieval Knight</title>
+		<titleShort>Medieval Knight</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a medieval knight. [PAWN_nameDef] could not ride horses.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Animals</defName>
+				<amount>-4</amount>
+			</li>
+			<li>
+				<defName>Melee</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Plants</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+		<defName>Anneli_DeadBody</defName>
+		<title>Annelitrice Dead Body</title>
+		<titleShort>Dead Body</titleShort>
+		<baseDescription>[PAWN_nameDef] acts as a dead body in the battlefield. When not being actually killed, [PAWN_pronoun] spent the day in meditation.</baseDescription>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>4</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>2</amount>
+			</li>
+		</skillGains>
+	<spawnCategories>
+		<li>Anneli_Story</li>
+	</spawnCategories>
+	</AlienRace.BackstoryDef>
+
+</Defs>

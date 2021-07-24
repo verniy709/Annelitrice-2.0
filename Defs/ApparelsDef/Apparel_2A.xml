@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Yorha_2A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Anneli_Yorha</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_Corset-->
+	<ThingDef ParentName="Anneli_Yorha_2A">
+		<defName>Anneli_Yorha_Corset</defName>
+		<description>Anneli_Yorha_Corset</description>
+		<label>Anneli_Yorha_Corset</label>
+		<graphicData>
+			<texPath>2A/Anneli_Yorha_Corset</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Yorha_Corset</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Combat</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_HealerPeplum-->
+	<ThingDef ParentName="Anneli_Yorha_2A">
+		<defName>Anneli_Yorha_HealerPeplum</defName>
+		<description>Anneli_Yorha_HealerPeplum</description>
+		<label>Anneli_Yorha_HealerPeplum</label>
+		<graphicData>
+			<texPath>2A/Anneli_Yorha_HealerPeplum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Yorha_HealerPeplum</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Support</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_RebelRags-->
+	<ThingDef ParentName="Anneli_Yorha_2A">
+		<defName>Anneli_Yorha_RebelRags</defName>
+		<description>Anneli_Yorha_RebelRags</description>
+		<label>Anneli_Yorha_RebelRags</label>
+		<graphicData>
+			<texPath>2A/Anneli_Yorha_RebelRags</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Yorha_RebelRags</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Combat</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_Tuxedo-->
+	<ThingDef ParentName="Anneli_Yorha_2A">
+		<defName>Anneli_Yorha_Tuxedo</defName>
+		<description>Anneli_Yorha_Tuxedo</description>
+		<label>Anneli_Yorha_Tuxedo</label>
+		<graphicData>
+			<texPath>2A/Anneli_Yorha_Tuxedo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Yorha_Tuxedo</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Combat</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+		
+</Defs>

@@ -4,7 +4,7 @@
 	<name>Annelitrice 2.0</name>
 	<author>Verniy709</author>
 	<supportedVersions>
-		<li>1.3</li>
+		<li>1.2</li>
 	</supportedVersions>
    <packageId>Verniy709.Annelitrice2.0</packageId>
 	<description>
@@ -21,11 +21,17 @@
 		<displayName>Humanoid Alien Races 2.0</displayName>
 		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
 	</li>
+	<li>
+		<packageId>velc.HatsDisplaySelection</packageId>
+		<displayName>Hats Display Selection</displayName>
+		<steamWorkshopUrl>steam://url/CommunityFilePage/1542291825</steamWorkshopUrl>
+	</li>
 </modDependencies>
 <loadAfter>
 	<li>brrainz.harmony</li>
 	<li>Ludeon.RimWorld</li>
 	<li>erdelf.HumanoidAlienRaces</li>
+	<li>velc.HatsDisplaySelection</li>
 </loadAfter>
 
 </ModMetaData>

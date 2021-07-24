@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+	<HairDef>
+		<defName>HAR_AT_Hair_1</defName>
+		<label>AT_Hair_1</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_1</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_2</defName>
+		<label>AT_Hair_2</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_2</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_3</defName>
+		<label>AT_Hair_3</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_3</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_4</defName>
+		<label>AT_Hair_4</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_4</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>	
+
+	<HairDef>
+		<defName>HAR_AT_Hair_5</defName>
+		<label>AT_Hair_5</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_5</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>	
+
+	<HairDef>
+		<defName>HAR_AT_Hair_6</defName>
+		<label>AT_Hair_6</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_6</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>	
+
+	<HairDef>
+		<defName>HAR_AT_Hair_7</defName>
+		<label>AT_Hair_7</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_7</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_8</defName>
+		<label>AT_Hair_8</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_8</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_9</defName>
+		<label>AT_Hair_9</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_9</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_10</defName>
+		<label>AT_Hair_10</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_10</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_11</defName>
+		<label>AT_Hair_11</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_11</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>HAR_AT_Hair_12</defName>
+		<label>AT_Hair_12</label>
+		<hairGender>Female</hairGender>
+		<texPath>AT_Hair/HAR_AT_Hair_12</texPath>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</HairDef>
+
+	
+
+</Defs>

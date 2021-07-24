@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef Name="Annelitrice_FactionBase" Abstract="True">
+		<defName>Annelitrice_Base_Faction</defName>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>True</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Leader</leaderTitle>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+	</FactionDef>
+
+
+	<FactionDef>
+		<defName>Annelitrice_P_Faction</defName>
+		<label>Annelitrice Colony</label>
+		<pawnSingular>Annelitrice</pawnSingular>
+		<pawnsPlural>Annelitrices</pawnsPlural>
+		<description>A colony founded by Annelitrice survivors.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>HAR_Annelitrice_Player</basicMemberKind>
+		<techLevel>Spacer</techLevel>
+		<backstoryCategories>
+			<li>HAR_AT_Story</li>
+		</backstoryCategories>
+		<settlementTexturePath>Factions/HAR_AT_Faction</settlementTexturePath>
+		<factionIconPath>Factions/HAR_AT_Faction</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+	</FactionDef>
+
+
+
+
+
+
+
+
+
+
+
+	<FactionDef ParentName="Annelitrice_FactionBase">
+		<defName>Annelitrice_Faction_NPC</defName>
+		<label>Annelitrice_Faction</label>
+		<description>Some Annelitrice survivors come together and repeat their former lifestyles.</description>
+		<pawnSingular>Annelitrice</pawnSingular>
+		<pawnsPlural>Annelitrices</pawnsPlural>
+		<fixedName>Annelitrice Survivors</fixedName>
+		<techLevel>Spacer</techLevel>
+		<colorSpectrum>
+			<li>(0.75, 0.5, 0.5)</li>
+		</colorSpectrum>
+		<settlementTexturePath>Factions/HAR_AT_Faction</settlementTexturePath>
+		<factionIconPath>Factions/HAR_AT_Faction</factionIconPath>
+		<startingGoodwill>
+			<min>-10</min>
+      		<max>20</max>
+		</startingGoodwill>
+    	<naturalColonyGoodwill>
+      		<min>-50</min>
+      		<max>50</max>
+    	</naturalColonyGoodwill>
+		<goodwillDailyGain>0.20</goodwillDailyGain>
+		<goodwillDailyFall>0.00</goodwillDailyFall>
+		<listOrderPriority>25</listOrderPriority>
+		<settlementGenerationWeight>0.5</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>True</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Leader</leaderTitle>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<geneticVariance>1</geneticVariance>
+		<hairTags>
+			<li>HAR_AT</li>
+		</hairTags>
+		<backstoryCategories>
+			<li>HAR_AT_Story</li>
+		</backstoryCategories>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-45</min>
+			<max>50</max>
+		</allowedArrivalTemperatureRange>
+		<pawnGroupMakers>
+			<!-- Melee -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<HAR_AT_NPC_Knight>20</HAR_AT_NPC_Knight>
+					<HAR_AT_NPC_Yorha>20</HAR_AT_NPC_Yorha>
+				</options>
+			</li>
+			<!-- Gunner -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<HAR_AT_NPC_Recruit>15</HAR_AT_NPC_Recruit>
+					<HAR_AT_NPC_Gunner>10</HAR_AT_NPC_Gunner>
+					<HAR_AT_NPC_Krieg>10</HAR_AT_NPC_Krieg>
+				</options>
+			</li>
+			<!-- Bunny -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<HAR_AT_NPC_FriendlyBunny>20</HAR_AT_NPC_FriendlyBunny>
+					<HAR_AT_NPC_LunaticBunny>3</HAR_AT_NPC_LunaticBunny>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<HAR_AT_NPC_LineInfantry>5</HAR_AT_NPC_LineInfantry>
+					<HAR_AT_NPC_Recruit>5</HAR_AT_NPC_Recruit>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<HAR_AT_NPC_Trader>5</HAR_AT_NPC_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>3</Muffalo>
+					<Dromedary>3</Dromedary>
+					<Alpaca>3</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<HAR_AT_NPC_LineInfantry>5</HAR_AT_NPC_LineInfantry>
+					<HAR_AT_NPC_Recruit>5</HAR_AT_NPC_Recruit>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<HAR_AT_NPC_Recruit>15</HAR_AT_NPC_Recruit>
+					<HAR_AT_NPC_Gunner>10</HAR_AT_NPC_Gunner>
+					<HAR_AT_NPC_Krieg>10</HAR_AT_NPC_Krieg>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+
+
+</Defs>

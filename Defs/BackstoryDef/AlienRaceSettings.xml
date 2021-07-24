@@ -2,13 +2,13 @@
 <Defs>
 
 <AlienRace.RaceSettings>
-	<defName>Anneli_Settings</defName>
+	<defName>HAR_AT_Settings</defName>
 	<pawnKindSettings>
 		
 		<alienslavekinds>
 			<li>
 				<kindDefs>
-					<li>Anneli_Player</li>
+					<li>HAR_Annelitrice_Player</li>
 				</kindDefs>
 				<chance>10</chance>
 			</li>
@@ -19,13 +19,13 @@
 				<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>Anneli_Player</li>
+							<li>HAR_Annelitrice_Player</li>
 						</kindDefs>
 						<chance>1</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
-					<li>Anneli_Faction_Player</li> 
+					<li>Annelitrice_P_Faction</li> 
 				</factionDefs>
 			</li>
 		</alienwandererkinds>
@@ -33,9 +33,9 @@
 		<alienrefugeekinds>
 			<li>
 				<kindDefs>
-					<li>Anneli_Player</li>
+					<li>HAR_Annelitrice_Player</li>
 				</kindDefs>
-				<chance>1</chance>
+				<chance>0.4</chance>
 			</li>
 		</alienrefugeekinds>
 		<startingColonists>
@@ -43,13 +43,13 @@
 				<pawnKindEntries>
 					<li>
 						<kindDefs>
-							<li>Anneli_Player</li>
+							<li>HAR_Annelitrice_Player</li>
 						</kindDefs>
 						<chance>20.0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
-					<li>Anneli_Faction_Player</li>
+					<li>Annelitrice_P_Faction</li>
 				</factionDefs>
 			</li>
 		</startingColonists>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="Annelice_Worm" Abstract="True">
+		<thingClass>Annelitrice.Worm</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>false</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<statBases>
+			<Beauty>-4</Beauty>
+			<Mass>0.03</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<inspectorTabs>
+			<li>ITab_Pawn_Character</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>14</pathCost>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+	</ThingDef>
+
+	<ThingDef ParentName="Annelice_Worm">
+		<defName>Annelice_ColonistWorm</defName>
+		<label>colonist worm</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Anneli_Items/Worm_Colonist</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="Annelice_Worm">
+		<defName>Annelice_OutsiderWorm</defName>
+		<label>outsider worm</label>
+		<description>PLACEHOLDER</description>
+		<graphicData>
+			<texPath>Anneli_Items/Worm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>

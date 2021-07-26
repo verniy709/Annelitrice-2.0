@@ -22,7 +22,12 @@
 		<li>ITab_Pawn_Log</li>
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
-	
+	<modExtensions>
+		<li Class="Annelitrice.RaceExtension">
+			<outsiderSpawnThingAfterDestruction>Annelice_OutsiderWorm</outsiderSpawnThingAfterDestruction>
+			<colonistSpawnThingAfterDestruction>Annelice_ColonistWorm</colonistSpawnThingAfterDestruction>
+		</li>
+	</modExtensions>
 </ThingDef>
 
 <AlienRace.ThingDef_AlienRace ParentName="Anneli_BasePawn">

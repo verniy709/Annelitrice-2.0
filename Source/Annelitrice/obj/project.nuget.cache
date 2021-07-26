@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zW7o+VCcGo6e1dIOoo5F4puME+GmmMVnLG+2sPNCGNlsbjw750xBa5osqPEEKvCYk/HDVe0CDRTRPyYk7cWJfg==",
+  "success": true,
+  "projectFilePath": "c:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3071\\krafs.rimworld.ref.1.3.3071.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.1.0\\lib.harmony.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -4,8 +4,7 @@
 	<ThingDef Name="Anneli_Yorha_6ABC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>75</costStuffCount>
 		<stuffCategories>
-			<li>Leathery</li>
-			<li>Fabric</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
@@ -52,9 +51,6 @@
 			</tags>
 		</apparel>
 		<!--Heavy armor stats-->
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
 			<Mass>3.0</Mass>

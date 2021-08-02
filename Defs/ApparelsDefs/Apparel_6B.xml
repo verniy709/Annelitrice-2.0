@@ -3,10 +3,6 @@
 
 	<ThingDef Name="Anneli_Yorha_6B" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>10</costStuffCount>
-		<stuffCategories>
-			<li>Leathery</li>
-			<li>Fabric</li>
-		</stuffCategories>
 		<statBases>
 			<WorkToMake>2000</WorkToMake>
 			<Mass>0.1</Mass>
@@ -49,6 +45,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_Blindfold_B-->
@@ -68,6 +68,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_Glasses-->

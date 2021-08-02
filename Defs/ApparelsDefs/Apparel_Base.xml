@@ -7,7 +7,7 @@
 		<label>Annelitrice Yorha Apparels</label>
 	</ThingCategoryDef>
 
-  <ApparelLayerDef>
+  <!-- <ApparelLayerDef>
     <defName>Anneli_Socks</defName>
     <label>Anneli_Socks</label>
     <drawOrder>0</drawOrder>
@@ -17,7 +17,17 @@
     <defName>Anneli_Shoes</defName>
     <label>Anneli_Shoes</label>
     <drawOrder>100</drawOrder>
+  </ApparelLayerDef> -->
+
+<!--Layer 3-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_LowerShell</defName>
+    <label>Anneli_LowerShell</label>
+    <drawOrder>190</drawOrder>
   </ApparelLayerDef>
+
+ <!--Layer 5-->
 
   <ApparelLayerDef>
     <defName>Anneli_UpperShell</defName>
@@ -25,11 +35,15 @@
     <drawOrder>210</drawOrder>
   </ApparelLayerDef>
 
+ <!--Layer 7-->
+
   <ApparelLayerDef>
     <defName>Anneli_Bag</defName>
     <label>Anneli_Bag</label>
     <drawOrder>220</drawOrder>
   </ApparelLayerDef>
+
+<!--Layer 8-->
 
   <ApparelLayerDef>
     <defName>Anneli_Misc</defName>
@@ -64,15 +78,17 @@
       		<effectWorking>Tailor</effectWorking>
       		<soundWorking>Recipe_Tailor</soundWorking>
       		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      		<recipeUsers>
+				<li>Anneli_Yorha_Workbench</li>
+			</recipeUsers>
     	</recipeMaker>
 		<altitudeLayer>Item</altitudeLayer>
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
 		<apparel>
 			<defaultOutfitTags>
-				<li>Worker</li>
 			</defaultOutfitTags>
-      		<useWornGraphicMask>true</useWornGraphicMask>
+      		<useWornGraphicMask>false</useWornGraphicMask>
       		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		</apparel>
 		<comps>

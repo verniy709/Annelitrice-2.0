@@ -16,6 +16,9 @@
 			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<Cleanliness>0.10</Cleanliness>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -35,8 +38,8 @@
 <!--Anneli_Yorha_Leotard_A-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Leotard_A</defName>
-		<description>Anneli_Yorha_Leotard_A</description>
-		<label>Anneli_Yorha_Leotard_A</label>
+		<description>Yorha_1AB_Leotard_A</description>
+		<label>Yorha_1AB_Leotard_A</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Leotard_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -55,8 +58,8 @@
 <!--Anneli_Yorha_Leotard_B-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Leotard_B</defName>
-		<description>Anneli_Yorha_Leotard_B</description>
-		<label>Anneli_Yorha_Leotard_B</label>
+		<description>Yorha_1AB_Leotard_B</description>
+		<label>Yorha_1AB_Leotard_B</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Leotard_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -74,8 +77,8 @@
 <!--Anneli_Yorha_Tight_A-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Tight_A</defName>
-		<description>Anneli_Yorha_Tight_A</description>
-		<label>Anneli_Yorha_Tight_A</label>
+		<description>Yorha_1AB_Tight_A</description>
+		<label>Yorha_1AB_Tight_A</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Tight_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -91,8 +94,8 @@
 <!--Anneli_Yorha_Tight_B-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Tight_B</defName>
-		<description>Anneli_Yorha_Tight_B</description>
-		<label>Anneli_Yorha_Tight_B</label>
+		<description>Yorha_1AB_Tight_B</description>
+		<label>Yorha_1AB_Tight_B</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Tight_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

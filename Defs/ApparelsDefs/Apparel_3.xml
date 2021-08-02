@@ -16,6 +16,10 @@
 			<EquipDelay>10</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -24,7 +28,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Shell</li>
+				<li>Anneli_LowerShell</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>
@@ -35,8 +39,8 @@
 <!--Anneli_Yorha_Cloak-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Cloak</defName>
-		<description>Anneli_Yorha_Cloak</description>
-		<label>Anneli_Yorha_Cloak</label>
+		<description>Yorha_3_Cloak</description>
+		<label>Yorha_3_Cloak</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Cloak</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -53,8 +57,8 @@
 <!--Anneli_Yorha_Coat-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Coat</defName>
-		<description>Anneli_Yorha_Coat</description>
-		<label>Anneli_Yorha_Coat</label>
+		<description>Yorha_3_Coat</description>
+		<label>Yorha_3_Coat</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -71,8 +75,8 @@
 <!--Anneli_Yorha_Jacket-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Jacket</defName>
-		<description>Anneli_Yorha_Jacket</description>
-		<label>Anneli_Yorha_Jacket</label>
+		<description>Yorha_3_Jacket</description>
+		<label>Yorha_3_Jacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Jacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -88,8 +92,8 @@
 <!--Anneli_Yorha_Shawl-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Shawl</defName>
-		<description>Anneli_Yorha_Shawl</description>
-		<label>Anneli_Yorha_Shawl</label>
+		<description>Yorha_3_Shawl</description>
+		<label>Yorha_3_Shawl</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Shawl</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -106,8 +110,8 @@
 <!--Anneli_Yorha_ShortJacket-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_ShortJacket</defName>
-		<description>Anneli_Yorha_ShortJacket</description>
-		<label>Anneli_Yorha_ShortJacket</label>
+		<description>Yorha_3_ShortJacket</description>
+		<label>Yorha_3_ShortJacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_ShortJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -124,8 +128,8 @@
 <!--Anneli_Yorha_TrenchCoat-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_TrenchCoat</defName>
-		<description>Anneli_Yorha_TrenchCoat</description>
-		<label>Anneli_Yorha_TrenchCoat</label>
+		<description>Yorha_3_TrenchCoat</description>
+		<label>Yorha_3_TrenchCoat</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_TrenchCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

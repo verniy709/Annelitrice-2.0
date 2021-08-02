@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<ThingDef Name="Anneli_Yorha_7" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_Bag</li>
+			</layers>
+			<tags>
+				<li>Anneli_Yorha</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Yorha_Bag-->
+	<ThingDef ParentName="Anneli_Yorha_7">
+		<defName>Anneli_Yorha_Bag</defName>
+		<description>Yorha_7_Bag</description>
+		<label>Yorha_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Yorha_Bag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Yorha_Bag</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Combat</li>
+				<li>Anneli_Yorha_Support</li>
+			</tags>
+		</apparel>
+	</ThingDef>
 			
 </Defs>

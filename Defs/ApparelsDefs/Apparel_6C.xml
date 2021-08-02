@@ -16,6 +16,9 @@
 			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.6</ToxicSensitivity>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Neck</li>
@@ -32,14 +35,14 @@
 <!--Anneli_Yorha_Mask_A-->
 	<ThingDef ParentName="Anneli_Yorha_5C">
 		<defName>Anneli_Yorha_Mask_A</defName>
-		<description>Anneli_Yorha_Mask_A</description>
-		<label>Anneli_Yorha_Mask_A</label>
+		<description>Yorha_6C_Mask_A</description>
+		<label>Yorha_6C_Mask_A</label>
 		<graphicData>
-			<texPath>5C/Anneli_Yorha_Mask_A</texPath>
+			<texPath>6C/Anneli_Yorha_Mask_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5C/Anneli_Yorha_Mask_A</wornGraphicPath>
+			<wornGraphicPath>6C/Anneli_Yorha_Mask_A</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Command</li>
 			</tags>
@@ -49,14 +52,14 @@
 <!--Anneli_Yorha_Mask_B-->
 	<ThingDef ParentName="Anneli_Yorha_5C">
 		<defName>Anneli_Yorha_Mask_B</defName>
-		<description>Anneli_Yorha_Mask_B</description>
-		<label>Anneli_Yorha_Mask_B</label>
+		<description>Yorha_6C_Mask_B</description>
+		<label>Yorha_6C_Mask_B</label>
 		<graphicData>
-			<texPath>5C/Anneli_Yorha_Mask_B</texPath>
+			<texPath>6C/Anneli_Yorha_Mask_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5C/Anneli_Yorha_Mask_B</wornGraphicPath>
+			<wornGraphicPath>6C/Anneli_Yorha_Mask_B</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Combat</li>
 				<li>Anneli_Yorha_Support</li>

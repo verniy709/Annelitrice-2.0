@@ -23,7 +23,7 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Anneli_UpperShell</li>
+				<li>Shell</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>
@@ -34,8 +34,8 @@
 <!--Anneli_Yorha_ArmorPlate-->
 	<ThingDef ParentName="Anneli_Yorha_4">
 		<defName>Anneli_Yorha_ArmorPlate</defName>
-		<description>Anneli_Yorha_ArmorPlate</description>
-		<label>Anneli_Yorha_ArmorPlate</label>
+		<description>Yorha_4_ArmorPlate</description>
+		<label>Yorha_4_ArmorPlate</label>
 		<graphicData>
 			<texPath>4/Anneli_Yorha_ArmorPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

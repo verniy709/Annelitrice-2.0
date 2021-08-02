@@ -16,6 +16,9 @@
 			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Eyes</li>
@@ -32,14 +35,14 @@
 <!--Anneli_Yorha_Blindfold_A-->
 	<ThingDef ParentName="Anneli_Yorha_5B">
 		<defName>Anneli_Yorha_Blindfold_A</defName>
-		<description>Anneli_Yorha_Blindfold_A</description>
-		<label>Anneli_Yorha_Blindfold_A</label>
+		<description>Yorha_6B_Blindfold_A</description>
+		<label>Yorha_6B_Blindfold_A</label>
 		<graphicData>
-			<texPath>5B/Anneli_Yorha_Blindfold_A</texPath>
+			<texPath>6B/Anneli_Yorha_Blindfold_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5B/Anneli_Yorha_Blindfold_A</wornGraphicPath>
+			<wornGraphicPath>6B/Anneli_Yorha_Blindfold_A</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Combat</li>
 				<li>Anneli_Yorha_Support</li>
@@ -51,14 +54,14 @@
 <!--Anneli_Yorha_Blindfold_B-->
 	<ThingDef ParentName="Anneli_Yorha_5B">
 		<defName>Anneli_Yorha_Blindfold_B</defName>
-		<description>Anneli_Yorha_Blindfold_B</description>
-		<label>Anneli_Yorha_Blindfold_B</label>
+		<description>Yorha_6B_Blindfold_B</description>
+		<label>Yorha_6B_Blindfold_B</label>
 		<graphicData>
-			<texPath>5B/Anneli_Yorha_Blindfold_B</texPath>
+			<texPath>6B/Anneli_Yorha_Blindfold_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5B/Anneli_Yorha_Blindfold_B</wornGraphicPath>
+			<wornGraphicPath>6B/Anneli_Yorha_Blindfold_B</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Combat</li>
 				<li>Anneli_Yorha_Support</li>
@@ -70,14 +73,14 @@
 <!--Anneli_Yorha_Glasses-->
 	<ThingDef ParentName="Anneli_Yorha_5B">
 		<defName>Anneli_Yorha_Glasses</defName>
-		<description>Anneli_Yorha_Glasses</description>
-		<label>Anneli_Yorha_Glasses</label>
+		<description>Yorha_6B_Glasses</description>
+		<label>Yorha_6B_Glasses</label>
 		<graphicData>
-			<texPath>5B/Anneli_Yorha_Glasses</texPath>
+			<texPath>6B/Anneli_Yorha_Glasses</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5B/Anneli_Yorha_Glasses</wornGraphicPath>
+			<wornGraphicPath>6B/Anneli_Yorha_Glasses</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Command</li>
 			</tags>

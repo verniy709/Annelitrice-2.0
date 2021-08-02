@@ -16,6 +16,11 @@
 			<EquipDelay>5</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-1.0</ToxicSensitivity>
+			<PsychicSensitivity>-0.20</PsychicSensitivity>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>UpperHead</li>
@@ -34,14 +39,14 @@
 <!--Anneli_Yorha_HeavyHelmet-->
 	<ThingDef ParentName="Anneli_Yorha_5ABC">
 		<defName>Anneli_Yorha_HeavyHelmet</defName>
-		<description>Anneli_Yorha_HeavyHelmet</description>
-		<label>Anneli_Yorha_HeavyHelmet</label>
+		<description>Yorha_6ABC_HeavyHelmet</description>
+		<label>Yorha_6ABC_HeavyHelmet</label>
 		<graphicData>
-			<texPath>5ABC/Anneli_Yorha_HeavyHelmet</texPath>
+			<texPath>6ABC/Anneli_Yorha_HeavyHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5ABC/Anneli_Yorha_HeavyHelmet</wornGraphicPath>
+			<wornGraphicPath>6ABC/Anneli_Yorha_HeavyHelmet</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>

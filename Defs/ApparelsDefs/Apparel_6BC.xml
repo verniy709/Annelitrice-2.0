@@ -16,6 +16,10 @@
 			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.6</ToxicSensitivity>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Eyes</li>
@@ -33,14 +37,14 @@
 <!--Anneli_Yorha_Veil-->
 	<ThingDef ParentName="Anneli_Yorha_5BC">
 		<defName>Anneli_Yorha_Veil</defName>
-		<description>Anneli_Yorha_Veil</description>
-		<label>Anneli_Yorha_Veil</label>
+		<description>Yorha_6BC_Veil</description>
+		<label>Yorha_6BC_Veil</label>
 		<graphicData>
-			<texPath>5BC/Anneli_Yorha_Veil</texPath>
+			<texPath>6BC/Anneli_Yorha_Veil</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>5BC/Anneli_Yorha_Veil</wornGraphicPath>
+			<wornGraphicPath>6BC/Anneli_Yorha_Veil</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Combat</li>
 				<li>Anneli_Yorha_Support</li>

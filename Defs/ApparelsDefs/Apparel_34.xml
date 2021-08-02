@@ -15,6 +15,10 @@
 			<EquipDelay>15</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -23,8 +27,8 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
+				<li>Anneli_LowerShell</li>
 				<li>Shell</li>
-				<li>Anneli_UpperShell</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>
@@ -35,8 +39,8 @@
 <!--Anneli_Yorha_HeavyArmor-->
 	<ThingDef ParentName="Anneli_Yorha_34">
 		<defName>Anneli_Yorha_HeavyArmor</defName>
-		<description>Anneli_Yorha_HeavyArmor</description>
-		<label>Anneli_Yorha_HeavyArmor</label>
+		<description>Yorha_34_HeavyArmor</description>
+		<label>Yorha_34__HeavyArmor</label>
 		<graphicData>
 			<texPath>34/Anneli_Yorha_HeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

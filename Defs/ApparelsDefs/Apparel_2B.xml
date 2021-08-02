@@ -32,8 +32,8 @@
 <!--Anneli_Yorha_HealerPants-->
 	<ThingDef ParentName="Anneli_Yorha_2B">
 		<defName>Anneli_Yorha_HealerPants</defName>
-		<description>Anneli_Yorha_HealerPants</description>
-		<label>Anneli_Yorha_HealerPants</label>
+		<description>Yorha_2B_HealerPants</description>
+		<label>Yorha_2B_HealerPants</label>
 		<graphicData>
 			<texPath>2B/Anneli_Yorha_HealerPants</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -49,8 +49,8 @@
 <!--Anneli_Yorha_Pants-->
 	<ThingDef ParentName="Anneli_Yorha_2B">
 		<defName>Anneli_Yorha_Pants</defName>
-		<description>Anneli_Yorha_Pants</description>
-		<label>Anneli_Yorha_Pants</label>
+		<description>Yorha_2B_Pants</description>
+		<label>Yorha_2B_Pants</label>
 		<graphicData>
 			<texPath>2B/Anneli_Yorha_Pants</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -67,8 +67,8 @@
 <!--Anneli_Yorha_Shorts-->
 	<ThingDef ParentName="Anneli_Yorha_2B">
 		<defName>Anneli_Yorha_Shorts</defName>
-		<description>Anneli_Yorha_Shorts</description>
-		<label>Anneli_Yorha_Shorts</label>
+		<description>Yorha_2B_Shorts</description>
+		<label>Yorha_2B_Shorts</label>
 		<graphicData>
 			<texPath>2B/Anneli_Yorha_Shorts</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -85,8 +85,8 @@
 <!--Anneli_Yorha_Skirt-->
 	<ThingDef ParentName="Anneli_Yorha_2B">
 		<defName>Anneli_Yorha_Skirt</defName>
-		<description>Anneli_Yorha_Skirt</description>
-		<label>Anneli_Yorha_Skirt</label>
+		<description>Yorha_2B_Skirt</description>
+		<label>Yorha_2B_Skirt</label>
 		<graphicData>
 			<texPath>2B/Anneli_Yorha_Skirt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -102,8 +102,8 @@
 <!--Anneli_Yorha_TightSkirt-->
 	<ThingDef ParentName="Anneli_Yorha_2B">
 		<defName>Anneli_Yorha_TightSkirt</defName>
-		<description>Anneli_Yorha_TightSkirt</description>
-		<label>Anneli_Yorha_TightSkirt</label>
+		<description>Yorha_2B_TightSkirt</description>
+		<label>Yorha_2B_TightSkirt</label>
 		<graphicData>
 			<texPath>2B/Anneli_Yorha_TightSkirt</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

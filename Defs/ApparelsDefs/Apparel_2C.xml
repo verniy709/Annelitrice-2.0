@@ -16,6 +16,9 @@
 			<EquipDelay>5</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Feet</li>
@@ -32,8 +35,8 @@
 <!--Anneli_Yorha_AnkleBoots_A-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_AnkleBoots_A</defName>
-		<description>Anneli_Yorha_AnkleBoots_A</description>
-		<label>Anneli_Yorha_AnkleBoots_A</label>
+		<description>Yorha_2C_AnkleBoots_A</description>
+		<label>Yorha_2C_AnkleBoots_A</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_AnkleBoots_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -50,8 +53,8 @@
 <!--Anneli_Yorha_AnkleBoots_B-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_AnkleBoots_B</defName>
-		<description>Anneli_Yorha_AnkleBoots_B</description>
-		<label>Anneli_Yorha_AnkleBoots_B</label>
+		<description>Yorha_2C_AnkleBoots_B</description>
+		<label>Yorha_2C_AnkleBoots_B</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_AnkleBoots_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -68,8 +71,8 @@
 <!--Anneli_Yorha_TacticalBoots-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_TacticalBoots</defName>
-		<description>Anneli_Yorha_TacticalBoots</description>
-		<label>Anneli_Yorha_TacticalBoots</label>
+		<description>Yorha_2C_TacticalBoots</description>
+		<label>Yorha_2C_TacticalBoots</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_TacticalBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -86,8 +89,8 @@
 <!--Anneli_Yorha_TallBoots_A-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_TallBoots_A</defName>
-		<description>Anneli_Yorha_TallBoots_A</description>
-		<label>Anneli_Yorha_TallBoots_A</label>
+		<description>Yorha_2C_TallBoots_A</description>
+		<label>Yorha_2C_TallBoots_A</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_TallBoots_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -104,8 +107,8 @@
 <!--Anneli_Yorha_TallBoots_B-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_TallBoots_B</defName>
-		<description>Anneli_Yorha_TallBoots_B</description>
-		<label>Anneli_Yorha_TallBoots_B</label>
+		<description>Yorha_2C_TallBoots_B</description>
+		<label>Yorha_2C_TallBoots_B</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_TallBoots_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -122,8 +125,8 @@
 <!--Anneli_Yorha_TallBoots_C-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_TallBoots_C</defName>
-		<description>Anneli_Yorha_TallBoots_C</description>
-		<label>Anneli_Yorha_TallBoots_C</label>
+		<description>Yorha_2C_TallBoots_C</description>
+		<label>Yorha_2C_TallBoots_C</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_TallBoots_C</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -139,8 +142,8 @@
 <!--Anneli_Yorha_HeavyBoots-->
 	<ThingDef ParentName="Anneli_Yorha_2C">
 		<defName>Anneli_Yorha_HeavyBoots</defName>
-		<description>Anneli_Yorha_HeavyBoots</description>
-		<label>Anneli_Yorha_HeavyBoots</label>
+		<description>Yorha_2C_HeavyBoots</description>
+		<label>Yorha_2C_HeavyBoots</label>
 		<graphicData>
 			<texPath>2C/Anneli_Yorha_HeavyBoots</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="Anneli_Yorha_5BC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+	<ThingDef Name="Anneli_Yorha_6BC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -35,7 +35,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Veil-->
-	<ThingDef ParentName="Anneli_Yorha_5BC">
+	<ThingDef ParentName="Anneli_Yorha_6BC">
 		<defName>Anneli_Yorha_Veil</defName>
 		<description>Yorha_6BC_Veil</description>
 		<label>Yorha_6BC_Veil</label>

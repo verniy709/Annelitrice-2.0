@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="Anneli_Yorha_5B" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+	<ThingDef Name="Anneli_Yorha_6B" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>10</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -33,7 +33,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Blindfold_A-->
-	<ThingDef ParentName="Anneli_Yorha_5B">
+	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Blindfold_A</defName>
 		<description>Yorha_6B_Blindfold_A</description>
 		<label>Yorha_6B_Blindfold_A</label>
@@ -52,7 +52,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Blindfold_B-->
-	<ThingDef ParentName="Anneli_Yorha_5B">
+	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Blindfold_B</defName>
 		<description>Yorha_6B_Blindfold_B</description>
 		<label>Yorha_6B_Blindfold_B</label>
@@ -71,7 +71,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Glasses-->
-	<ThingDef ParentName="Anneli_Yorha_5B">
+	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Glasses</defName>
 		<description>Yorha_6B_Glasses</description>
 		<label>Yorha_6B_Glasses</label>

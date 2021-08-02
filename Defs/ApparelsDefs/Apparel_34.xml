@@ -3,9 +3,10 @@
 
 	<ThingDef Name="Anneli_Yorha_34" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>150</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+		<!-- <stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories> -->
 		<statBases>
 			<WorkToMake>20000</WorkToMake>
 			<Mass>10</Mass>
@@ -51,6 +52,9 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 	</ThingDef>
 			
 </Defs>

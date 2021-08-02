@@ -3,10 +3,10 @@
 
 	<ThingDef Name="Anneli_Yorha_5A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>35</costStuffCount>
-		<stuffCategories>
+		<!-- <stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
-		</stuffCategories>
+		</stuffCategories> -->
 		<statBases>
 			<WorkToMake>5000</WorkToMake>
 			<Mass>0.5</Mass>
@@ -49,6 +49,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 	
 <!--Anneli_Yorha_DerbyHat-->
@@ -66,6 +70,10 @@
 				<li>Anneli_Yorha_Combat</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_Headband-->
@@ -84,6 +92,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_HealerHeadFlower-->
@@ -101,6 +113,10 @@
 				<li>Anneli_Yorha_Support</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_Hood-->
@@ -119,6 +135,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_PeakedCap_A-->
@@ -136,6 +156,10 @@
 				<li>Anneli_Yorha_Command</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_PeakedCap_B-->
@@ -154,6 +178,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_SideCap-->
@@ -172,6 +200,10 @@
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>
 		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
 	</ThingDef>
 
 <!--Anneli_Yorha_Headwear-->

@@ -3,9 +3,10 @@
 
 	<ThingDef Name="Anneli_Yorha_6ABC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>75</costStuffCount>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+		<!-- <stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories> -->
 		<statBases>
 			<WorkToMake>8000</WorkToMake>
 			<Mass>1.0</Mass>
@@ -32,7 +33,7 @@
 			<tags>
 				<li>Anneli_Yorha</li>
 			</tags>
-		</apparel>
+		</apparel>		
 	</ThingDef>
 
 <!--Anneli_Yorha_HeavyHelmet-->
@@ -60,6 +61,9 @@
 			<EquipDelay>8</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 	</ThingDef>
 
 

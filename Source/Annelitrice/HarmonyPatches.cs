@@ -72,4 +72,54 @@ namespace Annelitrice
             return true;
         }
     }
+
+    [HarmonyPatch(typeof(CompRefuelable), "ConsumptionRatePerTick", MethodType.Getter)]
+    public static class CompRefuelable_ConsumptionRatePerTick_Patch
+    {
+        public static bool Prefix(CompRefuelable __instance, ref float __result)
+        {
+            if (__instance.parent is WormIncubator incubator)
+            {
+                __result = incubator.GetFuelConsumptionRate();
+
+                return false;
+            }
+            return true;
+        }
+    }
+    [HarmonyPatch(typeof(CompRefuelable), "CompInspectStringExtra")]
+    public static class CompRefuelable_CompInspectStringExtra_Patch
+    {
+        public static bool Prefix(CompRefuelable __instance, ref string __result)
+        {
+            if (__instance.parent is WormIncubator incubator)
+            {
+                __result = CompInspectStringExtra(incubator, __instance);
+                return false;
+            }
+            return true;
+        }
+        public static string CompInspectStringExtra(WormIncubator incubator, CompRefuelable instance)
+        {
+            if (instance.Props.fuelIsMortarBarrel && Find.Storyteller.difficulty.classicMortars)
+            {
+                return string.Empty;
+            }
+            string text = instance.Props.FuelLabel + ": " + instance.Fuel.ToStringDecimalIfSmall() + " / " + instance.Props.fuelCapacity.ToStringDecimalIfSmall();
+            if (!instance.Props.consumeFuelOnlyWhenUsed && instance.HasFuel)
+            {
+                int numTicks = (int)((instance.Fuel / incubator.GetFuelConsumptionRate()));// * 60000f);
+                text = text + " (" + numTicks.ToStringTicksToPeriod() + ")";
+            }
+            if (!instance.HasFuel && !instance.Props.outOfFuelMessage.NullOrEmpty())
+            {
+                text += $"\n{instance.Props.outOfFuelMessage} ({instance.GetFuelCountToFullyRefuel()}x {instance.Props.fuelFilter.AnyAllowedDef.label})";
+            }
+            if (instance.Props.targetFuelLevelConfigurable)
+            {
+                text += "\n" + "ConfiguredTargetFuelLevel".Translate(instance.TargetFuelLevel.ToStringDecimalIfSmall());
+            }
+            return text;
+        }
+    }
 }

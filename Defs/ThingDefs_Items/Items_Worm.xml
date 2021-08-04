@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<ThingCategoryDef>
+		<defName>Annely_Worm</defName>
+		<label>annelitrice worms</label>
+		<parent>Root</parent>
+	</ThingCategoryDef>
+
 	<ThingDef Name="Annelice_Worm" Abstract="True">
 		<thingClass>Annelitrice.Worm</thingClass>
 		<category>Item</category>
@@ -8,6 +15,9 @@
 		<useHitPoints>false</useHitPoints>
 		<selectable>true</selectable>
 		<altitudeLayer>Item</altitudeLayer>
+		<thingCategories>
+			<li>Annely_Worm</li>
+		</thingCategories>
 		<statBases>
 			<Beauty>-4</Beauty>
 			<Mass>0.03</Mass>
@@ -19,6 +29,7 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
+
 		<alwaysHaulable>true</alwaysHaulable>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<rotatable>false</rotatable>
@@ -37,7 +48,7 @@
 			<drawSize>0.80</drawSize>
 		</graphicData>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Annelice_Worm">
 		<defName>Annelice_OutsiderWorm</defName>
 		<label>outsider worm</label>

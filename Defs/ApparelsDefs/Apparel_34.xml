@@ -21,6 +21,7 @@
 			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<apparel>
+			<shellCoversHead>false</shellCoversHead>
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -28,8 +29,8 @@
 				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
-				<li>Anneli_LowerShell</li>
 				<li>Shell</li>
+				<li>Anneli_UpperShell_Armor</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>

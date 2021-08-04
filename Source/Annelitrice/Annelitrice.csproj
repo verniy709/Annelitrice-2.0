@@ -43,16 +43,21 @@
   <ItemGroup>
     <Compile Include="AnnelitriceUtils.cs" />
     <Compile Include="JobDriver_ResurrectUsingWorm.cs" />
+    <Compile Include="UIUtility.cs" />
+    <Compile Include="Textures.cs" />
     <Compile Include="RaceExtension.cs" />
     <Compile Include="AnnelitriceDefOf.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="CompTargetable_SingleCorpseOverride.cs" />
+    <Compile Include="ITab_Pawn_Mimicry.cs" />
+    <Compile Include="CompEvolution.cs" />
+    <Compile Include="WormIncubator.cs" />
     <Compile Include="Worm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.3.3071</Version>
+      <Version>1.3.3080</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
       <Version>2.1.0</Version>

@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
-  
   <ThingDef ParentName="ResourceBase" Name="AnnelyResurrectorBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -25,21 +22,38 @@
   </ThingDef>
 
   <ThingDef ParentName="AnnelyResurrectorBase">
-    <defName>Annely_GrowthFactorCocktails</defName>
+    <defName>Anneli_GrowthFactorCocktails</defName>
     <label>growth factor cocktails</label>
     <description>PLACEHOLDER</description>
     <graphicData>
       <texPath>Anneli_Items/GrowthFactor</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <stackLimit>10</stackLimit>
+    <stackLimit>25</stackLimit>
     <statBases>
-      <MarketValue>1700</MarketValue>
+      <MarketValue>200</MarketValue>
+      <WorkToMake>1500</WorkToMake>
     </statBases>
     <thingCategories>
       <li>Items</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>Anneli_GrowthFactorCocktails</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <Anneli_NutrientSolution>10</Anneli_NutrientSolution>
+      <MedicineIndustrial>2</MedicineIndustrial>
+    </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>
     </thingSetMakerTags>

@@ -5,6 +5,9 @@
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>
+		<colorSpectrum>
+			<li>(1.0, 1.0, 1.0)</li>
+		</colorSpectrum>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>True</canSiege>
 		<canStageAttacks>true</canStageAttacks>
@@ -21,9 +24,6 @@
 				<li>(4000, 1000)</li>
 			</points>
 		</raidLootValueFromPointsCurve>
-		<allowedCultures>
-			<li>Anneli_Cultures</li>
-		</allowedCultures>
 	</FactionDef>
 
 	<FactionDef ParentName="Anneli_FactionBase">
@@ -35,6 +35,9 @@
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Anneli_Player</basicMemberKind>
 		<techLevel>Medieval</techLevel>
+		<allowedCultures>
+			<li>Anneli_Cultures_Rustican</li>
+		</allowedCultures>
 		<backstoryCategories>
 			<li>Anneli_Story</li>
 		</backstoryCategories>
@@ -44,9 +47,6 @@
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
-		<startingResearchTags>
-			<li>ClassicStart</li>
-		</startingResearchTags>
 	</FactionDef>
 
 </Defs>

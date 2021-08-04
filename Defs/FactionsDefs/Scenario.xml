@@ -15,24 +15,13 @@
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>1</pawnCount>
-					<pawnChoiceCount>2</pawnChoiceCount>
+					<pawnChoiceCount>4</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
 					<method>Standing</method>
-				</li>
-
-				<!-- Player pawns modifiers -->
-				<li Class="ScenPart_ForcedHediff">
-					<def>ForcedHediff</def>
-					<visible>false</visible>
-					<context>PlayerStarter</context>
-					<chance>0.5</chance>
-					<hediff>CryptosleepSickness</hediff>
-					<hideOffMap>true</hideOffMap>
-					<severityRange>1~1</severityRange>
 				</li>
 
 				<!-- Player starting things -->

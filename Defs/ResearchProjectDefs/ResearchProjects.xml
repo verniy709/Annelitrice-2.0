@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>Anneli_Research</defName>
+		<label>Anneli_Research</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>Anneli_NutrientSolution</defName>
+		<label>Anneli_NutrientSolution</label>
+		<description>Anneli_NutrientSolution.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>DrugProduction</li>
+    	</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Anneli_GrowthFactorCocktails</defName>
+		<label>Anneli_GrowthFactorCocktails</label>
+		<description>Anneli_GrowthFactorCocktails.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>Anneli_NutrientSolution</li>
+    	</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Anneli_Incubator</defName>
+		<label>Anneli_Incubator</label>
+		<description>Anneli_Incubator.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>Anneli_GrowthFactorCocktails</li>
+    	</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>Anneli_PuppetTheatre</defName>
+		<label>Anneli_PuppetTheatre</label>
+		<description>Anneli_PuppetTheatre.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>Smithing</li>
+      		<li>ComplexClothing</li>
+    	</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef>
+
+	
+</Defs>

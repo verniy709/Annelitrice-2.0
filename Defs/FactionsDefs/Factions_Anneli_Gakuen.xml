@@ -2,22 +2,22 @@
 <Defs>
 
 	<FactionDef ParentName="Anneli_FactionBase">
-		<defName>Anneli_Faction_Yorha</defName>
-		<label>Anneli_Faction_Yorha</label>
-		<description>Anneli_Faction_Yorha.</description>
+		<defName>Anneli_Faction_Gakuen</defName>
+		<label>Anneli_Faction_Gakuen</label>
+		<description>Anneli_Faction_Gakuen.</description>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
-		<fixedName>Forged YoRHa Butai</fixedName>
+		<fixedName>Forged Gakuen</fixedName>
 		<requiredMemes>
       		<li>FemaleSupremacy</li>
-      		<li>Guilty</li>
-      		<li>HumanPrimacy</li>
-      		<li>Transhumanist</li>
+      		<li>Individualist</li>
+      		<li>Loyalist</li>
+      		<li>HighLife</li>
     	</requiredMemes>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
-		<techLevel>Spacer</techLevel>
+		<techLevel>Industrial</techLevel>
 		<allowedCultures>
-			<li>Anneli_Cultures_Astropolitan</li>
+			<li>Anneli_Cultures_Rustican</li>
 		</allowedCultures>
 		<settlementTexturePath>Anneli_Factions/Anneli_Yorha</settlementTexturePath>
 		<factionIconPath>Anneli_Factions/Anneli_Yorha</factionIconPath>

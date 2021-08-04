@@ -24,7 +24,7 @@
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.4</fillPercent>
-    <rotatable>false</rotatable>
+    <rotatable>True</rotatable>
     <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>4000</WorkToBuild>

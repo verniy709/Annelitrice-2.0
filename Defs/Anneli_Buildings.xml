@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>HAR_AT_Incubator</defName>
+		<thingClass>Building</thingClass>
+		<label>HAR_AT_Incubator</label>
+		<description>HAR_AT_Incubator</description>
+		<graphicData>
+			<texPath>AT_Building/Incubator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,3)</drawSize>
+			<shadowData>
+				<volume>(1.1, 1.1, 1.5)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,1.5,1.5)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<rotatable>false</rotatable>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>10000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>200</Beauty>
+			<WorkToBuild>20000</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>500</costStuffCount>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<size>(3,3)</size>
+		<designationCategory>Misc</designationCategory>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<ai_chillDestination>true</ai_chillDestination>
+			<allowAutoroof>true</allowAutoroof>
+	        <deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+
+		<ThingDef ParentName="BuildingBase">
+		<defName>HAR_AT_PuppetTheatre</defName>
+		<thingClass>Building</thingClass>
+		<label>HAR_AT_PuppetTheatre</label>
+		<description>HAR_AT_PuppetTheatre</description>
+		<graphicData>
+			<texPath>AT_Building/PuppetTheatre</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(0.5, 1.0, 1.0)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.1,0.1,1.0,1.0)</rect>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<rotatable>true</rotatable>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>1250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>25</Beauty>
+			<WorkToBuild>7500</WorkToBuild>
+		</statBases>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<size>(2,2)</size>
+		<designationCategory>Misc</designationCategory>
+		<selectable>true</selectable>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<building>
+			<ai_chillDestination>true</ai_chillDestination>
+			<allowAutoroof>true</allowAutoroof>
+	        <deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+
+	
+
+
+</Defs>

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnnelitriceUtils.cs" />
+    <Compile Include="JobDriver_AssimilateCorpse.cs" />
+    <Compile Include="JobDriver_InjectEPsToWormIncubator.cs" />
     <Compile Include="JobDriver_ResurrectUsingWorm.cs" />
     <Compile Include="UIUtility.cs" />
     <Compile Include="Textures.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="CompTargetable_SingleCorpseOverride.cs" />
     <Compile Include="ITab_Pawn_Mimicry.cs" />
     <Compile Include="CompEvolution.cs" />
+    <Compile Include="JobDriver_GainEPsFromWormIncubator.cs" />
     <Compile Include="WormIncubator.cs" />
     <Compile Include="Worm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

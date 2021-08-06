@@ -34,5 +34,9 @@ namespace Annelitrice
         public static HediffDef Annely_VenomGland;
 
         public static BodyPartDef Spine;
+
+        public static JobDef Annely_GainEPsFromWormIncubator;
+        public static JobDef Annely_InjectEPsToWormIncubator;
+        public static JobDef Annely_AssimilateCorpse;
     }
 }

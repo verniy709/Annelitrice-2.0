@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace Annelitrice
 {
@@ -46,6 +47,48 @@ namespace Annelitrice
             }
         }
 
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
+        {
+            foreach (var opt in base.GetFloatMenuOptions(selPawn))
+            {
+                yield return opt;
+            }
+            var comp = selPawn.GetComp<CompEvolution>();
+            if (comp != null)
+            {
+                if (comp.evolutionPoints > 0)
+                {
+                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Annely.InjectEPs".Translate(), delegate
+                    {
+                        int b = 1;
+                        int to2 = comp.evolutionPoints;
+                        Dialog_Slider window2 = new Dialog_Slider("Annely.InjectEPsCount".Translate("Annely.EPs".Translate()), 1, to2, delegate (int count)
+                        {
+                            Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_InjectEPsToWormIncubator, this);
+                            job.count = count;
+                            selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                        });
+                        Find.WindowStack.Add(window2);
+                    }, MenuOptionPriority.High), selPawn, this);
+                }
+
+                if (this.evolutionPoints > 0)
+                {
+                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Annely.GainEPs".Translate(), delegate
+                    {
+                        int b = 1;
+                        int to2 = this.evolutionPoints;
+                        Dialog_Slider window2 = new Dialog_Slider("Annely.GainEPsCount".Translate("Annely.EPs".Translate()), 1, to2, delegate (int count)
+                        {
+                            Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_GainEPsFromWormIncubator, this);
+                            job.count = count;
+                            selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+                        });
+                        Find.WindowStack.Add(window2);
+                    }, MenuOptionPriority.High), selPawn, this);
+                }
+            }
+        }
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();

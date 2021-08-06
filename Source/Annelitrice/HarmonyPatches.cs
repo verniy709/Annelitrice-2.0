@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -120,6 +121,60 @@ namespace Annelitrice
                 text += "\n" + "ConfiguredTargetFuelLevel".Translate(instance.TargetFuelLevel.ToStringDecimalIfSmall());
             }
             return text;
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn_DraftController), "GetGizmos")]
+    public class Pawn_DraftController_GetGizmos_Patch
+    {
+        protected static TargetingParameters GetHumanCorpseTargetParameters(Pawn caster)
+        {
+            return new TargetingParameters
+            {
+                canTargetAnimals = false,
+                canTargetHumans = false,
+                canTargetMechs = false,
+                mapObjectTargetsMustBeAutoAttackable = false,
+                canTargetPawns = false,
+                canTargetSelf = false,
+                canTargetBuildings = false,
+                canTargetItems = true,
+                validator = (TargetInfo targ) => targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
+            };
+        }
+
+        private static Dictionary<Pawn, CompEvolution> cachedComps = new Dictionary<Pawn, CompEvolution>();
+        public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn_DraftController __instance)
+        {
+            foreach (var g in __result)
+            {
+                yield return g;
+            }
+            Pawn pawn = __instance.pawn;
+            if (!cachedComps.TryGetValue(pawn, out var comp))
+            {
+                cachedComps[pawn] = pawn.TryGetComp<CompEvolution>();
+            }
+            if (comp == null)
+            {
+                yield break;
+            }
+
+            Command_Action item = new Command_Action()
+            {
+                defaultLabel = "Annely.Assimilate".Translate(),
+                defaultDesc = "Annely.AssimilateDesc".Translate(),
+                icon = ContentFinder<Texture2D>.Get("Anneli_Skill/Assimilate"),
+                action = delegate
+                {
+                    Find.Targeter.BeginTargeting(GetHumanCorpseTargetParameters(pawn), delegate (LocalTargetInfo t)
+                    {
+                        Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_AssimilateCorpse, t.Thing);
+                        pawn.jobs.TryTakeOrderedJob(job);
+                    }, pawn);
+                }
+            };
+            yield return item;
         }
     }
 }

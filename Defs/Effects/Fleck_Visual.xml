@@ -3,7 +3,7 @@
 
   <!--=============== Mote SpurtBlood ==============-->
 
-  <ThingDef ParentName="MoteBase">
+  <FleckDef ParentName="FleckBase_Thrown">
     <defName>Anneli_Mote_SpurtBlood</defName>
     <graphicData>
       <texPath>Anneli_Motes/SpurtBlood</texPath>

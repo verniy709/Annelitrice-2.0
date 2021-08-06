@@ -46,11 +46,22 @@ namespace Annelitrice
 			labelKey = "Annely.Mimicry";
 		}
 
-        public override void OnOpen()
+		public Dictionary<BodyPartDef, Rect> bodyPartRects = new Dictionary<BodyPartDef, Rect>();
+		public Dictionary<BodyPartDef, Rect> leftBodyPartRects = new Dictionary<BodyPartDef, Rect>();
+		public Dictionary<BodyPartDef, Rect> rightBodyPartRects = new Dictionary<BodyPartDef, Rect>();
+
+		public override void OnOpen()
         {
             base.OnOpen();
 			pawn = PawnToShowInfoAbout;
 			compEvolution = pawn.TryGetComp<CompEvolution>();
+			rightBodyPartRects[BodyPartDefOf.Arm] = new Rect(333, 260, 80, 80);
+			rightBodyPartRects[BodyPartDefOf.Leg] = new Rect(278, 485, 80, 80);
+			leftBodyPartRects[BodyPartDefOf.Arm] = new Rect(88, 260, 80, 80);
+			leftBodyPartRects[BodyPartDefOf.Leg] = new Rect(142, 485, 80, 80);
+			bodyPartRects[AnnelitriceDefOf.Spine] = new Rect(363, 385, 80, 80);
+			bodyPartRects[BodyPartDefOf.Torso] = new Rect(58, 385, 80, 80);
+			bodyPartRects[BodyPartDefOf.Head] = new Rect(211, 205, 80, 80);
 		}
 
 		[TweakValue("AN", 0, 1000)] public static float menuWidth = 500;
@@ -63,11 +74,12 @@ namespace Annelitrice
 
 		[TweakValue("AN", 0, 1000)] public static float redX;
 		[TweakValue("AN", 0, 1000)] public static float redY;
-		[TweakValue("AN", 0, 1000)] public static float redW;
-		[TweakValue("AN", 0, 1000)] public static float redH;
+		[TweakValue("AN", 0, 1000)] public static float redW = 80;
+		[TweakValue("AN", 0, 1000)] public static float redH = 80;
 		protected override void FillTab()
 		{
 			UpdateSize();
+
 			var totalRect = new Rect(0, 0, size.x, size.y);
 			GUI.DrawTexture(totalRect, Textures.BackgroundMenu);
 			var curFont = Text.Font;
@@ -116,11 +128,134 @@ namespace Annelitrice
 
 			var evolutionPointsRect = new Rect(365, 155, 85, 35);
 			Widgets.Label(evolutionPointsRect, "Annely.EPs".Translate() + ": " + compEvolution.evolutionPoints.ToString());
+			
+			GUI.color = curColor;
+
+			foreach (var bodyPartRect in rightBodyPartRects)
+            {
+				var part = GetRightPart(pawn, bodyPartRect.Key);
+				var pairs = Textures.rightPairedAppendanges[bodyPartRect.Key];
+				var allAppendages = pairs.Keys.ToList();
+				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.rightAppendagesActive) : null;
+				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.rightAppendagesActive);
+			}
+
+			foreach (var bodyPartRect in leftBodyPartRects)
+			{
+				var part = GetLeftPart(pawn, bodyPartRect.Key);
+				var pairs = Textures.leftPairedAppendanges[bodyPartRect.Key];
+				var allAppendages = pairs.Keys.ToList();
+				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.leftAppendagesActive) : null;
+				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.leftAppendagesActive);
+			}
+
+			foreach (var bodyPartRect in bodyPartRects)
+			{
+				var part = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(x => x.def == bodyPartRect.Key);
+				var pairs = Textures.pairedAppendanges[bodyPartRect.Key];
+				var allAppendages = pairs.Keys.ToList();
+				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.appendagesActive) : null;
+				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.appendagesActive);
+			}
 
 			Text.Font = curFont;
 			GUI.color = curColor;
 		}
 
+		private void DrawAppendages(Rect rect, Dictionary<HediffDef, Texture2D> pairs, HediffDef activeAppendage, BodyPartRecord part, List<HediffDef> allAppendages, Dictionary<BodyPartDef, HediffDef> appendagesActive)
+        {
+			foreach (var appendages in pairs)
+			{
+				if (part != null)
+				{
+					if (activeAppendage != null)
+					{
+						GUI.DrawTexture(rect, pairs[activeAppendage]);
+						if (rect.IsLeftClicked())
+						{
+							if (compEvolution.evolutionPoints < CompEvolution.AppendageCost)
+                            {
+								Messages.Message("Annely.NotEnoughEPs".Translate(), pawn, MessageTypeDefOf.CautionInput);
+                            }
+							else
+                            {
+								CallFloatMenuForActiveAppendages(part.def, allAppendages.Where(x => x != activeAppendage).ToList(), appendagesActive);
+                            }
+						}
+					}
+					else
+					{
+						if (rect.IsLeftClicked())
+						{
+							if (compEvolution.evolutionPoints < CompEvolution.AppendageCost)
+							{
+								Messages.Message("Annely.NotEnoughEPs".Translate(), pawn, MessageTypeDefOf.CautionInput);
+							}
+							else
+                            {
+								CallFloatMenuForActiveAppendages(part.def, allAppendages, appendagesActive);
+                            }
+						}
+					}
+				}
+				else if (rect.IsLeftClicked())
+                {
+					Messages.Message("Annely.BodyPartIsMissing".Translate(), pawn, MessageTypeDefOf.CautionInput);
+				}
+			}
+		}
+		private void CallFloatMenuForActiveAppendages(BodyPartDef bodyPartDef, List<HediffDef> allAppendages, Dictionary<BodyPartDef, HediffDef> appendagesActive)
+        {
+			var floatMenuOptions = new List<FloatMenuOption>();
+			foreach (var appendage in allAppendages)
+			{
+				floatMenuOptions.Add(new FloatMenuOption("CommandInstall".Translate() + " " + appendage.label, delegate
+				{
+					appendagesActive[bodyPartDef] = appendage;
+					compEvolution.evolutionPoints -= CompEvolution.AppendageCost;
+				}));
+			}
+			Find.WindowStack.Add(new FloatMenu(floatMenuOptions));
+		}
+		private HediffDef GetActiveAppendage(BodyPartRecord bodyPart, List<HediffDef> allAppendanges, Dictionary<BodyPartDef, HediffDef> appendagesActive)
+        {
+			if (appendagesActive.TryGetValue(bodyPart.def, out var hediffDef))
+            {
+				return hediffDef;
+            }
+			var hediff = pawn.health.hediffSet.hediffs.FirstOrDefault(x => allAppendanges.Contains(x.def) && x.Part == bodyPart);
+			if (hediff != null)
+            {
+				return hediff.def;
+            }
+			return null;
+		}
+		private BodyPartRecord GetRightPart(Pawn pawn, BodyPartDef bodyPartDef)
+        {
+			var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
+			if (bodyPartDef == BodyPartDefOf.Arm)
+            {
+				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right arm");
+            }
+			else if (bodyPartDef == BodyPartDefOf.Leg)
+            {
+				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right leg");
+			}
+			return null;
+		}
+		private BodyPartRecord GetLeftPart(Pawn pawn, BodyPartDef bodyPartDef)
+		{
+			var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
+			if (bodyPartDef == BodyPartDefOf.Arm)
+			{
+				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left arm");
+			}
+			else if (bodyPartDef == BodyPartDefOf.Leg)
+			{
+				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left leg");
+			}
+			return null;
+		}
 		private void DoMinusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture minusTexture)
         {
 			var bileMinusButton = new Rect(point.x, point.y, 50, 50);

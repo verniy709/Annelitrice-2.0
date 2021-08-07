@@ -38,5 +38,7 @@ namespace Annelitrice
         public static JobDef Annely_GainEPsFromWormIncubator;
         public static JobDef Annely_InjectEPsToWormIncubator;
         public static JobDef Annely_AssimilateCorpse;
+        public static HediffDef Annely_Regeneration;
+        public static JobDef Annely_GrowAppendage;
     }
 }

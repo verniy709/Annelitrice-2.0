@@ -87,11 +87,12 @@ namespace Annelitrice
 			Text.Font = GameFont.Medium;
 			GUI.color = Color.black;
 
-			var redBilePointsRect = new Rect(115, 45, 60, 35);
+			var redBilePointsRect = new Rect(105, 45, 70, 35);
+
 			Widgets.Label(redBilePointsRect, compEvolution.redBilePoints + " / " + CompEvolution.MaxBilePoints);
 
 			var greenBilePointsRect = new Rect(redBilePointsRect.x, redBilePointsRect.yMax + 15, redBilePointsRect.width, redBilePointsRect.height);
-			Widgets.Label(greenBilePointsRect, compEvolution.redBilePoints + " / " + CompEvolution.MaxBilePoints);
+			Widgets.Label(greenBilePointsRect, compEvolution.greenBilePoints + " / " + CompEvolution.MaxBilePoints);
 
 			var blueBilePointsRect = new Rect(greenBilePointsRect.x, greenBilePointsRect.yMax + 15, greenBilePointsRect.width, greenBilePointsRect.height);
 			Widgets.Label(blueBilePointsRect, compEvolution.blueBilePoints + " / " + CompEvolution.MaxBilePoints);
@@ -126,14 +127,14 @@ namespace Annelitrice
 			curColor = GUI.color;
 			GUI.color = Color.black;
 
-			var evolutionPointsRect = new Rect(365, 155, 85, 35);
+			var evolutionPointsRect = new Rect(350, 155, 125, 32);
 			Widgets.Label(evolutionPointsRect, "Annely.EPs".Translate() + ": " + compEvolution.evolutionPoints.ToString());
 			
 			GUI.color = curColor;
 
 			foreach (var bodyPartRect in rightBodyPartRects)
             {
-				var part = GetRightPart(pawn, bodyPartRect.Key);
+				var part = compEvolution.GetRightPart(bodyPartRect.Key);
 				var pairs = Textures.rightPairedAppendanges[bodyPartRect.Key];
 				var allAppendages = pairs.Keys.ToList();
 				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.rightAppendagesActive) : null;
@@ -142,7 +143,7 @@ namespace Annelitrice
 
 			foreach (var bodyPartRect in leftBodyPartRects)
 			{
-				var part = GetLeftPart(pawn, bodyPartRect.Key);
+				var part = compEvolution.GetLeftPart(bodyPartRect.Key);
 				var pairs = Textures.leftPairedAppendanges[bodyPartRect.Key];
 				var allAppendages = pairs.Keys.ToList();
 				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.leftAppendagesActive) : null;
@@ -228,32 +229,6 @@ namespace Annelitrice
             {
 				return hediff.def;
             }
-			return null;
-		}
-		private BodyPartRecord GetRightPart(Pawn pawn, BodyPartDef bodyPartDef)
-        {
-			var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
-			if (bodyPartDef == BodyPartDefOf.Arm)
-            {
-				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right arm");
-            }
-			else if (bodyPartDef == BodyPartDefOf.Leg)
-            {
-				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right leg");
-			}
-			return null;
-		}
-		private BodyPartRecord GetLeftPart(Pawn pawn, BodyPartDef bodyPartDef)
-		{
-			var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
-			if (bodyPartDef == BodyPartDefOf.Arm)
-			{
-				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left arm");
-			}
-			else if (bodyPartDef == BodyPartDefOf.Leg)
-			{
-				return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left leg");
-			}
 			return null;
 		}
 		private void DoMinusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture minusTexture)

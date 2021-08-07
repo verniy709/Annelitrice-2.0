@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="AnnelitriceUtils.cs" />
     <Compile Include="JobDriver_AssimilateCorpse.cs" />
+    <Compile Include="JobDriver_GrowAppendage.cs" />
     <Compile Include="JobDriver_InjectEPsToWormIncubator.cs" />
+    <Compile Include="JobGiver_GrowAppendages.cs" />
     <Compile Include="JobDriver_ResurrectUsingWorm.cs" />
     <Compile Include="UIUtility.cs" />
     <Compile Include="Textures.cs" />

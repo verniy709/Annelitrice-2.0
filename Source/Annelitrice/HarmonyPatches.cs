@@ -124,8 +124,8 @@ namespace Annelitrice
         }
     }
 
-    [HarmonyPatch(typeof(Pawn_DraftController), "GetGizmos")]
-    public class Pawn_DraftController_GetGizmos_Patch
+    [HarmonyPatch(typeof(Pawn), "GetGizmos")]
+    public class Pawn_GetGizmos_Patch
     {
         protected static TargetingParameters GetHumanCorpseTargetParameters(Pawn caster)
         {
@@ -143,19 +143,14 @@ namespace Annelitrice
             };
         }
 
-        private static Dictionary<Pawn, CompEvolution> cachedComps = new Dictionary<Pawn, CompEvolution>();
-        public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn_DraftController __instance)
+        public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {
             foreach (var g in __result)
             {
                 yield return g;
             }
-            Pawn pawn = __instance.pawn;
-            if (!cachedComps.TryGetValue(pawn, out var comp))
-            {
-                cachedComps[pawn] = pawn.TryGetComp<CompEvolution>();
-            }
-            if (comp == null)
+            Pawn pawn = __instance;
+            if (!pawn.TryGetCompEvolution(out var comp))
             {
                 yield break;
             }
@@ -175,6 +170,64 @@ namespace Annelitrice
                 }
             };
             yield return item;
+        }
+    }
+
+    [HarmonyPatch(typeof(BodyPartDef), "GetMaxHealth")]
+    public class GetMaxHealth_Patch
+    {
+        [HarmonyPriority(Priority.Last)]
+        private static void Postfix(BodyPartDef __instance, Pawn pawn, ref float __result)
+        {
+            if (pawn.TryGetCompEvolution(out var comp))
+            {
+                if (comp.redBilePoints > 0)
+                {
+                    __result *= 1 + (comp.redBilePoints * 0.125f);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
+    public static class GetStatValue_Patch
+    {
+        [HarmonyPriority(Priority.Last)]
+        private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
+        {
+            if (thing is Pawn pawn && pawn.TryGetCompEvolution(out var comp))
+            {
+                if (stat == StatDefOf.MoveSpeed)
+                {
+                    if (comp.greenBilePoints > 0)
+                    {
+                        __result *= 1 + (comp.greenBilePoints * 0.05f);
+                    }
+                }
+                else if (stat == StatDefOf.PsychicSensitivity)
+                {
+                    if (comp.blueBilePoints > 0)
+                    {
+                        __result *= 1 + (comp.blueBilePoints * 0.05f);
+                    }
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnCapacityWorker_Consciousness), "CalculateCapacityLevel")]
+    public class CalculateCapacityLevel_Patch
+    {
+        [HarmonyPriority(Priority.Last)]
+        private static void Postfix(ref float __result, HediffSet diffSet, List<PawnCapacityUtility.CapacityImpactor> impactors = null)
+        {
+            if (diffSet.pawn.TryGetCompEvolution(out var comp))
+            {
+                if (comp.redBilePoints > 0)
+                {
+                    __result *= 1 + (comp.redBilePoints * 0.035f);
+                }
+            }
         }
     }
 }

@@ -142,7 +142,17 @@ namespace Annelitrice
                 validator = (TargetInfo targ) => targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
             };
         }
-
+        protected static TargetingParameters GetHumanoidTargetParameters(Pawn caster)
+        {
+            return new TargetingParameters
+            {
+                canTargetAnimals = false,
+                canTargetHumans = true,
+                canTargetPawns = true,
+                canTargetSelf = false,
+                validator = (TargetInfo targ) => targ.Thing is Pawn pawn && pawn.RaceProps.Humanlike && pawn.Position.DistanceTo(caster.Position) <= 2.9f
+            };
+        }
         public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {
             foreach (var g in __result)
@@ -155,7 +165,7 @@ namespace Annelitrice
                 yield break;
             }
 
-            Command_Action item = new Command_Action()
+            Command_Action assimilate = new Command_Action()
             {
                 defaultLabel = "Annely.Assimilate".Translate(),
                 defaultDesc = "Annely.AssimilateDesc".Translate(),
@@ -166,10 +176,32 @@ namespace Annelitrice
                     {
                         Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_AssimilateCorpse, t.Thing);
                         pawn.jobs.TryTakeOrderedJob(job);
+                        pawn.drafter.Drafted = false;
                     }, pawn);
                 }
             };
-            yield return item;
+            yield return assimilate;
+
+            Command_Action infest = new Command_Action()
+            {
+                defaultLabel = "Annely.Infest".Translate(),
+                defaultDesc = "Annely.InfestDesc".Translate(),
+                icon = ContentFinder<Texture2D>.Get("Anneli_Skill/Infest"),
+                action = delegate
+                {
+                    Find.Targeter.BeginTargeting(GetHumanoidTargetParameters(pawn), delegate (LocalTargetInfo t)
+                    {
+                        Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_InfestHuman, t.Thing);
+                        pawn.jobs.TryTakeOrderedJob(job);
+                        pawn.drafter.Drafted = false;
+                    }, pawn);
+                }
+            };
+            if (pawn.needs.food.CurLevelPercentage < 0.1f)
+            {
+                infest.Disable("Annely.CannotInfestTooLowFoodLevel".Translate());
+            }
+            yield return infest;
         }
     }
 
@@ -228,6 +260,63 @@ namespace Annelitrice
                     __result *= 1 + (comp.redBilePoints * 0.035f);
                 }
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt), "RandomSelectionWeight")]
+    public class RandomSelectionWeight_Patch
+    {
+        [HarmonyPriority(Priority.First)]
+        private static bool Prefix(ref float __result, Pawn initiator, Pawn recipient)
+        {
+            if (initiator.def == AnnelitriceDefOf.Annelitrice)
+            {
+                __result = RandomSelectionWeight(initiator, recipient);
+                return false;
+            }
+            return true;
+        }
+
+        public static float RandomSelectionWeight(Pawn initiator, Pawn recipient)
+        {
+            if (TutorSystem.TutorialMode)
+            {
+                return 0f;
+            }
+            if (LovePartnerRelationUtility.LovePartnerRelationExists(initiator, recipient))
+            {
+                return 0f;
+            }
+            float num = initiator.relations.SecondaryRomanceChanceFactor(recipient);
+            if (num < 0.15f)
+            {
+                return 0f;
+            }
+            float num2 = 5f;
+            int num3 = initiator.relations.OpinionOf(recipient);
+            if ((float)num3 < num2)
+            {
+                return 0f;
+            }
+            if ((float)recipient.relations.OpinionOf(initiator) < num2)
+            {
+                return 0f;
+            }
+            float num4 = 1f;
+            if (!new HistoryEvent(initiator.GetHistoryEventForLoveRelationCountPlusOne(), initiator.Named(HistoryEventArgsNames.Doer)).DoerWillingToDo())
+            {
+                Pawn pawn = LovePartnerRelationUtility.ExistingMostLikedLovePartner(initiator, allowDead: false);
+                if (pawn != null)
+                {
+                    float value = initiator.relations.OpinionOf(pawn);
+                    num4 = Mathf.InverseLerp(50f, -50f, value);
+                }
+            }
+            float num5 = 1f;
+            float num6 = Mathf.InverseLerp(0.15f, 1f, num);
+            float num7 = Mathf.InverseLerp(num2, 100f, num3);
+            float num8 = ((initiator.gender == recipient.gender) ? ((!initiator.story.traits.HasTrait(TraitDefOf.Gay) || !recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f) : ((initiator.story.traits.HasTrait(TraitDefOf.Gay) || recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f));
+            return 1.15f * num5 * num6 * num7 * num4 * num8;
         }
     }
 }

@@ -18,7 +18,9 @@ namespace Annelitrice
 		}
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
-			yield return Toils_General.Wait(WorkTimeTicks, TargetIndex.A).WithProgressBarToilDelay(TargetIndex.A);
+			yield return Toils_General.Wait(WorkTimeTicks, TargetIndex.A)
+				.WithProgressBarToilDelay(TargetIndex.A)
+				.WithEffect(AnnelitriceDefOf.Anneli_Effecter_SpurtBlood, TargetIndex.None).PlaySustainerOrSound(AnnelitriceDefOf.Anneli_Sound_SpurtBlood);
 			yield return Toils_General.Do(delegate
 			{
 				var comp = pawn.GetComp<CompEvolution>();

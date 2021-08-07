@@ -41,7 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hediff_AnnelyInfection.cs" />
+    <Compile Include="HediffComp_GenerateEvolutionPoints.cs" />
     <Compile Include="AnnelitriceUtils.cs" />
+    <Compile Include="JobDriver_InfestHuman.cs" />
     <Compile Include="JobDriver_AssimilateCorpse.cs" />
     <Compile Include="JobDriver_GrowAppendage.cs" />
     <Compile Include="JobDriver_InjectEPsToWormIncubator.cs" />

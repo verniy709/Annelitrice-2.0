@@ -20,4 +20,7 @@
 	<Annely.GainEPsCount>Gain {0}: {{0}}x </Annely.GainEPsCount>
 	<Annely.Assimilate>Assimilate</Annely.Assimilate>
 	<Annely.AssimilateDesc>Assmilate a humanoid body to gain EPs and nutrition.</Annely.AssimilateDesc>
+	<Annely.Infest>Infest</Annely.Infest>
+	<Annely.InfestDesc>Infest a humanoid target. The target has 15% chance to be transformed into an Annelitrice pawn, 85% to be consumed by worms.</Annely.InfestDesc>
+	<Annely.CannotInfestTooLowFoodLevel>The pawn is too hungry to use this ability.</Annely.CannotInfestTooLowFoodLevel>
 </LanguageData>

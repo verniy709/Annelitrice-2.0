@@ -2,7 +2,21 @@
 <Defs>
 
   <!--=============== Mote SpurtBlood ==============-->
-
+  <EffecterDef>
+    <defName>Anneli_Effecter_SpurtBlood</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>Anneli_Mote_SpurtBlood</fleckDef>
+        <ticksBetweenMotes>30</ticksBetweenMotes>
+        <scale>0.35~0.45</scale>
+        <absoluteAngle>true</absoluteAngle>
+        <angle>30~70</angle>
+        <speed>0.18~0.3</speed>
+      </li>
+    </children>
+  </EffecterDef>
+  
   <FleckDef ParentName="FleckBase_Thrown">
     <defName>Anneli_Mote_SpurtBlood</defName>
     <graphicData>

@@ -121,6 +121,15 @@ namespace Annelitrice
 				else
                 {
 					compEvolution.evolutionPoints -= CompEvolution.HealingCost;
+					var missingParts = pawn.health.hediffSet.GetMissingPartsCommonAncestors();
+					foreach (var part in missingParts)
+                    {
+						pawn.health.RestorePart(part.Part);
+                    }
+					foreach (var injury in pawn.health.hediffSet.hediffs.OfType<Hediff_Injury>().ToList())
+                    {
+						pawn.health.RemoveHediff(injury);
+                    }
 				}
 			}
 

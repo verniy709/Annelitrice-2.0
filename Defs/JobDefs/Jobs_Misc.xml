@@ -30,6 +30,23 @@
 	</JobDef>
 
 	<JobDef>
+		<defName>Annely_InfestHuman</defName>
+		<driverClass>Annelitrice.JobDriver_InfestHuman</driverClass>
+		<reportString>Infesting TargetA</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>Annely_StandStill</defName>
+		<driverClass>Annelitrice.JobDriver_StandSilentlyFaceTarget</driverClass>
+		<reportString>standing</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<playerInterruptible>false</playerInterruptible>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
 		<defName>Annely_GrowAppendage</defName>
 		<driverClass>Annelitrice.JobDriver_GrowAppendage</driverClass>
 		<reportString>Growing appendage</reportString>

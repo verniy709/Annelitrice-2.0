@@ -143,6 +143,11 @@
       <solid>true</solid>
       <partEfficiency>1.50</partEfficiency>
     </addedPartProps>
+    <comps>
+      <li Class="Annelitrice.HediffCompProperties_GenerateEvolutionPoints">
+        <evolutionPointsPerDay>5</evolutionPointsPerDay>
+      </li>
+    </comps>
   </HediffDef>
   
   <HediffDef ParentName="AddedBodyPartBase">
@@ -156,6 +161,11 @@
       <solid>true</solid>
       <partEfficiency>1.50</partEfficiency>
     </addedPartProps>
+    <comps>
+      <li Class="Annelitrice.HediffCompProperties_GenerateEvolutionPoints">
+        <evolutionPointsPerDay>5</evolutionPointsPerDay>
+      </li>
+    </comps>
   </HediffDef>
   
   <HediffDef ParentName="AddedBodyPartBase">

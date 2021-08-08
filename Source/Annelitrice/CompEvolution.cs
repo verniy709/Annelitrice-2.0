@@ -32,13 +32,38 @@ namespace Annelitrice
         public Dictionary<BodyPartDef, HediffDef> leftAppendagesActive;
         public Dictionary<BodyPartDef, HediffDef> appendagesActive;
         private Dictionary<Hediff_MissingPart, int> missingParts = new Dictionary<Hediff_MissingPart, int>();
-        public override void PostSpawnSetup(bool respawningAfterLoad)
+
+        public bool CanShowFace
         {
-            base.PostSpawnSetup(respawningAfterLoad);
-            pawn.story.hairDef = null;
-            LongEventHandler.ExecuteWhenFinished(pawn.Drawer.renderer.graphics.ResolveAllGraphics);
+            get
+            {
+                foreach (var hediff in this.pawn.health.hediffSet.hediffs)
+                {
+                    var extension = hediff.def.GetModExtension<HediffExtension>();
+                    if (extension != null && extension.hideFace)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
         }
 
+        public bool CanShowLegs
+        {
+            get
+            {
+                foreach (var hediff in this.pawn.health.hediffSet.hediffs)
+                {
+                    var extension = hediff.def.GetModExtension<HediffExtension>();
+                    if (extension != null && extension.hideLegs)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
         private Graphic mouthGraphic;
         public Graphic MouthGraphic
         {
@@ -74,19 +99,42 @@ namespace Annelitrice
         }
 
         private Graphic eyesGraphic;
+        private Graphic deadEyesGraphic;
         public Graphic EyesGraphic
         {
             get
             {
-                if (eyesGraphic is null)
+                if (pawn.Dead)
                 {
-                    Rand.PushState();
-                    Rand.Seed = this.pawn.thingIDNumber;
-                    var path = LoadAllFiles("Anneli_Face/EyesTypes/").RandomElement();
-                    eyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, Color.black);
-                    Rand.PopState();
+                    if (deadEyesGraphic is null)
+                    {
+                        Rand.PushState();
+                        Rand.Seed = this.pawn.thingIDNumber;
+                        var path = LoadAllFiles("Anneli_Face/DeadEyesTypes/").RandomElement();
+                        var randomR = Rand.RangeInclusive(80, 255);
+                        var randomG = Rand.RangeInclusive(80, 255);
+                        var randomB = Rand.RangeInclusive(80, 255);
+                        deadEyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
+                        Rand.PopState();
+                    }
+                    return deadEyesGraphic;
                 }
-                return eyesGraphic;
+                else
+                {
+                    if (eyesGraphic is null)
+                    {
+                        Rand.PushState();
+                        Rand.Seed = this.pawn.thingIDNumber;
+                        var path = LoadAllFiles("Anneli_Face/EyesTypes/").RandomElement();
+                        var randomR = Rand.RangeInclusive(80, 255);
+                        var randomG = Rand.RangeInclusive(80, 255);
+                        var randomB = Rand.RangeInclusive(80, 255);
+                        eyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
+                        Rand.PopState();
+                    }
+                    return eyesGraphic;
+                }
+
             }
         }
 
@@ -207,6 +255,7 @@ namespace Annelitrice
         public override void CompTick()
         {
             base.CompTick();
+            pawn.Drawer.renderer.graphics.ResolveAllGraphics();
             foreach (var part in pawn.health.hediffSet.GetMissingPartsCommonAncestors())
             {
                 if (!missingParts.ContainsKey(part))

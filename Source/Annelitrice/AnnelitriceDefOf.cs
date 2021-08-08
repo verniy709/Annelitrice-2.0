@@ -30,6 +30,7 @@ namespace Annelitrice
         public static HediffDef Annely_Piercing;
         public static HediffDef Annely_ProliferatingBrain;
         public static HediffDef Annely_Tentacle;
+        public static HediffDef Annely_BackTentacle;
         public static HediffDef Annely_ThirdEye;
         public static HediffDef Annely_VenomGland;
 

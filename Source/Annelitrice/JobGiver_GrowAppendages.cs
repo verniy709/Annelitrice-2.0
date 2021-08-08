@@ -24,7 +24,7 @@ namespace Annelitrice
             {
                 if ((compEvolution.appendagesActive?.Any() ?? false) || (compEvolution.leftAppendagesActive?.Any() ?? false) || (compEvolution.rightAppendagesActive?.Any() ?? false))
                 {
-                    return JobMaker.MakeJob(AnnelitriceDefOf.Annely_GrowAppendage);
+                    return JobMaker.MakeJob(AnnelitriceDefOf.Annely_GrowAppendage, pawn);
                 }
             }
             return null;

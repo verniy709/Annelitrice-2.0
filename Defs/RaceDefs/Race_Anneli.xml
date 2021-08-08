@@ -198,6 +198,7 @@
 		<makesFootprints>true</makesFootprints>
 		<nameCategory>HumanStandard</nameCategory>
 		<lifeExpectancy>5000</lifeExpectancy>
+		<fleshType>Annely_Flesh</fleshType>
 		<body>Anneli_Body</body>
 		<baseBodySize>1.0</baseBodySize>
 		<baseHealthScale>0.75</baseHealthScale>

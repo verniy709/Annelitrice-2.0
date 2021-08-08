@@ -59,6 +59,7 @@
     <Compile Include="ITab_Pawn_Mimicry.cs" />
     <Compile Include="CompEvolution.cs" />
     <Compile Include="JobDriver_GainEPsFromWormIncubator.cs" />
+    <Compile Include="HediffExtension.cs" />
     <Compile Include="WormIncubator.cs" />
     <Compile Include="Worm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

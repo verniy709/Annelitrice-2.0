@@ -50,7 +50,7 @@ namespace Annelitrice
             backAppendages[AnnelitriceDefOf.Annely_BoneWing] = Back_BoneWing_UI;
             backAppendages[AnnelitriceDefOf.Annely_Lump] = Back_Lump_UI;
             backAppendages[AnnelitriceDefOf.Annely_PatagiumWing] = Back_PatagiumWing_UI;
-            backAppendages[AnnelitriceDefOf.Annely_Tentacle] = Back_Tentacle_UI;
+            backAppendages[AnnelitriceDefOf.Annely_BackTentacle] = Back_Tentacle_UI;
             pairedAppendanges[AnnelitriceDefOf.Spine] = backAppendages;
 
             var headAppendages = new Dictionary<HediffDef, Texture2D>();

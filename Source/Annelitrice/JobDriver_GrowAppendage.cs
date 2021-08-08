@@ -20,7 +20,7 @@ namespace Annelitrice
 		{
 			yield return Toils_General.Wait(WorkTimeTicks, TargetIndex.A)
 				.WithProgressBarToilDelay(TargetIndex.A)
-				.WithEffect(AnnelitriceDefOf.Anneli_Effecter_SpurtBlood, TargetIndex.None).PlaySustainerOrSound(AnnelitriceDefOf.Anneli_Sound_SpurtBlood);
+				.WithEffect(AnnelitriceDefOf.Anneli_Effecter_SpurtBlood, () => pawn).PlaySustainerOrSound(AnnelitriceDefOf.Anneli_Sound_SpurtBlood);
 			yield return Toils_General.Do(delegate
 			{
 				var comp = pawn.GetComp<CompEvolution>();
@@ -29,6 +29,10 @@ namespace Annelitrice
 					foreach (var appendage in comp.appendagesActive)
 					{
 						var part = pawn.health.hediffSet.GetNotMissingParts().First(x => x.def == appendage.Key);
+						if (part != null)
+                        {
+							pawn.health.RestorePart(part);
+                        }
 						var hediff = HediffMaker.MakeHediff(appendage.Value, pawn, part);
 						pawn.health.AddHediff(hediff, part);
 					}

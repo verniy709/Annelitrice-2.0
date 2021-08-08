@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
@@ -31,8 +32,108 @@ namespace Annelitrice
         public Dictionary<BodyPartDef, HediffDef> leftAppendagesActive;
         public Dictionary<BodyPartDef, HediffDef> appendagesActive;
         private Dictionary<Hediff_MissingPart, int> missingParts = new Dictionary<Hediff_MissingPart, int>();
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            pawn.story.hairDef = null;
+            LongEventHandler.ExecuteWhenFinished(pawn.Drawer.renderer.graphics.ResolveAllGraphics);
+        }
 
+        private Graphic mouthGraphic;
+        public Graphic MouthGraphic
+        {
+            get
+            {
+                if (mouthGraphic is null)
+                {
+                    Rand.PushState();
+                    Rand.Seed = this.pawn.thingIDNumber;
+                    var path = LoadAllFiles("Anneli_Face/MouthTypes/").RandomElement();
+                    mouthGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+                    Rand.PopState();
+                }
+                return mouthGraphic;
+            }
+        }
 
+        private Graphic eyeBrowsGraphic;
+        public Graphic EyeBrowsGraphic
+        {
+            get
+            {
+                if (eyeBrowsGraphic is null)
+                {
+                    Rand.PushState();
+                    Rand.Seed = this.pawn.thingIDNumber;
+                    var path = LoadAllFiles("Anneli_Face/EyeBrowsTypes/").RandomElement();
+                    eyeBrowsGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.hairColor);
+                    Rand.PopState();
+                }
+                return eyeBrowsGraphic;
+            }
+        }
+
+        private Graphic eyesGraphic;
+        public Graphic EyesGraphic
+        {
+            get
+            {
+                if (eyesGraphic is null)
+                {
+                    Rand.PushState();
+                    Rand.Seed = this.pawn.thingIDNumber;
+                    var path = LoadAllFiles("Anneli_Face/EyesTypes/").RandomElement();
+                    eyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, Color.black);
+                    Rand.PopState();
+                }
+                return eyesGraphic;
+            }
+        }
+
+        private HashSet<string> LoadAllFiles(string folderPath)
+        {
+            var list = new HashSet<string>();
+            foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading)
+            {
+                foreach (var f in ModContentPack.GetAllFilesForMod(mod, "Textures/" + folderPath))
+                {
+                    var path = f.Value.FullName;
+                    if (path.EndsWith(".png"))
+                    {
+                        path = path.Replace("\\", "/");
+                        path = path.Substring(path.IndexOf("/Textures/") + 10);
+                        path = path.Replace(".png", "");
+                        path = Regex.Replace(path, @"(.*)_.*", "$1");
+                        list.Add(path);
+                    }
+                }
+            }
+            return list;
+        }
+        private Graphic rightLegGraphic;
+        public Graphic RightLegGraphic
+        {
+            get
+            {
+                if (rightLegGraphic is null)
+                {
+                    rightLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_RightLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+                }
+                return rightLegGraphic;
+            }
+        }
+        private Graphic leftLegGraphic;
+        public Graphic LeftLegGraphic
+        {
+            get
+            {
+                if (leftLegGraphic is null)
+                {
+                    leftLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_LeftLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+                }
+                return leftLegGraphic;
+            }
+        }
         private void PreInit()
         {
             if (rightAppendagesActive is null)

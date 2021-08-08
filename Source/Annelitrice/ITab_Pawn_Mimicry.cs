@@ -88,7 +88,6 @@ namespace Annelitrice
 			GUI.color = Color.black;
 
 			var redBilePointsRect = new Rect(105, 45, 70, 35);
-
 			Widgets.Label(redBilePointsRect, compEvolution.redBilePoints + " / " + CompEvolution.MaxBilePoints);
 
 			var greenBilePointsRect = new Rect(redBilePointsRect.x, redBilePointsRect.yMax + 15, redBilePointsRect.width, redBilePointsRect.height);
@@ -100,17 +99,24 @@ namespace Annelitrice
 			GUI.color = curColor;
 			Vector2 point = new Vector2(redBilePointsRect.xMax + 21, redBilePointsRect.y + -14);
 
-			DoMinusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Minus);
-			DoPlusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Plus);
+			DoMinusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Minus, Textures.Red_Minus_Hovering);
+			DoPlusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Plus, Textures.Red_Plus_Hovering);
 
-			DoMinusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Minus);
-			DoPlusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Plus);
+			DoMinusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Minus, Textures.Green_Minus_Hovering);
+			DoPlusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Plus, Textures.Green_Plus_Hovering);
 
-			DoMinusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Minus);
-			DoPlusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Plus);
+			DoMinusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Minus, Textures.Blue_Minus_Hovering);
+			DoPlusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Plus, Textures.Blue_Plus_Hovering);
 
 			var healRect = new Rect(350, 29, 115, 115);
-			GUI.DrawTexture(healRect, Textures.Heal_Button);
+			if (Mouse.IsOver(healRect))
+            {
+				GUI.DrawTexture(healRect, Textures.Heal_Button_Hovering);
+			}
+			else
+            {
+				GUI.DrawTexture(healRect, Textures.Heal_Button);
+            }
 			TooltipHandler.TipRegion(healRect, "Annely.HealTooltip".Translate(CompEvolution.HealingCost));
 			if (healRect.IsLeftClicked())
             {
@@ -195,6 +201,10 @@ namespace Annelitrice
 					}
 					else
 					{
+						if (Mouse.IsOver(rect))
+                        {
+							GUI.DrawTexture(rect, Textures.Empty_Slot_Hovering);
+						}
 						if (rect.IsLeftClicked())
 						{
 							if (compEvolution.evolutionPoints < CompEvolution.AppendageCost)
@@ -240,10 +250,17 @@ namespace Annelitrice
             }
 			return null;
 		}
-		private void DoMinusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture minusTexture)
+		private void DoMinusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture minusTexture, Texture hoverTexture)
         {
 			var bileMinusButton = new Rect(point.x, point.y, 50, 50);
-			GUI.DrawTexture(bileMinusButton, minusTexture);
+			if (Mouse.IsOver(bileMinusButton))
+            {
+				GUI.DrawTexture(bileMinusButton, hoverTexture);
+			}
+			else
+            {
+				GUI.DrawTexture(bileMinusButton, minusTexture);
+			}
 			TooltipHandler.TipRegion(bileMinusButton, "Annely.MinusSignTooltip".Translate(colorName, CompEvolution.BilePointCost));
 
 			if (bileMinusButton.IsLeftClicked())
@@ -261,10 +278,17 @@ namespace Annelitrice
 			point.x = bileMinusButton.xMax + 4;
 		}
 
-		private void DoPlusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture plusTexture)
+		private void DoPlusButton(ref Vector2 point, ref int bilePointField, string colorName, Texture plusTexture, Texture hoverTexture)
 		{
 			var bilePlusButton = new Rect(point.x, point.y, 50, 50);
-			GUI.DrawTexture(bilePlusButton, plusTexture);
+			if (Mouse.IsOver(bilePlusButton))
+            {
+				GUI.DrawTexture(bilePlusButton, hoverTexture);
+			}
+			else
+            {
+				GUI.DrawTexture(bilePlusButton, plusTexture);
+			}
 			TooltipHandler.TipRegion(bilePlusButton, "Annely.PlusSignTooltip".Translate(CompEvolution.BilePointCost, colorName));
 
 			if (bilePlusButton.IsLeftClicked())

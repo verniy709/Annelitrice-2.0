@@ -75,13 +75,7 @@
 					</li>
 				</colorChannels>
 				<aliencrowntypes>
-					<li>Head1</li>
-					<li>Head2</li>
-					<li>Head3</li>
-					<li>Head4</li>
-					<li>Head5</li>
-					<li>Head6</li>
-					<li>Head7</li>
+					<li>Head</li>
                 </aliencrowntypes>
 		        <alienbodytypes>
 					<li>Female</li>

@@ -319,4 +319,50 @@ namespace Annelitrice
             return 1.15f * num5 * num6 * num7 * num4 * num8;
         }
     }
+
+
+    [HarmonyPatch(typeof(PawnRenderer), "DrawPawnBody")]
+    public class DrawPawnBody_Patch
+    {
+        [HarmonyPriority(Priority.Last)]
+        private static void Postfix(Pawn ___pawn, PawnRenderer __instance, ref Vector3 rootLoc, ref float angle, ref Rot4 facing, ref RotDrawMode bodyDrawType, ref PawnRenderFlags flags, ref Mesh bodyMesh)
+        {
+            if (bodyDrawType != RotDrawMode.Dessicated && ___pawn.RaceProps.Humanlike)
+            {
+                Quaternion quat = Quaternion.AngleAxis(angle, Vector3.up);
+
+                Vector3 vector = rootLoc;
+                if (___pawn.TryGetCompEvolution(out var comp))
+                {
+                    Material rightLeg = comp.RightLegGraphic.MatAt(___pawn.Rotation);
+                    GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, rightLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+                    
+                    Material leftLeg = comp.LeftLegGraphic.MatAt(___pawn.Rotation);
+                    GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, leftLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+
+                    Vector3 vector2 = rootLoc;
+                    if (facing != Rot4.North)
+                    {
+                        vector2.y += 0.0231660213f;
+                    }
+                    else
+                    {
+                        vector2.y += 3f / 148f;
+                    }
+                    var vector3 = quat * __instance.BaseHeadOffsetAt(facing);
+
+                    var headVector = vector2 + vector3;
+                    Material mouth = comp.MouthGraphic.MatAt(___pawn.Rotation);
+                    GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, mouth, flags.FlagSet(PawnRenderFlags.DrawNow));
+                    
+                    headVector.y += 0.0231660213f;
+                    Material eyes = comp.EyesGraphic.MatAt(___pawn.Rotation);
+                    GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyes, flags.FlagSet(PawnRenderFlags.DrawNow));
+
+                    Material eyeBrows = comp.EyeBrowsGraphic.MatAt(___pawn.Rotation);
+                    GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyeBrows, flags.FlagSet(PawnRenderFlags.DrawNow));
+                }
+            }
+        }
+    }
 }

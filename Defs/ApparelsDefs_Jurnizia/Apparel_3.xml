@@ -21,7 +21,7 @@
 			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<apparel>
-			<shellCoversHead>false</shellCoversHead>
+			<!-- <shellCoversHead>false</shellCoversHead> -->
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>

@@ -51,15 +51,15 @@
 
 <!--Anneli_Yorha_POD_B-->
 	<ThingDef ParentName="Anneli_Yorha_8">
-		<defName>Anneli_Yorha_POD_A</defName>
+		<defName>Anneli_Yorha_POD_B</defName>
 		<description>Yorha_7_Bag</description>
 		<label>Yorha_7_Bag</label>
 		<graphicData>
-			<texPath>8/Anneli_Yorha_POD_A</texPath>
+			<texPath>8/Anneli_Yorha_POD_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>8/Anneli_Yorha_POD_A</wornGraphicPath>
+			<wornGraphicPath>8/Anneli_Yorha_POD_B</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Combat</li>
 				<li>Anneli_Yorha_Heavy</li>

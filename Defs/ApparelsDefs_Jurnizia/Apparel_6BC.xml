@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_6BC" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.035</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.6</ToxicSensitivity>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Eyes</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GP5_GasMask-->
+	<ThingDef ParentName="Anneli_Jurnizia_6BC">
+		<defName>Anneli_Jurnizia_GP5_GasMask</defName>
+		<description>Jurnizia_6BC_Veil</description>
+		<label>Jurnizia_6BC_Veil</label>
+		<graphicData>
+			<texPath>6BC/Anneli_Jurnizia_GP5_GasMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6BC/Anneli_Jurnizia_GP5_GasMask</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_PMK1_GasMask-->
+	<ThingDef ParentName="Anneli_Jurnizia_6BC">
+		<defName>Anneli_Jurnizia_PMK1_GasMask</defName>
+		<description>Jurnizia_6BC_Veil</description>
+		<label>Jurnizia_6BC_Veil</label>
+		<graphicData>
+			<texPath>6BC/Anneli_Jurnizia_PMK1_GasMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6BC/Anneli_Jurnizia_PMK1_GasMask</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+		
+</Defs>

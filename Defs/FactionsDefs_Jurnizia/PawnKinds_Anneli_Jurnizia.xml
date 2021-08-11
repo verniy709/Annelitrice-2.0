@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="Anneli_Jurnizia_KindBase" ParentName="Anneli_KindBase" Abstract="True">
+		<label>Anneli_Jurnizia_KindBase</label>
+		<itemQuality>Good</itemQuality>
+		<defaultFactionType>Anneli_Faction_Jurnizia</defaultFactionType>
+		<isFighter>true</isFighter>
+		<combatPower>90</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<backstoryCategories>
+			<li>Anneli_Story</li>
+		</backstoryCategories>
+		<weaponMoney>1500</weaponMoney>
+		<apparelMoney>
+			<min>2000</min>
+			<max>4500</max>
+		</apparelMoney>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>300</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_Militia</defName>
+		<label>Anneli_Jurnizia_Militia</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Civilian</li>
+			<li>Anneli_Jurnizia_Military_Olive</li>
+			<li>Anneli_Jurnizia_Military_Black</li>
+			<li>Anneli_Jurnizia_Military_Tan</li>
+			<li>Anneli_Jurnizia_Military_VSR</li>
+			<li>Anneli_Jurnizia_Gorka</li>
+			<li>Anneli_Jurnizia_Gorka_VSR</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_Guitarist</defName>
+		<label>Anneli_Jurnizia_Guitarist</label>
+		<isFighter>true</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Civilian</li>
+			<li>Anneli_Jurnizia_Military_Olive</li>
+			<li>Anneli_Jurnizia_Military_Black</li>
+			<li>Anneli_Jurnizia_Military_Tan</li>
+			<li>Anneli_Jurnizia_Military_VSR</li>
+			<li>Anneli_Jurnizia_Gorka</li>
+			<li>Anneli_Jurnizia_Gorka_VSR</li>
+			<li>Anneli_Jurnizia_Special</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_Draftee</defName>
+		<label>Anneli_Jurnizia_Draftee</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Military_Olive</li>
+			<li>Anneli_Jurnizia_Military_VSR</li>
+		</apparelTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_HeavyTrooper</defName>
+		<label>Anneli_Jurnizia_HeavyTrooper</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Military_Olive</li>
+			<li>Anneli_Jurnizia_Military_VSR</li>
+			<li>Anneli_Jurnizia_Heavy</li>
+		</apparelTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>RangedHeavy</li>
+			<li>GunHeavy</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_Spetsnaz</defName>
+		<label>Anneli_Jurnizia_Spetsnaz</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Military_Black</li>
+			<li>Anneli_Jurnizia_Gorka</li>
+			<li>Anneli_Jurnizia_Gorka_VSR</li>
+		</apparelTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SniperRifle</li>
+			<li>GrenadeEMP</li>
+			<li>GrenadeSmoke</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Jurnizia_KindBase">
+		<defName>Anneli_Jurnizia_Chief</defName>
+		<label>Anneli_Jurnizia_Chief</label>
+		<isFighter>True</isFighter>
+		<factionLeader>true</factionLeader>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Jurnizia_Common</li>
+			<li>Anneli_Jurnizia_Military_Black</li>
+			<li>Anneli_Jurnizia_Chief</li>
+		</apparelTags>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>GunHeavy</li>
+      		<li>GunSingleUse</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

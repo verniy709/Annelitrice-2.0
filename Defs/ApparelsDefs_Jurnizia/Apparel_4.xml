@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_4" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_UpperShell_Armor</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B2_Armor-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B2_Armor</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B2_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B2_Armor</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B2_Armor_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B2_Armor_Tan</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B2_Armor_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B2_Armor_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B2_Armor_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B2_Armor_VSR</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B2_Armor_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B2_Armor_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+	
+<!--Anneli_Jurnizia_6B3_Armor-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B3_Armor</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B3_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B3_Armor</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B3_Armor_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B3_Armor_Tan</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B3_Armor_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B3_Armor_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B3_Armor_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B3_Armor_VSR</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B3_Armor_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B3_Armor_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+
+<!--Anneli_Jurnizia_6B13_Armor-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B13_Armor</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B13_Armor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B13_Armor</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B13_Armor_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B13_Armor_Tan</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B13_Armor_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B13_Armor_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_6B13_Armor_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_4">
+		<defName>Anneli_Jurnizia_6B13_Armor_VSR</defName>
+		<description>Jurnizia_4_ArmorPlate</description>
+		<label>Jurnizia_4_ArmorPlate</label>
+		<graphicData>
+			<texPath>4/Anneli_Jurnizia_6B13_Armor_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>4/Anneli_Jurnizia_6B13_Armor_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+				<li>Anneli_Jurnizia_Gorka</li>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>		
+
+</Defs>

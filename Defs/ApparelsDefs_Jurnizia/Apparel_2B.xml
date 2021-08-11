@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_2B" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.6</Mass>
+			<StuffEffectMultiplierArmor>0.12</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AdidasPants-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_AdidasPants</defName>
+		<description>Jurnizia_2B_HealerPants</description>
+		<label>Jurnizia_2B_HealerPants</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_AdidasPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_AdidasPants</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaPants-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_GorkaPants</defName>
+		<description>Jurnizia_2B_HealerPants</description>
+		<label>Jurnizia_2B_HealerPants</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_GorkaPants</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_GorkaPants</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaPants_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_GorkaPants_VSR</defName>
+		<description>Jurnizia_2B_Pants</description>
+		<label>Jurnizia_2B_Pants</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_GorkaPants_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_GorkaPants_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Jeans-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_Jeans</defName>
+		<description>Jurnizia_2B_Shorts</description>
+		<label>Jurnizia_2B_Shorts</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_Jeans</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_Jeans</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_JeanShorts-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_JeanShorts</defName>
+		<description>Jurnizia_2B_Skirt</description>
+		<label>Jurnizia_2B_Skirt</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_JeanShorts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_JeanShorts</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Pants_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_Pants_VSR</defName>
+		<description>Jurnizia_2B_TightSkirt</description>
+		<label>Jurnizia_2B_TightSkirt</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_Pants_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_Pants_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Shorts_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_2B">
+		<defName>Anneli_Jurnizia_Shorts_VSR</defName>
+		<description>Jurnizia_2B_TightSkirt</description>
+		<label>Jurnizia_2B_TightSkirt</label>
+		<graphicData>
+			<texPath>2B/Anneli_Jurnizia_Shorts_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Jurnizia_Shorts_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+			
+</Defs>

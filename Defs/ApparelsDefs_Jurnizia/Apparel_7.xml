@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_7" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_Bag</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AtakaBackpack-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_AtakaBackpack</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_AtakaBackpack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_AtakaBackpack</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+<!--Anneli_Jurnizia_AtakaBackpack_Black-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_AtakaBackpack_Black</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_AtakaBackpack_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_AtakaBackpack_Black</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Black</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AtakaBackpack_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_AtakaBackpack_Tan</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_AtakaBackpack_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_AtakaBackpack_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AtakaBackpack_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_AtakaBackpack_VSR</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_AtakaBackpack_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_AtakaBackpack_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_DuffelBag-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_DuffelBag</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_DuffelBag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_DuffelBag</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+<!--Anneli_Jurnizia_DuffelBag_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_DuffelBag_Tan</defName>
+		<description>Jurnizia_7_Bag</description>
+		<label>Jurnizia_7_Bag</label>
+		<graphicData>
+			<texPath>7/Anneli_Jurnizia_DuffelBag_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Jurnizia_DuffelBag_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

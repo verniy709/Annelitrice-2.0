@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_2C" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>45</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.0</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.15</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_HikingBoots-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_HikingBoots</defName>
+		<description>Jurnizia_2C_AnkleBoots_A</description>
+		<label>Jurnizia_2C_AnkleBoots_A</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_HikingBoots</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_HikingBoots</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_LeatherShoes-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_LeatherShoes</defName>
+		<description>Jurnizia_2C_AnkleBoots_B</description>
+		<label>Jurnizia_2C_AnkleBoots_B</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_LeatherShoes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_LeatherShoes</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_MockbaTrainers_A-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_MockbaTrainers_A</defName>
+		<description>Jurnizia_2C_TacticalBoots</description>
+		<label>Jurnizia_2C_TacticalBoots</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_MockbaTrainers_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_MockbaTrainers_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_MockbaTrainers_B-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_MockbaTrainers_B</defName>
+		<description>Jurnizia_2C_TallBoots_A</description>
+		<label>Jurnizia_2C_TallBoots_A</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_MockbaTrainers_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_MockbaTrainers_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TacticalBoots_A-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_TacticalBoots_A</defName>
+		<description>Jurnizia_2C_TallBoots_B</description>
+		<label>Jurnizia_2C_TallBoots_B</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_TacticalBoots_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_TacticalBoots_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TacticalBoots_B-->
+	<ThingDef ParentName="Anneli_Jurnizia_2C">
+		<defName>Anneli_Jurnizia_TacticalBoots_B</defName>
+		<description>Jurnizia_2C_TallBoots_C</description>
+		<label>Jurnizia_2C_TallBoots_C</label>
+		<graphicData>
+			<texPath>2C/Anneli_Jurnizia_TacticalBoots_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2C/Anneli_Jurnizia_TacticalBoots_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

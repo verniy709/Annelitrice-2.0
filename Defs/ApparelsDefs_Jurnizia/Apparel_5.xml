@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_5" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_UpperShell_Tactical</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Lifchik-->
+	<ThingDef ParentName="Anneli_Jurnizia_5">
+		<defName>Anneli_Jurnizia_Lifchik</defName>
+		<description>Jurnizia_5_ArmorPlate</description>
+		<label>Jurnizia_5_ArmorPlate</label>
+		<graphicData>
+			<texPath>5/Anneli_Jurnizia_Lifchik</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5/Anneli_Jurnizia_Lifchik</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Lifchik_Black-->
+	<ThingDef ParentName="Anneli_Jurnizia_5">
+		<defName>Anneli_Jurnizia_Lifchik_Black</defName>
+		<description>Jurnizia_5_ArmorPlate</description>
+		<label>Jurnizia_5_ArmorPlate</label>
+		<graphicData>
+			<texPath>5/Anneli_Jurnizia_Lifchik_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5/Anneli_Jurnizia_Lifchik_Black</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Black</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Lifchik_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_5">
+		<defName>Anneli_Jurnizia_Lifchik_Tan</defName>
+		<description>Jurnizia_5_ArmorPlate</description>
+		<label>Jurnizia_5_ArmorPlate</label>
+		<graphicData>
+			<texPath>5/Anneli_Jurnizia_Lifchik_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5/Anneli_Jurnizia_Lifchik_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Lifchik_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_5">
+		<defName>Anneli_Jurnizia_Lifchik_VSR</defName>
+		<description>Jurnizia_5_ArmorPlate</description>
+		<label>Jurnizia_5_ArmorPlate</label>
+		<graphicData>
+			<texPath>5/Anneli_Jurnizia_Lifchik_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>5/Anneli_Jurnizia_Lifchik_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+			
+</Defs>

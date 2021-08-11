@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Category_Annelitrice_Jurnizia</defName>
+		<parent>Apparel</parent>
+		<label>Annelitrice Jurnizian Apparels</label>
+	</ThingCategoryDef>
+
+  <!-- <ApparelLayerDef>
+    <defName>Anneli_Socks</defName>
+    <label>Anneli_Socks</label>
+    <drawOrder>0</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>Anneli_Shoes</defName>
+    <label>Anneli_Shoes</label>
+    <drawOrder>100</drawOrder>
+  </ApparelLayerDef> -->
+
+<!--Layer 4-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_UpperShell_Armor</defName>
+    <label>Anneli_UpperShell_Armor</label>
+    <drawOrder>210</drawOrder>
+  </ApparelLayerDef>
+
+ <!--Layer 5-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_UpperShell_Tactical</defName>
+    <label>Anneli_UpperShell_Tactical</label>
+    <drawOrder>220</drawOrder>
+  </ApparelLayerDef>
+
+ <!--Layer 7-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_Bag</defName>
+    <label>Anneli_Bag</label>
+    <drawOrder>230</drawOrder>
+  </ApparelLayerDef>
+
+<!--Layer 8-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_Misc</defName>
+    <label>Anneli_Misc</label>
+    <drawOrder>310</drawOrder>
+  </ApparelLayerDef>
+
+	<ThingDef Name="Anneli_Jurnizia_ApparelCommonBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<useHitPoints>True</useHitPoints>
+		<pathCost>10</pathCost>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>Category_Annelitrice_Jurnizia</li>
+		</thingCategories>
+		<drawGUIOverlay>true</drawGUIOverlay>
+    	<techLevel>Medieval</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<Beauty>1</Beauty>
+		</statBases>
+    	<recipeMaker>
+      		<useIngredientsForColor>false</useIngredientsForColor>
+      		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      		<workSkill>Crafting</workSkill>
+      		<effectWorking>Tailor</effectWorking>
+      		<soundWorking>Recipe_Tailor</soundWorking>
+      		<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+      		<recipeUsers>
+				<li>Anneli_Jurnizia_Workbench</li>
+			</recipeUsers>
+    	</recipeMaker>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<apparel>
+			<defaultOutfitTags>
+			</defaultOutfitTags>
+      		<useWornGraphicMask>true</useWornGraphicMask>
+      		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      		<tags>
+				<li>Anneli</li>
+			</tags>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				 <compClass>CompQuality</compClass>
+			</li>
+			<li>
+				 <compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

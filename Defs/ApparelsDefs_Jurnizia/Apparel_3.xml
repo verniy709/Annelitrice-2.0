@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_3" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>2.0</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
+		</equippedStatOffsets>
+		<apparel>
+			<shellCoversHead>false</shellCoversHead>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AdidasCoat_A-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_AdidasCoat_A</defName>
+		<description>Jurnizia_3_Cloak</description>
+		<label>Jurnizia_3_Cloak</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_AdidasCoat_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_AdidasCoat_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AdidasCoat_B-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_AdidasCoat_B</defName>
+		<description>Jurnizia_3_Coat</description>
+		<label>Jurnizia_3_Coat</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_AdidasCoat_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_AdidasCoat_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_DownJacket-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_DownJacket</defName>
+		<description>Jurnizia_3_Jacket</description>
+		<label>Jurnizia_3_Jacket</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_DownJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_DownJacket</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaCoat-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_GorkaCoat</defName>
+		<description>Jurnizia_3_Shawl</description>
+		<label>Jurnizia_3_Shawl</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_GorkaCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_GorkaCoat</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaCoat_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_GorkaCoat_VSR</defName>
+		<description>Jurnizia_3_ShortJacket</description>
+		<label>Jurnizia_3_ShortJacket</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_GorkaCoat_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_GorkaCoat_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_JeanJacket-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_JeanJacket</defName>
+		<description>Jurnizia_3_TrenchCoat</description>
+		<label>Jurnizia_3_TrenchCoat</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_JeanJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_JeanJacket</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_LeatherJacket-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_LeatherJacket</defName>
+		<description>Jurnizia_3_TrenchCoat</description>
+		<label>Jurnizia_3_TrenchCoat</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_LeatherJacket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_LeatherJacket</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_SummerCoat_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_SummerCoat_VSR</defName>
+		<description>Jurnizia_3_TrenchCoat</description>
+		<label>Jurnizia_3_TrenchCoat</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_SummerCoat_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_SummerCoat_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_WinterCoat_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_3">
+		<defName>Anneli_Jurnizia_WinterCoat_VSR</defName>
+		<description>Jurnizia_3_TrenchCoat</description>
+		<label>Jurnizia_3_TrenchCoat</label>
+		<graphicData>
+			<texPath>3/Anneli_Jurnizia_WinterCoat_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>3/Anneli_Jurnizia_WinterCoat_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

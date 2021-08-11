@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_8" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>10</CarryingCapacity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_Misc</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+
+<!--Anneli_Jurnizia_Guitar-->
+	<ThingDef ParentName="Anneli_Jurnizia_7">
+		<defName>Anneli_Jurnizia_Guitar</defName>
+		<description>Jurnizia_8</description>
+		<label>Jurnizia_8</label>
+		<graphicData>
+			<texPath>8/Anneli_Jurnizia_Guitar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>8/Anneli_Jurnizia_Guitar</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Special</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+
+</Defs>

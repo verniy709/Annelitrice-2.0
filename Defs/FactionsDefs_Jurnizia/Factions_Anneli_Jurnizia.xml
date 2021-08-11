@@ -2,22 +2,23 @@
 <Defs>
 
 	<FactionDef ParentName="Anneli_FactionBase">
-		<defName>Anneli_Faction_Confederate</defName>
-		<label>Anneli_Faction_Confederate</label>
-		<description>Anneli_Faction_Confederate.</description>
+		<defName>Anneli_Faction_Jurnizia</defName>
+		<label>Anneli_Faction_Jurnizia</label>
+		<description>Anneli_Faction_Jurnizia.</description>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
-		<fixedName>Forged Confederate</fixedName>
+		<fixedName>Forged Jurnizia</fixedName>
 		<requiredMemes>
       		<li>FemaleSupremacy</li>
-      		<li>Supremacist</li>
-      		<li>HumanPrimacy</li>
-      		<li>Collectivist</li>
+      		<li>Raider</li>
+      		<li>Proselytizer</li>
+      		<li>Rancher</li>
     	</requiredMemes>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <permanentEnemy>true</permanentEnemy>
 		<techLevel>Industrial</techLevel>
 		<allowedCultures>
-			<li>Anneli_Cultures_Rustican</li>
+			<li>Anneli_Cultures_Kriminul</li>
 		</allowedCultures>
 		<settlementTexturePath>Anneli_Factions/Anneli_Yorha</settlementTexturePath>
 		<factionIconPath>Anneli_Factions/Anneli_Yorha</factionIconPath>
@@ -61,26 +62,38 @@
 			<max>50</max>
 		</allowedArrivalTemperatureRange>
 		<pawnGroupMakers>
-			<!-- Assault Team -->
+			<!-- Cannon Fodder -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>70</commonality>
+				<commonality>60</commonality>
 				<options>
-					<Anneli_Yorha_Combatant>70</Anneli_Yorha_Combatant>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
-					<Anneli_Yorha_Healer>5</Anneli_Yorha_Healer>
-					<Anneli_Yorha_HeavyTroopers>20</Anneli_Yorha_HeavyTroopers>
+					<Anneli_Jurnizia_Militia>70</Anneli_Jurnizia_Militia>
+					<Anneli_Jurnizia_Guitarist>2</Anneli_Jurnizia_Guitarist>
+					<Anneli_Jurnizia_Draftee>20</Anneli_Jurnizia_Draftee>
+					<Anneli_Jurnizia_HeavyTrooper>8</Anneli_Jurnizia_HeavyTrooper>
 				</options>
 			</li>
-			<!-- Strike Force -->
+			<!-- Regular Army -->
 			<li>
 				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
+				<commonality>35</commonality>
 				<options>
-					<Anneli_Yorha_Combatant>45</Anneli_Yorha_Combatant>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
-					<Anneli_Yorha_Healer>5</Anneli_Yorha_Healer>
-					<Anneli_Yorha_HeavyTroopers>45</Anneli_Yorha_HeavyTroopers>
+					<Anneli_Jurnizia_Militia>10</Anneli_Jurnizia_Militia>
+					<Anneli_Jurnizia_Draftee>58</Anneli_Jurnizia_Draftee>
+					<Anneli_Jurnizia_HeavyTrooper>20</Anneli_Jurnizia_HeavyTrooper>
+					<Anneli_Jurnizia_Spetsnaz>10</Anneli_Jurnizia_Spetsnaz>
+					<Anneli_Jurnizia_Chief>2</Anneli_Jurnizia_Chief>
+				</options>
+			</li>
+			<!-- Chief's Guards -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<Anneli_Jurnizia_Draftee>40</Anneli_Jurnizia_Draftee>
+					<Anneli_Jurnizia_HeavyTrooper>40</Anneli_Jurnizia_HeavyTrooper>
+					<Anneli_Jurnizia_Spetsnaz>15</Anneli_Jurnizia_Spetsnaz>
+					<Anneli_Jurnizia_Chief>5</Anneli_Jurnizia_Chief>
 				</options>
 			</li>
 			<li>

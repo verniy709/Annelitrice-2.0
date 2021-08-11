@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_6C" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicSensitivity>-0.6</ToxicSensitivity>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Balaclava-->
+	<ThingDef ParentName="Anneli_Jurnizia_6C">
+		<defName>Anneli_Jurnizia_Balaclava</defName>
+		<description>Jurnizia_6C_Mask_A</description>
+		<label>Jurnizia_6C_Mask_A</label>
+		<graphicData>
+			<texPath>6C/Anneli_Jurnizia_Balaclava</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6C/Anneli_Jurnizia_Balaclava</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_ScarfMask-->
+	<ThingDef ParentName="Anneli_Jurnizia_6C">
+		<defName>Anneli_Jurnizia_ScarfMask</defName>
+		<description>Jurnizia_6C_Mask_B</description>
+		<label>Jurnizia_6C_Mask_B</label>
+		<graphicData>
+			<texPath>6C/Anneli_Jurnizia_ScarfMask</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6C/Anneli_Jurnizia_ScarfMask</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Cigar-->
+	<ThingDef ParentName="Anneli_Jurnizia_6C">
+		<defName>Anneli_Jurnizia_Cigar</defName>
+		<description>Jurnizia_6C_Mask_B</description>
+		<label>Jurnizia_6C_Mask_B</label>
+		<graphicData>
+			<texPath>6C/Anneli_Jurnizia_Cigar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6C/Anneli_Jurnizia_Cigar</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+		
+</Defs>

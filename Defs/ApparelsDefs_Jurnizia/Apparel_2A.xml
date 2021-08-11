@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_2A" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>50</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.15</PainShockThreshold>
+			<MeleeDodgeChance>0.20</MeleeDodgeChance>
+			<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
+			<MedicalTendQuality>0.05</MedicalTendQuality>
+			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Adidas_Black-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_Adidas_Black</defName>
+		<description>Jurnizia_2A_Corset</description>
+		<label>Jurnizia_2A_Corset</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_Adidas_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_Adidas_Black</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Adidas_White-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_Adidas_White</defName>
+		<description>Jurnizia_2A_HealerPeplum</description>
+		<label>Jurnizia_2A_HealerPeplum</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_Adidas_White</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_Adidas_White</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Chief</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TankTop-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_TankTop</defName>
+		<description>Jurnizia_2A_RebelRags</description>
+		<label>Jurnizia_2A_RebelRags</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_TankTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_TankTop</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+				<li>Anneli_Jurnizia_Gorka</li>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+				<li>Anneli_Jurnizia_Heavy</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TankTop_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_TankTop_VSR</defName>
+		<description>Jurnizia_2A_Tuxedo</description>
+		<label>Jurnizia_2A_Tuxedo</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_TankTop_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_TankTop_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+				<li>Anneli_Jurnizia_Gorka</li>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+				<li>Anneli_Jurnizia_Heavy</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TelnyashkaSweater-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_TelnyashkaSweater</defName>
+		<description>Jurnizia_2A_Tuxedo</description>
+		<label>Jurnizia_2A_Tuxedo</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_TelnyashkaSweater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_TelnyashkaSweater</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka</li>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+				<li>Anneli_Jurnizia_Heavy</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_TelnyashkaTankTop-->
+	<ThingDef ParentName="Anneli_Jurnizia_2A">
+		<defName>Anneli_Jurnizia_TelnyashkaTankTop</defName>
+		<description>Jurnizia_2A_Tuxedo</description>
+		<label>Jurnizia_2A_Tuxedo</label>
+		<graphicData>
+			<texPath>2A/Anneli_Jurnizia_TelnyashkaTankTop</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2A/Anneli_Jurnizia_TelnyashkaTankTop</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka</li>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+				<li>Anneli_Jurnizia_Heavy</li>
+			</tags>
+		</apparel>
+	</ThingDef>		
+		
+</Defs>

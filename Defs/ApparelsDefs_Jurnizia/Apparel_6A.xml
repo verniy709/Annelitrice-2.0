@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_6A" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>35</costStuffCount>
+		<!-- <stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories> -->
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<NegotiationAbility>0.05</NegotiationAbility>
+			<SocialImpact>0.10</SocialImpact>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_BandanaCap-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BandanaCap</defName>
+		<description>Jurnizia_6A_Beret</description>
+		<label>Jurnizia_6A_Beret</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BandanaCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BandanaCap</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+	
+<!--Anneli_Jurnizia_BandanaCap_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BandanaCap_Tan</defName>
+		<description>Jurnizia_6A_DerbyHat</description>
+		<label>Jurnizia_6A_DerbyHat</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BandanaCap_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BandanaCap_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_BandanaCap_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BandanaCap_VSR</defName>
+		<description>Jurnizia_6A_Headband</description>
+		<label>Jurnizia_6A_Headband</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BandanaCap_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BandanaCap_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_BaseballCap-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BaseballCap</defName>
+		<description>Jurnizia_6A_Beret</description>
+		<label>Jurnizia_6A_Beret</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BaseballCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BaseballCap</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+	
+<!--Anneli_Jurnizia_BaseballCap_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BaseballCap_Tan</defName>
+		<description>Jurnizia_6A_DerbyHat</description>
+		<label>Jurnizia_6A_DerbyHat</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BaseballCap_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BaseballCap_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_BaseballCap_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_BaseballCap_VSR</defName>
+		<description>Jurnizia_6A_Headband</description>
+		<label>Jurnizia_6A_Headband</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_BaseballCap_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_BaseballCap_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>	
+
+<!--Anneli_Jurnizia_Beanie-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_Beanie</defName>
+		<description>Jurnizia_6A_HealerHeadFlower</description>
+		<label>Jurnizia_6A_HealerHeadFlower</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_Beanie</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_Beanie</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_FlatCap-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_FlatCap</defName>
+		<description>Jurnizia_6A_Hood</description>
+		<label>Jurnizia_6A_Hood</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_FlatCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_FlatCap</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaHood-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_GorkaHood</defName>
+		<description>Jurnizia_6A_PeakedCap_A</description>
+		<label>Jurnizia_6A_PeakedCap_A</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_GorkaHood</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_GorkaHood</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_GorkaHood_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_GorkaHood_VSR</defName>
+		<description>Jurnizia_6A_PeakedCap_B</description>
+		<label>Jurnizia_6A_PeakedCap_B</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_GorkaHood_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_GorkaHood_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Gorka_VSR</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_PatrolCap-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_PatrolCap</defName>
+		<description>Jurnizia_6A_SideCap</description>
+		<label>Jurnizia_6A_SideCap</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_PatrolCap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_PatrolCap</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_PatrolCap_Tan-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_PatrolCap_Tan</defName>
+		<description>Jurnizia_6A_SideCap</description>
+		<label>Jurnizia_6A_SideCap</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_PatrolCap_Tan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_PatrolCap_Tan</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Tan</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_PatrolCap_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_PatrolCap_VSR</defName>
+		<description>Jurnizia_6A_SideCap</description>
+		<label>Jurnizia_6A_SideCap</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_PatrolCap_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_PatrolCap_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Ushanka_A-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_Ushanka_A</defName>
+		<description>Jurnizia_6A_SideCap</description>
+		<label>Jurnizia_6A_SideCap</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_Ushanka_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_Ushanka_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Ushanka_B-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_Ushanka_B</defName>
+		<description>Jurnizia_6A_SideCap</description>
+		<label>Jurnizia_6A_SideCap</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_Ushanka_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_Ushanka_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_MASKA-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_MASKA</defName>
+		<description>Jurnizia_6A_Headwear</description>
+		<label>Jurnizia_6A_Headwear</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_MASKA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_MASKA</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_MASKA_Black-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_MASKA_Black</defName>
+		<description>Jurnizia_6A_Headwear</description>
+		<label>Jurnizia_6A_Headwear</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_MASKA_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_MASKA_Black</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Black</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_SSH68_Helmet-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_SSH68_Helmet</defName>
+		<description>Jurnizia_6A_Headwear</description>
+		<label>Jurnizia_6A_Headwear</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_SSH68_Helmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_SSH68_Helmet</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_Olive</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_SSH68_Helmet_VSR-->
+	<ThingDef ParentName="Anneli_Jurnizia_6A">
+		<defName>Anneli_Jurnizia_SSH68_Helmet_VSR</defName>
+		<description>Jurnizia_6A_Headwear</description>
+		<label>Jurnizia_6A_Headwear</label>
+		<graphicData>
+			<texPath>6A/Anneli_Jurnizia_SSH68_Helmet_VSR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6A/Anneli_Jurnizia_SSH68_Helmet_VSR</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Military_VSR</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+</Defs>

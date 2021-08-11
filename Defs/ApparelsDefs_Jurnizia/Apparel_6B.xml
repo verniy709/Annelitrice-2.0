@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Yorha_6B" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>10</costStuffCount>
+		<!-- <stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories> -->
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Yorha</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_AviatorSunglasses-->
+	<ThingDef ParentName="Anneli_Yorha_6B">
+		<defName>Anneli_Jurnizia_AviatorSunglasses</defName>
+		<description>Yorha_6B_Blindfold_A</description>
+		<label>Yorha_6B_Blindfold_A</label>
+		<graphicData>
+			<texPath>6B/Anneli_Jurnizia_AviatorSunglasses</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Jurnizia_AviatorSunglasses</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Civilian</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_ZP1_80_Goggles-->
+	<ThingDef ParentName="Anneli_Yorha_6B">
+		<defName>Anneli_Jurnizia_ZP1_80_Goggles</defName>
+		<description>Yorha_6B_Blindfold_B</description>
+		<label>Yorha_6B_Blindfold_B</label>
+		<graphicData>
+			<texPath>6B/Anneli_Jurnizia_ZP1_80_Goggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Jurnizia_ZP1_80_Goggles</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_ZP2_80_Goggles-->
+	<ThingDef ParentName="Anneli_Yorha_6B">
+		<defName>Anneli_Jurnizia_ZP2_80_Goggles</defName>
+		<description>Yorha_6B_Glasses</description>
+		<label>Yorha_6B_Glasses</label>
+		<graphicData>
+			<texPath>6B/Anneli_Jurnizia_ZP2_80_Goggles</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Jurnizia_ZP2_80_Goggles</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+		
+</Defs>

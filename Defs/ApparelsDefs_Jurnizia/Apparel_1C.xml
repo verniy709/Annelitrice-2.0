@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Jurnizia_1C" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.05</Mass>
+			<StuffEffectMultiplierArmor>0.015</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Anneli_Jurnizia</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Footwraps-->
+	<ThingDef ParentName="Anneli_Jurnizia_1C">
+		<defName>Anneli_Jurnizia_Footwraps</defName>
+		<description>Jurnizia_1C_Footwraps</description>
+		<label>Jurnizia_1C_Footwraps</label>
+		<graphicData>
+			<texPath>1C/Anneli_Jurnizia_Footwraps</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1C/Anneli_Jurnizia_Footwraps</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Jurnizia_Socks-->
+	<ThingDef ParentName="Anneli_Jurnizia_1C">
+		<defName>Anneli_Jurnizia_Socks</defName>
+		<description>Jurnizia_1C_Socks</description>
+		<label>Jurnizia_1C_Socks</label>
+		<graphicData>
+			<texPath>1C/Anneli_Jurnizia_Socks</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1C/Anneli_Jurnizia_Socks</wornGraphicPath>
+			<tags>
+				<li>Anneli_Jurnizia_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

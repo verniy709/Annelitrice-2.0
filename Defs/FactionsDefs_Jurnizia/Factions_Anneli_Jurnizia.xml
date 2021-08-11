@@ -20,8 +20,8 @@
 		<allowedCultures>
 			<li>Anneli_Cultures_Kriminul</li>
 		</allowedCultures>
-		<settlementTexturePath>Anneli_Factions/Anneli_Yorha</settlementTexturePath>
-		<factionIconPath>Anneli_Factions/Anneli_Yorha</factionIconPath>
+		<settlementTexturePath>Anneli_Factions/Anneli_Jurnizia</settlementTexturePath>
+		<factionIconPath>Anneli_Factions/Anneli_Jurnizia</factionIconPath>
 		<listOrderPriority>30</listOrderPriority>
 		<settlementGenerationWeight>0.5</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -46,9 +46,6 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<caravanTraderKinds>
-			<li>Caravan_Outlander_Exotic</li>
-			<li>Caravan_Outlander_BulkGoods</li>
-			<li>Caravan_Outlander_CombatSupplier</li>
 			<li>Caravan_Outlander_PirateMerchant</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
@@ -99,15 +96,15 @@
 			<li>
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<Anneli_Yorha_Combatant>15</Anneli_Yorha_Combatant>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
-					<Anneli_Yorha_Healer>5</Anneli_Yorha_Healer>
+					<Anneli_Jurnizia_Militia>15</Anneli_Jurnizia_Militia>
+					<Anneli_Jurnizia_Spetsnaz>5</Anneli_Jurnizia_Spetsnaz>
+					<Anneli_Jurnizia_Draftee>5</Anneli_Jurnizia_Draftee>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
+					<Anneli_Jurnizia_Chief>5</Anneli_Jurnizia_Chief>
 				</traders>
 				<carriers>
 					<Muffalo>3</Muffalo>
@@ -116,19 +113,19 @@
 					<Elephant>2</Elephant>
 				</carriers>
 				<guards>
-					<Anneli_Yorha_Combatant>70</Anneli_Yorha_Combatant>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
-					<Anneli_Yorha_Healer>5</Anneli_Yorha_Healer>
-					<Anneli_Yorha_HeavyTroopers>20</Anneli_Yorha_HeavyTroopers>
+					<Anneli_Jurnizia_Militia>15</Anneli_Jurnizia_Militia>
+					<Anneli_Jurnizia_Spetsnaz>5</Anneli_Jurnizia_Spetsnaz>
+					<Anneli_Jurnizia_Draftee>5</Anneli_Jurnizia_Draftee>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<Anneli_Yorha_Combatant>45</Anneli_Yorha_Combatant>
-					<Anneli_Yorha_Commander>5</Anneli_Yorha_Commander>
-					<Anneli_Yorha_Healer>5</Anneli_Yorha_Healer>
-					<Anneli_Yorha_HeavyTroopers>45</Anneli_Yorha_HeavyTroopers>
+					<Anneli_Jurnizia_Militia>10</Anneli_Jurnizia_Militia>
+					<Anneli_Jurnizia_Draftee>58</Anneli_Jurnizia_Draftee>
+					<Anneli_Jurnizia_HeavyTrooper>20</Anneli_Jurnizia_HeavyTrooper>
+					<Anneli_Jurnizia_Spetsnaz>10</Anneli_Jurnizia_Spetsnaz>
+					<Anneli_Jurnizia_Chief>2</Anneli_Jurnizia_Chief>
 				</options>
 			</li>
 		</pawnGroupMakers>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="Anneli_Yorha_5A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+	<ThingDef Name="Anneli_Yorha_6A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>35</costStuffCount>
 		<!-- <stuffCategories>
 			<li>Leathery</li>
@@ -34,7 +34,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Beret-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Beret</defName>
 		<description>Yorha_6A_Beret</description>
 		<label>Yorha_6A_Beret</label>
@@ -56,7 +56,7 @@
 	</ThingDef>
 	
 <!--Anneli_Yorha_DerbyHat-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_DerbyHat</defName>
 		<description>Yorha_6A_DerbyHat</description>
 		<label>Yorha_6A_DerbyHat</label>
@@ -77,7 +77,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Headband-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Headband</defName>
 		<description>Yorha_6A_Headband</description>
 		<label>Yorha_6A_Headband</label>
@@ -99,7 +99,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_HealerHeadFlower-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_HealerHeadFlower</defName>
 		<description>Yorha_6A_HealerHeadFlower</description>
 		<label>Yorha_6A_HealerHeadFlower</label>
@@ -120,7 +120,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Hood-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Hood</defName>
 		<description>Yorha_6A_Hood</description>
 		<label>Yorha_6A_Hood</label>
@@ -142,7 +142,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_PeakedCap_A-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_PeakedCap_A</defName>
 		<description>Yorha_6A_PeakedCap_A</description>
 		<label>Yorha_6A_PeakedCap_A</label>
@@ -163,7 +163,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_PeakedCap_B-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_PeakedCap_B</defName>
 		<description>Yorha_6A_PeakedCap_B</description>
 		<label>Yorha_6A_PeakedCap_B</label>
@@ -185,7 +185,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_SideCap-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_SideCap</defName>
 		<description>Yorha_6A_SideCap</description>
 		<label>Yorha_6A_SideCap</label>
@@ -207,7 +207,7 @@
 	</ThingDef>
 
 <!--Anneli_Yorha_Headwear-->
-	<ThingDef ParentName="Anneli_Yorha_5A">
+	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Headwear</defName>
 		<description>Yorha_6A_Headwear</description>
 		<label>Yorha_6A_Headwear</label>

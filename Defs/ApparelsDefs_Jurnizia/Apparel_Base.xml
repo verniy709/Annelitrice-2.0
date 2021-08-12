@@ -72,7 +72,6 @@
 			<Beauty>1</Beauty>
 		</statBases>
     	<recipeMaker>
-      		<useIngredientsForColor>false</useIngredientsForColor>
       		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       		<workSkill>Crafting</workSkill>
       		<effectWorking>Tailor</effectWorking>
@@ -86,14 +85,20 @@
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
 		<apparel>
-			<defaultOutfitTags>
-			</defaultOutfitTags>
       		<useWornGraphicMask>true</useWornGraphicMask>
       		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       		<tags>
 				<li>Anneli</li>
 			</tags>
 		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(1,1,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li>

@@ -20,6 +20,7 @@
 			<ToxicSensitivity>-0.6</ToxicSensitivity>
 		</equippedStatOffsets>
 		<apparel>
+			<forceRenderUnderHair>true</forceRenderUnderHair>
 			<bodyPartGroups>
 				<li>Neck</li>
 			</bodyPartGroups>

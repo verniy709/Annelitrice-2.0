@@ -21,6 +21,7 @@
 			<SocialImpact>0.10</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
+			<forceRenderUnderHair>false</forceRenderUnderHair>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>

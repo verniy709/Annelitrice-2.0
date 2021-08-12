@@ -20,6 +20,7 @@
 			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<apparel>
+			<forceRenderUnderHair>true</forceRenderUnderHair>
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>

@@ -17,10 +17,7 @@
 		</statBases>
 		<apparel>
 			<bodyPartGroups>
-				<li>Torso</li>
 				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Anneli_UpperShell_Tactical</li>

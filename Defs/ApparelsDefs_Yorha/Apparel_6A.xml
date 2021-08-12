@@ -30,6 +30,7 @@
 			<tags>
 				<li>Anneli_Yorha</li>
 			</tags>
+			<forceRenderUnderHair>false</forceRenderUnderHair>
 		</apparel>
 	</ThingDef>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="Anneli_Yorha_6B" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
+	<ThingDef Name="Anneli_Jurnizia_6B" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>10</costStuffCount>
 		<!-- <stuffCategories>
 			<li>Leathery</li>
@@ -20,6 +20,7 @@
 			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<apparel>
+			<forceRenderUnderHair>true</forceRenderUnderHair>
 			<bodyPartGroups>
 				<li>Eyes</li>
 			</bodyPartGroups>
@@ -27,16 +28,16 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>Anneli_Yorha</li>
+				<li>Anneli_Jurnizia</li>
 			</tags>
 		</apparel>
 	</ThingDef>
 
 <!--Anneli_Jurnizia_AviatorSunglasses-->
-	<ThingDef ParentName="Anneli_Yorha_6B">
+	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_AviatorSunglasses</defName>
-		<description>Yorha_6B_Blindfold_A</description>
-		<label>Yorha_6B_Blindfold_A</label>
+		<description>Jurnizia_6B_Blindfold_A</description>
+		<label>Jurnizia_6B_Blindfold_A</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_AviatorSunglasses</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,10 +64,10 @@
 	</ThingDef>
 
 <!--Anneli_Jurnizia_ZP1_80_Goggles-->
-	<ThingDef ParentName="Anneli_Yorha_6B">
+	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_ZP1_80_Goggles</defName>
-		<description>Yorha_6B_Blindfold_B</description>
-		<label>Yorha_6B_Blindfold_B</label>
+		<description>Jurnizia_6B_Blindfold_B</description>
+		<label>Jurnizia_6B_Blindfold_B</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_ZP1_80_Goggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -93,10 +94,10 @@
 	</ThingDef>
 
 <!--Anneli_Jurnizia_ZP2_80_Goggles-->
-	<ThingDef ParentName="Anneli_Yorha_6B">
+	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_ZP2_80_Goggles</defName>
-		<description>Yorha_6B_Glasses</description>
-		<label>Yorha_6B_Glasses</label>
+		<description>Jurnizia_6B_Glasses</description>
+		<label>Jurnizia_6B_Glasses</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_ZP2_80_Goggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

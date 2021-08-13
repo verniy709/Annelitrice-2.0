@@ -21,10 +21,10 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>Feet</li>
+				<li>Feet</li><!--This is stupid, but necessary.-->
 			</bodyPartGroups>
 			<layers>
-				<li>OnSkin</li>
+				<li>Anneli_OnSkin</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>

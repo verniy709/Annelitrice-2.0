@@ -7,17 +7,43 @@
 		<label>Annelitrice Yorha Apparels</label>
 	</ThingCategoryDef>
 
-  <!-- <ApparelLayerDef>
+
+
+<!--Layer 1-->
+
+  <ApparelLayerDef>
     <defName>Anneli_Socks</defName>
     <label>Anneli_Socks</label>
-    <drawOrder>0</drawOrder>
+    <drawOrder>5</drawOrder>
   </ApparelLayerDef>
 
   <ApparelLayerDef>
+    <defName>Anneli_OnSkin</defName>
+    <label>Anneli_OnSkin</label>
+    <drawOrder>10</drawOrder>
+  </ApparelLayerDef>
+
+<!--Layer 2-->
+
+ <ApparelLayerDef>
     <defName>Anneli_Shoes</defName>
     <label>Anneli_Shoes</label>
-    <drawOrder>100</drawOrder>
-  </ApparelLayerDef> -->
+    <drawOrder>105</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>Anneli_Middle</defName>
+    <label>Anneli_Middle</label>
+    <drawOrder>110</drawOrder>
+  </ApparelLayerDef>
+
+<!--Layer 3-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_Shell</defName>
+    <label>Anneli_Shell</label>
+    <drawOrder>205</drawOrder>
+  </ApparelLayerDef>
 
 <!--Layer 4-->
 
@@ -27,7 +53,7 @@
     <drawOrder>210</drawOrder>
   </ApparelLayerDef>
 
- <!--Layer 5-->
+<!--Layer 5-->
 
   <ApparelLayerDef>
     <defName>Anneli_UpperShell_Tactical</defName>
@@ -35,7 +61,15 @@
     <drawOrder>220</drawOrder>
   </ApparelLayerDef>
 
- <!--Layer 7-->
+<!--Layer 6-->
+
+  <ApparelLayerDef>
+    <defName>Anneli_Head</defName>
+    <label>Anneli_Head</label>
+    <drawOrder>405</drawOrder>
+  </ApparelLayerDef>
+
+<!--Layer 7-->
 
   <ApparelLayerDef>
     <defName>Anneli_Bag</defName>
@@ -72,6 +106,7 @@
 			<Beauty>1</Beauty>
 		</statBases>
     	<recipeMaker>
+    		<useIngredientsForColor>false</useIngredientsForColor>
       		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       		<workSkill>Crafting</workSkill>
       		<effectWorking>Tailor</effectWorking>
@@ -85,7 +120,7 @@
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
 		<apparel>
-      		<useWornGraphicMask>true</useWornGraphicMask>
+      		<useWornGraphicMask>false</useWornGraphicMask>
       		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       		<tags>
 				<li>Anneli</li>

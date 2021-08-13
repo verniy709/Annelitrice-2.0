@@ -3,7 +3,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_1</defName>
 		<label>Anneli_Hair_1</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_1</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -13,7 +13,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_2</defName>
 		<label>Anneli_Hair_2</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_2</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -23,7 +23,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_3</defName>
 		<label>Anneli_Hair_3</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_3</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -33,7 +33,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_4</defName>
 		<label>Anneli_Hair_4</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_4</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -43,7 +43,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_5</defName>
 		<label>Anneli_Hair_5</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_5</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -53,7 +53,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_6</defName>
 		<label>Anneli_Hair_6</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_6</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -63,7 +63,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_7</defName>
 		<label>Anneli_Hair_7</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_7</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -73,7 +73,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_8</defName>
 		<label>Anneli_Hair_8</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_8</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -83,7 +83,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_9</defName>
 		<label>Anneli_Hair_9</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_9</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -93,7 +93,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_10</defName>
 		<label>Anneli_Hair_10</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_10</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -103,7 +103,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_11</defName>
 		<label>Anneli_Hair_11</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_11</texPath>
 		<styleTags>
 			<li>Anneli</li>
@@ -113,7 +113,7 @@
 	<HairDef>
 		<defName>Anneli_Hair_12</defName>
 		<label>Anneli_Hair_12</label>
-		<styleGender>Female</styleGender>
+		<styleGender>Any</styleGender>
 		<texPath>Anneli_Hair/Anneli_Hair_12</texPath>
 		<styleTags>
 			<li>Anneli</li>

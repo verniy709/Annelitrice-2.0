@@ -21,7 +21,7 @@
 			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<apparel>
-			<shellCoversHead>false</shellCoversHead>
+			<!-- <shellCoversHead>false</shellCoversHead> -->
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
@@ -30,7 +30,7 @@
 			</bodyPartGroups>
 			<layers>
 				<li>Anneli_UpperShell_Armor</li>
-				<li>Shell</li>
+				<li>Anneli_Shell</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>
@@ -48,6 +48,27 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
+			<wornGraphicPath>34/Anneli_Yorha_HeavyArmor</wornGraphicPath>
+			<tags>
+				<li>Anneli_Yorha_Heavy</li>
+			</tags>
+		</apparel>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	</ThingDef>
+
+<!--Anneli_Yorha_HeavyArmor-->
+	<ThingDef ParentName="Anneli_Yorha_34">
+		<defName>Anneli_Yorha_HeavyArmorA</defName>
+		<description>Yorha_34_HeavyArmor</description>
+		<label>Yorha_34__HeavyArmor</label>
+		<graphicData>
+			<texPath>34/Anneli_Yorha_HeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<wornGraphicPath>34/Anneli_Yorha_HeavyArmor</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Heavy</li>

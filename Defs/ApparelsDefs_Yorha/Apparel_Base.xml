@@ -63,11 +63,7 @@
 
 <!--Layer 6-->
 
-  <ApparelLayerDef>
-    <defName>Anneli_Head</defName>
-    <label>Anneli_Head</label>
-    <drawOrder>405</drawOrder>
-  </ApparelLayerDef>
+<!--Vanilla Head-->
 
 <!--Layer 7-->
 

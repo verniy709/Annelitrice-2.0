@@ -21,7 +21,7 @@
 						<kindDefs>
 							<li>Anneli_Player</li>
 						</kindDefs>
-						<chance>1</chance>
+						<chance>0</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
@@ -35,7 +35,7 @@
 				<kindDefs>
 					<li>Anneli_Player</li>
 				</kindDefs>
-				<chance>1</chance>
+				<chance>10</chance>
 			</li>
 		</alienrefugeekinds>
 		<startingColonists>
@@ -45,7 +45,7 @@
 						<kindDefs>
 							<li>Anneli_Player</li>
 						</kindDefs>
-						<chance>20.0</chance>
+						<chance>5</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>

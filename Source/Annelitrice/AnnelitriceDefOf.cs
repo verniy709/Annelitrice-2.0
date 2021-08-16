@@ -48,5 +48,9 @@ namespace Annelitrice
         public static SoundDef Anneli_Sound_SpurtBlood;
         public static HediffDef Annely_Infection;
         public static PawnKindDef Anneli_Player;
+
+        public static SoundDef Anneli_Sound_AudienceLaugh1;
+        public static SoundDef Anneli_Sound_AudienceLaugh2;
+        public static SoundDef Anneli_Sound_AudienceLaugh3;
     }
 }

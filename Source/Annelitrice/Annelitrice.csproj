@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HediffExtension - Copy.cs" />
+    <Compile Include="JobDriver_WatchPuppetShow.cs" />
     <Compile Include="Hediff_AnnelyInfection.cs" />
     <Compile Include="HediffComp_GenerateEvolutionPoints.cs" />
     <Compile Include="AnnelitriceUtils.cs" />

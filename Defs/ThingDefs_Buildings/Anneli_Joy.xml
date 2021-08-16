@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <JoyKindDef>
+    <defName>Annely_Spectate</defName>
+    <label>spectating</label>
+  </JoyKindDef>
+
   <JoyGiverDef>
     <defName>WatchPuppetShow</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>
     <baseChance>3.0</baseChance>
     <canDoWhileInBed>true</canDoWhileInBed>
+	<desireSit>false</desireSit>
     <thingDefs>
       <li>Anneli_PuppetTheatre</li>
     </thingDefs>
     <jobDef>WatchPuppetShow</jobDef>
-    <joyKind>Television</joyKind>
+    <joyKind>Annely_Spectate</joyKind>
     <requiredCapacities>
       <li>Sight</li>
     </requiredCapacities>
@@ -18,11 +24,11 @@
 
   <JobDef>
     <defName>WatchPuppetShow</defName>
-    <driverClass>JobDriver_WatchTelevision</driverClass>
+    <driverClass>Annelitrice.JobDriver_WatchPuppetShow</driverClass>
     <reportString>watching puppetshow.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>12</joyMaxParticipants>
-    <joyKind>Television</joyKind>
+    <joyKind>Annely_Spectate</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
 
@@ -70,9 +76,7 @@
     </thingCategories>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <building>
-      <joyKind>Television</joyKind>
-      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
-      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <joyKind>Annely_Spectate</joyKind>
       <watchBuildingStandDistanceRange>2~6</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>6</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
@@ -81,13 +85,6 @@
     <researchPrerequisites>
       <li>Anneli_PuppetTheatre</li>
     </researchPrerequisites>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <shortCircuitInRain>false</shortCircuitInRain>
-        <basePowerConsumption>-10</basePowerConsumption>
-      </li>
-    </comps>
     <placeWorkers>
       <li>PlaceWorker_WatchArea</li>
     </placeWorkers>

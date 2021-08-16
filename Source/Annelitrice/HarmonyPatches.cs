@@ -4,6 +4,7 @@ using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -20,6 +21,161 @@ namespace Annelitrice
         {
             harmonyInstance = new Harmony("Annelitrice.Mod");
             harmonyInstance.PatchAll();
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal")]
+    public class RenderPawnInternal_Patch
+    {
+        [TweakValue("AN", -1f, 1f)] public static float test1 = 0.02f;
+
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
+        {
+            var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
+            Label label = ilg.DefineLabel();
+            var shouldOverride = AccessTools.Method(typeof(DrawHeadHair_Patch), "ShouldOverride");
+            var changeVector = AccessTools.Method(typeof(RenderPawnInternal_Patch), "ChangeVector");
+            int found = 0;
+
+            var codes = instructions.ToList();
+            for (var i = 0; i < codes.Count; i++)
+            {
+                var instr = codes[i];
+                yield return instr;
+                if (found < 2 && i > 2 && i < codes.Count - 1 && codes[i - 2].opcode == OpCodes.Ldc_R4 && codes[i - 2].OperandIs(0.0231660213f) && codes[i].opcode == OpCodes.Stind_R4)
+                {
+                    found++;
+                    if (found == 2)
+                    {
+                        yield return codes[i + 1];
+                        i++;
+                        codes[i + 1].labels.Add(label);
+                        yield return new CodeInstruction(OpCodes.Nop);
+
+                        yield return new CodeInstruction(OpCodes.Ldarg_0);
+                        yield return new CodeInstruction(OpCodes.Ldfld, pawnField);
+                        yield return new CodeInstruction(OpCodes.Call, shouldOverride);
+                        yield return new CodeInstruction(OpCodes.Brfalse, label);
+
+                        yield return new CodeInstruction(OpCodes.Nop);
+
+                        yield return new CodeInstruction(OpCodes.Ldloc_2);
+                        yield return new CodeInstruction(OpCodes.Call, changeVector);
+                        yield return new CodeInstruction(OpCodes.Stloc_2);
+
+                        Log.Message("Annely: Patched RenderPawnInternal");
+                    }
+                }
+            }
+        }
+
+        public static Vector3 ChangeVector(Vector3 vector3)
+        {
+            vector3.y += test1;
+            Log.Message("Changing vector: " + vector3);
+            return vector3;
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnRenderer), "DrawHeadHair")]
+    public class DrawHeadHair_Patch
+    {
+        [TweakValue("AN", -1f, 1f)] public static float test2 = 0.032f;
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
+        {
+            var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
+            Label label = ilg.DefineLabel();
+            var shouldOverride = AccessTools.Method(typeof(DrawHeadHair_Patch), "ShouldOverride");
+            var changeVector = AccessTools.Method(typeof(DrawHeadHair_Patch), "ChangeVector");
+            var onHeadField = AccessTools.Field(typeof(PawnRenderer).GetNestedTypes(AccessTools.all)
+                .First(c => c.Name.Contains("c__DisplayClass39_0")), "onHeadLoc");
+            bool found = false;
+            var codes = instructions.ToList();
+
+            for (var i = 0; i < codes.Count; i++)
+            {
+                var instr = codes[i];
+                yield return instr;
+                if (!found && i > 2 && i < codes.Count - 1 && codes[i - 2].opcode == OpCodes.Ldc_R4 && codes[i - 2].OperandIs(0.0289575271f) && codes[i].opcode == OpCodes.Stind_R4)
+                {
+                    found = true;
+                    codes[i + 1].labels.Add(label);
+                    yield return new CodeInstruction(OpCodes.Ldarg_0);
+                    yield return new CodeInstruction(OpCodes.Ldfld, pawnField);
+                    yield return new CodeInstruction(OpCodes.Call, shouldOverride);
+                    yield return new CodeInstruction(OpCodes.Brfalse, label);
+
+                    yield return new CodeInstruction(OpCodes.Nop);
+
+                    yield return new CodeInstruction(OpCodes.Ldloca_S, 0);
+                    yield return new CodeInstruction(OpCodes.Ldloc_0);
+
+                    yield return new CodeInstruction(OpCodes.Ldfld, onHeadField);
+                    yield return new CodeInstruction(OpCodes.Call, changeVector);
+                    yield return new CodeInstruction(OpCodes.Stfld, onHeadField);
+                    Log.Message("Annely: Patched DrawHeadHair");
+                }
+            }
+        }
+
+        public static bool ShouldOverride(Pawn pawn)
+        {
+            return pawn.def == AnnelitriceDefOf.Annelitrice;
+        }
+        public static Vector3 ChangeVector(Vector3 vector3)
+        {
+            vector3.y += test2;
+            return vector3;
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnRenderer), "DrawPawnBody")]
+    public class DrawPawnBody_Patch
+    {
+        [HarmonyPriority(Priority.Last)]
+        private static void Postfix(Pawn ___pawn, PawnRenderer __instance, ref Vector3 rootLoc, ref float angle, ref Rot4 facing, ref RotDrawMode bodyDrawType, ref PawnRenderFlags flags, ref Mesh bodyMesh)
+        {
+            //if (bodyDrawType != RotDrawMode.Dessicated && ___pawn.RaceProps.Humanlike)
+            //{
+            //    Quaternion quat = Quaternion.AngleAxis(angle, Vector3.up);
+            //
+            //    Vector3 vector = rootLoc;
+            //    if (___pawn.TryGetCompEvolution(out var comp))
+            //    {
+            //        if (comp.CanShowLegs)
+            //        {
+            //            Material rightLeg = comp.RightLegGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, rightLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            Material leftLeg = comp.LeftLegGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, leftLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //        }
+            //
+            //        if (comp.CanShowFace)
+            //        {
+            //            Vector3 vector2 = rootLoc;
+            //            if (facing != Rot4.North)
+            //            {
+            //                vector2.y += 0.0231660213f;
+            //            }
+            //            else
+            //            {
+            //                vector2.y += 3f / 148f;
+            //            }
+            //            var vector3 = quat * __instance.BaseHeadOffsetAt(facing);
+            //            var headVector = vector2 + vector3;
+            //            Material mouth = comp.MouthGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, mouth, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            headVector.y += 0.005f;
+            //            Material eyes = comp.EyesGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyes, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            Material eyeBrows = comp.EyeBrowsGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyeBrows, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //        }
+            //    }
+            //}
         }
     }
 
@@ -233,6 +389,16 @@ namespace Annelitrice
     [HarmonyPatch(typeof(Pawn), "GetGizmos")]
     public class Pawn_GetGizmos_Patch
     {
+        private static int lastActiveFrame = -1;
+        public static bool DoCastRadius(IntVec3 center)
+        {
+            if (lastActiveFrame != Time.frameCount)
+            {
+                lastActiveFrame = Time.frameCount;
+                GenDraw.DrawRadiusRing(center, 2.9f);
+            }
+            return true;
+        }
         protected static TargetingParameters GetHumanCorpseTargetParameters(Pawn caster)
         {
             return new TargetingParameters
@@ -245,7 +411,7 @@ namespace Annelitrice
                 canTargetSelf = false,
                 canTargetBuildings = false,
                 canTargetItems = true,
-                validator = (TargetInfo targ) => targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
+                validator = (TargetInfo targ) => DoCastRadius(caster.Position) && targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
             };
         }
         protected static TargetingParameters GetHumanoidTargetParameters(Pawn caster)
@@ -256,7 +422,7 @@ namespace Annelitrice
                 canTargetHumans = true,
                 canTargetPawns = true,
                 canTargetSelf = false,
-                validator = (TargetInfo targ) => targ.Thing is Pawn pawn && pawn.RaceProps.Humanlike && pawn.Position.DistanceTo(caster.Position) <= 2.9f
+                validator = (TargetInfo targ) => DoCastRadius(caster.Position) && targ.Thing is Pawn pawn && pawn.RaceProps.Humanlike && pawn.Position.DistanceTo(caster.Position) <= 2.9f
             };
         }
         public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
@@ -282,9 +448,9 @@ namespace Annelitrice
                     {
                         Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_AssimilateCorpse, t.Thing);
                         pawn.jobs.TryTakeOrderedJob(job);
-                        pawn.drafter.Drafted = false;
                     }, pawn);
-                }
+                },
+                onHover = () => DoCastRadius(__instance.Position),
             };
             yield return assimilate;
 
@@ -299,9 +465,9 @@ namespace Annelitrice
                     {
                         Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_InfestHuman, t.Thing);
                         pawn.jobs.TryTakeOrderedJob(job);
-                        pawn.drafter.Drafted = false;
                     }, pawn);
-                }
+                },
+                onHover = () => DoCastRadius(__instance.Position),
             };
             if (pawn.needs.food.CurLevelPercentage < 0.1f)
             {
@@ -423,57 +589,6 @@ namespace Annelitrice
             float num7 = Mathf.InverseLerp(num2, 100f, num3);
             float num8 = ((initiator.gender == recipient.gender) ? ((!initiator.story.traits.HasTrait(TraitDefOf.Gay) || !recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f) : ((initiator.story.traits.HasTrait(TraitDefOf.Gay) || recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f));
             return 1.15f * num5 * num6 * num7 * num4 * num8;
-        }
-    }
-
-
-    [HarmonyPatch(typeof(PawnRenderer), "DrawPawnBody")]
-    public class DrawPawnBody_Patch
-    {
-        [HarmonyPriority(Priority.Last)]
-        private static void Postfix(Pawn ___pawn, PawnRenderer __instance, ref Vector3 rootLoc, ref float angle, ref Rot4 facing, ref RotDrawMode bodyDrawType, ref PawnRenderFlags flags, ref Mesh bodyMesh)
-        {
-            //if (bodyDrawType != RotDrawMode.Dessicated && ___pawn.RaceProps.Humanlike)
-            //{
-            //    Quaternion quat = Quaternion.AngleAxis(angle, Vector3.up);
-            //
-            //    Vector3 vector = rootLoc;
-            //    if (___pawn.TryGetCompEvolution(out var comp))
-            //    {
-            //        if (comp.CanShowLegs)
-            //        {
-            //            Material rightLeg = comp.RightLegGraphic.MatAt(___pawn.Rotation);
-            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, rightLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
-            //
-            //            Material leftLeg = comp.LeftLegGraphic.MatAt(___pawn.Rotation);
-            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, leftLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
-            //        }
-            //
-            //        if (comp.CanShowFace)
-            //        {
-            //            Vector3 vector2 = rootLoc;
-            //            if (facing != Rot4.North)
-            //            {
-            //                vector2.y += 0.0231660213f;
-            //            }
-            //            else
-            //            {
-            //                vector2.y += 3f / 148f;
-            //            }
-            //            var vector3 = quat * __instance.BaseHeadOffsetAt(facing);
-            //            var headVector = vector2 + vector3;
-            //            Material mouth = comp.MouthGraphic.MatAt(___pawn.Rotation);
-            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, mouth, flags.FlagSet(PawnRenderFlags.DrawNow));
-            //
-            //            headVector.y += 0.005f;
-            //            Material eyes = comp.EyesGraphic.MatAt(___pawn.Rotation);
-            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyes, flags.FlagSet(PawnRenderFlags.DrawNow));
-            //
-            //            Material eyeBrows = comp.EyeBrowsGraphic.MatAt(___pawn.Rotation);
-            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyeBrows, flags.FlagSet(PawnRenderFlags.DrawNow));
-            //        }
-            //    }
-            //}
         }
     }
 }

@@ -68,7 +68,7 @@
 							<options>
 								<li>
 									<weight>1</weight>
-									<only>RGBA(1,0.5,0.5,1)</only>
+									<only>RGBA(1,0.95,0.95,1)</only>
 								</li>
 							</options>
 						</first>

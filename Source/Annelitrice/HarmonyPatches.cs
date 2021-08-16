@@ -42,13 +42,11 @@ namespace Annelitrice
             {
                 var instr = codes[i];
                 yield return instr;
-                if (found < 2 && i > 2 && i < codes.Count - 1 && codes[i - 2].opcode == OpCodes.Ldc_R4 && codes[i - 2].OperandIs(0.0231660213f) && codes[i].opcode == OpCodes.Stind_R4)
+                if (found < 2 && i > 3 && i < codes.Count - 1 && codes[i - 3].opcode == OpCodes.Ldc_R4 && codes[i - 3].OperandIs(0.0231660213f) && codes[i - 1].opcode == OpCodes.Stind_R4)
                 {
                     found++;
                     if (found == 2)
                     {
-                        yield return codes[i + 1];
-                        i++;
                         codes[i + 1].labels.Add(label);
                         yield return new CodeInstruction(OpCodes.Nop);
 
@@ -72,7 +70,6 @@ namespace Annelitrice
         public static Vector3 ChangeVector(Vector3 vector3)
         {
             vector3.y += test1;
-            Log.Message("Changing vector: " + vector3);
             return vector3;
         }
     }

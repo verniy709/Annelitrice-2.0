@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>Anneli_Sound_SampleSong</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Sample_Song</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <distRange>10~25</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+</Defs>

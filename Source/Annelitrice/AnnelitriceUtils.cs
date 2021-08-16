@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using AlienRace;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,30 @@ namespace Annelitrice
                 cachedComps[pawn] = comp = pawn.TryGetComp<CompEvolution>();
             }
             return comp != null;
+        }
+
+        public static List<string> savedDeadFaces;
+        public static List<string> savedLivingFaces;
+        public static void TryInitHeads(this Pawn pawn)
+        {
+            var alienDef = pawn.def as ThingDef_AlienRace;
+            var list = alienDef.alienRace.generalSettings.alienPartGenerator.aliencrowntypes;
+            if (savedDeadFaces is null)
+            {
+                savedDeadFaces = list.Where(x => x.Contains("DeadFace")).ToList();
+            }
+            if (savedLivingFaces is null)
+            {
+                savedLivingFaces = list.Where(x => !x.Contains("DeadFace")).ToList();
+            }
+        }
+
+        public static void UpdateGraphics(this Pawn pawn)
+        {
+            pawn.Drawer.renderer.graphics.ResolveAllGraphics();
+            PortraitsCache.SetDirty(pawn);
+            PortraitsCache.PortraitsCacheUpdate();
+            GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
         }
         public static void TrySpawnWorm(this Pawn pawn)
         {

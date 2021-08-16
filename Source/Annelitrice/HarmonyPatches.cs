@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using AlienRace;
+using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,111 @@ namespace Annelitrice
             harmonyInstance.PatchAll();
         }
     }
+
+    [HarmonyPatch(typeof(AlienPartGenerator), "RandomAlienHead")]
+    public static class AlienPartGenerator_RandomAlienHead_Patch
+    {
+        public static void Prefix(string userpath, Pawn pawn, out CompEvolution __state)
+        {
+            if (pawn.TryGetCompEvolution(out __state))
+            {
+                pawn.TryInitHeads();
+                var alienDef = pawn.def as ThingDef_AlienRace;
+                if (pawn.Dead)
+                {
+                    alienDef.alienRace.generalSettings.alienPartGenerator.aliencrowntypes = AnnelitriceUtils.savedDeadFaces;
+                }
+                else
+                {
+                    alienDef.alienRace.generalSettings.alienPartGenerator.aliencrowntypes = AnnelitriceUtils.savedLivingFaces;
+                }
+            }
+        }
+        public static void Postfix(string userpath, Pawn pawn, CompEvolution __state)
+        {
+            if (__state != null)
+            {
+                if (pawn.Dead)
+                {
+                    __state.deadFace = pawn.TryGetComp<AlienPartGenerator.AlienComp>().crownType;
+                }
+                else
+                {
+                    __state.livingFace = pawn.TryGetComp<AlienPartGenerator.AlienComp>().crownType;
+                }
+
+                var alienDef = pawn.def as ThingDef_AlienRace;
+                var list = alienDef.alienRace.generalSettings.alienPartGenerator.aliencrowntypes;
+                foreach (var head in list)
+                {
+                    Log.Message("Head: " + head);
+                }
+                var alienComp = pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+                if (alienComp != null)
+                {
+                    Log.Message("alienComp.crownType: " + alienComp.crownType);
+                }
+
+                Log.Message("__state.deadFace: " + __state.deadFace);
+                Log.Message("__state.livingFace: " + __state.livingFace);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn), "Kill")]
+    public static class Pawn_Kill_Patch
+    {
+        public static void Prefix(Pawn __instance)
+        {
+            if (__instance.TryGetCompEvolution(out var comp))
+            {
+                try
+                {
+                    __instance.TryInitHeads();
+                    var alienComp = __instance.TryGetComp<AlienPartGenerator.AlienComp>();
+                    if (comp.livingFace.NullOrEmpty())
+                    {
+                        comp.livingFace = alienComp.crownType;
+                    }
+                    if (comp.deadFace.NullOrEmpty())
+                    {
+                        comp.deadFace = AnnelitriceUtils.savedDeadFaces.RandomElement();
+                    }
+                    alienComp.crownType = comp.deadFace;
+                    __instance.UpdateGraphics();
+                }
+                catch { };
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(Pawn_HealthTracker), "Notify_Resurrected")]
+    public static class Pawn_HealthTracker_Notify_Resurrected_Patch
+    {
+        public static void Prefix(Pawn ___pawn)
+        {
+            if (___pawn.TryGetCompEvolution(out var comp))
+            {
+                try
+                {
+                    ___pawn.TryInitHeads();
+                    var alienComp = ___pawn.TryGetComp<AlienPartGenerator.AlienComp>();
+                    if (comp.deadFace.NullOrEmpty())
+                    {
+                        comp.deadFace = alienComp.crownType;
+                    }
+                    if (comp.livingFace.NullOrEmpty())
+                    {
+                        comp.livingFace = AnnelitriceUtils.savedLivingFaces.RandomElement();
+                    }
+                    alienComp.crownType = comp.livingFace;
+                    ___pawn.UpdateGraphics();
+                }
+                catch { };
+            }
+        }
+    }
+
     [HarmonyPatch(typeof(Pawn), "Destroy")]
     public static class Pawn_Destroy_Patch
     {
@@ -327,47 +433,47 @@ namespace Annelitrice
         [HarmonyPriority(Priority.Last)]
         private static void Postfix(Pawn ___pawn, PawnRenderer __instance, ref Vector3 rootLoc, ref float angle, ref Rot4 facing, ref RotDrawMode bodyDrawType, ref PawnRenderFlags flags, ref Mesh bodyMesh)
         {
-            if (bodyDrawType != RotDrawMode.Dessicated && ___pawn.RaceProps.Humanlike)
-            {
-                Quaternion quat = Quaternion.AngleAxis(angle, Vector3.up);
-    
-                Vector3 vector = rootLoc;
-                if (___pawn.TryGetCompEvolution(out var comp))
-                {
-                    if (comp.CanShowLegs)
-                    {
-                        Material rightLeg = comp.RightLegGraphic.MatAt(___pawn.Rotation);
-                        GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, rightLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
-
-                        Material leftLeg = comp.LeftLegGraphic.MatAt(___pawn.Rotation);
-                        GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, leftLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
-                    }
-
-                    if (comp.CanShowFace)
-                    {
-                        Vector3 vector2 = rootLoc;
-                        if (facing != Rot4.North)
-                        {
-                            vector2.y += 0.0231660213f;
-                        }
-                        else
-                        {
-                            vector2.y += 3f / 148f;
-                        }
-                        var vector3 = quat * __instance.BaseHeadOffsetAt(facing);
-                        var headVector = vector2 + vector3;
-                        Material mouth = comp.MouthGraphic.MatAt(___pawn.Rotation);
-                        GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, mouth, flags.FlagSet(PawnRenderFlags.DrawNow));
-
-                        headVector.y += 0.005f;
-                        Material eyes = comp.EyesGraphic.MatAt(___pawn.Rotation);
-                        GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyes, flags.FlagSet(PawnRenderFlags.DrawNow));
-
-                        Material eyeBrows = comp.EyeBrowsGraphic.MatAt(___pawn.Rotation);
-                        GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyeBrows, flags.FlagSet(PawnRenderFlags.DrawNow));
-                    }
-                }
-            }
+            //if (bodyDrawType != RotDrawMode.Dessicated && ___pawn.RaceProps.Humanlike)
+            //{
+            //    Quaternion quat = Quaternion.AngleAxis(angle, Vector3.up);
+            //
+            //    Vector3 vector = rootLoc;
+            //    if (___pawn.TryGetCompEvolution(out var comp))
+            //    {
+            //        if (comp.CanShowLegs)
+            //        {
+            //            Material rightLeg = comp.RightLegGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, rightLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            Material leftLeg = comp.LeftLegGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(bodyMesh, vector, quat, leftLeg, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //        }
+            //
+            //        if (comp.CanShowFace)
+            //        {
+            //            Vector3 vector2 = rootLoc;
+            //            if (facing != Rot4.North)
+            //            {
+            //                vector2.y += 0.0231660213f;
+            //            }
+            //            else
+            //            {
+            //                vector2.y += 3f / 148f;
+            //            }
+            //            var vector3 = quat * __instance.BaseHeadOffsetAt(facing);
+            //            var headVector = vector2 + vector3;
+            //            Material mouth = comp.MouthGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, mouth, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            headVector.y += 0.005f;
+            //            Material eyes = comp.EyesGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyes, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //
+            //            Material eyeBrows = comp.EyeBrowsGraphic.MatAt(___pawn.Rotation);
+            //            GenDraw.DrawMeshNowOrLater(MeshPool.humanlikeHeadSet.MeshAt(facing), headVector, quat, eyeBrows, flags.FlagSet(PawnRenderFlags.DrawNow));
+            //        }
+            //    }
+            //}
         }
     }
 }

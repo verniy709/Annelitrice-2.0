@@ -27,6 +27,7 @@
         <texture>Things/Pawn/Wounds/BandagedC</texture>
       </li>
     </bandagedWounds>
+	
     <hediffWounds>
       <li  MayRequire="Ludeon.RimWorld.Ideology">
         <hediff>Scarification</hediff>
@@ -81,6 +82,7 @@
           </li>
         </wounds>
       </li>
+	  <!--
       <li>
         <hediff>Annely_BoneBlade</hediff>
         <wounds>
@@ -342,6 +344,7 @@
           </li>
         </wounds>
       </li>
+	  -->
     </hediffWounds>
   </FleshTypeDef>
 

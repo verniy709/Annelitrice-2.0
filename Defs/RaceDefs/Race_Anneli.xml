@@ -118,6 +118,10 @@
 					<li>Head_Red_H</li>
 					<li>Head_Red_I</li>
 					<li>Head_Red_J</li>
+					
+					<li>Head_DeadFace_A</li>
+					<li>Head_DeadFace_B</li>
+					<li>Head_DeadFace_C</li>
                 </aliencrowntypes>
 		        <alienbodytypes>
 					<li>Female</li>

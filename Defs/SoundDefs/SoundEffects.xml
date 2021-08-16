@@ -68,4 +68,39 @@
     </subSounds>
   </SoundDef>
 
+  <SoundDef>
+    <defName>Anneli_Sound_AudienceLaughTest1</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <sustain>True</sustain>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AudienceLaugh1</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Anneli_Sound_AudienceLaughTest2</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <sustain>True</sustain>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AudienceLaugh2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <distRange>10~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>

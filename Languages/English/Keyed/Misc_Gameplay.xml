@@ -23,4 +23,10 @@
 	<Annely.Infest>Infest</Annely.Infest>
 	<Annely.InfestDesc>Infest a humanoid target. The target has 15% chance to be transformed into an Annelitrice pawn, 85% to be consumed by worms.</Annely.InfestDesc>
 	<Annely.CannotInfestTooLowFoodLevel>The pawn is too hungry to use this ability.</Annely.CannotInfestTooLowFoodLevel>
+	<Annely.PlaySong>Play song: {0}</Annely.PlaySong>
+	<Annely.PlaySongDesc>Play selected song.</Annely.PlaySongDesc>
+	<Annely.StopSong>Stop song</Annely.StopSong>
+	<Annely.StopSongDesc>Stop current song.</Annely.StopSongDesc>
+	<Annely.SelectSong>Select song</Annely.SelectSong>
+	<Annely.SelectSongDesc>Select a song to play it later.</Annely.SelectSongDesc>
 </LanguageData>

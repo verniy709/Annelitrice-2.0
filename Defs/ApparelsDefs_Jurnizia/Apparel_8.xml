@@ -47,6 +47,18 @@
 				<li>Anneli_Jurnizia_Special</li>
 			</tags>
 		</apparel>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="Annelitrice.CompProperties_PlayMusic">
+				<soundDefs>
+					<li>Anneli_Sound_AudienceLaughTest1</li>
+					<li>Anneli_Sound_AudienceLaughTest2</li>
+				</soundDefs>
+				<playerThought>AnnelitricePlayerPlayedMusic</playerThought>
+				<audienceThought>AnnelitriceAudiencesHeardMusic</audienceThought>
+				<affectRadius>6</affectRadius>
+			</li>
+		</comps>
 	</ThingDef>	
 
 </Defs>

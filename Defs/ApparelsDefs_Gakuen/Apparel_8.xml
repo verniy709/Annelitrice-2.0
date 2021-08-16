@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="Anneli_Jurnizia_8" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
+	<ThingDef Name="Anneli_Gakuen_8" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
@@ -27,24 +27,22 @@
 				<li>Anneli_Misc</li>
 			</layers>
 			<tags>
-				<li>Anneli_Jurnizia</li>
 			</tags>
 		</apparel>
 	</ThingDef>	
 
-<!--Anneli_Jurnizia_Guitar-->
-	<ThingDef ParentName="Anneli_Jurnizia_8">
-		<defName>Anneli_Jurnizia_Guitar</defName>
+<!--Anneli_Gakuen_Walkwoman-->
+	<ThingDef ParentName="Anneli_Gakuen_8">
+		<defName>Anneli_Gakuen_Walkwoman</defName>
 		<description>Jurnizia_8</description>
 		<label>Jurnizia_8</label>
 		<graphicData>
-			<texPath>8/Anneli_Jurnizia_Guitar</texPath>
+			<texPath>8/Anneli_Gakuen_Walkwoman</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>8/Anneli_Jurnizia_Guitar</wornGraphicPath>
+			<wornGraphicPath>8/Anneli_Gakuen_Walkwoman</wornGraphicPath>
 			<tags>
-				<li>Anneli_Jurnizia_Special</li>
 			</tags>
 		</apparel>
 	</ThingDef>	

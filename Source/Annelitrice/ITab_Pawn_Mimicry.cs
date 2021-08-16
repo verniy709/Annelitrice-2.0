@@ -147,32 +147,32 @@ namespace Annelitrice
 			
 			GUI.color = curColor;
 
-			foreach (var bodyPartRect in rightBodyPartRects)
-            {
-				var part = compEvolution.GetRightPart(bodyPartRect.Key);
-				var pairs = Textures.rightPairedAppendanges[bodyPartRect.Key];
-				var allAppendages = pairs.Keys.ToList();
-				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.rightAppendagesActive) : null;
-				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.rightAppendagesActive);
-			}
-
-			foreach (var bodyPartRect in leftBodyPartRects)
-			{
-				var part = compEvolution.GetLeftPart(bodyPartRect.Key);
-				var pairs = Textures.leftPairedAppendanges[bodyPartRect.Key];
-				var allAppendages = pairs.Keys.ToList();
-				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.leftAppendagesActive) : null;
-				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.leftAppendagesActive);
-			}
-
-			foreach (var bodyPartRect in bodyPartRects)
-			{
-				var part = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(x => x.def == bodyPartRect.Key);
-				var pairs = Textures.pairedAppendanges[bodyPartRect.Key];
-				var allAppendages = pairs.Keys.ToList();
-				var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.appendagesActive) : null;
-				DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.appendagesActive);
-			}
+			//foreach (var bodyPartRect in rightBodyPartRects)
+            //{
+			//	var part = compEvolution.GetRightPart(bodyPartRect.Key);
+			//	var pairs = Textures.rightPairedAppendanges[bodyPartRect.Key];
+			//	var allAppendages = pairs.Keys.ToList();
+			//	var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.rightAppendagesActive) : null;
+			//	DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.rightAppendagesActive);
+			//}
+			//
+			//foreach (var bodyPartRect in leftBodyPartRects)
+			//{
+			//	var part = compEvolution.GetLeftPart(bodyPartRect.Key);
+			//	var pairs = Textures.leftPairedAppendanges[bodyPartRect.Key];
+			//	var allAppendages = pairs.Keys.ToList();
+			//	var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.leftAppendagesActive) : null;
+			//	DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.leftAppendagesActive);
+			//}
+			//
+			//foreach (var bodyPartRect in bodyPartRects)
+			//{
+			//	var part = pawn.health.hediffSet.GetNotMissingParts().FirstOrDefault(x => x.def == bodyPartRect.Key);
+			//	var pairs = Textures.pairedAppendanges[bodyPartRect.Key];
+			//	var allAppendages = pairs.Keys.ToList();
+			//	var activeAppendage = part != null ? GetActiveAppendage(part, allAppendages, compEvolution.appendagesActive) : null;
+			//	DrawAppendages(bodyPartRect.Value, pairs, activeAppendage, part, allAppendages, compEvolution.appendagesActive);
+			//}
 
 			Text.Font = curFont;
 			GUI.color = curColor;

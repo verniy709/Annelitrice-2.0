@@ -33,6 +33,8 @@ namespace Annelitrice
         public Dictionary<BodyPartDef, HediffDef> appendagesActive;
         private Dictionary<Hediff_MissingPart, int> missingParts = new Dictionary<Hediff_MissingPart, int>();
 
+        public string livingFace;
+        public string deadFace;
         public bool CanShowFace
         {
             get
@@ -227,6 +229,10 @@ namespace Annelitrice
             Scribe_Values.Look(ref redBilePoints, "redBilePoints");
             Scribe_Values.Look(ref evolutionPoints, "evolutionPoints");
             Scribe_Values.Look(ref nextHealTick, "nextHealTick");
+
+            Scribe_Values.Look(ref livingFace, "livingFace");
+            Scribe_Values.Look(ref deadFace, "deadFace");
+
             Scribe_Collections.Look(ref rightAppendagesActive, "rightAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys1, ref hediffDefValues1);
             Scribe_Collections.Look(ref leftAppendagesActive, "leftAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys2, ref hediffDefValues2);
             Scribe_Collections.Look(ref appendagesActive, "appendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys3, ref hediffDefValues3);
@@ -252,10 +258,30 @@ namespace Annelitrice
             }
         }
 
+        public static void SetAlienHead(Pawn pawn, string head)
+        {
+            var alienComp = ThingCompUtility.TryGetComp<AlienRace.AlienPartGenerator.AlienComp>(pawn);
+            if (alienComp != null)
+            {
+                alienComp.crownType = head;
+            }
+        }
+
+
+        public static string GetAlienHead(Pawn pawn)
+        {
+            string sRet = "(unknown)";
+            var alienComp = ThingCompUtility.TryGetComp<AlienRace.AlienPartGenerator.AlienComp>(pawn);
+            if (alienComp != null)
+            {
+                sRet = alienComp.crownType;
+            }
+            return sRet;
+        }
+
         public override void CompTick()
         {
             base.CompTick();
-            pawn.Drawer.renderer.graphics.ResolveAllGraphics();
             foreach (var part in pawn.health.hediffSet.GetMissingPartsCommonAncestors())
             {
                 if (!missingParts.ContainsKey(part))

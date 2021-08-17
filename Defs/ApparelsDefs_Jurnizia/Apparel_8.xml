@@ -51,8 +51,7 @@
 		<comps>
 			<li Class="Annelitrice.CompProperties_PlayMusic">
 				<soundDefs>
-					<li>Anneli_Sound_AudienceLaughTest1</li>
-					<li>Anneli_Sound_AudienceLaughTest2</li>
+					<li>Anneli_Sound_SampleSong</li>
 				</soundDefs>
 				<effecters>
 					<li>Anneli_Effecter_Note1</li>

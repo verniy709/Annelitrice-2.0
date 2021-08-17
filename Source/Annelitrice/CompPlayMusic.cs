@@ -58,12 +58,14 @@ namespace Annelitrice
 
                     if (!this.Props.effecters.NullOrEmpty() && Find.TickManager.TicksGame > nextEffecterSpawn)
                     {
-                        nextEffecterSpawn = Find.TickManager.TicksGame + Rand.RangeInclusive(60, 120);
-                        if (effecter is null)
+                        nextEffecterSpawn = Find.TickManager.TicksGame + Rand.RangeInclusive(40, 80);
+                        if (effecter != null)
                         {
-                            effecter = this.Props.effecters.RandomElement().Spawn();
-                            effecter.Trigger(player, player);
+                            effecter.Cleanup();
+                            effecter = null;
                         }
+                        effecter = this.Props.effecters.RandomElement().Spawn();
+                        effecter.Trigger(player, player);
                     }
 
                     if (effecter != null)
@@ -99,6 +101,7 @@ namespace Annelitrice
                     if (curSustainer != null && !curSustainer.Ended)
                     {
                         curSustainer.End();
+                        effecter = null;
                     }
                     curSustainer = curSoundDef.TrySpawnSustainer(info);
                     if (this.Props.playerThought != null)
@@ -128,6 +131,7 @@ namespace Annelitrice
                     if (curSustainer != null && !curSustainer.Ended)
                     {
                         curSustainer.End();
+                        effecter = null;
                     }
                 }
             };

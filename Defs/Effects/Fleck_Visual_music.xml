@@ -41,7 +41,7 @@
 		<defName>Anneli_Effecter_Note1</defName>
 		<children>
 			<li>
-				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<fleckDef>Anneli_Fleck_Note1</fleckDef>
 				<ticksBetweenMotes>30</ticksBetweenMotes>
 				<scale>0.30~0.50</scale>
@@ -56,7 +56,7 @@
 		<defName>Anneli_Effecter_Note2</defName>
 		<children>
 			<li>
-				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<fleckDef>Anneli_Fleck_Note2</fleckDef>
 				<ticksBetweenMotes>30</ticksBetweenMotes>
 				<scale>0.30~0.50</scale>
@@ -71,7 +71,7 @@
 		<defName>Anneli_Effecter_Note3</defName>
 		<children>
 			<li>
-				<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
 				<fleckDef>Anneli_Fleck_Note3</fleckDef>
 				<ticksBetweenMotes>30</ticksBetweenMotes>
 				<scale>0.30~0.50</scale>

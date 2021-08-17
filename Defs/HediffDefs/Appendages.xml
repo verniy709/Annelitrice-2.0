@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<HediffDef ParentName="ImplantHediffBase" Name="AnnelyAppendage" Abstract="True">
+	<!-- <HediffDef ParentName="ImplantHediffBase" Name="AnnelyAppendage" Abstract="True">
 		<displayWound>true</displayWound>
 	</HediffDef>
 	
@@ -271,7 +271,7 @@
 			<solid>true</solid>
 			<partEfficiency>1.50</partEfficiency>
 		</addedPartProps>
-	</HediffDef>
+	</HediffDef> -->
 </Defs>
 
 

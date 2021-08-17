@@ -65,17 +65,20 @@ namespace Annelitrice
                             effecter.Trigger(player, player);
                         }
                     }
+
+                    if (effecter != null)
+                    {
+                        effecter.EffectTick(player, player);
+                    }
                 }
                 else
                 {
                     curSustainer = null;
+                    effecter = null;
                 }
             }
 
-            if (effecter != null)
-            {
-                effecter.EffectTick(player, player);
-            }
+
         }
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
         {

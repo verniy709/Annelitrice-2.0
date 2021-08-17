@@ -54,6 +54,11 @@
 					<li>Anneli_Sound_AudienceLaughTest1</li>
 					<li>Anneli_Sound_AudienceLaughTest2</li>
 				</soundDefs>
+				<effecters>
+					<li>Anneli_Effecter_Note1</li>
+					<li>Anneli_Effecter_Note2</li>
+					<li>Anneli_Effecter_Note3</li>
+				</effecters>
 				<playerThought>AnnelitricePlayerPlayedMusic</playerThought>
 				<audienceThought>AnnelitriceAudiencesHeardMusic</audienceThought>
 				<affectRadius>6</affectRadius>

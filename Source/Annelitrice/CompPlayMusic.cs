@@ -18,6 +18,7 @@ namespace Annelitrice
         public ThoughtDef playerThought;
         public ThoughtDef audienceThought;
         public float affectRadius = 3;
+        public List<EffecterDef> effecters;
         public CompProperties_PlayMusic()
         {
             this.compClass = typeof(CompPlayMusic);
@@ -26,7 +27,6 @@ namespace Annelitrice
     public class CompPlayMusic : ThingComp
     {
         public SoundDef curSoundDef;
-
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -43,12 +43,38 @@ namespace Annelitrice
 
         public Sustainer curSustainer;
 
+        private int nextEffecterSpawn;
+
+        private Effecter effecter;
         public override void CompTick()
         {
             base.CompTick();
-            if (curSustainer != null && !curSustainer.Ended)
+            var player = Player;
+            if (curSustainer != null)
             {
-                curSustainer.Maintain();
+                if (!curSustainer.Ended)
+                {
+                    curSustainer.Maintain();
+
+                    if (!this.Props.effecters.NullOrEmpty() && Find.TickManager.TicksGame > nextEffecterSpawn)
+                    {
+                        nextEffecterSpawn = Find.TickManager.TicksGame + Rand.RangeInclusive(60, 120);
+                        if (effecter is null)
+                        {
+                            effecter = this.Props.effecters.RandomElement().Spawn();
+                            effecter.Trigger(player, player);
+                        }
+                    }
+                }
+                else
+                {
+                    curSustainer = null;
+                }
+            }
+
+            if (effecter != null)
+            {
+                effecter.EffectTick(player, player);
             }
         }
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
@@ -66,13 +92,12 @@ namespace Annelitrice
                 action = delegate ()
                 {
                     var player = Player;
-                    var info = SoundInfo.InMap(new TargetInfo(player.Position, player.Map), MaintenanceType.PerFrame);
+                    var info = SoundInfo.InMap(new TargetInfo(player.Position, player.Map), MaintenanceType.PerTick);
                     if (curSustainer != null && !curSustainer.Ended)
                     {
                         curSustainer.End();
                     }
                     curSustainer = curSoundDef.TrySpawnSustainer(info);
-
                     if (this.Props.playerThought != null)
                     {
                         player.needs.mood.thoughts.memories.TryGainMemory(this.Props.playerThought);

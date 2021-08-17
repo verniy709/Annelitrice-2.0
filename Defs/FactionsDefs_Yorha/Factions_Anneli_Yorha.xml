@@ -9,10 +9,10 @@
 		<pawnsPlural>Annelitrices</pawnsPlural>
 		<fixedName>Forged YoRHa Butai</fixedName>
 		<requiredMemes>
-      		<li>FemaleSupremacy</li>
-      		<li>Guilty</li>
-      		<li>HumanPrimacy</li>
-      		<li>Transhumanist</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
     	</requiredMemes>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
 		<techLevel>Spacer</techLevel>

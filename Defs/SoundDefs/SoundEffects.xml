@@ -68,7 +68,7 @@
 		</subSounds>
 	</SoundDef>
 
-	<SoundDef>
+	<!-- <SoundDef>
 		<defName>Anneli_Sound_AudienceLaughTest1</defName>
 		<sustain>True</sustain>
 		<context>MapOnly</context>
@@ -108,5 +108,27 @@
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
+	</SoundDef> -->
+
+	<SoundDef>
+		<defName>Anneli_Sound_SampleSong</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>10</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SampleSong</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+				<pitchRange>0.9541177~1.068824</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
 	</SoundDef>
+
 </Defs>

@@ -9,10 +9,10 @@
 		<pawnsPlural>Annelitrices</pawnsPlural>
 		<fixedName>Forged Jurnizia</fixedName>
 		<requiredMemes>
-      		<li>FemaleSupremacy</li>
-      		<li>Raider</li>
-      		<li>Proselytizer</li>
-      		<li>Rancher</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
     	</requiredMemes>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <permanentEnemy>true</permanentEnemy>

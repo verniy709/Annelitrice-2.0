@@ -2,7 +2,7 @@
 <Defs>
 
   <!--=============== Mote SpurtBlood ==============-->
-  <!-- <EffecterDef>
+  <EffecterDef>
     <defName>Anneli_Effecter_SpurtBlood</defName>
     <children>
       <li>
@@ -27,6 +27,6 @@
     <solidTime>0.25</solidTime>
     <fadeOutTime>1.4</fadeOutTime>
     <attachedDrawOffset>(0.45, 0, 0.45)</attachedDrawOffset>
-  </FleckDef> -->
+  </FleckDef>
   
 </Defs>

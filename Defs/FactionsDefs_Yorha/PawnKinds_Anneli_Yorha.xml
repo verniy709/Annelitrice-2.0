@@ -6,7 +6,7 @@
 		<itemQuality>Good</itemQuality>
 		<defaultFactionType>Anneli_Faction_Yorha</defaultFactionType>
 		<isFighter>true</isFighter>
-		<combatPower>60</combatPower>
+		<combatPower>110</combatPower>
 		<canBeSapper>true</canBeSapper>
 		<backstoryCategories>
 			<li>Anneli_Story</li>

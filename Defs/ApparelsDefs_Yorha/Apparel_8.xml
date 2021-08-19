@@ -60,6 +60,12 @@
 		<defName>Anneli_Yorha_POD_B</defName>
 		<description>Yorha_7_Bag</description>
 		<label>Yorha_7_Bag</label>
+		<tickerType>Normal</tickerType>
+		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
+		<statBases>
+			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+		</statBases>
 		<graphicData>
 			<texPath>8/Anneli_Yorha_POD_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

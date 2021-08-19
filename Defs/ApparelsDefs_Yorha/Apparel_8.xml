@@ -40,8 +40,8 @@
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>
-			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+			<EnergyShieldRechargeRate>0.20</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
 		</statBases>
 		<graphicData>
 			<texPath>8/Anneli_Yorha_POD_A</texPath>
@@ -53,6 +53,40 @@
 				<li>Anneli_Yorha_Command</li>
 			</tags>
 		</apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Anneli_Sound_POD_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>energy</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch laser</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>49.9</range>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Anneli_Sound_POD_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Anneli_Projectile_PODLaser_A</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
 	</ThingDef>
 
 <!--Anneli_Yorha_POD_B-->
@@ -63,8 +97,8 @@
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>
-			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+			<EnergyShieldRechargeRate>0.20</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
 		</statBases>
 		<graphicData>
 			<texPath>8/Anneli_Yorha_POD_B</texPath>
@@ -78,6 +112,40 @@
 				<li>Anneli_Yorha_Support</li>
 			</tags>
 		</apparel>
+	<comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <ammoDef>Chemfuel</ammoDef>
+        <ammoCountPerCharge>20</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Anneli_Sound_POD_Reload</soundReload>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>energy</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <label>launch laser</label>
+        <verbClass>Verb_LaunchProjectileStatic</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>49.9</range>
+        <forcedMissRadius>0.9</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Anneli_Sound_POD_Fire</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>Anneli_Projectile_PODLaser_A</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
 	</ThingDef>
 			
 </Defs>

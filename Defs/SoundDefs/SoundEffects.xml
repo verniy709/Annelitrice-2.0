@@ -69,10 +69,52 @@
 	</SoundDef>
 
 	<SoundDef>
+		<defName>Anneli_Sound_POD_Fire</defName>
+		<sustain>False</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>POD_Fire</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+				<pitchRange>0.9~1.1</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Anneli_Sound_POD_Reload</defName>
+		<sustain>False</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>POD_Reload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~40</volumeRange>
+				<pitchRange>0.9~1.1</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
 		<defName>Anneli_Sound_SampleSong</defName>
 		<sustain>True</sustain>
 		<context>MapOnly</context>
-		<maxSimultaneous>10</maxSimultaneous>
+		<maxSimultaneous>1</maxSimultaneous>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>

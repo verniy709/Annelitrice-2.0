@@ -21,6 +21,7 @@
 			</bodyPartGroups>
 			<layers>
 				<li>Anneli_UpperShell_Tactical</li>
+				<li>Belt</li>
 			</layers>
 			<tags>
 				<li>Anneli_Yorha</li>
@@ -38,10 +39,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
+			<wornGraphicPath>5/Anneli_Yorha_Arms</wornGraphicPath>
 			<wornGraphicData>
         		<renderUtilityAsPack>true</renderUtilityAsPack>
       		</wornGraphicData>
-			<wornGraphicPath>5/Anneli_Yorha_Arms</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Heavy</li>
 			</tags>

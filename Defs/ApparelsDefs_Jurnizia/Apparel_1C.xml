@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Jurnizia_1C" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>10</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>0.05</Mass>
-			<StuffEffectMultiplierArmor>0.015</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -35,8 +35,8 @@
 <!--Anneli_Jurnizia_Footwraps-->
 	<ThingDef ParentName="Anneli_Jurnizia_1C">
 		<defName>Anneli_Jurnizia_Footwraps</defName>
-		<description>Jurnizia_1C_Footwraps</description>
-		<label>Jurnizia_1C_Footwraps</label>
+		<description>(Jurnizia)1C_Footwraps</description>
+		<label>(Jurnizia)1C_Footwraps</label>
 		<graphicData>
 			<texPath>1C/Anneli_Jurnizia_Footwraps</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -52,8 +52,8 @@
 <!--Anneli_Jurnizia_Socks-->
 	<ThingDef ParentName="Anneli_Jurnizia_1C">
 		<defName>Anneli_Jurnizia_Socks</defName>
-		<description>Jurnizia_1C_Socks</description>
-		<label>Jurnizia_1C_Socks</label>
+		<description>(Jurnizia)1C_Socks</description>
+		<label>(Jurnizia)1C_Socks</label>
 		<graphicData>
 			<texPath>1C/Anneli_Jurnizia_Socks</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

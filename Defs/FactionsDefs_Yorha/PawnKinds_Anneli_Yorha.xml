@@ -51,6 +51,7 @@
 		</apparelTags>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
+			<li>SpacerMelee</li>
 			<li>UltratechMelee</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -66,6 +67,7 @@
 		</apparelTags>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
+			<li>SpacerMelee</li>
 			<li>UltratechMelee</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -80,6 +82,7 @@
 		</apparelTags>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
+			<li>SpacerMelee</li>
 			<li>UltratechMelee</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -94,6 +97,7 @@
 		</apparelTags>
 		<weaponTags>
 			<li>MedievalMeleeDecent</li>
+			<li>SpacerMelee</li>
 			<li>UltratechMelee</li>
 		</weaponTags>
 	</PawnKindDef>

@@ -2,26 +2,27 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_6ABC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<!-- <stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories> -->
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Mass>1.0</Mass>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>3.5</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>5</EquipDelay>
-			<Flammability>0.5</Flammability>
+			<Flammability>0.15</Flammability>
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicSensitivity>-1.0</ToxicSensitivity>
-			<PsychicSensitivity>-0.20</PsychicSensitivity>
-			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>-0.2</PsychicSensitivity>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<apparel>
+			<useWornGraphicMask>false</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 				<li>Eyes</li>
@@ -39,8 +40,8 @@
 <!--Anneli_Yorha_HeavyHelmet-->
 	<ThingDef ParentName="Anneli_Yorha_6ABC">
 		<defName>Anneli_Yorha_HeavyHelmet</defName>
-		<description>Yorha_6ABC_HeavyHelmet</description>
-		<label>Yorha_6ABC_HeavyHelmet</label>
+		<description>(Yorha)6ABC_HeavyHelmet</description>
+		<label>(Yorha)6ABC_HeavyHelmet</label>
 		<graphicData>
 			<texPath>6ABC/Anneli_Yorha_HeavyHelmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

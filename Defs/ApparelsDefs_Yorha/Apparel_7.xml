@@ -8,7 +8,7 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
@@ -17,7 +17,8 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>10</CarryingCapacity>
+			<CarryingCapacity>12</CarryingCapacity>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -35,8 +36,8 @@
 <!--Anneli_Yorha_Bag-->
 	<ThingDef ParentName="Anneli_Yorha_7">
 		<defName>Anneli_Yorha_Bag</defName>
-		<description>Yorha_7_Bag</description>
-		<label>Yorha_7_Bag</label>
+		<description>(Yorha)7_Bag</description>
+		<label>(Yorha)7_Bag</label>
 		<graphicData>
 			<texPath>7/Anneli_Yorha_Bag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

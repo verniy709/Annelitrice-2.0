@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="Anneli_Gakuen_KindBase" ParentName="Anneli_KindBase" Abstract="True">
+		<label>Anneli_Gakuen_KindBase</label>
+		<itemQuality>Good</itemQuality>
+		<defaultFactionType>Anneli_Faction_Gakuen</defaultFactionType>
+		<isFighter>true</isFighter>
+		<combatPower>60</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<backstoryCategories>
+			<li>Anneli_Story</li>
+		</backstoryCategories>
+		<weaponMoney>1000</weaponMoney>
+		<apparelMoney>
+			<min>2000</min>
+			<max>4500</max>
+		</apparelMoney>
+		<techHediffsChance>0.1</techHediffsChance>
+		<techHediffsMoney>1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>2.0</max>
+		</gearHealthRange>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<choiceChance>100</choiceChance>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>50</min>
+						<max>300</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+				
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Kitakubuinn_A</defName>
+		<label>Anneli_Gakuen_Kitakubuinn_A</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Kitakubu_A</li>
+		</apparelTags>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Kitakubuinn_B</defName>
+		<label>Anneli_Gakuen_Kitakubuinn_B</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Kitakubu_B</li>
+		</apparelTags>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Undoubuin</defName>
+		<label>Anneli_Gakuen_Undoubuin</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Undoubu</li>
+		</apparelTags>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Ouenbuin</defName>
+		<label>Anneli_Gakuen_Ouenbuin</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Ouenbu</li>
+		</apparelTags>
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>GrenadeDestructive</li>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Tsuppari</defName>
+		<label>Anneli_Gakuen_Tsuppari</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Tsuppari</li>
+		</apparelTags>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+      		<li>SpacerMelee</li>
+			<li>UltratechMelee</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Sukeban</defName>
+		<label>Anneli_Gakuen_Sukeban</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<factionLeader>true</factionLeader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Sukeban</li>
+		</apparelTags>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+      		<li>NeolithicMeleeBasic</li>
+      		<li>MedievalMeleeDecent</li>
+      		<li>SpacerMelee</li>
+			<li>UltratechMelee</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Sabagebuin_A</defName>
+		<label>Anneli_Gakuen_Sabagebuin_A</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Sabagebu_A</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Anneli_Gakuen_KindBase">
+		<defName>Anneli_Gakuen_Sabagebuin_B</defName>
+		<label>Anneli_Gakuen_Sabagebuin_B</label>
+		<isFighter>True</isFighter>
+		<trader>true</trader>
+		<apparelTags>
+			<li>Anneli_Gakuen_Common</li>
+			<li>Anneli_Gakuen_Sabagebu_B</li>
+		</apparelTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+
+</Defs>

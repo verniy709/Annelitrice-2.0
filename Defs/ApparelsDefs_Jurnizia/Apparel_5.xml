@@ -2,19 +2,25 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Jurnizia_5" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>Leathery</li>
+			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>4.5</Mass>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>10</EquipDelay>
-			<Flammability>0.15</Flammability>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>2.5</CarryingCapacity>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
@@ -31,8 +37,8 @@
 <!--Anneli_Jurnizia_Lifchik-->
 	<ThingDef ParentName="Anneli_Jurnizia_5">
 		<defName>Anneli_Jurnizia_Lifchik</defName>
-		<description>Jurnizia_5_ArmorPlate</description>
-		<label>Jurnizia_5_ArmorPlate</label>
+		<description>(Jurnizia)5_Lifchik</description>
+		<label>(Jurnizia)5_Lifchik</label>
 		<graphicData>
 			<texPath>5/Anneli_Jurnizia_Lifchik</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -48,8 +54,8 @@
 <!--Anneli_Jurnizia_Lifchik_Black-->
 	<ThingDef ParentName="Anneli_Jurnizia_5">
 		<defName>Anneli_Jurnizia_Lifchik_Black</defName>
-		<description>Jurnizia_5_ArmorPlate</description>
-		<label>Jurnizia_5_ArmorPlate</label>
+		<description>(Jurnizia)5_Lifchik_Black</description>
+		<label>(Jurnizia)5_Lifchik_Black</label>
 		<graphicData>
 			<texPath>5/Anneli_Jurnizia_Lifchik_Black</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -65,8 +71,8 @@
 <!--Anneli_Jurnizia_Lifchik_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_5">
 		<defName>Anneli_Jurnizia_Lifchik_Tan</defName>
-		<description>Jurnizia_5_ArmorPlate</description>
-		<label>Jurnizia_5_ArmorPlate</label>
+		<description>(Jurnizia)5_Lifchik_Tan</description>
+		<label>(Jurnizia)5_Lifchik_Tan</label>
 		<graphicData>
 			<texPath>5/Anneli_Jurnizia_Lifchik_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -82,8 +88,8 @@
 <!--Anneli_Jurnizia_Lifchik_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_5">
 		<defName>Anneli_Jurnizia_Lifchik_VSR</defName>
-		<description>Jurnizia_5_ArmorPlate</description>
-		<label>Jurnizia_5_ArmorPlate</label>
+		<description>(Jurnizia)5_Lifchik_VSR</description>
+		<label>(Jurnizia)5_Lifchik_VSR</label>
 		<graphicData>
 			<texPath>5/Anneli_Jurnizia_Lifchik_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

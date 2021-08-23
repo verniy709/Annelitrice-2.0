@@ -2,19 +2,22 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Jurnizia_4" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>17500</WorkToMake>
 			<Mass>4.5</Mass>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>10</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+      		<MoveSpeed>-0.6</MoveSpeed>
+    	</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -34,8 +37,8 @@
 <!--Anneli_Jurnizia_6B2_Armor-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B2_Armor</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B2_Armor</description>
+		<label>(Jurnizia)4_6B2_Armor</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B2_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -51,8 +54,8 @@
 <!--Anneli_Jurnizia_6B2_Armor_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B2_Armor_Tan</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B2_Armor_Tan</description>
+		<label>(Jurnizia)4_6B2_Armor_Tan</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B2_Armor_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -68,8 +71,8 @@
 <!--Anneli_Jurnizia_6B2_Armor_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B2_Armor_VSR</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B2_Armor_VSR</description>
+		<label>(Jurnizia)4_6B2_Armor_VSR</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B2_Armor_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -85,8 +88,8 @@
 <!--Anneli_Jurnizia_6B3_Armor-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B3_Armor</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B3_Armor</description>
+		<label>(Jurnizia)4_6B3_Armor</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B3_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -102,8 +105,8 @@
 <!--Anneli_Jurnizia_6B3_Armor_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B3_Armor_Tan</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B3_Armor_Tan</description>
+		<label>(Jurnizia)4_6B3_Armor_Tan</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B3_Armor_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -119,8 +122,8 @@
 <!--Anneli_Jurnizia_6B3_Armor_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B3_Armor_VSR</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B3_Armor_VSR</description>
+		<label>(Jurnizia)4_6B3_Armor_VSR</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B3_Armor_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -136,8 +139,8 @@
 <!--Anneli_Jurnizia_6B13_Armor-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B13_Armor</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B13_Armor</description>
+		<label>(Jurnizia)4_6B13_Armor</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B13_Armor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -153,8 +156,8 @@
 <!--Anneli_Jurnizia_6B13_Armor_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B13_Armor_Tan</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B13_Armor_Tan</description>
+		<label>(Jurnizia)4_6B13_Armor_Tan</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B13_Armor_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -171,8 +174,8 @@
 <!--Anneli_Jurnizia_6B13_Armor_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_4">
 		<defName>Anneli_Jurnizia_6B13_Armor_VSR</defName>
-		<description>Jurnizia_4_ArmorPlate</description>
-		<label>Jurnizia_4_ArmorPlate</label>
+		<description>(Jurnizia)4_6B13_Armor_VSR</description>
+		<label>(Jurnizia)4_6B13_Armor_VSR</label>
 		<graphicData>
 			<texPath>4/Anneli_Jurnizia_6B13_Armor_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

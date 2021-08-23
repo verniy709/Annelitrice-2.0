@@ -8,16 +8,15 @@
 			<li>Fabric</li>
 		</stuffCategories> -->
 		<statBases>
-			<WorkToMake>20000</WorkToMake>
+			<WorkToMake>22000</WorkToMake>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 			<ComfyTemperatureMin>-6</ComfyTemperatureMin> 
 		</equippedStatOffsets>
 		<apparel>
@@ -41,34 +40,13 @@
 <!--Anneli_Yorha_HeavyArmor-->
 	<ThingDef ParentName="Anneli_Yorha_34">
 		<defName>Anneli_Yorha_HeavyArmor</defName>
-		<description>Yorha_34_HeavyArmor</description>
-		<label>Yorha_34__HeavyArmor</label>
+		<description>(Yorha)34_HeavyArmor</description>
+		<label>(Yorha)34__HeavyArmor</label>
 		<graphicData>
 			<texPath>34/Anneli_Yorha_HeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>34/Anneli_Yorha_HeavyArmor</wornGraphicPath>
-			<tags>
-				<li>Anneli_Yorha_Heavy</li>
-			</tags>
-		</apparel>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-	</ThingDef>
-
-<!--Anneli_Yorha_HeavyArmor-->
-	<ThingDef ParentName="Anneli_Yorha_34">
-		<defName>Anneli_Yorha_HeavyArmorA</defName>
-		<description>Yorha_34_HeavyArmor</description>
-		<label>Yorha_34__HeavyArmor</label>
-		<graphicData>
-			<texPath>34/Anneli_Yorha_HeavyArmor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<apparel>
-			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			<wornGraphicPath>34/Anneli_Yorha_HeavyArmor</wornGraphicPath>
 			<tags>
 				<li>Anneli_Yorha_Heavy</li>

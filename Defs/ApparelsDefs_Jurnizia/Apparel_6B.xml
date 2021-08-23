@@ -8,16 +8,17 @@
 			<li>Fabric</li>
 		</stuffCategories> -->
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>0.1</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
 		</equippedStatOffsets>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -37,8 +38,8 @@
 <!--Anneli_Jurnizia_AviatorSunglasses-->
 	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_AviatorSunglasses</defName>
-		<description>Jurnizia_6B_Blindfold_A</description>
-		<label>Jurnizia_6B_Blindfold_A</label>
+		<description>(Jurnizia)6B_AviatorSunglasses</description>
+		<label>(Jurnizia)6B_AviatorSunglasses</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_AviatorSunglasses</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -54,12 +55,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.15</Mass>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 	</ThingDef>
@@ -67,8 +68,8 @@
 <!--Anneli_Jurnizia_ZP1_80_Goggles-->
 	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_ZP1_80_Goggles</defName>
-		<description>Jurnizia_6B_Blindfold_B</description>
-		<label>Jurnizia_6B_Blindfold_B</label>
+		<description>(Jurnizia)6B_ZP1_80_Goggles</description>
+		<label>(Jurnizia)6B_ZP1_80_Goggles</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_ZP1_80_Goggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -84,12 +85,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.15</Mass>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 	</ThingDef>
@@ -97,8 +98,8 @@
 <!--Anneli_Jurnizia_ZP2_80_Goggles-->
 	<ThingDef ParentName="Anneli_Jurnizia_6B">
 		<defName>Anneli_Jurnizia_ZP2_80_Goggles</defName>
-		<description>Jurnizia_6B_Glasses</description>
-		<label>Jurnizia_6B_Glasses</label>
+		<description>(Jurnizia)6B_ZP2_80_Goggle</description>
+		<label>(Jurnizia)6B_ZP2_80_Goggle</label>
 		<graphicData>
 			<texPath>6B/Anneli_Jurnizia_ZP2_80_Goggles</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -114,12 +115,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.15</Mass>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 	</ThingDef>

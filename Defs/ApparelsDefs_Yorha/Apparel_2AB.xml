@@ -8,12 +8,12 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>1.5</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3.5</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -23,6 +23,7 @@
 			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
 			<MedicalTendQuality>0.05</MedicalTendQuality>
 			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+			<MoveSpeed>0.10</MoveSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -43,8 +44,8 @@
 <!--Anneli_Yorha_LeatherArmor_A-->
 	<ThingDef ParentName="Anneli_Yorha_2AB">
 		<defName>Anneli_Yorha_LeatherArmor_A</defName>
-		<description>Yorha_2AB_LeatherArmor_A</description>
-		<label>Yorha_2AB_LeatherArmor_A</label>
+		<description>(Yorha)2AB_LeatherArmor_A</description>
+		<label>(Yorha)2AB_LeatherArmor_A</label>
 		<graphicData>
 			<texPath>2AB/Anneli_Yorha_LeatherArmor_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -61,8 +62,8 @@
 <!--Anneli_Yorha_LeatherArmor_B-->
 	<ThingDef ParentName="Anneli_Yorha_2AB">
 		<defName>Anneli_Yorha_LeatherArmor_B</defName>
-		<description>Yorha_2AB_LeatherArmor_B</description>
-		<label>Yorha_2AB_LeatherArmor_B</label>
+		<description>(Yorha)2AB_LeatherArmor_B</description>
+		<label>(Yorha)2AB_LeatherArmor_B</label>
 		<graphicData>
 			<texPath>2AB/Anneli_Yorha_LeatherArmor_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -79,8 +80,8 @@
 <!--Anneli_Yorha_LongDress_A-->
 	<ThingDef ParentName="Anneli_Yorha_2AB">
 		<defName>Anneli_Yorha_LongDress_A</defName>
-		<description>Yorha_2AB_LongDress_A</description>
-		<label>Yorha_2AB_LongDress_A</label>
+		<description>(Yorha)2AB_LongDress_A</description>
+		<label>(Yorha)2AB_LongDress_A</label>
 		<graphicData>
 			<texPath>2AB/Anneli_Yorha_LongDress_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -96,8 +97,8 @@
 <!--Anneli_Yorha_LongDress_B-->
 	<ThingDef ParentName="Anneli_Yorha_2AB">
 		<defName>Anneli_Yorha_LongDress_B</defName>
-		<description>Yorha_2AB_LongDress_B</description>
-		<label>Yorha_2AB_LongDress_B</label>
+		<description>(Yorha)2AB_LongDress_B</description>
+		<label>(Yorha)2AB_LongDress_B</label>
 		<graphicData>
 			<texPath>2AB/Anneli_Yorha_LongDress_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -113,8 +114,8 @@
 <!--Anneli_Yorha_LongDress_C-->
 	<ThingDef ParentName="Anneli_Yorha_2AB">
 		<defName>Anneli_Yorha_LongDress_C</defName>
-		<description>Yorha_2AB_LongDress_C</description>
-		<label>Yorha_2AB_LongDress_C</label>
+		<description>(Yorha)2AB_LongDress_C</description>
+		<label>(Yorha)2AB_LongDress_C</label>
 		<graphicData>
 			<texPath>2AB/Anneli_Yorha_LongDress_C</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -4,11 +4,13 @@
 	<ThingDef Name="Anneli_Yorha_8" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
 		<costStuffCount>25</costStuffCount>
 		<stuffCategories>
-			<li>Leathery</li>
-			<li>Fabric</li>
+			<li>Metallic</li>
 		</stuffCategories>
+		<costList>
+      		<ComponentSpacer>3</ComponentSpacer>
+    	</costList>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>20000</WorkToMake>
 			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
@@ -21,7 +23,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
-				<li>Torso</li>
+				<li>Shoulders</li>
 			</bodyPartGroups>
 			<layers>
 				<li>Anneli_Misc</li>
@@ -35,8 +37,8 @@
 <!--Anneli_Yorha_POD_A-->
 	<ThingDef ParentName="Anneli_Yorha_8">
 		<defName>Anneli_Yorha_POD_A</defName>
-		<description>Yorha_7_Bag</description>
-		<label>Yorha_7_Bag</label>
+		<description>(Yorha)7_POD_White</description>
+		<label>(Yorha)7_POD_POD_White</label>
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>
@@ -71,7 +73,7 @@
         <verbClass>Verb_LaunchProjectileStatic</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <onlyManualCast>True</onlyManualCast>
-        <range>59.9</range>
+        <range>54.9</range>
         <forcedMissRadius>0.9</forcedMissRadius>
         <warmupTime>1.5</warmupTime>
         <noiseRadius>4</noiseRadius>
@@ -92,8 +94,8 @@
 <!--Anneli_Yorha_POD_B-->
 	<ThingDef ParentName="Anneli_Yorha_8">
 		<defName>Anneli_Yorha_POD_B</defName>
-		<description>Yorha_7_Bag</description>
-		<label>Yorha_7_Bag</label>
+		<description>(Yorha)7_POD_Black</description>
+		<label>(Yorha)7_POD_Black</label>
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>
@@ -130,7 +132,7 @@
         <verbClass>Verb_LaunchProjectileStatic</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <onlyManualCast>True</onlyManualCast>
-        <range>59.9</range>
+        <range>54.9</range>
         <forcedMissRadius>0.9</forcedMissRadius>
         <warmupTime>1.5</warmupTime>
         <noiseRadius>4</noiseRadius>

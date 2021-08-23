@@ -42,6 +42,7 @@
 		<alwaysHaulable>True</alwaysHaulable>
 		<tickerType>Never</tickerType>
 		<apparel>
+			<useWornGraphicMask>false</useWornGraphicMask>
       		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
       		<tags>
 				<li>Anneli</li>

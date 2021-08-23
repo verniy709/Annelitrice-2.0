@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_6B" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>10</costStuffCount>
+		<!-- <stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories> -->
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.1</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<ResearchSpeed>0.1</ResearchSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<forceRenderUnderHair>true</forceRenderUnderHair>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Glasses_A-->
+	<ThingDef ParentName="Anneli_Gakuen_6B">
+		<defName>Anneli_Gakuen_Glasses_A</defName>
+		<description>(Gakuen)6B_Glasses_A</description>
+		<label>(Gakuen)6B_Glasses_A</label>
+		<graphicData>
+			<texPath>6B/Anneli_Gakuen_Glasses_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Gakuen_Glasses_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Glasses_B-->
+	<ThingDef ParentName="Anneli_Gakuen_6B">
+		<defName>Anneli_Gakuen_Glasses_B</defName>
+		<description>(Gakuen)6B_Glasses_B</description>
+		<label>(Gakuen)6B_Glasses_B</label>
+		<graphicData>
+			<texPath>6B/Anneli_Gakuen_Glasses_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Gakuen_Glasses_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+		
+<!--Anneli_Gakuen_InvisibleGlasses-->
+	<ThingDef ParentName="Anneli_Gakuen_6B">
+		<defName>Anneli_Gakuen_InvisibleGlasses</defName>
+		<description>(Gakuen)6B_InvisibleGlasses</description>
+		<label>(Gakuen)6B_InvisibleGlasses</label>
+		<graphicData>
+			<texPath>6B/Anneli_Gakuen_InvisibleGlasses</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Gakuen_InvisibleGlasses</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_B</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Sunglasses-->
+	<ThingDef ParentName="Anneli_Gakuen_6B">
+		<defName>Anneli_Gakuen_Sunglasses</defName>
+		<description>(Gakuen)6B_Sunglasses</description>
+		<label>(Gakuen)6B_Sunglasses</label>
+		<graphicData>
+			<texPath>6B/Anneli_Gakuen_Sunglasses</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>6B/Anneli_Gakuen_Sunglasses</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Tsuppari</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+		<!--Heavy armor stats-->
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.15</Flammability>
+		</statBases>
+	</ThingDef>
+
+</Defs>

@@ -8,7 +8,7 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
@@ -17,7 +17,8 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>10</CarryingCapacity>
+			<CarryingCapacity>12</CarryingCapacity>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -35,8 +36,8 @@
 <!--Anneli_Jurnizia_AtakaBackpack-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_AtakaBackpack</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_AtakaBackpack</description>
+		<label>(Jurnizia)7_AtakaBackpack</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_AtakaBackpack</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -52,8 +53,8 @@
 <!--Anneli_Jurnizia_AtakaBackpack_Black-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_AtakaBackpack_Black</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_AtakaBackpack_Black</description>
+		<label>(Jurnizia)7_AtakaBackpack_Black</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_AtakaBackpack_Black</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -69,8 +70,8 @@
 <!--Anneli_Jurnizia_AtakaBackpack_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_AtakaBackpack_Tan</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_AtakaBackpack_Black</description>
+		<label>(Jurnizia)7_AtakaBackpack_Black</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_AtakaBackpack_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -86,8 +87,8 @@
 <!--Anneli_Jurnizia_AtakaBackpack_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_AtakaBackpack_VSR</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_AtakaBackpack_VSR</description>
+		<label>(Jurnizia)7_AtakaBackpack_VSR</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_AtakaBackpack_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -103,8 +104,8 @@
 <!--Anneli_Jurnizia_DuffelBag-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_DuffelBag</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_DuffelBag</description>
+		<label>(Jurnizia)7_Bag</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_DuffelBag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -120,8 +121,8 @@
 <!--Anneli_Jurnizia_DuffelBag_Tan-->
 	<ThingDef ParentName="Anneli_Jurnizia_7">
 		<defName>Anneli_Jurnizia_DuffelBag_Tan</defName>
-		<description>Jurnizia_7_Bag</description>
-		<label>Jurnizia_7_Bag</label>
+		<description>(Jurnizia)7_DuffelBag_Tan</description>
+		<label>(Jurnizia)7_Bag</label>
 		<graphicData>
 			<texPath>7/Anneli_Jurnizia_DuffelBag_Tan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

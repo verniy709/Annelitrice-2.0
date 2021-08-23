@@ -8,17 +8,16 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>0.05</Mass>
-			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<Cleanliness>0.10</Cleanliness>
-			<MoveSpeed>0.05</MoveSpeed>
+			<Cleanliness>0.05</Cleanliness>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -36,8 +35,8 @@
 <!--Anneli_Jurnizia_SportsUnderwear-->
 	<ThingDef ParentName="Anneli_Jurnizia_1B">
 		<defName>Anneli_Jurnizia_SportsUnderwear</defName>
-		<description>Jurnizia_1B_SportsUnderwear</description>
-		<label>Jurnizia_1B_SportsUnderwear</label>
+		<description>(Jurnizia)1B_SportsUnderwear</description>
+		<label>(Jurnizia)1B_SportsUnderwear</label>
 		<graphicData>
 			<texPath>1B/Anneli_Jurnizia_SportsUnderwear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

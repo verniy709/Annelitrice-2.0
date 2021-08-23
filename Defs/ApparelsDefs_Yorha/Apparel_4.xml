@@ -2,19 +2,22 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_4" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>17500</WorkToMake>
 			<Mass>4.5</Mass>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>10</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+      		<MoveSpeed>-0.6</MoveSpeed>
+    	</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -34,8 +37,8 @@
 <!--Anneli_Yorha_ArmorPlate-->
 	<ThingDef ParentName="Anneli_Yorha_4">
 		<defName>Anneli_Yorha_ArmorPlate</defName>
-		<description>Yorha_4_ArmorPlate</description>
-		<label>Yorha_4_ArmorPlate</label>
+		<description>(Yorha)4_ArmorPlate</description>
+		<label>(Yorha)4_ArmorPlate</label>
 		<graphicData>
 			<texPath>4/Anneli_Yorha_ArmorPlate</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

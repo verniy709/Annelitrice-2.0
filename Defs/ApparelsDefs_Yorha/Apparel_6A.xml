@@ -2,25 +2,26 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_6A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>35</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<!-- <stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories> -->
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>0.5</Mass>
-			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<NegotiationAbility>0.05</NegotiationAbility>
-			<SocialImpact>0.10</SocialImpact>
+			<MentalBreakThreshold>-0.075</MentalBreakThreshold>
+			<Beauty>0.5</Beauty>
 		</equippedStatOffsets>
 		<apparel>
+			<useWornGraphicMask>false</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -37,8 +38,8 @@
 <!--Anneli_Yorha_Beret-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Beret</defName>
-		<description>Yorha_6A_Beret</description>
-		<label>Yorha_6A_Beret</label>
+		<description>(Yorha)6A_Beret</description>
+		<label>(Yorha)6A_Beret</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_Beret</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -59,8 +60,8 @@
 <!--Anneli_Yorha_DerbyHat-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_DerbyHat</defName>
-		<description>Yorha_6A_DerbyHat</description>
-		<label>Yorha_6A_DerbyHat</label>
+		<description>(Yorha)6A_DerbyHat</description>
+		<label>(Yorha)6A_DerbyHat</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_DerbyHat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -80,8 +81,8 @@
 <!--Anneli_Yorha_Headband-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Headband</defName>
-		<description>Yorha_6A_Headband</description>
-		<label>Yorha_6A_Headband</label>
+		<description>(Yorha)6A_Headband</description>
+		<label>(Yorha)6A_Headband</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_Headband</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -102,8 +103,8 @@
 <!--Anneli_Yorha_HealerHeadFlower-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_HealerHeadFlower</defName>
-		<description>Yorha_6A_HealerHeadFlower</description>
-		<label>Yorha_6A_HealerHeadFlower</label>
+		<description>(Yorha)6A_HealerHeadFlower</description>
+		<label>(Yorha)6A_HealerHeadFlower</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_HealerHeadFlower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -123,8 +124,8 @@
 <!--Anneli_Yorha_Hood-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Hood</defName>
-		<description>Yorha_6A_Hood</description>
-		<label>Yorha_6A_Hood</label>
+		<description>(Yorha)6A_Hood</description>
+		<label>(Yorha)6A_Hood</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_Hood</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -145,8 +146,8 @@
 <!--Anneli_Yorha_PeakedCap_A-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_PeakedCap_A</defName>
-		<description>Yorha_6A_PeakedCap_A</description>
-		<label>Yorha_6A_PeakedCap_A</label>
+		<description>(Yorha)6A_PeakedCap_A</description>
+		<label>(Yorha)6A_PeakedCap_A</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_PeakedCap_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -166,8 +167,8 @@
 <!--Anneli_Yorha_PeakedCap_B-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_PeakedCap_B</defName>
-		<description>Yorha_6A_PeakedCap_B</description>
-		<label>Yorha_6A_PeakedCap_B</label>
+		<description>(Yorha)6A_PeakedCap_B</description>
+		<label>(Yorha)6A_PeakedCap_B</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_PeakedCap_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -188,8 +189,8 @@
 <!--Anneli_Yorha_SideCap-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_SideCap</defName>
-		<description>Yorha_6A_SideCap</description>
-		<label>Yorha_6A_SideCap</label>
+		<description>(Yorha)6A_SideCap</description>
+		<label>(Yorha)6A_SideCap</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_SideCap</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -210,8 +211,8 @@
 <!--Anneli_Yorha_Headwear-->
 	<ThingDef ParentName="Anneli_Yorha_6A">
 		<defName>Anneli_Yorha_Headwear</defName>
-		<description>Yorha_6A_Headwear</description>
-		<label>Yorha_6A_Headwear</label>
+		<description>(Yorha)6A_Headwear</description>
+		<label>(Yorha)6A_Headwear</label>
 		<graphicData>
 			<texPath>6A/Anneli_Yorha_Headwear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -227,12 +228,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>1.5</Mass>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 	</ThingDef>

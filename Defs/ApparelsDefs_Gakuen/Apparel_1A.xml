@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_1A" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.10</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<Cleanliness>0.05</Cleanliness>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Bra_A-->
+	<ThingDef ParentName="Anneli_Gakuen_1A">
+		<defName>Anneli_Gakuen_Bra_A</defName>
+		<description>(Gakuen)1A_Bra_A</description>
+		<label>(Gakuen)1A_Bra_A</label>
+		<graphicData>
+			<texPath>1A/Anneli_Gakuen_Bra_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1A/Anneli_Gakuen_Bra_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Bra_B-->
+	<ThingDef ParentName="Anneli_Gakuen_1A">
+		<defName>Anneli_Gakuen_Bra_B</defName>
+		<description>(Gakuen)1A_Bra_B</description>
+		<label>(Gakuen)1A_Bra_B</label>
+		<graphicData>
+			<texPath>1A/Anneli_Gakuen_Bra_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1A/Anneli_Gakuen_Bra_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

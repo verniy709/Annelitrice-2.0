@@ -8,11 +8,11 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>2500</WorkToMake>
 			<Mass>0.15</Mass>
-			<StuffEffectMultiplierArmor>0.035</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
@@ -38,8 +38,8 @@
 <!--Anneli_Yorha_Leotard_A-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Leotard_A</defName>
-		<description>Yorha_1AB_Leotard_A</description>
-		<label>Yorha_1AB_Leotard_A</label>
+		<description>(Yorha)1AB_Leotard_White</description>
+		<label>(Yorha)1AB_Leotard_White</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Leotard_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -58,8 +58,8 @@
 <!--Anneli_Yorha_Leotard_B-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Leotard_B</defName>
-		<description>Yorha_1AB_Leotard_B</description>
-		<label>Yorha_1AB_Leotard_B</label>
+		<description>(Yorha)1AB_Leotard_Black</description>
+		<label>(Yorha)1AB_Leotard_Black</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Leotard_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -77,8 +77,8 @@
 <!--Anneli_Yorha_Tight_A-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Tight_A</defName>
-		<description>Yorha_1AB_Tight_A</description>
-		<label>Yorha_1AB_Tight_A</label>
+		<description>(Yorha)1AB_Tight_White</description>
+		<label>(Yorha)1AB_Tight_White</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Tight_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -94,8 +94,8 @@
 <!--Anneli_Yorha_Tight_B-->
 	<ThingDef ParentName="Anneli_Yorha_1AB">
 		<defName>Anneli_Yorha_Tight_B</defName>
-		<description>Yorha_1AB_Tight_B</description>
-		<label>Yorha_1AB_Tight_B</label>
+		<description>(Yorha)1AB_Tight_Black</description>
+		<label>(Yorha)1AB_Tight_Black</label>
 		<graphicData>
 			<texPath>1AB/Anneli_Yorha_Tight_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

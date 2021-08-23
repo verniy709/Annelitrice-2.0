@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_7" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<CarryingCapacity>12</CarryingCapacity>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_Bag</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_ShoulderBag_Black-->
+	<ThingDef ParentName="Anneli_Gakuen_7">
+		<defName>Anneli_Gakuen_ShoulderBag_Black</defName>
+		<description>(Gakuen)7_ShoulderBag_Black</description>
+		<label>(Gakuen)7_ShoulderBag_Black</label>
+		<graphicData>
+			<texPath>7/Anneli_Gakuen_ShoulderBag_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Gakuen_ShoulderBag_Black</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Tsuppari</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_ShoulderBag_Blue-->
+	<ThingDef ParentName="Anneli_Gakuen_7">
+		<defName>Anneli_Gakuen_ShoulderBag_Blue</defName>
+		<description>(Gakuen)7_ShoulderBag_Blue</description>
+		<label>(Gakuen)7_ShoulderBag_Blue</label>
+		<graphicData>
+			<texPath>7/Anneli_Gakuen_ShoulderBag_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>7/Anneli_Gakuen_ShoulderBag_Blue</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Undoubu</li>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+				<li>Anneli_Gakuen_Ouenbu</li>
+				<li>Anneli_Gakuen_Sabagebu_B</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+			
+</Defs>

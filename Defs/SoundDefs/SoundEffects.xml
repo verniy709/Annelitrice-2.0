@@ -111,7 +111,7 @@
 	</SoundDef>
 
 	<SoundDef>
-		<defName>Anneli_Sound_SampleSong</defName>
+		<defName>Anneli_Sound_SampleSongGuitarA</defName>
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<maxSimultaneous>1</maxSimultaneous>
@@ -121,10 +121,73 @@
 				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>SampleSong</clipPath>
+						<clipPath>SampleSongGuitarA</clipPath>
 					</li>
 				</grains>
-				<volumeRange>30~30</volumeRange>
+				<volumeRange>40~40</volumeRange>
+				<pitchRange>0.9541177~1.068824</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Anneli_Sound_SampleSongGuitarB</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SampleSongGuitarB</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~40</volumeRange>
+				<pitchRange>0.9541177~1.068824</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Anneli_Sound_SampleSongWalkwomanA</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SampleSongWalkwomanA</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~40</volumeRange>
+				<pitchRange>0.9541177~1.068824</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Anneli_Sound_SampleSongWalkwomanB</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>SampleSongWalkwomanB</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~40</volumeRange>
 				<pitchRange>0.9541177~1.068824</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>

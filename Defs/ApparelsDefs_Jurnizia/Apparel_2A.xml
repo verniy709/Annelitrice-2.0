@@ -2,27 +2,26 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Jurnizia_2A" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>4500</WorkToMake>
 			<Mass>1</Mass>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<PainShockThreshold>0.15</PainShockThreshold>
-			<MeleeDodgeChance>0.20</MeleeDodgeChance>
-			<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
-			<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
-			<MedicalTendQuality>0.05</MedicalTendQuality>
-			<MedicalTendSpeed>0.05</MedicalTendSpeed>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<ConstructSuccessChance>0.05</ConstructSuccessChance>
+			<FoodPoisonChance>-0.1</FoodPoisonChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -42,8 +41,8 @@
 <!--Anneli_Jurnizia_Adidas_Black-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_Adidas_Black</defName>
-		<description>Jurnizia_2A_Corset</description>
-		<label>Jurnizia_2A_Corset</label>
+		<description>(Jurnizia)2A_Adidas_Black</description>
+		<label>(Jurnizia)2A_Adidas_Black</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_Adidas_Black</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -60,8 +59,8 @@
 <!--Anneli_Jurnizia_Adidas_White-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_Adidas_White</defName>
-		<description>Jurnizia_2A_HealerPeplum</description>
-		<label>Jurnizia_2A_HealerPeplum</label>
+		<description>(Jurnizia)2A_Adidas_White</description>
+		<label>(Jurnizia)2A_Adidas_White</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_Adidas_White</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +77,8 @@
 <!--Anneli_Jurnizia_TankTop-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_TankTop</defName>
-		<description>Jurnizia_2A_RebelRags</description>
-		<label>Jurnizia_2A_RebelRags</label>
+		<description>(Jurnizia)2A_TankTop</description>
+		<label>(Jurnizia)2A_TankTop</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_TankTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -98,8 +97,8 @@
 <!--Anneli_Jurnizia_TankTop_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_TankTop_VSR</defName>
-		<description>Jurnizia_2A_Tuxedo</description>
-		<label>Jurnizia_2A_Tuxedo</label>
+		<description>(Jurnizia)2A_TankTop_VSR</description>
+		<label>(Jurnizia)2A_TankTop_VSR</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_TankTop_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -118,8 +117,8 @@
 <!--Anneli_Jurnizia_TelnyashkaSweater-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_TelnyashkaSweater</defName>
-		<description>Jurnizia_2A_Tuxedo</description>
-		<label>Jurnizia_2A_Tuxedo</label>
+		<description>(Jurnizia)2A_TelnyashkaSweater</description>
+		<label>(Jurnizia)2A_TelnyashkaSweater</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_TelnyashkaSweater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -137,8 +136,8 @@
 <!--Anneli_Jurnizia_TelnyashkaTankTop-->
 	<ThingDef ParentName="Anneli_Jurnizia_2A">
 		<defName>Anneli_Jurnizia_TelnyashkaTankTop</defName>
-		<description>Jurnizia_2A_Tuxedo</description>
-		<label>Jurnizia_2A_Tuxedo</label>
+		<description>(Jurnizia)2A_TelnyashkaTankTop</description>
+		<label>(Jurnizia)2A_TelnyashkaTankTop</label>
 		<graphicData>
 			<texPath>2A/Anneli_Jurnizia_TelnyashkaTankTop</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

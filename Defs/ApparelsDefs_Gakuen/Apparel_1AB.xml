@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_1AB" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<Cleanliness>0.10</Cleanliness>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_OnSkin</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_SwimSuit_A-->
+	<ThingDef ParentName="Anneli_Gakuen_1AB">
+		<defName>Anneli_Gakuen_SwimSuit_A</defName>
+		<description>(Gakuen)1AB_SwimSuit_White</description>
+		<label>(Gakuen)1AB_SwimSuit_White</label>
+		<graphicData>
+			<texPath>1AB/Anneli_Gakuen_SwimSuit_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1AB/Anneli_Gakuen_SwimSuit_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Undoubu</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_SwimSuit_B-->
+	<ThingDef ParentName="Anneli_Gakuen_1AB">
+		<defName>Anneli_Gakuen_SwimSuit_B</defName>
+		<description>(Gakuen)1AB_SwimSuit_Blue</description>
+		<label>(Gakuen)1AB_SwimSuit_Blue</label>
+		<graphicData>
+			<texPath>1AB/Anneli_Gakuen_SwimSuit_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1AB/Anneli_Gakuen_SwimSuit_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Undoubu</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

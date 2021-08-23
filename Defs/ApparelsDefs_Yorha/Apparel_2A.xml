@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_2A" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>45</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>8000</WorkToMake>
+			<WorkToMake>4500</WorkToMake>
 			<Mass>1</Mass>
-			<StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -42,8 +42,8 @@
 <!--Anneli_Yorha_Corset-->
 	<ThingDef ParentName="Anneli_Yorha_2A">
 		<defName>Anneli_Yorha_Corset</defName>
-		<description>Yorha_2A_Corset</description>
-		<label>Yorha_2A_Corset</label>
+		<description>(Yorha)2A_Corset</description>
+		<label>(Yorha)2A_Corset</label>
 		<graphicData>
 			<texPath>2A/Anneli_Yorha_Corset</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -59,8 +59,8 @@
 <!--Anneli_Yorha_HealerPeplum-->
 	<ThingDef ParentName="Anneli_Yorha_2A">
 		<defName>Anneli_Yorha_HealerPeplum</defName>
-		<description>Yorha_2A_HealerPeplum</description>
-		<label>Yorha_2A_HealerPeplum</label>
+		<description>(Yorha)2A_HealerPeplum</description>
+		<label>(Yorha)2A_HealerPeplum</label>
 		<graphicData>
 			<texPath>2A/Anneli_Yorha_HealerPeplum</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -76,8 +76,8 @@
 <!--Anneli_Yorha_RebelRags-->
 	<ThingDef ParentName="Anneli_Yorha_2A">
 		<defName>Anneli_Yorha_RebelRags</defName>
-		<description>Yorha_2A_RebelRags</description>
-		<label>Yorha_2A_RebelRags</label>
+		<description>(Yorha)2A_RebelRags</description>
+		<label>(Yorha)2A_RebelRags</label>
 		<graphicData>
 			<texPath>2A/Anneli_Yorha_RebelRags</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -93,8 +93,8 @@
 <!--Anneli_Yorha_Tuxedo-->
 	<ThingDef ParentName="Anneli_Yorha_2A">
 		<defName>Anneli_Yorha_Tuxedo</defName>
-		<description>Yorha_2A_Tuxedo</description>
-		<label>Yorha_2A_Tuxedo</label>
+		<description>(Yorha)2A_Tuxedo</description>
+		<label>(Yorha)2A_Tuxedo</label>
 		<graphicData>
 			<texPath>2A/Anneli_Yorha_Tuxedo</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

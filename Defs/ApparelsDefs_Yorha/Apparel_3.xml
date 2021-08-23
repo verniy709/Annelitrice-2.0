@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_3" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>100</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>2.0</Mass>
-			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>10</EquipDelay>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -40,8 +40,8 @@
 <!--Anneli_Yorha_Cloak-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Cloak</defName>
-		<description>Yorha_3_Cloak</description>
-		<label>Yorha_3_Cloak</label>
+		<description>(Yorha)3_Cloak</description>
+		<label>(Yorha)3_Cloak</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Cloak</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -58,8 +58,8 @@
 <!--Anneli_Yorha_Coat-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Coat</defName>
-		<description>Yorha_3_Coat</description>
-		<label>Yorha_3_Coat</label>
+		<description>(Yorha)3_Coat</description>
+		<label>(Yorha)3_Coat</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Coat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -76,8 +76,8 @@
 <!--Anneli_Yorha_Jacket-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Jacket</defName>
-		<description>Yorha_3_Jacket</description>
-		<label>Yorha_3_Jacket</label>
+		<description>(Yorha)3_Jacket</description>
+		<label>(Yorha)3_Jacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Jacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -93,8 +93,8 @@
 <!--Anneli_Yorha_Shawl-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_Shawl</defName>
-		<description>Yorha_3_Shawl</description>
-		<label>Yorha_3_Shawl</label>
+		<description>(Yorha)3_Shawl</description>
+		<label>(Yorha)3_Shawl</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_Shawl</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -111,8 +111,8 @@
 <!--Anneli_Yorha_ShortJacket-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_ShortJacket</defName>
-		<description>Yorha_3_ShortJacket</description>
-		<label>Yorha_3_ShortJacket</label>
+		<description>(Yorha)3_ShortJacket</description>
+		<label>(Yorha)3_ShortJacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_ShortJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -129,8 +129,8 @@
 <!--Anneli_Yorha_TrenchCoat-->
 	<ThingDef ParentName="Anneli_Yorha_3">
 		<defName>Anneli_Yorha_TrenchCoat</defName>
-		<description>Yorha_3_TrenchCoat</description>
-		<label>Yorha_3_TrenchCoat</label>
+		<description>(Yorha)3_TrenchCoat</description>
+		<label>(Yorha)3_TrenchCoat</label>
 		<graphicData>
 			<texPath>3/Anneli_Yorha_TrenchCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

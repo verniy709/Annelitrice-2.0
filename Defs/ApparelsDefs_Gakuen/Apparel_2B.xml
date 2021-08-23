@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_2B" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>35</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.7</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Anneli_Middle</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_CheerLeaderDress-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_CheerLeaderDress</defName>
+		<description>(Gakuen)2B_CheerLeaderDress</description>
+		<label>(Gakuen)2B_CheerLeaderDress</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_CheerLeaderDress</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_CheerLeaderDress</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Ouenbu</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_GymShorts-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_GymShorts</defName>
+		<description>(Gakuen)2B_GymShorts</description>
+		<label>(Gakuen)2B_GymShorts</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_GymShorts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_GymShorts</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Undoubu</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_A_L-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_A_L</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Plaid_L</description>
+		<label>(Gakuen)2B_PleatedSkirt_Plaid_L</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_A_L</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_A_L</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_A_M-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_A_M</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Plaid_M</description>
+		<label>(Gakuen)2B_PleatedSkirt_Plaid_M</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_A_M</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_A_M</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_A_S-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_A_S</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Plaid_S</description>
+		<label>(Gakuen)2B_PleatedSkirt_Plaid_S</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_A_S</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_A_S</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+	
+<!--Anneli_Gakuen_PleatedSkirt_B_L-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_B_L</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Blue_L</description>
+		<label>(Gakuen)2B_PleatedSkirt_Blue_L</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_B_L</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_B_L</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+				<li>Anneli_Gakuen_Sabagebu_B</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_B_M-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_B_M</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Blue_M</description>
+		<label>(Gakuen)2B_PleatedSkirt_Blue_M</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_B_M</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_B_M</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+				<li>Anneli_Gakuen_Sabagebu_B</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_B_S-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_B_S</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Blue_S</description>
+		<label>(Gakuen)2B_PleatedSkirt_Blue_S</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_B_S</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_B_S</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_B</li>
+				<li>Anneli_Gakuen_Sabagebu_B</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_C_L-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_C_L</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Grey_L</description>
+		<label>(Gakuen)2B_PleatedSkirt_Grey_L</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_C_L</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_C_L</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_C_M-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_C_M</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Grey_M</description>
+		<label>(Gakuen)2B_PleatedSkirt_Grey_M</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_C_M</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_C_M</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_PleatedSkirt_C_S-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_PleatedSkirt_C_S</defName>
+		<description>(Gakuen)2B_PleatedSkirt_Grey_S</description>
+		<label>(Gakuen)2B_PleatedSkirt_Grey_S</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_PleatedSkirt_C_S</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_PleatedSkirt_C_S</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Kitakubu_A</li>
+				<li>Anneli_Gakuen_Sabagebu_A</li>
+				<li>Anneli_Gakuen_Sukeban</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+
+<!--Anneli_Gakuen_YankeePants_A-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_YankeePants_A</defName>
+		<description>(Gakuen)2B_YankeePants_A</description>
+		<label>(Gakuen)2B_YankeePants_A</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_YankeePants_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_YankeePants_A</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Tsuppari</li>
+			</tags>
+		</apparel>
+	</ThingDef>		
+
+<!--Anneli_Gakuen_YankeePants_B-->
+	<ThingDef ParentName="Anneli_Gakuen_2B">
+		<defName>Anneli_Gakuen_YankeePants_B</defName>
+		<description>(Gakuen)2B_YankeePants_B</description>
+		<label>(Gakuen)2B_YankeePants_B</label>
+		<graphicData>
+			<texPath>2B/Anneli_Gakuen_YankeePants_B</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>2B/Anneli_Gakuen_YankeePants_B</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Tsuppari</li>
+			</tags>
+		</apparel>
+	</ThingDef>		
+
+</Defs>

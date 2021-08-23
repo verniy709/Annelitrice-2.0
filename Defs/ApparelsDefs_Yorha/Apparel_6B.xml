@@ -8,16 +8,17 @@
 			<li>Fabric</li>
 		</stuffCategories> -->
 		<statBases>
-			<WorkToMake>2000</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>0.1</Mass>
 			<StuffEffectMultiplierArmor>0.01</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<MeleeHitChance>0.15</MeleeHitChance>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -37,8 +38,8 @@
 <!--Anneli_Yorha_Blindfold_A-->
 	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Blindfold_A</defName>
-		<description>Yorha_6B_Blindfold_A</description>
-		<label>Yorha_6B_Blindfold_A</label>
+		<description>(Yorha)6B_Blindfold_A</description>
+		<label>(Yorha)6B_Blindfold_A</label>
 		<graphicData>
 			<texPath>6B/Anneli_Yorha_Blindfold_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -60,8 +61,8 @@
 <!--Anneli_Yorha_Blindfold_B-->
 	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Blindfold_B</defName>
-		<description>Yorha_6B_Blindfold_B</description>
-		<label>Yorha_6B_Blindfold_B</label>
+		<description>(Yorha)6B_Blindfold_B</description>
+		<label>(Yorha)6B_Blindfold_B</label>
 		<graphicData>
 			<texPath>6B/Anneli_Yorha_Blindfold_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -83,8 +84,8 @@
 <!--Anneli_Yorha_Glasses-->
 	<ThingDef ParentName="Anneli_Yorha_6B">
 		<defName>Anneli_Yorha_Glasses</defName>
-		<description>Yorha_6B_Glasses</description>
-		<label>Yorha_6B_Glasses</label>
+		<description>(Yorha)6B_Glasses</description>
+		<label>(Yorha)6B_Glasses</label>
 		<graphicData>
 			<texPath>6B/Anneli_Yorha_Glasses</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -100,12 +101,12 @@
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>3000</WorkToMake>
-			<Mass>0.15</Mass>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>0.2</Mass>
 			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.01</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.01</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
 	</ThingDef>

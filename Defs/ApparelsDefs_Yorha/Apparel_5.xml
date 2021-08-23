@@ -2,19 +2,23 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_5" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>75</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
-			<Mass>4.5</Mass>
-			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>10</EquipDelay>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
 			<Flammability>0.15</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<MeleeHitChance>0.5</MeleeHitChance>
+			<MeleeDodgeChance>0.5</MeleeDodgeChance>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
@@ -32,8 +36,8 @@
 <!--Anneli_Yorha_Arms-->
 	<ThingDef ParentName="Anneli_Yorha_5">
 		<defName>Anneli_Yorha_Arms</defName>
-		<description>Anneli_Yorha_Arms</description>
-		<label>Anneli_Yorha_Arms</label>
+		<description>(Yorha)5_Yorha_Arms</description>
+		<label>(Yorha)5_Yorha_Arms</label>
 		<graphicData>
 			<texPath>5/Anneli_Yorha_Arms</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -8,14 +8,17 @@
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>6000</WorkToMake>
-			<Mass>0.6</Mass>
-			<StuffEffectMultiplierArmor>0.12</StuffEffectMultiplierArmor>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.7</Mass>
+			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>5</EquipDelay>
+			<EquipDelay>2</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
@@ -32,8 +35,8 @@
 <!--Anneli_Jurnizia_AdidasPants-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_AdidasPants</defName>
-		<description>Jurnizia_2B_HealerPants</description>
-		<label>Jurnizia_2B_HealerPants</label>
+		<description>(Jurnizia)2B_AdidasPants</description>
+		<label>(Jurnizia)2B_AdidasPants</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_AdidasPants</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -50,8 +53,8 @@
 <!--Anneli_Jurnizia_GorkaPants-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_GorkaPants</defName>
-		<description>Jurnizia_2B_HealerPants</description>
-		<label>Jurnizia_2B_HealerPants</label>
+		<description>(Jurnizia)2B_GorkaPants</description>
+		<label>(Jurnizia)2B_GorkaPants</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_GorkaPants</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -67,8 +70,8 @@
 <!--Anneli_Jurnizia_GorkaPants_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_GorkaPants_VSR</defName>
-		<description>Jurnizia_2B_Pants</description>
-		<label>Jurnizia_2B_Pants</label>
+		<description>(Jurnizia)2B_GorkaPants_VSR</description>
+		<label>(Jurnizia)2B_GorkaPants_VSR</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_GorkaPants_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -84,8 +87,8 @@
 <!--Anneli_Jurnizia_Jeans-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_Jeans</defName>
-		<description>Jurnizia_2B_Shorts</description>
-		<label>Jurnizia_2B_Shorts</label>
+		<description>(Jurnizia)2B_Jeans</description>
+		<label>(Jurnizia)2B_Jeans</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_Jeans</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -101,8 +104,8 @@
 <!--Anneli_Jurnizia_JeanShorts-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_JeanShorts</defName>
-		<description>Jurnizia_2B_Skirt</description>
-		<label>Jurnizia_2B_Skirt</label>
+		<description>(Jurnizia)2B_JeanShorts</description>
+		<label>(Jurnizia)2B_JeanShorts</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_JeanShorts</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -118,8 +121,8 @@
 <!--Anneli_Jurnizia_Pants_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_Pants_VSR</defName>
-		<description>Jurnizia_2B_TightSkirt</description>
-		<label>Jurnizia_2B_TightSkirt</label>
+		<description>(Jurnizia)2B_Pants_VSR</description>
+		<label>(Jurnizia)2B_Pants_VSR</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_Pants_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -135,8 +138,8 @@
 <!--Anneli_Jurnizia_Shorts_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_2B">
 		<defName>Anneli_Jurnizia_Shorts_VSR</defName>
-		<description>Jurnizia_2B_TightSkirt</description>
-		<label>Jurnizia_2B_TightSkirt</label>
+		<description>(Jurnizia)2B_Shorts_VSR</description>
+		<label>(Jurnizia)2B_Shorts_VSR</label>
 		<graphicData>
 			<texPath>2B/Anneli_Jurnizia_Shorts_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

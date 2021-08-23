@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_1ABC" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>40</costStuffCount>
+		<costStuffCount>35</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>0.25</Mass>
-			<StuffEffectMultiplierArmor>0.02</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.15</Mass>
+			<StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -40,8 +40,8 @@
 <!--Anneli_Yorha_Zentai_A-->
 	<ThingDef ParentName="Anneli_Yorha_1ABC">
 		<defName>Anneli_Yorha_Zentai_A</defName>
-		<description>Yorha_1ABC_Zentai_A</description>
-		<label>Yorha_1ABC_Zentai_A</label>
+		<description>(Yorha)1ABC_Zentai_White</description>
+		<label>(Yorha)1ABC_Zentai_White</label>
 		<graphicData>
 			<texPath>1ABC/Anneli_Yorha_Zentai_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -57,8 +57,8 @@
 <!--Anneli_Yorha_Zentai_B-->
 	<ThingDef ParentName="Anneli_Yorha_1ABC">
 		<defName>Anneli_Yorha_Zentai_B</defName>
-		<description>Yorha_1ABC_Zentai_B</description>
-		<label>Yorha_1ABC_Zentai_B</label>
+		<description>(Yorha)1ABC_Zentai_Black</description>
+		<label>(Yorha)1ABC_Zentai_Black</label>
 		<graphicData>
 			<texPath>1ABC/Anneli_Yorha_Zentai_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

@@ -35,8 +35,8 @@
 <!--Anneli_Yorha_Socks-->
 	<ThingDef ParentName="Anneli_Yorha_1C">
 		<defName>Anneli_Yorha_Socks</defName>
-		<description>Yorha_1C_Socks</description>
-		<label>Yorha_1C_Socks</label>
+		<description>(Yorha)1C_Socks</description>
+		<label>(Yorha)1C_Socks</label>
 		<graphicData>
 			<texPath>1C/Anneli_Yorha_Socks</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -55,8 +55,8 @@
 <!--Anneli_Yorha_Stockings_A-->
 	<ThingDef ParentName="Anneli_Yorha_1C">
 		<defName>Anneli_Yorha_Stockings_A</defName>
-		<description>Yorha_1C_Stockings_A</description>
-		<label>Yorha_1C_Stockings_A</label>
+		<description>(Yorha)1C_Stockings_A</description>
+		<label>(Yorha)1C_Stockings_A</label>
 		<graphicData>
 			<texPath>1C/Anneli_Yorha_Stockings_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -75,8 +75,8 @@
 <!--Anneli_Yorha_Stockings_B-->
 	<ThingDef ParentName="Anneli_Yorha_1C">
 		<defName>Anneli_Yorha_Stockings_B</defName>
-		<description>Yorha_1C_Stockings_B</description>
-		<label>Yorha_1C_Stockings_B</label>
+		<description>(Yorha)1C_Stockings_B</description>
+		<label>(Yorha)1C_Stockings_B</label>
 		<graphicData>
 			<texPath>1C/Anneli_Yorha_Stockings_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -95,8 +95,8 @@
 <!--Anneli_Yorha_Stockings_C-->
 	<ThingDef ParentName="Anneli_Yorha_1C">
 		<defName>Anneli_Yorha_Stockings_C</defName>
-		<description>Yorha_1C_Stockings_C</description>
-		<label>Yorha_1C_Stockings_C</label>
+		<description>(Yorha)1C_Stockings_C</description>
+		<label>(Yorha)1C_Stockings_C</label>
 		<graphicData>
 			<texPath>1C/Anneli_Yorha_Stockings_C</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

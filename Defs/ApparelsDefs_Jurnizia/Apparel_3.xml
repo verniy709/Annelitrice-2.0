@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Jurnizia_3" ParentName="Anneli_Jurnizia_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>100</costStuffCount>
+		<costStuffCount>80</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>12000</WorkToMake>
+			<WorkToMake>8000</WorkToMake>
 			<Mass>2.0</Mass>
-			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>10</EquipDelay>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>4</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -40,8 +40,8 @@
 <!--Anneli_Jurnizia_AdidasCoat_A-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_AdidasCoat_A</defName>
-		<description>Jurnizia_3_Cloak</description>
-		<label>Jurnizia_3_Cloak</label>
+		<description>(Jurnizia)3_AdidasCoat_A</description>
+		<label>(Jurnizia)3_AdidasCoat_A</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_AdidasCoat_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -58,8 +58,8 @@
 <!--Anneli_Jurnizia_AdidasCoat_B-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_AdidasCoat_B</defName>
-		<description>Jurnizia_3_Coat</description>
-		<label>Jurnizia_3_Coat</label>
+		<description>(Jurnizia)3_AdidasCoat_B</description>
+		<label>(Jurnizia)3_AdidasCoat_B</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_AdidasCoat_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -76,8 +76,8 @@
 <!--Anneli_Jurnizia_DownJacket-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_DownJacket</defName>
-		<description>Jurnizia_3_Jacket</description>
-		<label>Jurnizia_3_Jacket</label>
+		<description>(Jurnizia)3_DownJacket</description>
+		<label>(Jurnizia)3_DownJacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_DownJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -93,8 +93,8 @@
 <!--Anneli_Jurnizia_GorkaCoat-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_GorkaCoat</defName>
-		<description>Jurnizia_3_Shawl</description>
-		<label>Jurnizia_3_Shawl</label>
+		<description>(Jurnizia)3_GorkaCoat</description>
+		<label>(Jurnizia)3_GorkaCoat</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_GorkaCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -110,8 +110,8 @@
 <!--Anneli_Jurnizia_GorkaCoat_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_GorkaCoat_VSR</defName>
-		<description>Jurnizia_3_ShortJacket</description>
-		<label>Jurnizia_3_ShortJacket</label>
+		<description>(Jurnizia)3_GorkaCoat_VSR</description>
+		<label>(Jurnizia)3_GorkaCoat_VSR</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_GorkaCoat_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -127,8 +127,8 @@
 <!--Anneli_Jurnizia_JeanJacket-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_JeanJacket</defName>
-		<description>Jurnizia_3_TrenchCoat</description>
-		<label>Jurnizia_3_TrenchCoat</label>
+		<description>(Jurnizia)3_JeanJacket</description>
+		<label>(Jurnizia)3_JeanJacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_JeanJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -144,8 +144,8 @@
 <!--Anneli_Jurnizia_LeatherJacket-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_LeatherJacket</defName>
-		<description>Jurnizia_3_TrenchCoat</description>
-		<label>Jurnizia_3_TrenchCoat</label>
+		<description>(Jurnizia)3_LeatherJacket</description>
+		<label>(Jurnizia)3_LeatherJacket</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_LeatherJacket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -161,8 +161,8 @@
 <!--Anneli_Jurnizia_SummerCoat_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_SummerCoat_VSR</defName>
-		<description>Jurnizia_3_TrenchCoat</description>
-		<label>Jurnizia_3_TrenchCoat</label>
+		<description>(Jurnizia)3_SummerCoat_VSR</description>
+		<label>(Jurnizia)3_SummerCoat_VSR</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_SummerCoat_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -178,8 +178,8 @@
 <!--Anneli_Jurnizia_WinterCoat_VSR-->
 	<ThingDef ParentName="Anneli_Jurnizia_3">
 		<defName>Anneli_Jurnizia_WinterCoat_VSR</defName>
-		<description>Jurnizia_3_TrenchCoat</description>
-		<label>Jurnizia_3_TrenchCoat</label>
+		<description>(Jurnizia)3_WinterCoat_VSR</description>
+		<label>(Jurnizia)3_WinterCoat_VSR</label>
 		<graphicData>
 			<texPath>3/Anneli_Jurnizia_WinterCoat_VSR</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

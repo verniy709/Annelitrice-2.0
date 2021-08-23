@@ -2,18 +2,18 @@
 <Defs>
 
 	<ThingDef Name="Anneli_Yorha_6C" ParentName="Anneli_Yorha_ApparelCommonBase"  Abstract="True">
-		<costStuffCount>15</costStuffCount>
+		<costStuffCount>10</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 			<li>Fabric</li>
 		</stuffCategories>
 		<statBases>
-			<WorkToMake>2500</WorkToMake>
+			<WorkToMake>1000</WorkToMake>
 			<Mass>0.1</Mass>
-			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>2</EquipDelay>
+			<EquipDelay>1</EquipDelay>
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
@@ -37,8 +37,8 @@
 <!--Anneli_Yorha_Mask_A-->
 	<ThingDef ParentName="Anneli_Yorha_6C">
 		<defName>Anneli_Yorha_Mask_A</defName>
-		<description>Yorha_6C_Mask_A</description>
-		<label>Yorha_6C_Mask_A</label>
+		<description>(Yorha)6C_Mask_A</description>
+		<label>(Yorha)6C_Mask_A</label>
 		<graphicData>
 			<texPath>6C/Anneli_Yorha_Mask_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -54,8 +54,8 @@
 <!--Anneli_Yorha_Mask_B-->
 	<ThingDef ParentName="Anneli_Yorha_6C">
 		<defName>Anneli_Yorha_Mask_B</defName>
-		<description>Yorha_6C_Mask_B</description>
-		<label>Yorha_6C_Mask_B</label>
+		<description>(Yorha)6C_Mask_B</description>
+		<label>(Yorha)6C_Mask_B</label>
 		<graphicData>
 			<texPath>6C/Anneli_Yorha_Mask_B</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

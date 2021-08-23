@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="Anneli_Gakuen_1B" ParentName="Anneli_Gakuen_ApparelCommonBase"  Abstract="True">
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.05</Mass>
+			<StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1</EquipDelay>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<equippedStatOffsets>
+			<Cleanliness>0.05</Cleanliness>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Anneli_Gakuen</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_SafetyShorts-->
+	<ThingDef ParentName="Anneli_Gakuen_1B">
+		<defName>Anneli_Gakuen_SafetyShorts</defName>
+		<description>(Gakuen)1B_SafetyShorts</description>
+		<label>(Gakuen)1B_SafetyShorts</label>
+		<graphicData>
+			<texPath>1B/Anneli_Gakuen_SafetyShorts</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1B/Anneli_Gakuen_SafetyShorts</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+<!--Anneli_Gakuen_Underwear-->
+	<ThingDef ParentName="Anneli_Gakuen_1B">
+		<defName>Anneli_Gakuen_Underwear</defName>
+		<description>(Gakuen)1B_Underwear</description>
+		<label>(Gakuen)1B_Underwear</label>
+		<graphicData>
+			<texPath>1B/Anneli_Gakuen_Underwear</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>1B/Anneli_Gakuen_Underwear</wornGraphicPath>
+			<tags>
+				<li>Anneli_Gakuen_Common</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

@@ -11,7 +11,7 @@
 		<backstoryCategories>
 			<li>Anneli_Story</li>
 		</backstoryCategories>
-		<weaponMoney>1500</weaponMoney>
+		<weaponMoney>1200</weaponMoney>
 		<apparelMoney>
 			<min>2000</min>
 			<max>4500</max>
@@ -57,7 +57,9 @@
 			<li>Anneli_Jurnizia_Gorka_VSR</li>
 		</apparelTags>
 		<weaponTags>
-			<li>Gun</li>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
 			<li>GrenadeDestructive</li>
 			<li>MedievalMeleeBasic</li>
       		<li>NeolithicMeleeBasic</li>
@@ -101,6 +103,8 @@
 			<li>Anneli_Jurnizia_Military_VSR</li>
 		</apparelTags>
 		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
 			<li>IndustrialGunAdvanced</li>
 			<li>GrenadeDestructive</li>
 		</weaponTags>

@@ -35,8 +35,8 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Anneli_PuppetTheatre</defName>
     <thingClass>Building</thingClass>
-    <label>Anneli_PuppetTheatre</label>
-    <description>Anneli_PuppetTheatre</description>
+    <label>Anneli Puppet Theatre</label>
+    <description>Puppetry is a form of theatre or performance that involves the manipulation of puppets. It basically works as a TV for medieval society. Additionally, it gives your colonists an opportunity to reproduce the plots and costumes of some famous works by an unknown movie producer.</description>
     <graphicData>
       <texPath>Anneli_Building/PuppetTheatre</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

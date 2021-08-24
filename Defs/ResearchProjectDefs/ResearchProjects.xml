@@ -7,8 +7,8 @@
 
 	<ResearchProjectDef>
 		<defName>Anneli_NutrientSolution</defName>
-		<label>Anneli_NutrientSolution</label>
-		<description>Anneli_NutrientSolution.</description>
+		<label>Anneli Nutrient Solution</label>
+		<description>More efficient and nastier than nutrient paste meals. Annelitrices won't mind it at all, as they grow up in it.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
@@ -21,8 +21,8 @@
 
 	<ResearchProjectDef>
 		<defName>Anneli_GrowthFactorCocktails</defName>
-		<label>Anneli_GrowthFactorCocktails</label>
-		<description>Anneli_GrowthFactorCocktails.</description>
+		<label>Anneli Growth Factor Cocktails</label>
+		<description>A drug made of mysterious technology. Can only revive Annelitrices.</description>
 		<baseCost>2500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
@@ -35,8 +35,8 @@
 
 	<ResearchProjectDef>
 		<defName>Anneli_Incubator</defName>
-		<label>Anneli_Incubator</label>
-		<description>Anneli_Incubator.</description>
+		<label>Anneli Incubator</label>
+		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points./n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"/n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
 		<baseCost>4000</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
@@ -49,8 +49,8 @@
 	
 	<ResearchProjectDef>
 		<defName>Anneli_PuppetTheatre</defName>
-		<label>Anneli_PuppetTheatre</label>
-		<description>Anneli_PuppetTheatre.</description>
+		<label>Anneli Puppet Theatre</label>
+		<description>Puppetry is a form of theatre or performance that involves the manipulation of puppets. It basically works as a TV for medieval society. Additionally, it gives your colonists an opportunity to reproduce the plots and costumes of some famous works by an unknown movie producer.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>

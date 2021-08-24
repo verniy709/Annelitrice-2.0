@@ -43,9 +43,9 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>8/Anneli_Jurnizia_Guitar</wornGraphicPath>
-			<tags>
+			<!-- <tags>
 				<li>Anneli_Jurnizia_Special</li>
-			</tags>
+			</tags> -->
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>

@@ -24,7 +24,7 @@
   <ThingDef ParentName="AnnelyResurrectorBase">
     <defName>Anneli_GrowthFactorCocktails</defName>
     <label>growth factor cocktails</label>
-    <description>PLACEHOLDER</description>
+    <description>A drug to revive Annelitrices. Nobody knows what solvent is used to dissolve the nutrient of a calf in a volume of a syringe.</description>
     <graphicData>
       <texPath>Anneli_Items/GrowthFactor</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

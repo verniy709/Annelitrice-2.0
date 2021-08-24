@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef ParentName="BenchBase">
-    <defName>Anneli_Yorha_Workbench</defName>
-    <label>Anneli_Yorha_Bench</label>
-    <description>Anneli_Yorha_Bench.</description>
+    <defName>Anneli_Gakuen_Workbench</defName>
+    <label>Anneli_Gakuen_Bench</label>
+    <description>Anneli_Gakuen_Bench.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Anneli_Yorha_Workbench</texPath>
+      <texPath>Anneli_Gakuen_Workbench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
       <shaderType>CutoutComplex</shaderType>
@@ -50,18 +50,18 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <researchPrerequisites>
-      <li>Anneli_Yorha_Apparels</li>
+      <li>Anneli_Gakuen_Apparels</li>
     </researchPrerequisites>
   </ThingDef>
 
   <WorkGiverDef>
-    <defName>DoBillsMakeApparel_Anneli_Yorha_Workbench</defName>
+    <defName>DoBillsMakeApparel_Anneli_Gakuen_Workbench</defName>
     <label>Making Apparel</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Tailoring</workType>
     <priorityInType>110</priorityInType>
     <fixedBillGiverDefs>
-      <li>Anneli_Yorha_Workbench</li>
+      <li>Anneli_Gakuen_Workbench</li>
     </fixedBillGiverDefs>
     <verb>tailor</verb>
     <gerund>tailoring at</gerund>

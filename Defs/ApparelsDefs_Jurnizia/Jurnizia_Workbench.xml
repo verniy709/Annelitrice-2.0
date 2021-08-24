@@ -50,6 +50,7 @@
       <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <researchPrerequisites>
+      <li>Anneli_Jurnizia_Apparels</li>
     </researchPrerequisites>
   </ThingDef>
 

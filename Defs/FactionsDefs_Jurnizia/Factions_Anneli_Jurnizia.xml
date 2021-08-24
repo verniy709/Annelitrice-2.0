@@ -3,8 +3,8 @@
 
 	<FactionDef ParentName="Anneli_FactionBase">
 		<defName>Anneli_Faction_Jurnizia</defName>
-		<label>Anneli_Faction_Jurnizia</label>
-		<description>Anneli_Faction_Jurnizia.</description>
+		<label>Anneli Faction Jurnizia</label>
+		<description>The Jurnizia Annelitrices are actually made of two groups of Annelitrices. A long time ago, there are two factions of Annelitrices: one plays as "Confederate", whose goal is to restore order of this planet, while the other one is "Rebel", whose goals are to go against the "Confederate" and play as a villain. However, they actually worked together to create the greatest war "movie". These two factions have been fighting for years, but the "Confederate" always won because it started with greater number of soldiers and better equipments. Until one cycle, somehow the "Confederate" made every possible mistake and some small probability events happened, the "Rebel" won the war and completely assimilitated the "Confederate". In the past, the "Confederate" would stop the "Rebel" by killing and capturing every "Rebel" Annelitrice, and then start the next cycle; now nobody would stop these "Rebels". Later, the "Rebel" became "Jurnizia" and its members continuted indiscriminate attacks on other settlements. One important thing is that these Jurnizia Annelitrices are not evil in their nature: they are just playing as bad people and doing what bad people should do.</description>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
 		<fixedName>Forged Jurnizia</fixedName>
@@ -34,7 +34,8 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
 		<backstoryCategories>
-			<li>Anneli_Story</li>
+			<li>Anneli_Childhood</li>
+			<li>Anneli_Story_Jurnizia</li>
 		</backstoryCategories>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>

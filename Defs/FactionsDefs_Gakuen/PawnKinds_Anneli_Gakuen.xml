@@ -170,7 +170,9 @@
 			<li>Anneli_Gakuen_Sabagebu_A</li>
 		</apparelTags>
 		<weaponTags>
-			<li>Gun</li>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
 			<li>GrenadeDestructive</li>
 		</weaponTags>
 	</PawnKindDef>
@@ -185,7 +187,9 @@
 			<li>Anneli_Gakuen_Sabagebu_B</li>
 		</apparelTags>
 		<weaponTags>
-			<li>Gun</li>
+			<li>SimpleGun</li>
+			<li>Revolver</li>
+			<li>IndustrialGunAdvanced</li>
 			<li>GrenadeDestructive</li>
 		</weaponTags>
 	</PawnKindDef>

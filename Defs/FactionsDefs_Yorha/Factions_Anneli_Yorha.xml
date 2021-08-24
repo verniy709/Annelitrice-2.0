@@ -3,8 +3,8 @@
 
 	<FactionDef ParentName="Anneli_FactionBase">
 		<defName>Anneli_Faction_Yorha</defName>
-		<label>Anneli_Faction_Yorha</label>
-		<description>Anneli_Faction_Yorha.</description>
+		<label>Anneli Faction Yorha</label>
+		<description>The Yorha Annelitrices believe they are androids who have lost their creators and been trapped in nihilism. Because they claim they are androids, any activity that indicates their organic nature is a top secret, including eating, drinking, excretion, etc. Some outsiders were executed simply because they unfortunately witnessed Yorha Annelitrices drinking water. However, since they mostly stay in their secret bunkers, most residents on this planet do not even know the existence of Yorha Annelitrices, let alone figure out their origins and intentions.</description>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
 		<fixedName>Forged YoRHa Butai</fixedName>
@@ -33,7 +33,8 @@
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
 		<backstoryCategories>
-			<li>Anneli_Story</li>
+			<li>Anneli_Childhood</li>
+			<li>Anneli_Story_Yorha</li>
 		</backstoryCategories>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>

@@ -3,8 +3,8 @@
 
 	<ThingDef ParentName="LWM_DeepStorage">
 		<defName>Anneli_Incubator</defName>
-		<label>Anneli_Incubator</label>
-		<description>Anneli_Incubator</description>
+		<label>Anneli Incubator</label>
+		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points.\n\n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"\n\n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
 		<thingClass>Annelitrice.WormIncubator</thingClass>
 		<graphicData>
 			<texPath>Anneli_Building/Incubator</texPath>
@@ -35,6 +35,10 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>500</costStuffCount>
+		<costList>
+      		<Gold>100</Gold>
+      		<Silver>2000</Silver>
+    	</costList>
 		<tickerType>Normal</tickerType>
 		<stealable>false</stealable>
 		<size>(3,3)</size>
@@ -48,7 +52,7 @@
 			<fixedStorageSettings>
 				<filter>
 					<categories>
-						<li>Annely_Worm</li>
+						<li>Anneli_Worm</li>
 					</categories>
 				</filter>
 			</fixedStorageSettings>

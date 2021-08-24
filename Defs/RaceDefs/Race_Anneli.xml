@@ -25,8 +25,8 @@
     <drawGUIOverlay>true</drawGUIOverlay>
 	<modExtensions>
 		<li Class="Annelitrice.RaceExtension">
-			<outsiderSpawnThingAfterDestruction>Annelice_OutsiderWorm</outsiderSpawnThingAfterDestruction>
-			<colonistSpawnThingAfterDestruction>Annelice_ColonistWorm</colonistSpawnThingAfterDestruction>
+			<outsiderSpawnThingAfterDestruction>Anneli_OutsiderWorm</outsiderSpawnThingAfterDestruction>
+			<colonistSpawnThingAfterDestruction>Anneli_ColonistWorm</colonistSpawnThingAfterDestruction>
 		</li>
 	</modExtensions>
 	<comps>

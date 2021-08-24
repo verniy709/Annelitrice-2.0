@@ -51,7 +51,7 @@
 		<label>Annelitrice Colony</label>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
-		<description>A colony founded by Annelitrice survivors.</description>
+		<description>A colony founded by some Annelitrice survivors.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>Anneli_Player</basicMemberKind>
 		<techLevel>Medieval</techLevel>

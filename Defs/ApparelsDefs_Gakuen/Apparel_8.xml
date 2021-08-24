@@ -45,12 +45,12 @@
 		</graphicData>
 		<apparel>
 			<wornGraphicPath>8/Anneli_Gakuen_WALKWOMAN</wornGraphicPath>
-			<tags>
+			<!-- <tags>
 				<li>Anneli_Gakuen_Kitakubu_A</li>
 				<li>Anneli_Gakuen_Kitakubu_B</li>
 				<li>Anneli_Gakuen_Tsuppari</li>
 				<li>Anneli_Gakuen_Sukeban</li>
-			</tags>
+			</tags> -->
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>

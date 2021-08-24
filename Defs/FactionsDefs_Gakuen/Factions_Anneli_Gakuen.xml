@@ -3,16 +3,16 @@
 
 	<FactionDef ParentName="Anneli_FactionBase">
 		<defName>Anneli_Faction_Gakuen</defName>
-		<label>Anneli_Faction_Gakuen</label>
-		<description>Anneli_Faction_Gakuen.</description>
+		<label>Anneli Faction Gakuen</label>
+		<description>A group of Annelitrices who believe they should live a high-school lifestyle. Their society is formed by different clubs, which are not just platforms for hobbies, but also basic units of production or even law enforcement entities. Every citizen in the community is called a "student", and every "student" will join one or more clubs. Once a year, the leadership is decided through drawing lots, and "Great Senpai" is the common title for their supreme leaders. Although their lifestyle sounds decent, the reality is that their settlements or "schools" are extremely vulnerable. Due to the nature of their governance, they cannot or are unwilling to build a standing army. Consequently, their militias made of club members are always overwhelmed by other factions like pirates. Such annihilation has repeated multiple times to multiple Annelitrice Gakuens, but the Gakuen Annelitrices did not make any change at all: they simply rebuilt their "schools" and continued their club activities as if nothing has happened.</description>
 		<pawnSingular>Annelitrice</pawnSingular>
 		<pawnsPlural>Annelitrices</pawnsPlural>
 		<fixedName>Forged Gakuen</fixedName>
 		<requiredMemes>
       		<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-      		<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
-      		<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
-      		<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      		<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
     	</requiredMemes>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <permanentEnemy>false</permanentEnemy>
@@ -29,12 +29,13 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>True</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>Commander</leaderTitle>
+		<leaderTitle>Senpai</leaderTitle>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<geneticVariance>1</geneticVariance>
 		<backstoryCategories>
-			<li>Anneli_Story</li>
+			<li>Anneli_Childhood</li>
+			<li>Anneli_Story_Gakuen</li>
 		</backstoryCategories>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
@@ -59,7 +60,7 @@
 			<max>50</max>
 		</allowedArrivalTemperatureRange>
 		<pawnGroupMakers>
-			<!-- Cannon Fodder -->
+			<!-- Idling Youths-->
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>

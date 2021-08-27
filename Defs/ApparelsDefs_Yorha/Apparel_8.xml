@@ -38,8 +38,8 @@
 <!--Anneli_Yorha_POD_A-->
 	<ThingDef ParentName="Anneli_Yorha_8">
 		<defName>Anneli_Yorha_POD_A</defName>
-		<description>(Yorha)7_POD_White</description>
-		<label>(Yorha)7_POD_White</label>
+		<description>(Yorha)8_POD_White</description>
+		<label>(Yorha)8_POD_White</label>
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>
@@ -95,8 +95,8 @@
 <!--Anneli_Yorha_POD_B-->
 	<ThingDef ParentName="Anneli_Yorha_8">
 		<defName>Anneli_Yorha_POD_B</defName>
-		<description>(Yorha)7_POD_Black</description>
-		<label>(Yorha)7_POD_Black</label>
+		<description>(Yorha)8_POD_Black</description>
+		<label>(Yorha)8_POD_Black</label>
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>

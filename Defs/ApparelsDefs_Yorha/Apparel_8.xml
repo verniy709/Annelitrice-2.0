@@ -19,7 +19,8 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>10</CarryingCapacity>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
@@ -38,7 +39,7 @@
 	<ThingDef ParentName="Anneli_Yorha_8">
 		<defName>Anneli_Yorha_POD_A</defName>
 		<description>(Yorha)7_POD_White</description>
-		<label>(Yorha)7_POD_POD_White</label>
+		<label>(Yorha)7_POD_White</label>
 		<tickerType>Normal</tickerType>
 		<thingClass>Annelitrice.AnnelitriceShieldBelt</thingClass>
 		<statBases>

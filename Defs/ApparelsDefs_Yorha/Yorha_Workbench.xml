@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Anneli_Yorha_Workbench</defName>
-    <label>Anneli_Yorha_Bench</label>
+    <label>Anneli Yorha Workbench</label>
     <description>Anneli_Yorha_Bench.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>

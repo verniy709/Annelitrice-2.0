@@ -17,7 +17,7 @@
 			<Flammability>0.5</Flammability>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>10</CarryingCapacity>
+			<SocialImpact>0.3</SocialImpact>
 		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>

@@ -2,8 +2,8 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Anneli_Gakuen_Workbench</defName>
-    <label>Anneli_Gakuen_Bench</label>
-    <description>Anneli_Gakuen_Bench.</description>
+    <label>Anneli Gakuen Bench</label>
+    <description>Looks like a regular table, but if an operator puts in raw material and keeps twisting the handles on the sides, some new clothes is made. Quite a few people believe this is a Rumanian Box scam.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Anneli_Gakuen_Workbench</texPath>

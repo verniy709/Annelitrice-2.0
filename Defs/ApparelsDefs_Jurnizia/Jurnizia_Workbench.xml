@@ -2,8 +2,8 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Anneli_Jurnizia_Workbench</defName>
-    <label>Anneli_Jurnizia_Bench</label>
-    <description>Anneli_Jurnizia_Bench.</description>
+    <label>Anneli Jurnizia Workbench</label>
+    <description>A strange nightstand-like furniture with a big screen. Sometimes the screen shows an angry old man who yells in an ancient language.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Anneli_Jurnizia_Workbench</texPath>

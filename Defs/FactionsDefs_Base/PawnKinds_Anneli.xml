@@ -11,8 +11,8 @@
 		<maxGenerationAge>80</maxGenerationAge>
 		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
 		<invNutrition>4.5</invNutrition>
-		<initialWillRange>5~10</initialWillRange>
-		<initialResistanceRange>25~99</initialResistanceRange>
+		<initialWillRange>5~15</initialWillRange>
+		<initialResistanceRange>25~65</initialResistanceRange>
 		<styleItemTags>
 			<li>
 				<tag>Anneli</tag>
@@ -35,6 +35,9 @@
 		<backstoryCategories>
 			<li>Anneli_Story</li>
 		</backstoryCategories>
+		<apparelTags>
+			<li>Anneli</li>
+		</apparelTags>
 	</PawnKindDef>
 
 </Defs>

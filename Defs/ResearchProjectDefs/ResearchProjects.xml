@@ -2,13 +2,13 @@
 <Defs>
 	<ResearchTabDef>
 		<defName>Anneli_Research</defName>
-		<label>Anneli_Research</label>
+		<label>Anneli Research</label>
 	</ResearchTabDef>
 
 	<ResearchProjectDef>
 		<defName>Anneli_NutrientSolution</defName>
 		<label>Anneli Nutrient Solution</label>
-		<description>More efficient and nastier than nutrient paste meals. Annelitrices won't mind it at all, as they grow up in it.</description>
+		<description>A bottle of suspicious liquid more efficient and nastier than nutrient paste meals. Artificial flavouring agents cannot mask its unpleasant flavors. Annelitrices won't mind it at all, as they grow up in it.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
@@ -22,7 +22,7 @@
 	<ResearchProjectDef>
 		<defName>Anneli_GrowthFactorCocktails</defName>
 		<label>Anneli Growth Factor Cocktails</label>
-		<description>A drug made of mysterious technology. Can only revive Annelitrices.</description>
+		<description>A drug made of mysterious technology to revive only Annelitrices. Nobody knows what solvent is used to dissolve the nutrient of a calf in a volume of a syringe.</description>
 		<baseCost>2500</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>
@@ -36,7 +36,7 @@
 	<ResearchProjectDef>
 		<defName>Anneli_Incubator</defName>
 		<label>Anneli Incubator</label>
-		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points./n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"/n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
+		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points.\n\n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"\n\n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
 		<baseCost>4000</baseCost>
 		<techLevel>Medieval</techLevel>
 		<prerequisites>

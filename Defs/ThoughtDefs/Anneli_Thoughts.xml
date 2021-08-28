@@ -12,7 +12,7 @@
     <stages>
       <li>
         <label>my friend {0} died</label>
-        <description>I feel lonely when my friends are gone.</description>
+        <description>Such loneliness.</description>
         <baseMoodEffect>-2</baseMoodEffect>
       </li>
     </stages>
@@ -43,7 +43,7 @@
     <stages>
       <li>
         <label>my relative {0} died</label>
-        <description>We will reunite soon.</description>
+        <description>We shall reunite soon.</description>
         <baseMoodEffect>-2</baseMoodEffect>
       </li>
     </stages>
@@ -82,8 +82,8 @@
     <stages>
       <li>
         <label>confused by {0}</label>
-        <description>Are you sure this is the right plot?</description>
-        <baseMoodEffect>-5</baseMoodEffect>
+        <description>Is this part of the plots?</description>
+        <baseMoodEffect>-4</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -100,7 +100,7 @@
     <stages>
       <li>
         <label>member {0} lost</label>
-        <description>I don't know when I can see them again.</description>
+        <description>They will be back soon.</description>
         <baseMoodEffect>-2</baseMoodEffect>
       </li>
     </stages>

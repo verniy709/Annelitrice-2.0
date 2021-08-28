@@ -3,7 +3,7 @@
 	<ThingDef ParentName="MealBase">
     <defName>Anneli_NutrientSolution</defName>
     <label>Annelitrice nutrient solution</label>
-    <description>A bottle of suspicious liquid. Artificial flavouring agents cannot mask its unpleasant flavors.</description>
+    <description>A bottle of suspicious liquid more efficient and nastier than nutrient paste meals. Artificial flavouring agents cannot mask its unpleasant flavors. Annelitrices won't mind it at all, as they grow up in it.</description>
     <graphicData>
       <texPath>Anneli_Items/NutrientSolution</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

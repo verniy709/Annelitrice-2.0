@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>  
+<Defs> 
+
+	<!-- <HairDef>
+		<defName>Anneli_Hair_0</defName>
+		<label>Anneli_Hair_0</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_Hair/Anneli_Hair_0</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+ -->
 	<HairDef>
 		<defName>Anneli_Hair_1</defName>
 		<label>Anneli_Hair_1</label>

@@ -56,7 +56,7 @@
 			<disallowedTraits>
 			</disallowedTraits>
 			<alienPartGenerator>
-				<headOffset>(0,0.0375)</headOffset>
+				<headOffset>(0,0.035)</headOffset>
 				<customDrawSize>(0.9, 0.9)</customDrawSize>
 				<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
 				<customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
@@ -145,9 +145,18 @@
 		    <li>
 		        <key>BeardDef</key>
 		        <value>
-		            <hasStyle>true</hasStyle>
+		            <hasStyle>false</hasStyle>
 		            <styleTags>
 		               <li>NoBeard</li>
+		            </styleTags>
+		        </value>
+		    </li>
+		    <li>
+		        <key>TattooDef</key>
+		        <value>
+		            <hasStyle>false</hasStyle>
+		            <styleTags>
+		               <li>NoTattoo</li>
 		            </styleTags>
 		        </value>
 		    </li>

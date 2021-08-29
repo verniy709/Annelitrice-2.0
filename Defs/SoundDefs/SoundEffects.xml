@@ -124,7 +124,7 @@
 						<clipPath>SampleSongGuitarA</clipPath>
 					</li>
 				</grains>
-				<volumeRange>40~40</volumeRange>
+				<volumeRange>50~50</volumeRange>
 				<pitchRange>0.9541177~1.068824</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -145,7 +145,7 @@
 						<clipPath>SampleSongGuitarB</clipPath>
 					</li>
 				</grains>
-				<volumeRange>40~40</volumeRange>
+				<volumeRange>50~50</volumeRange>
 				<pitchRange>0.9541177~1.068824</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>

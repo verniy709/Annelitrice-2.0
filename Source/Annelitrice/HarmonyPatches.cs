@@ -429,7 +429,7 @@ namespace Annelitrice
                 yield return g;
             }
             Pawn pawn = __instance;
-            if (!pawn.TryGetCompEvolution(out var comp))
+            if (pawn.Faction != Faction.OfPlayer || pawn.InMentalState || !pawn.TryGetCompEvolution(out var comp))
             {
                 yield break;
             }

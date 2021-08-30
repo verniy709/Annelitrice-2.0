@@ -29,7 +29,15 @@ namespace Annelitrice
                 else
                 {
                     var newPawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(AnnelitriceDefOf.Anneli_Player, Faction.OfPlayer, fixedBiologicalAge: 14, fixedChronologicalAge: 14));
+                    newPawn.apparel.DestroyAll();
+                    newPawn.inventory.DestroyAll();
+                    newPawn.equipment.DestroyAllEquipment();
                     GenSpawn.Spawn(newPawn, pos, map);
+                }
+                var bloodCount = Rand.RangeInclusive(3, 5);
+                for (var i = 0; i < bloodCount; i++)
+                {
+                    GenSpawn.Spawn(Rand.Bool ? ThingDefOf.Filth_Blood : ThingDef.Named("Filth_BloodInsect"), pos, map);
                 }
             }
         }

@@ -8,7 +8,7 @@
         <xpath>/Defs/ThingDef[defName="Anneli_Gakuen_WALKWOMAN"]/comps/li[@Class="Annelitrice.CompProperties_PlayMusic"]/soundDefs</xpath>        
         <value>
         	<li>Anneli_Sound_SampleSongWalkwomanA</li>
-			<li>Anneli_Sound_SampleSongWalkwomanB</li>
+			    <li>Anneli_Sound_SampleSongWalkwomanB</li>
         </value>
       </match>
     </Operation>
@@ -20,7 +20,7 @@
         <xpath>/Defs/ThingDef[defName="Anneli_Jurnizia_Guitar"]/comps/li[@Class="Annelitrice.CompProperties_PlayMusic"]/soundDefs</xpath>        
         <value>
         	<li>Anneli_Sound_SampleSongGuitarA</li>
-			<li>Anneli_Sound_SampleSongGuitarB</li>
+			    <li>Anneli_Sound_SampleSongGuitarB</li>
         </value>
       </match>
     </Operation>

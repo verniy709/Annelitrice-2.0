@@ -33,9 +33,9 @@
 
   <RecipeDef>
   	<defName>Anneli_MakeNutrientSolution</defName>
-    <label>make nutrient solution</label>
+    <label>make Annelitrice nutrient solution</label>
     <description>Juice organic matters.</description>
-    <jobString>Making nutrient solution.</jobString>
+    <jobString>Making Annelitrice nutrient solution.</jobString>
     <workAmount>1000</workAmount>
     <researchPrerequisite>Anneli_NutrientSolution</researchPrerequisite>
       <recipeUsers>

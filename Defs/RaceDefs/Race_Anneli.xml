@@ -161,14 +161,14 @@
 		        </value>
 		    </li>
 		    <li>
-		        <key>HairDef</key>
-		        <value>
-		            <hasStyle>true</hasStyle>
-		            <styleTags>
-		                <li>Anneli</li>
-		            </styleTags>
-		        </value>
-		    </li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<styleTagsOverride>
+                        <li>Anneli</li>
+                    </styleTagsOverride>
+				</value>
+			</li>
 		</styleSettings>
 
 		<thoughtSettings>

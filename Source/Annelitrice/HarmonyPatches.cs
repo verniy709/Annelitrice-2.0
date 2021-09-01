@@ -21,15 +21,59 @@ namespace Annelitrice
         {
             harmonyInstance = new Harmony("Annelitrice.Mod");
             harmonyInstance.PatchAll();
+
+            var drawHatWithHair2 = AccessTools.Method("HatDisplaySelection.Patch:DrawHatWithHair2");
+            if (drawHatWithHair2 is null)
+            {
+                harmonyInstance.Patch(AccessTools.Method("PawnRenderer:RenderPawnInternal"),
+                    transpiler: new HarmonyMethod(AccessTools.Method(typeof(RenderPawnInternal_Patch), "RenderPawnInternal_Transpiler")));
+            }
+        }
+
+        public static IEnumerable<CodeInstruction> DrawHatWithHair2Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
+        {
+            var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
+            Label label = ilg.DefineLabel();
+            var shouldOverride = AccessTools.Method(typeof(DrawHeadHair_Patch), "ShouldOverride");
+            var changeVector = AccessTools.Method(typeof(RenderPawnInternal_Patch), "ChangeVector");
+            int found = 0;
+
+            var codes = instructions.ToList();
+            for (var i = 0; i < codes.Count; i++)
+            {
+                var instr = codes[i];
+                yield return instr;
+                if (found < 2 && i > 3 && i < codes.Count - 1 && codes[i - 3].opcode == OpCodes.Ldc_R4 && codes[i - 3].OperandIs(0.02895753f) 
+                    && codes[i - 1].opcode == OpCodes.Stind_R4)
+                {
+                    found++;
+                    if (found == 2)
+                    {
+                        codes[i + 1].labels.Add(label);
+                        yield return new CodeInstruction(OpCodes.Nop);
+
+                        yield return new CodeInstruction(OpCodes.Ldarg_0);
+                        yield return new CodeInstruction(OpCodes.Ldfld, pawnField);
+                        yield return new CodeInstruction(OpCodes.Call, shouldOverride);
+                        yield return new CodeInstruction(OpCodes.Brfalse, label);
+
+                        yield return new CodeInstruction(OpCodes.Nop);
+
+                        yield return new CodeInstruction(OpCodes.Ldloc_2);
+                        yield return new CodeInstruction(OpCodes.Call, changeVector);
+                        yield return new CodeInstruction(OpCodes.Stloc_2);
+
+                        Log.Message("Annely: Patched RenderPawnInternal");
+                    }
+                }
+            }
         }
     }
 
-    [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal")]
     public class RenderPawnInternal_Patch
     {
         [TweakValue("AN", -1f, 1f)] public static float test1 = 0.02f;
-
-        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
+        public static IEnumerable<CodeInstruction> RenderPawnInternal_Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
         {
             var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
             Label label = ilg.DefineLabel();

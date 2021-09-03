@@ -24,10 +24,10 @@
 
   <HediffDef ParentName="DiseaseBase">
     <defName>Annely_Infection</defName>
-    <label>infection</label>
-    <labelNoun>an infection</labelNoun>
+    <label>infestaion</label>
+    <labelNoun>infestation</labelNoun>
 	<hediffClass>Annelitrice.Hediff_AnnelyInfection</hediffClass>
-    <description>.</description>
+    <description>Infestation induced by Annelitrice worms. If the victims are luckly, they will be transformed into new Annelitrices.</description>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>0.7</severityPerDay>

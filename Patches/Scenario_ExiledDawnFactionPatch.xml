@@ -8,7 +8,7 @@
     <success>Always</success>
 		<match Class="PatchOperationFindMod">
         <mods>
-				<li>Annelitrice The Mimic Race</li>
+				<li>Annelitrice 2.0</li>
 		</mods>
         <match Class="PatchOperationAdd">
             <success>Always</success>

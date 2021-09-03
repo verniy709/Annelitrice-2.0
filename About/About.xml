@@ -32,5 +32,8 @@
 	<li>erdelf.HumanoidAlienRaces</li>
 	<li>LWM.DeepStorage</li>
 </loadAfter>
+<incompatibleWith>
+		<li>velc.HatsDisplaySelection</li><!-- Break Pawn Rendering -->
+</incompatibleWith>
 
 </ModMetaData>

@@ -24,7 +24,7 @@
 
   <HediffDef ParentName="DiseaseBase">
     <defName>Annely_Infection</defName>
-    <label>infestaion</label>
+    <label>infestation</label>
     <labelNoun>infestation</labelNoun>
 	<hediffClass>Annelitrice.Hediff_AnnelyInfection</hediffClass>
     <description>Infestation induced by Annelitrice worms. If the victims are luckly, they will be transformed into new Annelitrices.</description>

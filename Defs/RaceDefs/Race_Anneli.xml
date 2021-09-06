@@ -424,7 +424,7 @@
 
    
 	<statBases>
-		<MarketValue>2000</MarketValue>
+		<MarketValue>1800</MarketValue>
 		<MentalBreakThreshold>0.25</MentalBreakThreshold>
 		<MoveSpeed>5.0</MoveSpeed>
 		<Mass>45</Mass>
@@ -437,7 +437,7 @@
 		<GlobalLearningFactor>1.1</GlobalLearningFactor>
 		<ResearchSpeed>1.2</ResearchSpeed>
 		<SocialImpact>1.20</SocialImpact>
-		<PsychicSensitivity>0.1</PsychicSensitivity>
+		<PsychicSensitivity>1.0</PsychicSensitivity>
 		<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
 		<MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
 		<MeleeDodgeChance>2</MeleeDodgeChance>

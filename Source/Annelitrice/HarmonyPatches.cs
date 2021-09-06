@@ -21,7 +21,7 @@ namespace Annelitrice
         {
             harmonyInstance = new Harmony("Annelitrice.Mod");
             harmonyInstance.PatchAll();
-
+            
             var drawHatWithHair2 = AccessTools.Method("HatDisplaySelection.Patch:DrawHatWithHair2");
             if (drawHatWithHair2 is null)
             {
@@ -29,7 +29,10 @@ namespace Annelitrice
                     transpiler: new HarmonyMethod(AccessTools.Method(typeof(RenderPawnInternal_Patch), "RenderPawnInternal_Transpiler")));
             }
         }
-
+        public static IEnumerable<CodeInstruction> EmptyTranspiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
+        {
+            yield break;
+        }
         public static IEnumerable<CodeInstruction> DrawHatWithHair2Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
         {
             var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
@@ -526,9 +529,9 @@ namespace Annelitrice
         {
             if (pawn.TryGetCompEvolution(out var comp))
             {
-                if (comp.redBilePoints > 0)
+                if (comp.blueBilePoints > 0)
                 {
-                    __result *= 1 + (comp.redBilePoints * 0.125f);
+                    __result *= 1 + (comp.blueBilePoints * 0.125f);
                 }
             }
         }
@@ -568,9 +571,9 @@ namespace Annelitrice
         {
             if (diffSet.pawn.TryGetCompEvolution(out var comp))
             {
-                if (comp.redBilePoints > 0)
+                if (comp.blueBilePoints > 0)
                 {
-                    __result *= 1 + (comp.redBilePoints * 0.035f);
+                    __result *= 1 + (comp.blueBilePoints * 0.035f);
                 }
             }
         }
@@ -630,6 +633,19 @@ namespace Annelitrice
             float num7 = Mathf.InverseLerp(num2, 100f, num3);
             float num8 = ((initiator.gender == recipient.gender) ? ((!initiator.story.traits.HasTrait(TraitDefOf.Gay) || !recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f) : ((initiator.story.traits.HasTrait(TraitDefOf.Gay) || recipient.story.traits.HasTrait(TraitDefOf.Gay)) ? 0.15f : 1f));
             return 1.15f * num5 * num6 * num7 * num4 * num8;
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnRenderer), "DrawEquipmentAiming")]
+    public static class DrawEquipmentAiming_Patch
+    {
+       public static float zOffset = 0.15f;
+        public static void Prefix(PawnRenderer __instance, Pawn ___pawn, Thing eq, ref Vector3 drawLoc, float aimAngle)
+        {
+            if (___pawn.TryGetCompEvolution(out var comp))
+            {
+                drawLoc.z += zOffset;
+            }
         }
     }
 }

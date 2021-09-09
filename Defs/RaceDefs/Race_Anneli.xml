@@ -438,7 +438,7 @@
 		<ResearchSpeed>1.2</ResearchSpeed>
 		<SocialImpact>1.20</SocialImpact>
 		<PsychicSensitivity>1.0</PsychicSensitivity>
-		<ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+		<ImmunityGainSpeed>1.75</ImmunityGainSpeed>
 		<MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
 		<MeleeDodgeChance>2</MeleeDodgeChance>
 		<PainShockThreshold>0.95</PainShockThreshold>

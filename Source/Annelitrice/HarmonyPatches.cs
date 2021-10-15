@@ -648,4 +648,23 @@ namespace Annelitrice
             }
         }
     }
+
+    [HarmonyPatch(typeof(PawnRenderer), "RenderAsPack")]
+    public static class RenderAsPack_Patch
+    {
+        public static HashSet<string> supportedLayers = new HashSet<string>
+        {
+            "Anneli_UpperShell_Tactical"
+        };
+        public static void Postfix(PawnRenderer __instance, Pawn ___pawn, Apparel apparel, ref bool __result)
+        {
+            if (!__result)
+            {
+                if (apparel.def.apparel.wornGraphicData != null && apparel.def.apparel.wornGraphicData.renderUtilityAsPack)
+                {
+                    __result = apparel.def.apparel.layers.Any(x => supportedLayers.Contains(x.defName));
+                }
+            }
+        }
+    }
 }

@@ -9,6 +9,12 @@ using Verse;
 
 namespace Annelitrice
 {
+	[AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
+	public class HotSwappableAttribute : Attribute
+	{
+	}
+
+	[HotSwappableAttribute]
 	public class ITab_Pawn_Mimicry : ITab
 	{
 		private Pawn PawnToShowInfoAbout
@@ -76,39 +82,55 @@ namespace Annelitrice
 		[TweakValue("AN", 0, 1000)] public static float redY;
 		[TweakValue("AN", 0, 1000)] public static float redW = 80;
 		[TweakValue("AN", 0, 1000)] public static float redH = 80;
+
+		private Vector2 scrollPosition;
+
+		private MainTabWindow_Inspect InspectPane => (MainTabWindow_Inspect)MainButtonDefOf.Inspect.TabWindow;
+
+		private float GetUIYShift()
+        {
+			if (UI.screenHeight == 768)
+            {
+				return 90;
+            }
+			return 0;
+        }
 		protected override void FillTab()
 		{
 			UpdateSize();
-
-			var totalRect = new Rect(0, 0, size.x, size.y);
+			var yShift = GetUIYShift();
+			var totalRect = new Rect(0, yShift, size.x, size.y);
+			var rect2 = totalRect;
+			rect2.height = size.y + yShift;
+			Widgets.BeginScrollView(totalRect, ref scrollPosition, rect2);
 			GUI.DrawTexture(totalRect, Textures.BackgroundMenu);
 			var curFont = Text.Font;
 			var curColor = GUI.color;
 			Text.Font = GameFont.Medium;
 			GUI.color = Color.black;
-
-			var redBilePointsRect = new Rect(105, 45, 70, 35);
+			
+			var redBilePointsRect = new Rect(105, totalRect.y + 45, 70, 35);
 			Widgets.Label(redBilePointsRect, compEvolution.redBilePoints + " / " + CompEvolution.MaxBilePoints);
-
+			
 			var greenBilePointsRect = new Rect(redBilePointsRect.x, redBilePointsRect.yMax + 15, redBilePointsRect.width, redBilePointsRect.height);
 			Widgets.Label(greenBilePointsRect, compEvolution.greenBilePoints + " / " + CompEvolution.MaxBilePoints);
-
+			
 			var blueBilePointsRect = new Rect(greenBilePointsRect.x, greenBilePointsRect.yMax + 15, greenBilePointsRect.width, greenBilePointsRect.height);
 			Widgets.Label(blueBilePointsRect, compEvolution.blueBilePoints + " / " + CompEvolution.MaxBilePoints);
-
+			
 			GUI.color = curColor;
 			Vector2 point = new Vector2(redBilePointsRect.xMax + 21, redBilePointsRect.y + -14);
-
+			
 			DoMinusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Minus, Textures.Red_Minus_Hovering);
 			DoPlusButton(ref point, ref compEvolution.redBilePoints, "Annely.Red".Translate(), Textures.Red_Plus, Textures.Red_Plus_Hovering);
-
+			
 			DoMinusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Minus, Textures.Green_Minus_Hovering);
 			DoPlusButton(ref point, ref compEvolution.greenBilePoints, "Annely.Green".Translate(), Textures.Green_Plus, Textures.Green_Plus_Hovering);
-
+			
 			DoMinusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Minus, Textures.Blue_Minus_Hovering);
 			DoPlusButton(ref point, ref compEvolution.blueBilePoints, "Annely.Blue".Translate(), Textures.Blue_Plus, Textures.Blue_Plus_Hovering);
-
-			var healRect = new Rect(350, 29, 115, 115);
+			
+			var healRect = new Rect(350, totalRect.y + 29, 115, 115);
 			if (Mouse.IsOver(healRect))
             {
 				GUI.DrawTexture(healRect, Textures.Heal_Button_Hovering);
@@ -138,11 +160,11 @@ namespace Annelitrice
                     }
 				}
 			}
-
+			
 			curColor = GUI.color;
 			GUI.color = Color.black;
-
-			var evolutionPointsRect = new Rect(350, 155, 125, 32);
+			
+			var evolutionPointsRect = new Rect(350, totalRect.y + 155, 125, 32);
 			Widgets.Label(evolutionPointsRect, "Annely.EPs".Translate() + ": " + compEvolution.evolutionPoints.ToString());
 			
 			GUI.color = curColor;
@@ -176,6 +198,8 @@ namespace Annelitrice
 
 			Text.Font = curFont;
 			GUI.color = curColor;
+			
+			Widgets.EndScrollView();
 		}
 
 		private void DrawAppendages(Rect rect, Dictionary<HediffDef, Texture2D> pairs, HediffDef activeAppendage, BodyPartRecord part, List<HediffDef> allAppendages, Dictionary<BodyPartDef, HediffDef> appendagesActive)

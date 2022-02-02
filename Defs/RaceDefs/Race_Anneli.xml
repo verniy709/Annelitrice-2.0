@@ -75,53 +75,64 @@
 					</li>
 				</colorChannels>
 				<aliencrowntypes>
-					<li>Head_Blue_A</li>
-					<li>Head_Blue_B</li>
-					<li>Head_Blue_C</li>
-					<li>Head_Blue_D</li>
-					<li>Head_Blue_E</li>
-					<li>Head_Blue_F</li>
-					<li>Head_Blue_G</li>
-					<li>Head_Blue_H</li>
-					<li>Head_Blue_I</li>
-					<li>Head_Blue_J</li>
+					<li>Anneli_Head_Blue_A</li>
+					<li>Anneli_Head_Blue_B</li>
+					<li>Anneli_Head_Blue_C</li>
+					<li>Anneli_Head_Blue_D</li>
+					<li>Anneli_Head_Blue_E</li>
+					<li>Anneli_Head_Blue_F</li>
+					<li>Anneli_Head_Blue_G</li>
+					<li>Anneli_Head_Blue_H</li>
+					<li>Anneli_Head_Blue_I</li>
+					<li>Anneli_Head_Blue_J</li>
 
-					<li>Head_Brown_A</li>
-					<li>Head_Brown_B</li>
-					<li>Head_Brown_C</li>
-					<li>Head_Brown_D</li>
-					<li>Head_Brown_E</li>
-					<li>Head_Brown_F</li>
-					<li>Head_Brown_G</li>
-					<li>Head_Brown_H</li>
-					<li>Head_Brown_I</li>
-					<li>Head_Brown_J</li>
+					<li>Anneli_Head_Brown_A</li>
+					<li>Anneli_Head_Brown_B</li>
+					<li>Anneli_Head_Brown_C</li>
+					<li>Anneli_Head_Brown_D</li>
+					<li>Anneli_Head_Brown_E</li>
+					<li>Anneli_Head_Brown_F</li>
+					<li>Anneli_Head_Brown_G</li>
+					<li>Anneli_Head_Brown_H</li>
+					<li>Anneli_Head_Brown_I</li>
+					<li>Anneli_Head_Brown_J</li>
 
-					<li>Head_Green_A</li>
-					<li>Head_Green_B</li>
-					<li>Head_Green_C</li>
-					<li>Head_Green_D</li>
-					<li>Head_Green_E</li>
-					<li>Head_Green_F</li>
-					<li>Head_Green_G</li>
-					<li>Head_Green_H</li>
-					<li>Head_Green_I</li>
-					<li>Head_Green_J</li>
+					<li>Anneli_Head_Green_A</li>
+					<li>Anneli_Head_Green_B</li>
+					<li>Anneli_Head_Green_C</li>
+					<li>Anneli_Head_Green_D</li>
+					<li>Anneli_Head_Green_E</li>
+					<li>Anneli_Head_Green_F</li>
+					<li>Anneli_Head_Green_G</li>
+					<li>Anneli_Head_Green_H</li>
+					<li>Anneli_Head_Green_I</li>
+					<li>Anneli_Head_Green_J</li>
 
-					<li>Head_Red_A</li>
-					<li>Head_Red_B</li>
-					<li>Head_Red_C</li>
-					<li>Head_Red_D</li>
-					<li>Head_Red_E</li>
-					<li>Head_Red_F</li>
-					<li>Head_Red_G</li>
-					<li>Head_Red_H</li>
-					<li>Head_Red_I</li>
-					<li>Head_Red_J</li>
+					<li>Anneli_Head_Red_A</li>
+					<li>Anneli_Head_Red_B</li>
+					<li>Anneli_Head_Red_C</li>
+					<li>Anneli_Head_Red_D</li>
+					<li>Anneli_Head_Red_E</li>
+					<li>Anneli_Head_Red_F</li>
+					<li>Anneli_Head_Red_G</li>
+					<li>Anneli_Head_Red_H</li>
+					<li>Anneli_Head_Red_I</li>
+					<li>Anneli_Head_Red_J</li>
+
+					<li>Anneli_Head_CosplayA_Ägir</li>
+					<li>Anneli_Head_CosplayA_Azusa</li>
+					<li>Anneli_Head_CosplayA_Eula</li>
+					<li>Anneli_Head_CosplayA_Haruna</li>
+					<li>Anneli_Head_CosplayA_Keqing</li>
+					<li>Anneli_Head_CosplayA_Lumine</li>
+					<li>Anneli_Head_CosplayA_Murmansk</li>
+					<li>Anneli_Head_CosplayA_Shiroko</li>
+					<li>Anneli_Head_CosplayA_Sirius</li>
 					
-					<li>Head_DeadFace_A</li>
-					<li>Head_DeadFace_B</li>
-					<li>Head_DeadFace_C</li>
+					<li>Anneli_Head_DeadFace_A</li>
+					<li>Anneli_Head_DeadFace_B</li>
+					<li>Anneli_Head_DeadFace_C</li>
+					<li>Anneli_Head_DeadFace_D</li>
                 </aliencrowntypes>
 		        <alienbodytypes>
 					<li>Female</li>

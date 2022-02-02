@@ -35,7 +35,5 @@
   <incompatibleWith>
     <li>velc.HatsDisplaySelection</li>
     <!-- Break Pawn Rendering -->
-    <li>c0ffee.rimworld.animations</li>
-    <!-- Break Pawn Rendering -->
   </incompatibleWith>
 </ModMetaData>

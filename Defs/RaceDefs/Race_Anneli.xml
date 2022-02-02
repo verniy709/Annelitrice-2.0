@@ -56,10 +56,10 @@
 			<disallowedTraits>
 			</disallowedTraits>
 			<alienPartGenerator>
-				<headOffset>(0,0.035)</headOffset>
-				<customDrawSize>(0.9, 0.9)</customDrawSize>
+				<headOffset>(0.005,0.0575)</headOffset>
+				<customDrawSize>(0.95, 0.95)</customDrawSize>
 				<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
-				<customPortraitDrawSize>(0.9, 0.9)</customPortraitDrawSize>
+				<customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
 				<customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
 				<colorChannels>
 					<li>

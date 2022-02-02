@@ -19,6 +19,20 @@
 		<tab>Anneli_Research</tab>
 	</ResearchProjectDef>
 
+	<!-- <ResearchProjectDef>
+		<defName>Anneli_GlycerolStock</defName>
+		<label>Anneli Glycerol Stock</label>
+		<description>Use basic lab kits, sterile products and Annelitrice worms to store ready-to-use gene copies. Gain 10 EPs \n\nThe recipe is in DrugLab.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>Anneli_NutrientSolution</li>
+    	</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef> -->
+
 	<ResearchProjectDef>
 		<defName>Anneli_GrowthFactorCocktails</defName>
 		<label>Anneli Growth Factor Cocktails</label>

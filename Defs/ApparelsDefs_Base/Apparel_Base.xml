@@ -9,11 +9,23 @@
     <drawOrder>10</drawOrder>
   </ApparelLayerDef>
 
+  <ApparelLayerDef>
+    <defName>Anneli_OnSkin_Socks</defName>
+    <label>Anneli_OnSkin_Socks</label>
+    <drawOrder>10</drawOrder>
+  </ApparelLayerDef>
+
 <!--Layer 2-->
 
   <ApparelLayerDef>
     <defName>Anneli_Middle</defName>
     <label>Anneli_Middle</label>
+    <drawOrder>110</drawOrder>
+  </ApparelLayerDef>
+
+  <ApparelLayerDef>
+    <defName>Anneli_Middle_Shoes</defName>
+    <label>Anneli_Middle_Shoes</label>
     <drawOrder>110</drawOrder>
   </ApparelLayerDef>
 
@@ -48,16 +60,16 @@
 <!--Layer 7-->
 
 <ApparelLayerDef>
-    <defName>Anneli_Bag</defName>
-    <label>Anneli_Bag</label>
+    <defName>Anneli_Weapon</defName>
+    <label>Anneli_Weapon</label>
     <drawOrder>240</drawOrder>
   </ApparelLayerDef>
 
 <!--Layer 8-->
 
 <ApparelLayerDef>
-    <defName>Anneli_Weapon</defName>
-    <label>Anneli_Weapon</label>
+    <defName>Anneli_Bag</defName>
+    <label>Anneli_Bag</label>
     <drawOrder>250</drawOrder>
   </ApparelLayerDef>
 
@@ -70,5 +82,5 @@
     <label>Anneli_Misc</label>
     <drawOrder>310</drawOrder>
   </ApparelLayerDef>
-	
+  
 </Defs>

@@ -56,11 +56,11 @@
 			<disallowedTraits>
 			</disallowedTraits>
 			<alienPartGenerator>
-				<headOffset>(0.005,0.0575)</headOffset>
+				<headOffset>(0.015,0.063)</headOffset>
 				<customDrawSize>(0.95, 0.95)</customDrawSize>
-				<customHeadDrawSize>(0.9, 0.9)</customHeadDrawSize>
+				<customHeadDrawSize>(0.94, 0.94)</customHeadDrawSize>
 				<customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(0.9, 0.9)</customPortraitHeadDrawSize>
+				<customPortraitHeadDrawSize>(0.94, 0.94)</customPortraitHeadDrawSize>
 				<colorChannels>
 					<li>
 						<name>skin</name>
@@ -84,7 +84,7 @@
 					<li>Anneli_Head_Blue_G</li>
 					<li>Anneli_Head_Blue_H</li>
 					<li>Anneli_Head_Blue_I</li>
-					<li>Anneli_Head_Blue_J</li>
+					<!-- <li>Anneli_Head_Blue_J</li> -->
 
 					<li>Anneli_Head_Brown_A</li>
 					<li>Anneli_Head_Brown_B</li>
@@ -95,7 +95,7 @@
 					<li>Anneli_Head_Brown_G</li>
 					<li>Anneli_Head_Brown_H</li>
 					<li>Anneli_Head_Brown_I</li>
-					<li>Anneli_Head_Brown_J</li>
+					<!-- <li>Anneli_Head_Brown_J</li> -->
 
 					<li>Anneli_Head_Green_A</li>
 					<li>Anneli_Head_Green_B</li>
@@ -106,7 +106,7 @@
 					<li>Anneli_Head_Green_G</li>
 					<li>Anneli_Head_Green_H</li>
 					<li>Anneli_Head_Green_I</li>
-					<li>Anneli_Head_Green_J</li>
+					<!-- <li>Anneli_Head_Green_J</li> -->
 
 					<li>Anneli_Head_Red_A</li>
 					<li>Anneli_Head_Red_B</li>
@@ -117,9 +117,9 @@
 					<li>Anneli_Head_Red_G</li>
 					<li>Anneli_Head_Red_H</li>
 					<li>Anneli_Head_Red_I</li>
-					<li>Anneli_Head_Red_J</li>
+					<!-- <li>Anneli_Head_Red_J</li> -->
 
-					<li>Anneli_Head_CosplayA_Ägir</li>
+					<li>Anneli_Head_CosplayA_Agir</li>
 					<li>Anneli_Head_CosplayA_Azusa</li>
 					<li>Anneli_Head_CosplayA_Eula</li>
 					<li>Anneli_Head_CosplayA_Haruna</li>
@@ -133,6 +133,7 @@
 					<li>Anneli_Head_DeadFace_B</li>
 					<li>Anneli_Head_DeadFace_C</li>
 					<li>Anneli_Head_DeadFace_D</li>
+					<li>Anneli_Head_DeadFace_E</li>
                 </aliencrowntypes>
 		        <alienbodytypes>
 					<li>Female</li>

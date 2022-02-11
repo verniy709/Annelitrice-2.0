@@ -3,14 +3,14 @@
 
 <AlienRace.RaceSettings>
 	<defName>Anneli_Settings</defName>
-	<pawnKindSettings>
-		
+
+	<pawnKindSettings>		
 		<alienslavekinds>
 			<li>
 				<kindDefs>
 					<li>Anneli_Player</li>
 				</kindDefs>
-				<chance>10</chance>
+				<chance>100</chance>
 			</li>
 		</alienslavekinds>
 
@@ -21,7 +21,7 @@
 						<kindDefs>
 							<li>Anneli_Player</li>
 						</kindDefs>
-						<chance>0</chance>
+						<chance>100</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
@@ -35,9 +35,10 @@
 				<kindDefs>
 					<li>Anneli_Player</li>
 				</kindDefs>
-				<chance>10</chance>
+				<chance>100</chance>
 			</li>
 		</alienrefugeekinds>
+
 		<startingColonists>
 			<li>
 				<pawnKindEntries>
@@ -45,7 +46,7 @@
 						<kindDefs>
 							<li>Anneli_Player</li>
 						</kindDefs>
-						<chance>5</chance>
+						<chance>100</chance>
 					</li>
 				</pawnKindEntries>
 				<factionDefs>
@@ -53,8 +54,8 @@
 				</factionDefs>
 			</li>
 		</startingColonists>
-	</pawnKindSettings>
 
+	</pawnKindSettings>
 </AlienRace.RaceSettings>
 
 </Defs>

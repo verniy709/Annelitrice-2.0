@@ -436,7 +436,7 @@
 
    
 	<statBases>
-		<MarketValue>1800</MarketValue>
+		<MarketValue>1200</MarketValue>
 		<MentalBreakThreshold>0.25</MentalBreakThreshold>
 		<MoveSpeed>5.0</MoveSpeed>
 		<Mass>45</Mass>
@@ -458,6 +458,7 @@
 		<SellPriceFactor>1.2</SellPriceFactor> 
 		<HungerRateMultiplier>1.25</HungerRateMultiplier>
 		<EatingSpeed>1.6</EatingSpeed>
+		<PawnBeauty>2</PawnBeauty>
     </statBases>
 	<tools>
 		<li>

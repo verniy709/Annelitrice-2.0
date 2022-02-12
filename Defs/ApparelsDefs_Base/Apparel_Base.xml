@@ -9,11 +9,11 @@
     <drawOrder>10</drawOrder>
   </ApparelLayerDef>
 
-  <ApparelLayerDef>
+<!--   <ApparelLayerDef>
     <defName>Anneli_OnSkin_Socks</defName>
     <label>Anneli_OnSkin_Socks</label>
     <drawOrder>10</drawOrder>
-  </ApparelLayerDef>
+  </ApparelLayerDef> -->
 
 <!--Layer 2-->
 
@@ -23,11 +23,11 @@
     <drawOrder>110</drawOrder>
   </ApparelLayerDef>
 
-  <ApparelLayerDef>
+<!--   <ApparelLayerDef>
     <defName>Anneli_Middle_Shoes</defName>
     <label>Anneli_Middle_Shoes</label>
     <drawOrder>110</drawOrder>
-  </ApparelLayerDef>
+  </ApparelLayerDef> -->
 
 <!--Layer 3-->
 

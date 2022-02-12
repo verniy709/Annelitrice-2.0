@@ -4,6 +4,21 @@
   <Anneli_NutrientSolution.label>安奈缇娅斯营养液</Anneli_NutrientSolution.label>
   <Anneli_NutrientSolution.description>有些可疑，而且比营养膏还要“丰富”的饮料，再多的人工香料也没法掩盖其本身的浓厚气味。但安奈缇娅斯不会在意，因为他们生长在其中.\n\n配方解锁在药物实验台.</Anneli_NutrientSolution.description>
 
+
+  <!-- <ResearchProjectDef>
+		<defName>Anneli_GlycerolStock</defName>
+		<label>Anneli Glycerol Stock</label>
+		<description>Use basic lab kits, sterile products and Annelitrice worms to store ready-to-use gene copies. Gain 10 EPs \n\nThe recipe is in DrugLab.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+      		<li>Anneli_NutrientSolution</li>
+    	</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+		<tab>Anneli_Research</tab>
+	</ResearchProjectDef> -->
+
   <Anneli_GrowthFactorCocktails.label>安奈缇娅斯复合生长促进剂</Anneli_GrowthFactorCocktails.label>
   <Anneli_GrowthFactorCocktails.description>由谜之科技制作，只能用来复活安奈缇娅斯.没人知道这东西用了什么溶剂来把一整头小牛的营养物质溶进一个小针管的溶液中.\n\n配方解锁在药物实验台.</Anneli_GrowthFactorCocktails.description>
 

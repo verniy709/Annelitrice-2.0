@@ -56,11 +56,11 @@
 			<disallowedTraits>
 			</disallowedTraits>
 			<alienPartGenerator>
-				<headOffset>(0.015,0.063)</headOffset>
+				<headOffset>(0.018,0.064)</headOffset>
 				<customDrawSize>(0.95, 0.95)</customDrawSize>
-				<customHeadDrawSize>(0.94, 0.94)</customHeadDrawSize>
+				<customHeadDrawSize>(0.96, 0.96)</customHeadDrawSize>
 				<customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(0.94, 0.94)</customPortraitHeadDrawSize>
+				<customPortraitHeadDrawSize>(0.96, 0.96)</customPortraitHeadDrawSize>
 				<colorChannels>
 					<li>
 						<name>skin</name>
@@ -150,6 +150,8 @@
 			<li>
 					<head>Anneli_Face/</head>
   	     			<body>Anneli_Body/</body>
+  	     			<skeleton>Anneli_Corpse/Dessicated_Female</skeleton>
+  	     			<skull>Anneli_Corpse/Dessicated_Head</skull>
 			</li>
 		</graphicPaths>
 
@@ -436,7 +438,7 @@
 
    
 	<statBases>
-		<MarketValue>1800</MarketValue>
+		<MarketValue>1200</MarketValue>
 		<MentalBreakThreshold>0.25</MentalBreakThreshold>
 		<MoveSpeed>5.0</MoveSpeed>
 		<Mass>45</Mass>
@@ -458,6 +460,7 @@
 		<SellPriceFactor>1.2</SellPriceFactor> 
 		<HungerRateMultiplier>1.25</HungerRateMultiplier>
 		<EatingSpeed>1.6</EatingSpeed>
+		<PawnBeauty>2</PawnBeauty>
     </statBases>
 	<tools>
 		<li>

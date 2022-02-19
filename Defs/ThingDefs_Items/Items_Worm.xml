@@ -33,6 +33,8 @@
 		<alwaysHaulable>true</alwaysHaulable>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<rotatable>false</rotatable>
+    <stackLimit>1</stackLimit>
+    <tradeability>None</tradeability>
 		<pathCost>14</pathCost>
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>

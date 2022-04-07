@@ -3,3 +3,8 @@ c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Sour
 c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CoreCompileInputs.cache
 c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CopyComplete
 c:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.dll
+D:\Github_Repository\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csprojAssemblyReference.cache
+D:\Github_Repository\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CoreCompileInputs.cache
+D:\Github_Repository\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.dll
+D:\Github_Repository\Annelitrice-2.0\Assemblies\Annelitrice.dll
+D:\Github_Repository\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CopyComplete

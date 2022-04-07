@@ -90,14 +90,14 @@ namespace Annelitrice
                 {
 					mats = new List<Material>()
 					{
-						MaterialPool.MatFrom("8/pod1", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod2", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod3", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod4", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod5", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod6", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod7", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("8/pod8", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod1", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod2", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod3", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod4", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod5", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod6", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod7", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/pod8", ShaderDatabase.Transparent),
 					};
 				}
 
@@ -109,7 +109,7 @@ namespace Annelitrice
 			}
 		}
 
-		private static readonly Material BubbleMat = MaterialPool.MatFrom("8/POD_Bubble", ShaderDatabase.Transparent);
+		private static readonly Material BubbleMat = MaterialPool.MatFrom("9/POD_Bubble", ShaderDatabase.Transparent);
 		private float EnergyMax => this.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
 		private float EnergyGainPerTick => this.GetStatValue(StatDefOf.EnergyShieldRechargeRate) / 60f;
 

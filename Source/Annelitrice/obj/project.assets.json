@@ -505,20 +505,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vova\\.nuget\\packages\\": {}
+    "C:\\Users\\verni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+      "projectUniqueName": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
       "projectName": "Annelitrice",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
-      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\obj\\",
+      "projectPath": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+      "packagesPath": "C:\\Users\\verni\\.nuget\\packages\\",
+      "outputPath": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\verni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

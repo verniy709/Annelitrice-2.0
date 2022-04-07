@@ -639,7 +639,7 @@ namespace Annelitrice
     [HarmonyPatch(typeof(PawnRenderer), "DrawEquipmentAiming")]
     public static class DrawEquipmentAiming_Patch
     {
-       public static float zOffset = 0.15f;
+       public static float zOffset = 0.215f;
         public static void Prefix(PawnRenderer __instance, Pawn ___pawn, Thing eq, ref Vector3 drawLoc, float aimAngle)
         {
             if (___pawn.TryGetCompEvolution(out var comp))
@@ -654,7 +654,8 @@ namespace Annelitrice
     {
         public static HashSet<string> supportedLayers = new HashSet<string>
         {
-            "Anneli_UpperShell_Tactical"
+            "Anneli_UpperShell_Tactical",
+            "Anneli_Weapon"
         };
         public static void Postfix(PawnRenderer __instance, Pawn ___pawn, Apparel apparel, ref bool __result)
         {

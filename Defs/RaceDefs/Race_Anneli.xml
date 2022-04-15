@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef Name="Anneli_BasePawn" Abstract="True">
+<ThingDef ParentName="BasePawn" Name="Anneli_BasePawn" Abstract="True">
     <thingClass>Pawn</thingClass>
     <category>Pawn</category>
     <selectable>true</selectable>
@@ -11,15 +11,6 @@
     <hasTooltip>true</hasTooltip>
     <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
     <inspectorTabs>
-		<li>ITab_Pawn_Health</li>
-		<li>ITab_Pawn_Needs</li>
-		<li>ITab_Pawn_Character</li>
-		<li>ITab_Pawn_Training</li>
-		<li>ITab_Pawn_Gear</li>
-		<li>ITab_Pawn_Guest</li>
-		<li>ITab_Pawn_Prisoner</li>
-		<li>ITab_Pawn_Social</li>
-		<li>ITab_Pawn_Log</li>
 		<li>Annelitrice.ITab_Pawn_Mimicry</li>
     </inspectorTabs>
     <drawGUIOverlay>true</drawGUIOverlay>
@@ -56,11 +47,11 @@
 			<disallowedTraits>
 			</disallowedTraits>
 			<alienPartGenerator>
-				<headOffset>(0.018,0.064)</headOffset>
+				<headOffset>(0.017,0.061)</headOffset>
 				<customDrawSize>(0.95, 0.95)</customDrawSize>
-				<customHeadDrawSize>(0.96, 0.96)</customHeadDrawSize>
+				<customHeadDrawSize>(0.93, 0.93)</customHeadDrawSize>
 				<customPortraitDrawSize>(0.95, 0.95)</customPortraitDrawSize>
-				<customPortraitHeadDrawSize>(0.96, 0.96)</customPortraitHeadDrawSize>
+				<customPortraitHeadDrawSize>(0.93, 0.93)</customPortraitHeadDrawSize>
 				<colorChannels>
 					<li>
 						<name>skin</name>

@@ -81,8 +81,9 @@
 				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
 			</li>
 			
-			<li><compClass>CompQuality</compClass></li><!--Hey, you CAN make it pretty?-->
+			<li><compClass>CompQuality</compClass></li>
 		</comps>
 	</ThingDef>
 
+	<!--Hey, you CAN make it pretty?-->
 </Defs>

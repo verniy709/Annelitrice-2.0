@@ -42,7 +42,7 @@
   <ApparelLayerDef>
     <defName>Anneli_UpperShell_Armor</defName>
     <label>Anneli_UpperShell_Armor</label>
-    <drawOrder>220</drawOrder>
+    <drawOrder>195</drawOrder>
   </ApparelLayerDef>
 
 <!--Layer 5-->

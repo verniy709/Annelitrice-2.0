@@ -20,7 +20,7 @@
 				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>
-		<apparelColor>(250,250,250)</apparelColor>
+		<!-- <apparelColor>(250,250,250)</apparelColor> -->
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Anneli_KindBase">

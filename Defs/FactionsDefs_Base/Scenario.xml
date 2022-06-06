@@ -15,7 +15,7 @@
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>1</pawnCount>
-					<pawnChoiceCount>4</pawnChoiceCount>
+					<pawnChoiceCount>6</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->
@@ -81,7 +81,7 @@
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
 					<pawnCount>4</pawnCount>
-					<pawnChoiceCount>6</pawnChoiceCount>
+					<pawnChoiceCount>10</pawnChoiceCount>
 				</li>
 
 				<!-- Player starting stuff spawn method-->

@@ -12,7 +12,7 @@
 		<backstoryCryptosleepCommonality>0.0</backstoryCryptosleepCommonality>
 		<invNutrition>4.5</invNutrition>
 		<initialWillRange>5~15</initialWillRange>
-		<initialResistanceRange>25~65</initialResistanceRange>
+		<initialResistanceRange>20~45</initialResistanceRange>
 		<styleItemTags>
 			<li>
 				<tag>Anneli</tag>
@@ -20,17 +20,13 @@
 				<weightFactor>1</weightFactor>
 			</li>
 		</styleItemTags>
-		<!-- <apparelColor>(250,250,250)</apparelColor> -->
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Anneli_KindBase">
 		<defName>Anneli_Player</defName>
 		<label>Annelitrice Colonist</label>
 		<defaultFactionType>Anneli_Faction_Player</defaultFactionType>
-		<apparelMoney>
-			<min>600</min>
-			<max>1000</max>
-		</apparelMoney>
+		<apparelMoney>100~150</apparelMoney>
 		<isFighter>false</isFighter>
 		<backstoryCategories>
 			<li>Anneli_Story</li>
@@ -38,6 +34,7 @@
 		<apparelTags>
 			<li>Anneli</li>
 		</apparelTags>
+		<apparelColor>(250,250,250)</apparelColor>
 	</PawnKindDef>
 
 </Defs>

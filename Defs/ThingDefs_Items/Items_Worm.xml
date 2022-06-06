@@ -29,7 +29,6 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
-
 		<alwaysHaulable>true</alwaysHaulable>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<rotatable>false</rotatable>

@@ -75,7 +75,7 @@ namespace Annelitrice
 
     public class RenderPawnInternal_Patch
     {
-        [TweakValue("AN", -1f, 1f)] public static float test1 = 0.02f;
+        [TweakValue("AN", -1f, 1f)] public static float test1 = 0.015f;
         public static IEnumerable<CodeInstruction> RenderPawnInternal_Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
         {
             var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");

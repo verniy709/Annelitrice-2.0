@@ -510,11 +510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+      "projectUniqueName": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
       "projectName": "Annelitrice",
-      "projectPath": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+      "projectPath": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
       "packagesPath": "C:\\Users\\verni\\.nuget\\packages\\",
-      "outputPath": "D:\\Github_Repository\\Annelitrice-2.0\\Source\\Annelitrice\\obj\\",
+      "outputPath": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

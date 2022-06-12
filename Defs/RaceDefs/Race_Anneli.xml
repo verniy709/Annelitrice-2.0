@@ -90,6 +90,79 @@
 								</options>
 							</first>
 						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<!--Common-->
+									<li>
+										<weight>10</weight>
+										<only>RGBA(253,219,186)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(209,210,211)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(255,195,162)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(87,87,90)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(67,65,74)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(218,176,133)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(144,97,71)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(250,240,230)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(229,200,168)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(183,156,123)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(159,154,150)</only>
+									</li>
+									<!--Rare-->
+									<li>
+										<weight>1</weight>
+										<only>RGBA(148,136,159)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(170,85,94)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(187,212,238)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(228,150,156)</only>
+									</li>
+									<li>
+										<weight>1</weight>
+										<only>RGBA(191,194,181)</only>
+									</li>
+								</options>
+							</first>
+						</li>
 					</colorChannels>
 					<aliencrowntypes>
 						<li>Anneli_Head_Blue_A</li>
@@ -161,7 +234,7 @@
 					</alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
-					<getsGreyAt>300</getsGreyAt> 
+					<getsGreyAt>70</getsGreyAt> 
 					<bodyAddons>
 						<!-- <li>
 							<drawSize>1</drawSize>
@@ -589,7 +662,7 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Robe</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_TortureCrown</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Blindfold</li>
-            	</blackApparelList>
+				</blackApparelList>
 				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
 				<onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
 			</raceRestriction>

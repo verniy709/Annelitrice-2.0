@@ -20,7 +20,7 @@ namespace Annelitrice
                 var map = this.pawn.Map;
                 this.pawn.Kill(null, this);
                 this.pawn.Corpse.Destroy();
-                if (Rand.Chance(0.85f))
+                if (Rand.Chance(0.5f))
                 {
                     var meat = ThingMaker.MakeThing(ThingDef.Named("Meat_Megaspider"));
                     meat.stackCount = 50;

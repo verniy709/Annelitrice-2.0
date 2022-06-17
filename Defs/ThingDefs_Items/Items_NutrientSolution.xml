@@ -39,6 +39,8 @@
     <workAmount>1000</workAmount>
     <researchPrerequisite>Anneli_NutrientSolution</researchPrerequisite>
       <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
         <li>DrugLab</li>
       </recipeUsers>
     <workSkill>Intellectual</workSkill>

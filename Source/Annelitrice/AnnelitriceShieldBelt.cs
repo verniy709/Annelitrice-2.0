@@ -90,14 +90,14 @@ namespace Annelitrice
                 {
 					mats = new List<Material>()
 					{
-						MaterialPool.MatFrom("9/pod1", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod2", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod3", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod4", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod5", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod6", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod7", ShaderDatabase.Transparent),
-						MaterialPool.MatFrom("9/pod8", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble1", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble2", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble3", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble4", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble5", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble6", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble7", ShaderDatabase.Transparent),
+						MaterialPool.MatFrom("9/POD_Bubble8", ShaderDatabase.Transparent),
 					};
 				}
 
@@ -312,9 +312,10 @@ namespace Annelitrice
 		{
 			if (ShieldState == ShieldState.Active && ShouldDisplay)
 			{
-				float num = Mathf.Lerp(2.2f, 2.6f, energy);
+				float num = Mathf.Lerp(1.8f, 2.2f, energy);
 				Vector3 drawPos = base.Wearer.Drawer.DrawPos;
 				drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();
+				drawPos.z += 0.15f;
 				int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
 				if (num2 < 8)
 				{
@@ -427,6 +428,21 @@ namespace Annelitrice
 						MaterialPool.MatFrom("9/KnightA_Bubble6", ShaderDatabase.TransparentPostLight),
 						MaterialPool.MatFrom("9/KnightA_Bubble7", ShaderDatabase.TransparentPostLight),
 						MaterialPool.MatFrom("9/KnightA_Bubble8", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble9", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble10", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble11", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble12", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble13", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble14", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble15", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble14", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble13", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble12", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble11", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble10", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble9", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble8", ShaderDatabase.TransparentPostLight),
+						MaterialPool.MatFrom("9/KnightA_Bubble8", ShaderDatabase.TransparentPostLight),
 						MaterialPool.MatFrom("9/KnightA_Bubble7", ShaderDatabase.TransparentPostLight),
 						MaterialPool.MatFrom("9/KnightA_Bubble6", ShaderDatabase.TransparentPostLight),
 						MaterialPool.MatFrom("9/KnightA_Bubble5", ShaderDatabase.TransparentPostLight),
@@ -437,7 +453,7 @@ namespace Annelitrice
 					};
 				}
 
-				if (curShieldInd == 15)
+				if (curShieldInd == 29)
 				{
 					curShieldInd = 0;
 				}
@@ -540,12 +556,12 @@ namespace Annelitrice
 			}
 			if (Find.TickManager.TicksGame > nextShieldFlicker)
 			{
-				nextShieldFlicker = Find.TickManager.TicksGame + Rand.RangeInclusive(15, 30);
+				nextShieldFlicker = Find.TickManager.TicksGame + Rand.RangeInclusive(145, 150);
 				flick = true;
 				flickTick = 0;
 				curShieldInd = 0;
 			}
-			if (flickTick > 75)
+			if (flickTick > 145)
 			{
 				flick = false;
 			}
@@ -651,6 +667,7 @@ namespace Annelitrice
 				float num = Mathf.Lerp(2.2f, 2.6f, energy);
 				Vector3 drawPos = base.Wearer.Drawer.DrawPos;
 				drawPos.y = AltitudeLayer.MoteLow.AltitudeFor();
+				drawPos.z += 0.28f;
 				int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
 				if (num2 < 8)
 				{

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnnelitriceShieldBelt.cs" />
+    <Compile Include="CompApparelHediffGiver.cs" />
     <Compile Include="CompPlayMusic.cs" />
     <Compile Include="JobDriver_WatchPuppetShow.cs" />
     <Compile Include="Hediff_AnnelyInfection.cs" />

@@ -42,6 +42,8 @@
       <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
       <workSkill>Intellectual</workSkill>
       <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
         <li>DrugLab</li>
       </recipeUsers>
       <researchPrerequisite>Anneli_GrowthFactorCocktails</researchPrerequisite>
@@ -52,7 +54,7 @@
     </recipeMaker>
     <costList>
       <Anneli_NutrientSolution>10</Anneli_NutrientSolution>
-      <MedicineIndustrial>2</MedicineIndustrial>
+      <MedicineHerbal>5</MedicineHerbal>
     </costList>
     <thingSetMakerTags>
       <li>RewardStandardMidFreq</li>

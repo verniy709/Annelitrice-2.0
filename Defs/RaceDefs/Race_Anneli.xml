@@ -55,8 +55,8 @@
 					<headOffsetDirectional>
 						<north>(0.0, 0.072)</north>
 						<south>(0.0, 0.072)</south>
-						<east>(0.01, 0.068)</east>
-						<west>(-0.01, 0.068)</west>
+						<east>(0.0, 0.068)</east>
+						<west>(-0.0, 0.068)</west>
 					</headOffsetDirectional>
 					<customDrawSize>(0.95, 0.99)</customDrawSize>
 					<customHeadDrawSize>(0.895, 0.91)</customHeadDrawSize>

@@ -45,7 +45,7 @@ namespace Annelitrice
 
 		public override void PostPostMake()
 		{
-			ticksUntilNextUpdate = Find.TickManager.TicksGame + Props.tickRate;
+			ticksUntilNextUpdate = Find.TickManager.TicksGame;
 			base.PostPostMake();
 		}
 
@@ -57,31 +57,34 @@ namespace Annelitrice
 
 			var apparelUser = ApparelUser;
 
-			ticksUntilNextUpdate--;
-			if (ticksUntilNextUpdate < 1)
+			//update hediffs every tickRate. Detect apparel user and hediff.
+			if (Find.TickManager.TicksGame % Props.tickRate == 0 && apparelUser != null && Props.hediffDef != null)
 			{
-				if (apparelUser != null)
+				//check radius of apparel users
+				foreach (var thing in GenRadial.RadialDistinctThingsAround(apparelUser.Position, apparelUser.Map, this.Props.radius, true))
 				{
-					foreach (var thing in GenRadial.RadialDistinctThingsAround(apparelUser.Position, apparelUser.Map, this.Props.radius, true))
+					//check pawns and pawns' factions
+					if (thing is Pawn pawn && pawn.Faction==apparelUser.Faction)
 					{
-						if (thing is Pawn pawn)
-						{
-							float adjustedSeverity = Props.severityIncrease;
+						float adjustedSeverity = Props.severityIncrease;
 
-							if (pawn.health.hediffSet.HasHediff(Props.hediffDef) && adjustedSeverity > 0f)
-							{
-								pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef).Severity += adjustedSeverity;
-							}
-							else if (adjustedSeverity > 0f)
-							{
-								Hediff hediff = HediffMaker.MakeHediff(Props.hediffDef, pawn);
-								hediff.Severity = adjustedSeverity;
-								pawn.health.AddHediff(hediff);
-							}
+						//pawns have hediffs
+						if (pawn.health.hediffSet.HasHediff(Props.hediffDef) && adjustedSeverity > 0f)
+						{
+							pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediffDef).Severity += adjustedSeverity;
+						}
+
+						//pawns have no hediffs
+						else if (adjustedSeverity > 0f)
+						{
+							Hediff hediff = HediffMaker.MakeHediff(Props.hediffDef, pawn);
+							hediff.Severity = adjustedSeverity;
+							pawn.health.AddHediff(hediff);
 						}
 					}
 				}
 			}
+
 		}
 	}
 }

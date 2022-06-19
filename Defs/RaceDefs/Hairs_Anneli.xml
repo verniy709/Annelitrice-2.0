@@ -31,6 +31,16 @@
 		</styleTags>
 	</HairDef>
 
+	<!-- <Annelitrice.BaseHairDef>
+		<defName>Anneli_Hair_2</defName>
+		<label>Anneli_Hair_2</label>
+		<hairDef>Anneli_Hair_2</hairDef>
+		<baseTexPath>Anneli_Hair/Anneli_Hair_2_Back</baseTexPath>
+		<yOffset>0.001</yOffset>
+		<apparelList>
+		</apparelList>
+	</Annelitrice.BaseHairDef> -->
+
 	<HairDef>
 		<defName>Anneli_Hair_3</defName>
 		<label>Anneli_Hair_3</label>

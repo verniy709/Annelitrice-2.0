@@ -668,4 +668,108 @@ namespace Annelitrice
             }
         }
     }
+
+
+
+	//服装替换Patch
+	[HarmonyPatch(typeof(PawnGraphicSet))]
+	[HarmonyPatch("ResolveApparelGraphics")]
+	public class Annelitrice_ApparelHarmonyPatch
+	{
+		[HarmonyAfter(new string[] { "rimworld.erdelf.alien_race.main" })]
+		[HarmonyPriority(390)]
+		static void Postfix(PawnGraphicSet __instance)
+		{
+			int count = __instance.apparelGraphics.Count();
+			for (int i = 0; i < count; i++)
+			{
+				CompApparelSecialTex comp = __instance.apparelGraphics[i].sourceApparel.GetComp<CompApparelSecialTex>();
+				if (comp == null)
+				{
+					continue;
+				}
+				Apparel apparel = __instance.apparelGraphics[i].sourceApparel;
+				ThingDef apparelDef = apparel.def;
+				List<SpApparelProperties> list = comp.list;
+				SpApparelProperties data = list.FirstOrDefault(x => __instance.apparelGraphics.Exists(y => y.sourceApparel.def == x.apparelDef));
+				if (data != null)
+				{
+					Shader shader = data.shader;
+					if (shader == null)
+					{
+						shader = ShaderDatabase.Cutout;
+						if (apparelDef.apparel.useWornGraphicMask)
+						{
+							shader = ShaderDatabase.CutoutComplex;
+						}
+					}
+					string path = data.path + "_" + __instance.pawn.story.bodyType.defName;
+					Graphic graphic = GraphicDatabase.Get<Graphic_Multi>(path, shader, apparelDef.graphicData.drawSize, apparel.DrawColor);
+					__instance.apparelGraphics[i] = new ApparelGraphicRecord(graphic, apparel);
+				}
+			}
+		}
+	}
+
+
+	//底发渲染Patch
+	[HarmonyPatch(typeof(PawnRenderer))]
+	[HarmonyPatch("DrawHeadHair")]
+	public class Annelitrice_HairPatch
+	{
+		static bool Prefix(PawnRenderer __instance, Vector3 rootLoc, float angle, Rot4 bodyFacing, RotDrawMode bodyDrawType, PawnRenderFlags flags, ref Pawn ___pawn)
+		{
+			HairDef def = __instance.graphics.pawn.story.hairDef;
+			BaseHairDef baseHair = DefDatabase<BaseHairDef>.AllDefsListForReading.FirstOrDefault(x => x.hairDef == def);
+			if (baseHair == null || flags.FlagSet(PawnRenderFlags.HeadStump) || bodyDrawType == RotDrawMode.Dessicated)
+			{
+				return true;
+			}
+
+			Rot4 headFacing = bodyFacing;
+			Vector3 headOffset = Vector3.zero;
+			//画正常头发的底发
+			if (__instance.graphics?.headGraphic != null)
+			{
+				List<ApparelGraphicRecord> apparelGraphics = __instance.graphics.apparelGraphics;
+				bool hasSurFaceApparel = baseHair.apparelList.NullOrEmpty() ? false : apparelGraphics.Exists(x => baseHair.apparelList.Contains(x.sourceApparel.def));
+				if (!hasSurFaceApparel && (!flags.FlagSet(PawnRenderFlags.Portrait) || !Prefs.HatsOnlyOnMap))
+				{
+					foreach (ApparelGraphicRecord apparel in apparelGraphics)
+					{
+						if (apparel.sourceApparel.def.apparel.LastLayer == ApparelLayerDefOf.Overhead || apparel.sourceApparel.def.apparel.LastLayer == ApparelLayerDefOf.EyeCover)
+						{
+							if (!apparel.sourceApparel.def.apparel.hatRenderedFrontOfFace && !apparel.sourceApparel.def.apparel.forceRenderUnderHair)
+							{
+								hasSurFaceApparel = true;
+							}
+						}
+					}
+				}
+				if (!hasSurFaceApparel)
+				{
+					Quaternion quaternion = Quaternion.AngleAxis(angle, Vector3.up);
+					headOffset = quaternion * __instance.BaseHeadOffsetAt(headFacing);
+					Mesh mesh3 = __instance.graphics.HairMeshSet.MeshAt(headFacing);
+
+					Graphic baseHairGraphic = GraphicDatabase.Get<Graphic_Multi>(baseHair.baseTexPath, ShaderDatabase.Transparent, Vector2.one, __instance.graphics.pawn.story.hairColor);
+					Material baseMat = baseHairGraphic.MatAt(headFacing, null);
+					if (!flags.FlagSet(PawnRenderFlags.Portrait) && __instance.graphics.pawn.IsInvisible())
+					{
+						baseMat = InvisibilityMatPool.GetInvisibleMat(baseMat);
+					}
+					if (!flags.FlagSet(PawnRenderFlags.Cache))
+					{
+						baseMat = __instance.graphics.flasher.GetDamagedMat(baseMat);
+					}
+
+					Vector3 loc2 = rootLoc + headOffset;
+					loc2.y += baseHair.yOffset;
+					GenDraw.DrawMeshNowOrLater(mesh3, loc2, quaternion, baseMat, flags.FlagSet(PawnRenderFlags.DrawNow));
+
+				}
+			}
+			return true;
+		}
+	}
 }

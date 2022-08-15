@@ -13,16 +13,17 @@ namespace Annelitrice
     {
         private static Dictionary<Pawn, CompEvolution> cachedComps = new Dictionary<Pawn, CompEvolution>();
 
-        public static bool TryGetCompEvolution(this Pawn pawn, out CompEvolution comp)
-        {
-            if (!cachedComps.TryGetValue(pawn, out comp))
-            {
-                cachedComps[pawn] = comp = pawn.TryGetComp<CompEvolution>();
-            }
-            return comp != null;
-        }
+		public static bool TryGetCompEvolution(this Pawn pawn, out CompEvolution comp)
+		{
+			if (!cachedComps.TryGetValue(pawn, out comp))
+			{
+				cachedComps[pawn] = comp = pawn.TryGetComp<CompEvolution>();
+			}
+			return comp != null;
+		}
 
-        public static List<string> savedDeadFaces;
+		//Do face change when dead
+		public static List<string> savedDeadFaces;
         public static List<string> savedLivingFaces;
         public static void TryInitHeads(this Pawn pawn)
         {
@@ -38,6 +39,7 @@ namespace Annelitrice
             }
         }
 
+		//Not sure what this does
         public static void UpdateGraphics(this Pawn pawn)
         {
             pawn.Drawer.renderer.graphics.ResolveAllGraphics();
@@ -45,6 +47,8 @@ namespace Annelitrice
             PortraitsCache.PortraitsCacheUpdate();
             GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
         }
+
+		//Spawn worms upon body destruction
         public static void TrySpawnWorm(this Pawn pawn)
         {
             var raceExtension = pawn?.def.GetModExtension<RaceExtension>();

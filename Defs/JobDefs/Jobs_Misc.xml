@@ -8,26 +8,26 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 
-	<JobDef>
+	<!-- <JobDef>
 		<defName>Annely_GainEPsFromWormIncubator</defName>
 		<driverClass>Annelitrice.JobDriver_GainEPsFromWormIncubator</driverClass>
 		<reportString>Gaining EPs from TargetA</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	</JobDef> -->
 
-	<JobDef>
+	<!-- <JobDef>
 		<defName>Annely_InjectEPsToWormIncubator</defName>
 		<driverClass>Annelitrice.JobDriver_InjectEPsToWormIncubator</driverClass>
 		<reportString>Injecting EPs to TargetA</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	</JobDef> -->
 
-	<JobDef>
+	<!-- <JobDef>
 		<defName>Annely_AssimilateCorpse</defName>
 		<driverClass>Annelitrice.JobDriver_AssimilateCorpse</driverClass>
 		<reportString>Assimilating TargetA</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	</JobDef> -->
 
 	<JobDef>
 		<defName>Annely_InfestHuman</defName>
@@ -46,14 +46,14 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	
-	<JobDef>
+	<!-- <JobDef>
 		<defName>Annely_GrowAppendage</defName>
 		<driverClass>Annelitrice.JobDriver_GrowAppendage</driverClass>
 		<reportString>Growing appendage</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	</JobDef>
+	</JobDef> -->
 
-	<ThinkTreeDef>
+	<!-- <ThinkTreeDef>
 		<defName>Annely_GrowAppendage</defName>
 		<insertTag>Humanlike_PreMain</insertTag>
 		<insertPriority>99</insertPriority>
@@ -66,5 +66,5 @@
 				</li>
 			</subNodes>
 		</thinkRoot>
-	</ThinkTreeDef>
+	</ThinkTreeDef> -->
 </Defs>

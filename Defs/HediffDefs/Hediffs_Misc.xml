@@ -30,7 +30,7 @@
     <description>Infestation induced by Annelitrice worms. If the victims are luckly, they will be transformed into new Annelitrices.</description>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>0.7</severityPerDay>
+        <severityPerDay>1.5</severityPerDay>
       </li>
     </comps>
     <stages>

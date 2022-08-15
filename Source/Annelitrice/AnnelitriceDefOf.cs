@@ -36,16 +36,16 @@ namespace Annelitrice
 
         public static BodyPartDef Spine;
 
-        public static JobDef Annely_GainEPsFromWormIncubator;
-        public static JobDef Annely_InjectEPsToWormIncubator;
-        public static JobDef Annely_AssimilateCorpse;
+        //public static JobDef Annely_GainEPsFromWormIncubator;
+        //public static JobDef Annely_InjectEPsToWormIncubator;
+        //public static JobDef Annely_AssimilateCorpse;
         public static JobDef Annely_InfestHuman;
         public static JobDef Annely_StandStill;
         public static HediffDef Annely_Regeneration;
-        public static JobDef Annely_GrowAppendage;
+        //public static JobDef Annely_GrowAppendage;
 
-        public static EffecterDef Anneli_Effecter_SpurtBlood;
-        public static SoundDef Anneli_Sound_SpurtBlood;
+        //public static EffecterDef Anneli_Effecter_SpurtBlood;
+        //public static SoundDef Anneli_Sound_SpurtBlood;
         public static HediffDef Annely_Infection;
         public static PawnKindDef Anneli_Player;
 

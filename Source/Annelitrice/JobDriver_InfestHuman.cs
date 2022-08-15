@@ -88,7 +88,7 @@ namespace Annelitrice
 
 				if (curDuration >= WorkTimeTicks)
 				{
-					pawn.needs.food.CurLevelPercentage -= 0.1f;
+					//pawn.needs.food.CurLevelPercentage -= 0.1f;
 					var hediff = HediffMaker.MakeHediff(AnnelitriceDefOf.Annely_Infection, Target);
 					Target.health.AddHediff(hediff);
 					Target.jobs.StopAll();

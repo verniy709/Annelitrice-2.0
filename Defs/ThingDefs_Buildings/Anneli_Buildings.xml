@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingDef ParentName="LWM_DeepStorage">
+	<!-- <ThingDef ParentName="LWM_DeepStorage">
 		<defName>Anneli_Incubator</defName>
 		<label>Anneli Incubator</label>
 		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points.\n\n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"\n\n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
@@ -83,7 +83,7 @@
 			
 			<li><compClass>CompQuality</compClass></li>
 		</comps>
-	</ThingDef>
+	</ThingDef> -->
 
 	<!--Hey, you CAN make it pretty?-->
 </Defs>

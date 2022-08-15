@@ -16,6 +16,7 @@ namespace Annelitrice
     [StaticConstructorOnStartup]
     public static class HarmonyInit
     {
+		//Pawn render patch
         public static Harmony harmonyInstance;
         static HarmonyInit()
         {
@@ -124,7 +125,7 @@ namespace Annelitrice
     [HarmonyPatch(typeof(PawnRenderer), "DrawHeadHair")]
     public class DrawHeadHair_Patch
     {
-        [TweakValue("AN", -1f, 1f)] public static float test2 = 0.032f;
+        [TweakValue("AN", -1f, 1f)] public static float test2 = 0.016f;
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator ilg)
         {
             var pawnField = AccessTools.Field(typeof(PawnRenderer), "pawn");
@@ -223,6 +224,7 @@ namespace Annelitrice
         }
     }
 
+	//Switch heads of dead/alive pawns
     [HarmonyPatch(typeof(AlienPartGenerator), "RandomAlienHead")]
     public static class AlienPartGenerator_RandomAlienHead_Patch
     {
@@ -327,6 +329,7 @@ namespace Annelitrice
         }
     }
 
+	//spawn worms after body destruction
     [HarmonyPatch(typeof(Pawn), "Destroy")]
     public static class Pawn_Destroy_Patch
     {
@@ -380,55 +383,55 @@ namespace Annelitrice
         }
     }
 
-    [HarmonyPatch(typeof(CompRefuelable), "ConsumptionRatePerTick", MethodType.Getter)]
-    public static class CompRefuelable_ConsumptionRatePerTick_Patch
-    {
-        public static bool Prefix(CompRefuelable __instance, ref float __result)
-        {
-            if (__instance.parent is WormIncubator incubator)
-            {
-                __result = incubator.GetFuelConsumptionRate();
+    //[HarmonyPatch(typeof(CompRefuelable), "ConsumptionRatePerTick", MethodType.Getter)]
+    //public static class CompRefuelable_ConsumptionRatePerTick_Patch
+    //{
+    //    public static bool Prefix(CompRefuelable __instance, ref float __result)
+    //    {
+    //        if (__instance.parent is WormIncubator incubator)
+    //        {
+    //            __result = incubator.GetFuelConsumptionRate();
 
-                return false;
-            }
-            return true;
-        }
-    }
-    [HarmonyPatch(typeof(CompRefuelable), "CompInspectStringExtra")]
-    public static class CompRefuelable_CompInspectStringExtra_Patch
-    {
-        public static bool Prefix(CompRefuelable __instance, ref string __result)
-        {
-            if (__instance.parent is WormIncubator incubator)
-            {
-                __result = CompInspectStringExtra(incubator, __instance);
-                return false;
-            }
-            return true;
-        }
-        public static string CompInspectStringExtra(WormIncubator incubator, CompRefuelable instance)
-        {
-            if (instance.Props.fuelIsMortarBarrel && Find.Storyteller.difficulty.classicMortars)
-            {
-                return string.Empty;
-            }
-            string text = instance.Props.FuelLabel + ": " + instance.Fuel.ToStringDecimalIfSmall() + " / " + instance.Props.fuelCapacity.ToStringDecimalIfSmall();
-            if (!instance.Props.consumeFuelOnlyWhenUsed && instance.HasFuel)
-            {
-                int numTicks = (int)((instance.Fuel / incubator.GetFuelConsumptionRate()));// * 60000f);
-                text = text + " (" + numTicks.ToStringTicksToPeriod() + ")";
-            }
-            if (!instance.HasFuel && !instance.Props.outOfFuelMessage.NullOrEmpty())
-            {
-                text += $"\n{instance.Props.outOfFuelMessage} ({instance.GetFuelCountToFullyRefuel()}x {instance.Props.fuelFilter.AnyAllowedDef.label})";
-            }
-            if (instance.Props.targetFuelLevelConfigurable)
-            {
-                text += "\n" + "ConfiguredTargetFuelLevel".Translate(instance.TargetFuelLevel.ToStringDecimalIfSmall());
-            }
-            return text;
-        }
-    }
+    //            return false;
+    //        }
+    //        return true;
+    //    }
+    //}
+    //[HarmonyPatch(typeof(CompRefuelable), "CompInspectStringExtra")]
+    //public static class CompRefuelable_CompInspectStringExtra_Patch
+    //{
+    //    public static bool Prefix(CompRefuelable __instance, ref string __result)
+    //    {
+    //        if (__instance.parent is WormIncubator incubator)
+    //        {
+    //            __result = CompInspectStringExtra(incubator, __instance);
+    //            return false;
+    //        }
+    //        return true;
+    //    }
+    //    public static string CompInspectStringExtra(WormIncubator incubator, CompRefuelable instance)
+    //    {
+    //        if (instance.Props.fuelIsMortarBarrel && Find.Storyteller.difficulty.classicMortars)
+    //        {
+    //            return string.Empty;
+    //        }
+    //        string text = instance.Props.FuelLabel + ": " + instance.Fuel.ToStringDecimalIfSmall() + " / " + instance.Props.fuelCapacity.ToStringDecimalIfSmall();
+    //        if (!instance.Props.consumeFuelOnlyWhenUsed && instance.HasFuel)
+    //        {
+    //            int numTicks = (int)((instance.Fuel / incubator.GetFuelConsumptionRate()));// * 60000f);
+    //            text = text + " (" + numTicks.ToStringTicksToPeriod() + ")";
+    //        }
+    //        if (!instance.HasFuel && !instance.Props.outOfFuelMessage.NullOrEmpty())
+    //        {
+    //            text += $"\n{instance.Props.outOfFuelMessage} ({instance.GetFuelCountToFullyRefuel()}x {instance.Props.fuelFilter.AnyAllowedDef.label})";
+    //        }
+    //        if (instance.Props.targetFuelLevelConfigurable)
+    //        {
+    //            text += "\n" + "ConfiguredTargetFuelLevel".Translate(instance.TargetFuelLevel.ToStringDecimalIfSmall());
+    //        }
+    //        return text;
+    //    }
+    //}
 
     [HarmonyPatch(typeof(Pawn), "GetGizmos")]
     public class Pawn_GetGizmos_Patch
@@ -439,25 +442,25 @@ namespace Annelitrice
             if (lastActiveFrame != Time.frameCount)
             {
                 lastActiveFrame = Time.frameCount;
-                GenDraw.DrawRadiusRing(center, 2.9f);
+                GenDraw.DrawRadiusRing(center, 51.9f);
             }
             return true;
         }
-        protected static TargetingParameters GetHumanCorpseTargetParameters(Pawn caster)
-        {
-            return new TargetingParameters
-            {
-                canTargetAnimals = false,
-                canTargetHumans = false,
-                canTargetMechs = false,
-                mapObjectTargetsMustBeAutoAttackable = false,
-                canTargetPawns = false,
-                canTargetSelf = false,
-                canTargetBuildings = false,
-                canTargetItems = true,
-                validator = (TargetInfo targ) => DoCastRadius(caster.Position) && targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
-            };
-        }
+        //protected static TargetingParameters GetHumanCorpseTargetParameters(Pawn caster)
+        //{
+        //    return new TargetingParameters
+        //    {
+        //        canTargetAnimals = false,
+        //        canTargetHumans = false,
+        //        canTargetMechs = false,
+        //        mapObjectTargetsMustBeAutoAttackable = false,
+        //        canTargetPawns = false,
+        //        canTargetSelf = false,
+        //        canTargetBuildings = false,
+        //        canTargetItems = true,
+        //        validator = (TargetInfo targ) => DoCastRadius(caster.Position) && targ.Thing is Corpse corpse && corpse.InnerPawn.RaceProps.Humanlike && corpse.Position.DistanceTo(caster.Position) <= 2.9f
+        //    };
+        //}
         protected static TargetingParameters GetHumanoidTargetParameters(Pawn caster)
         {
             return new TargetingParameters
@@ -481,22 +484,22 @@ namespace Annelitrice
                 yield break;
             }
 
-            Command_Action assimilate = new Command_Action()
-            {
-                defaultLabel = "Annely.Assimilate".Translate(),
-                defaultDesc = "Annely.AssimilateDesc".Translate(),
-                icon = ContentFinder<Texture2D>.Get("Anneli_Skill/Assimilate"),
-                action = delegate
-                {
-                    Find.Targeter.BeginTargeting(GetHumanCorpseTargetParameters(pawn), delegate (LocalTargetInfo t)
-                    {
-                        Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_AssimilateCorpse, t.Thing);
-                        pawn.jobs.TryTakeOrderedJob(job);
-                    }, pawn);
-                },
-                onHover = () => DoCastRadius(__instance.Position),
-            };
-            yield return assimilate;
+            //Command_Action assimilate = new Command_Action()
+            //{
+            //    defaultLabel = "Annely.Assimilate".Translate(),
+            //    defaultDesc = "Annely.AssimilateDesc".Translate(),
+            //    icon = ContentFinder<Texture2D>.Get("Anneli_Skill/Assimilate"),
+            //    action = delegate
+            //    {
+            //        Find.Targeter.BeginTargeting(GetHumanCorpseTargetParameters(pawn), delegate (LocalTargetInfo t)
+            //        {
+            //            Job job = JobMaker.MakeJob(AnnelitriceDefOf.Annely_AssimilateCorpse, t.Thing);
+            //            pawn.jobs.TryTakeOrderedJob(job);
+            //        }, pawn);
+            //    },
+            //    onHover = () => DoCastRadius(__instance.Position),
+            //};
+            //yield return assimilate;
 
             Command_Action infest = new Command_Action()
             {
@@ -513,72 +516,73 @@ namespace Annelitrice
                 },
                 onHover = () => DoCastRadius(__instance.Position),
             };
-            if (pawn.needs.food.CurLevelPercentage < 0.1f)
-            {
-                infest.Disable("Annely.CannotInfestTooLowFoodLevel".Translate());
-            }
+            //if (pawn.needs.food.CurLevelPercentage < 0.1f)
+            //{
+            //    infest.Disable("Annely.CannotInfestTooLowFoodLevel".Translate());
+            //}
             yield return infest;
         }
     }
 
-    [HarmonyPatch(typeof(BodyPartDef), "GetMaxHealth")]
-    public class GetMaxHealth_Patch
-    {
-        [HarmonyPriority(Priority.Last)]
-        private static void Postfix(BodyPartDef __instance, Pawn pawn, ref float __result)
-        {
-            if (pawn.TryGetCompEvolution(out var comp))
-            {
-                if (comp.blueBilePoints > 0)
-                {
-                    __result *= 1 + (comp.blueBilePoints * 0.125f);
-                }
-            }
-        }
-    }
+    //[HarmonyPatch(typeof(BodyPartDef), "GetMaxHealth")]
+    //public class GetMaxHealth_Patch
+    //{
+    //    [HarmonyPriority(Priority.Last)]
+    //    private static void Postfix(BodyPartDef __instance, Pawn pawn, ref float __result)
+    //    {
+    //        if (pawn.TryGetCompEvolution(out var comp))
+    //        {
+    //            if (comp.blueBilePoints > 0)
+    //            {
+    //                __result *= 1 + (comp.blueBilePoints * 0.125f);
+    //            }
+    //        }
+    //    }
+    //}
 
-    [HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
-    public static class GetStatValue_Patch
-    {
-        [HarmonyPriority(Priority.Last)]
-        private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
-        {
-            if (thing is Pawn pawn && pawn.TryGetCompEvolution(out var comp))
-            {
-                if (stat == StatDefOf.MoveSpeed)
-                {
-                    if (comp.greenBilePoints > 0)
-                    {
-                        __result *= 1 + (comp.greenBilePoints * 0.05f);
-                    }
-                }
-                else if (stat == StatDefOf.PsychicSensitivity)
-                {
-                    if (comp.blueBilePoints > 0)
-                    {
-                        __result *= 1 + (comp.blueBilePoints * 0.05f);
-                    }
-                }
-            }
-        }
-    }
+    //[HarmonyPatch(typeof(StatExtension), nameof(StatExtension.GetStatValue))]
+    //public static class GetStatValue_Patch
+    //{
+    //    [HarmonyPriority(Priority.Last)]
+    //    private static void Postfix(Thing thing, StatDef stat, bool applyPostProcess, ref float __result)
+    //    {
+    //        if (thing is Pawn pawn && pawn.TryGetCompEvolution(out var comp))
+    //        {
+    //            if (stat == StatDefOf.MoveSpeed)
+    //            {
+    //                if (comp.greenBilePoints > 0)
+    //                {
+    //                    __result *= 1 + (comp.greenBilePoints * 0.05f);
+    //                }
+    //            }
+    //            else if (stat == StatDefOf.PsychicSensitivity)
+    //            {
+    //                if (comp.blueBilePoints > 0)
+    //                {
+    //                    __result *= 1 + (comp.blueBilePoints * 0.05f);
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
-    [HarmonyPatch(typeof(PawnCapacityWorker_Consciousness), "CalculateCapacityLevel")]
-    public class CalculateCapacityLevel_Patch
-    {
-        [HarmonyPriority(Priority.Last)]
-        private static void Postfix(ref float __result, HediffSet diffSet, List<PawnCapacityUtility.CapacityImpactor> impactors = null)
-        {
-            if (diffSet.pawn.TryGetCompEvolution(out var comp))
-            {
-                if (comp.blueBilePoints > 0)
-                {
-                    __result *= 1 + (comp.blueBilePoints * 0.035f);
-                }
-            }
-        }
-    }
+    //[HarmonyPatch(typeof(PawnCapacityWorker_Consciousness), "CalculateCapacityLevel")]
+    //public class CalculateCapacityLevel_Patch
+    //{
+    //    [HarmonyPriority(Priority.Last)]
+    //    private static void Postfix(ref float __result, HediffSet diffSet, List<PawnCapacityUtility.CapacityImpactor> impactors = null)
+    //    {
+    //        if (diffSet.pawn.TryGetCompEvolution(out var comp))
+    //        {
+    //            if (comp.blueBilePoints > 0)
+    //            {
+    //                __result *= 1 + (comp.blueBilePoints * 0.035f);
+    //            }
+    //        }
+    //    }
+    //}
 
+	//race specific flirt chance increase
     [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt), "RandomSelectionWeight")]
     public class RandomSelectionWeight_Patch
     {
@@ -636,10 +640,11 @@ namespace Annelitrice
         }
     }
 
+	//weapon show position z offset for the race
     [HarmonyPatch(typeof(PawnRenderer), "DrawEquipmentAiming")]
     public static class DrawEquipmentAiming_Patch
     {
-       public static float zOffset = 0.215f;
+       public static float zOffset = 0.210f;
         public static void Prefix(PawnRenderer __instance, Pawn ___pawn, Thing eq, ref Vector3 drawLoc, float aimAngle)
         {
             if (___pawn.TryGetCompEvolution(out var comp))
@@ -649,7 +654,8 @@ namespace Annelitrice
         }
     }
 
-    [HarmonyPatch(typeof(PawnRenderer), "RenderAsPack")]
+	//RenderAsPack patch for race apparel layers
+	[HarmonyPatch(typeof(PawnRenderer), "RenderAsPack")]
     public static class RenderAsPack_Patch
     {
         public static HashSet<string> supportedLayers = new HashSet<string>
@@ -669,9 +675,7 @@ namespace Annelitrice
         }
     }
 
-
-
-	//服装替换Patch
+	//Apparel textures switch patch
 	[HarmonyPatch(typeof(PawnGraphicSet))]
 	[HarmonyPatch("ResolveApparelGraphics")]
 	public class Annelitrice_ApparelHarmonyPatch

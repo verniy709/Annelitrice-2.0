@@ -11,7 +11,7 @@ using Verse.Sound;
 
 namespace Annelitrice
 {
-
+	//play music system
     public class CompProperties_PlayMusic : CompProperties
     {
         public List<SoundDef> soundDefs;

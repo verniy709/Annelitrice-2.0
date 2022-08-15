@@ -1,31 +1,141 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
 
-	<!-- <HairDef>
-		<defName>Anneli_Hair_0</defName>
-		<label>Anneli_Hair_0</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_0</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
- -->
 	<HairDef>
-		<defName>Anneli_Hair_1</defName>
-		<label>Anneli_Hair_1</label>
+		<defName>Front_MShape_A</defName>
+		<label>Front_MShape_A</label>
 		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_1</texPath>
+		<texPath>Anneli_HairFront/Front_MShape_A</texPath>
 		<styleTags>
 			<li>Anneli</li>
 		</styleTags>
 	</HairDef>
 
 	<HairDef>
-		<defName>Anneli_Hair_2</defName>
-		<label>Anneli_Hair_2</label>
+		<defName>Front_MShape_B</defName>
+		<label>Front_MShape_B</label>
 		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_2</texPath>
+		<texPath>Anneli_HairFront/Front_MShape_B</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_MShape_C</defName>
+		<label>Front_MShape_C</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_MShape_C</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_MShape_D</defName>
+		<label>Front_MShape_D</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_MShape_D</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_MShape_E</defName>
+		<label>Front_MShape_E</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_MShape_E</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_MShape_F</defName>
+		<label>Front_MShape_F</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_MShape_F</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_MShape_G</defName>
+		<label>Front_MShape_G</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_MShape_G</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_Curtain_A</defName>
+		<label>Front_Curtain_A</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_Curtain_A</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_Curtain_B</defName>
+		<label>Front_Curtain_B</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_Curtain_B</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_Curtain_C</defName>
+		<label>Front_Curtain_C</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_Curtain_C</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_Straight_A</defName>
+		<label>Front_Straight_A</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_Straight_A</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_SideSwept_A</defName>
+		<label>Front_SideSwept_A</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_SideSwept_A</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_SideSwept_B</defName>
+		<label>Front_SideSwept_B</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_SideSwept_B</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>Front_SideSwept_C</defName>
+		<label>Front_SideSwept_C</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_SideSwept_C</texPath>
 		<styleTags>
 			<li>Anneli</li>
 		</styleTags>
@@ -35,231 +145,12 @@
 		<defName>Anneli_Hair_2</defName>
 		<label>Anneli_Hair_2</label>
 		<hairDef>Anneli_Hair_2</hairDef>
-		<baseTexPath>Anneli_Hair/Anneli_Hair_2_Back</baseTexPath>
+		<baseTexPath>Anneli_Hair/Anneli_Hair_2_back</baseTexPath>
 		<yOffset>0.001</yOffset>
 		<apparelList>
+			<li>test</li>
 		</apparelList>
 	</Annelitrice.BaseHairDef> -->
 
-	<HairDef>
-		<defName>Anneli_Hair_3</defName>
-		<label>Anneli_Hair_3</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_3</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_4</defName>
-		<label>Anneli_Hair_4</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_4</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>	
-
-	<HairDef>
-		<defName>Anneli_Hair_5</defName>
-		<label>Anneli_Hair_5</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_5</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>	
-
-	<HairDef>
-		<defName>Anneli_Hair_6</defName>
-		<label>Anneli_Hair_6</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_6</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>	
-
-	<HairDef>
-		<defName>Anneli_Hair_7</defName>
-		<label>Anneli_Hair_7</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_7</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_8</defName>
-		<label>Anneli_Hair_8</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_8</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_9</defName>
-		<label>Anneli_Hair_9</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_9</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_10</defName>
-		<label>Anneli_Hair_10</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_10</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_11</defName>
-		<label>Anneli_Hair_11</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_11</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_12</defName>
-		<label>Anneli_Hair_12</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_12</texPath>
-		<styleTags>
-			<li>Anneli</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Agir_A</defName>
-		<label>Anneli_Hair_CosplayA_Agir_A</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Agir_A</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Agir</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Agir_B</defName>
-		<label>Anneli_Hair_CosplayA_Agir_B</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Agir_B</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Agir</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Murmansk</defName>
-		<label>Anneli_Hair_CosplayA_Murmansk</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Murmansk</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Murmansk</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Sirius</defName>
-		<label>Anneli_Hair_CosplayA_Sirius</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Sirius</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Sirius</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Azusa</defName>
-		<label>Anneli_Hair_CosplayA_Azusa</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Azusa</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Azusa</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Haruna</defName>
-		<label>Anneli_Hair_CosplayA_Haruna</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Haruna</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Haruna</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Shiroko_A</defName>
-		<label>Anneli_Hair_CosplayA_Shiroko_A</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Shiroko_A</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Shiroko</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Shiroko_B</defName>
-		<label>Anneli_Hair_CosplayA_Shiroko_B</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Shiroko_B</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Shiroko</li>
-		</styleTags>
-	</HairDef>
-	
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Eula</defName>
-		<label>Anneli_Hair_CosplayA_Eula</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Eula</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Shiroko</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Keqing</defName>
-		<label>Anneli_Hair_CosplayA_Keqing</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Keqing</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Shiroko</li>
-		</styleTags>
-	</HairDef>
-
-	<HairDef>
-		<defName>Anneli_Hair_CosplayA_Lumine</defName>
-		<label>Anneli_Hair_CosplayA_Lumine</label>
-		<styleGender>Any</styleGender>
-		<texPath>Anneli_Hair/Anneli_Hair_CosplayA_Lumine</texPath>
-		<styleTags>
-			<li>Anneli</li>
-			<li>Anneli_CosplayA_Shiroko</li>
-		</styleTags>
-	</HairDef>
 
 </Defs>

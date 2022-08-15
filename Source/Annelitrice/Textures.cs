@@ -12,7 +12,7 @@ namespace Annelitrice
     [StaticConstructorOnStartup]
     public static class Textures
     {
-        public static readonly Texture2D BackgroundMenu = ContentFinder<Texture2D>.Get("Anneli_UI/UI_Background");
+        //public static readonly Texture2D BackgroundMenu = ContentFinder<Texture2D>.Get("Anneli_UI/UI_Background");
         //public static Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>> leftPairedAppendanges = new Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>>();
         //public static Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>> rightPairedAppendanges = new Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>>();
         //public static Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>> pairedAppendanges = new Dictionary<BodyPartDef, Dictionary<HediffDef, Texture2D>>();
@@ -98,23 +98,23 @@ namespace Annelitrice
         //public static readonly Texture2D Arm_Right_CrushingArm_UI = ContentFinder<Texture2D>.Get("Anneli_UI/Appendages_UI/Arm_Right/CrushingArm_UI");
         //public static readonly Texture2D Arm_Right_Tentacle_UI = ContentFinder<Texture2D>.Get("Anneli_UI/Appendages_UI/Arm_Right/Tentacle_UI");
 
-        public static readonly Texture2D Blue_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Minus");
-        public static readonly Texture2D Blue_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Plus");
-        public static readonly Texture2D Green_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Minus");
-        public static readonly Texture2D Green_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Plus");
-        public static readonly Texture2D Heal_Button = ContentFinder<Texture2D>.Get("Anneli_UI/Heal_Button");
-        public static readonly Texture2D Red_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Minus");
-        public static readonly Texture2D Red_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Plus");
-        public static readonly Texture2D UI_Evolution_Points = ContentFinder<Texture2D>.Get("Anneli_UI/UI_Evolution_Points");
+        //public static readonly Texture2D Blue_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Minus");
+        //public static readonly Texture2D Blue_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Plus");
+        //public static readonly Texture2D Green_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Minus");
+        //public static readonly Texture2D Green_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Plus");
+        //public static readonly Texture2D Heal_Button = ContentFinder<Texture2D>.Get("Anneli_UI/Heal_Button");
+        //public static readonly Texture2D Red_Minus = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Minus");
+        //public static readonly Texture2D Red_Plus = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Plus");
+        //public static readonly Texture2D UI_Evolution_Points = ContentFinder<Texture2D>.Get("Anneli_UI/UI_Evolution_Points");
 
-        public static readonly Texture2D Red_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Plus_Hovering");
-        public static readonly Texture2D Red_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Minus_Hovering");
-        public static readonly Texture2D Green_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Plus_Hovering");
-        public static readonly Texture2D Green_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Minus_Hovering");
-        public static readonly Texture2D Blue_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Plus_Hovering");
-        public static readonly Texture2D Blue_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Minus_Hovering");
-        public static readonly Texture2D Heal_Button_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Heal_Button_Hovering");
-        public static readonly Texture2D Empty_Slot_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Empty_Slot_Hovering");
+        //public static readonly Texture2D Red_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Plus_Hovering");
+        //public static readonly Texture2D Red_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Red_Minus_Hovering");
+        //public static readonly Texture2D Green_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Plus_Hovering");
+        //public static readonly Texture2D Green_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Green_Minus_Hovering");
+        //public static readonly Texture2D Blue_Plus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Plus_Hovering");
+        //public static readonly Texture2D Blue_Minus_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Blue_Minus_Hovering");
+        //public static readonly Texture2D Heal_Button_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Heal_Button_Hovering");
+        //public static readonly Texture2D Empty_Slot_Hovering = ContentFinder<Texture2D>.Get("Anneli_UI/Empty_Slot_Hovering");
 
     }
 }

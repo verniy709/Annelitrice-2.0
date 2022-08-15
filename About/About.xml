@@ -20,11 +20,11 @@
       <displayName>Humanoid Alien Races 2.0</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
     </li>
-    <li>
+    <!-- <li>
       <packageId>LWM.DeepStorage</packageId>
       <displayName>LWM's Deep Storage</displayName>
       <steamWorkshopUrl>https://github.com/lilwhitemouse/RimWorld-LWM.DeepStorage</steamWorkshopUrl>
-    </li>
+    </li> -->
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>

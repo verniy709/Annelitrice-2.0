@@ -10,17 +10,17 @@ using Verse.Sound;
 
 namespace Annelitrice
 {
-    public static class UIUtility
-    {
-        public static bool IsLeftClicked(this Rect rect)
-        {
-            if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && Mouse.IsOver(rect))
-            {
-                SoundDefOf.Click.PlayOneShotOnCamera();
-                Event.current.Use();
-                return true;
-            }
-            return false;
-        }
-    }
+    //public static class UIUtility
+    //{
+    //    public static bool IsLeftClicked(this Rect rect)
+    //    {
+    //        if (Event.current.type == EventType.MouseDown && Event.current.button == 0 && Mouse.IsOver(rect))
+    //        {
+    //            SoundDefOf.Click.PlayOneShotOnCamera();
+    //            Event.current.Use();
+    //            return true;
+    //        }
+    //        return false;
+    //    }
+    //}
 }

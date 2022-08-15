@@ -11,6 +11,8 @@ using Verse.Sound;
 namespace Annelitrice
 {
 	[StaticConstructorOnStartup]
+
+	//Need to redo this frame animation in the future. Really clumsy. If possible do three sides sprites for the 
 	public class AnnelyGizmo_EnergyShieldStatus : Gizmo
 	{
 		public AnnelitriceShieldBelt shield;

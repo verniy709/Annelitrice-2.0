@@ -8,6 +8,7 @@ using Verse;
 
 namespace Annelitrice
 {
+	//Target corpse and worm for resurrection
     public class CompTargetable_SingleCorpseOverride : CompTargetable_SingleCorpse
     {
 		protected override TargetingParameters GetTargetingParameters()

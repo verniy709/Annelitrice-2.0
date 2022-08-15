@@ -47,7 +47,7 @@
 		<tab>Anneli_Research</tab>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
+	<!-- <ResearchProjectDef>
 		<defName>Anneli_Incubator</defName>
 		<label>Anneli Incubator</label>
 		<description>A structure to house Annelitrice worms. Need nutrient solution as fuel to feed the worms, so that they can produce Evolution Points.\n\n"Why are we spending such efforts and resources for these slimy worms while our own people are still living in barracks?"\n\n"Shush! Just keep your mouth shut for your own good. They are very sensitive creatures."</description>
@@ -59,7 +59,7 @@
 		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
 		<tab>Anneli_Research</tab>
-	</ResearchProjectDef>
+	</ResearchProjectDef> -->
 	
 	<ResearchProjectDef>
 		<defName>Anneli_PuppetTheatre</defName>

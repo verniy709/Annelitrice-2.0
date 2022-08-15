@@ -19,128 +19,128 @@ namespace Annelitrice
     }
     public class CompEvolution : ThingComp
     {
-        public const int MaxBilePoints = 20;
-        public int blueBilePoints;
-        public int greenBilePoints;
-        public int redBilePoints;
-        public const int BilePointCost = 25;
-        public int evolutionPoints;
-        public const int HealingCost = 50;
-        public const int AppendageCost = 200;
+		//public const int MaxBilePoints = 20;
+		//public int blueBilePoints;
+		//public int greenBilePoints;
+		//public int redBilePoints;
+		//public const int BilePointCost = 25;
+		//public int evolutionPoints;
+		//public const int HealingCost = 50;
+		//public const int AppendageCost = 200;
 
-        public Dictionary<BodyPartDef, HediffDef> rightAppendagesActive;
-        public Dictionary<BodyPartDef, HediffDef> leftAppendagesActive;
-        public Dictionary<BodyPartDef, HediffDef> appendagesActive;
-        private Dictionary<Hediff_MissingPart, int> missingParts = new Dictionary<Hediff_MissingPart, int>();
+		//public Dictionary<BodyPartDef, HediffDef> rightAppendagesActive;
+		//public Dictionary<BodyPartDef, HediffDef> leftAppendagesActive;
+		//public Dictionary<BodyPartDef, HediffDef> appendagesActive;
+		private Dictionary<Hediff_MissingPart, int> missingParts = new Dictionary<Hediff_MissingPart, int>();
 
-        public string livingFace;
-        public string deadFace;
-        public bool CanShowFace
-        {
-            get
-            {
-                foreach (var hediff in this.pawn.health.hediffSet.hediffs)
-                {
-                    var extension = hediff.def.GetModExtension<HediffExtension>();
-                    if (extension != null && extension.hideFace)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
+		public string livingFace;
+		public string deadFace;
+		//public bool CanShowFace
+		//{
+		//    get
+		//    {
+		//        foreach (var hediff in this.pawn.health.hediffSet.hediffs)
+		//        {
+		//            var extension = hediff.def.GetModExtension<HediffExtension>();
+		//            if (extension != null && extension.hideFace)
+		//            {
+		//                return false;
+		//            }
+		//        }
+		//        return true;
+		//    }
+		//}
 
-        public bool CanShowLegs
-        {
-            get
-            {
-                foreach (var hediff in this.pawn.health.hediffSet.hediffs)
-                {
-                    var extension = hediff.def.GetModExtension<HediffExtension>();
-                    if (extension != null && extension.hideLegs)
-                    {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-        private Graphic mouthGraphic;
-        public Graphic MouthGraphic
-        {
-            get
-            {
-                if (mouthGraphic is null)
-                {
-                    Rand.PushState();
-                    Rand.Seed = this.pawn.thingIDNumber;
-                    var path = LoadAllFiles("Anneli_Face/MouthTypes/").RandomElement();
-                    mouthGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
-                    Rand.PopState();
-                }
-                return mouthGraphic;
-            }
-        }
+		//public bool CanShowLegs
+		//{
+		//    get
+		//    {
+		//        foreach (var hediff in this.pawn.health.hediffSet.hediffs)
+		//        {
+		//            var extension = hediff.def.GetModExtension<HediffExtension>();
+		//            if (extension != null && extension.hideLegs)
+		//            {
+		//                return false;
+		//            }
+		//        }
+		//        return true;
+		//    }
+		//}
+		//private Graphic mouthGraphic;
+		//public Graphic MouthGraphic
+		//{
+		//    get
+		//    {
+		//        if (mouthGraphic is null)
+		//        {
+		//            Rand.PushState();
+		//            Rand.Seed = this.pawn.thingIDNumber;
+		//            var path = LoadAllFiles("Anneli_Face/MouthTypes/").RandomElement();
+		//            mouthGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+		//            Rand.PopState();
+		//        }
+		//        return mouthGraphic;
+		//    }
+		//}
 
-        private Graphic eyeBrowsGraphic;
-        public Graphic EyeBrowsGraphic
-        {
-            get
-            {
-                if (eyeBrowsGraphic is null)
-                {
-                    Rand.PushState();
-                    Rand.Seed = this.pawn.thingIDNumber;
-                    var path = LoadAllFiles("Anneli_Face/EyeBrowsTypes/").RandomElement();
-                    eyeBrowsGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.hairColor);
-                    Rand.PopState();
-                }
-                return eyeBrowsGraphic;
-            }
-        }
+		//private Graphic eyeBrowsGraphic;
+		//public Graphic EyeBrowsGraphic
+		//{
+		//    get
+		//    {
+		//        if (eyeBrowsGraphic is null)
+		//        {
+		//            Rand.PushState();
+		//            Rand.Seed = this.pawn.thingIDNumber;
+		//            var path = LoadAllFiles("Anneli_Face/EyeBrowsTypes/").RandomElement();
+		//            eyeBrowsGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.hairColor);
+		//            Rand.PopState();
+		//        }
+		//        return eyeBrowsGraphic;
+		//    }
+		//}
 
-        private Graphic eyesGraphic;
-        private Graphic deadEyesGraphic;
-        public Graphic EyesGraphic
-        {
-            get
-            {
-                if (pawn.Dead)
-                {
-                    if (deadEyesGraphic is null)
-                    {
-                        Rand.PushState();
-                        Rand.Seed = this.pawn.thingIDNumber;
-                        var path = LoadAllFiles("Anneli_Face/DeadEyesTypes/").RandomElement();
-                        var randomR = Rand.RangeInclusive(80, 255);
-                        var randomG = Rand.RangeInclusive(80, 255);
-                        var randomB = Rand.RangeInclusive(80, 255);
-                        deadEyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
-                        Rand.PopState();
-                    }
-                    return deadEyesGraphic;
-                }
-                else
-                {
-                    if (eyesGraphic is null)
-                    {
-                        Rand.PushState();
-                        Rand.Seed = this.pawn.thingIDNumber;
-                        var path = LoadAllFiles("Anneli_Face/EyesTypes/").RandomElement();
-                        var randomR = Rand.RangeInclusive(80, 255);
-                        var randomG = Rand.RangeInclusive(80, 255);
-                        var randomB = Rand.RangeInclusive(80, 255);
-                        eyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
-                        Rand.PopState();
-                    }
-                    return eyesGraphic;
-                }
+		//private Graphic eyesGraphic;
+		//private Graphic deadEyesGraphic;
+		//public Graphic EyesGraphic
+		//{
+		//    get
+		//    {
+		//        if (pawn.Dead)
+		//        {
+		//            if (deadEyesGraphic is null)
+		//            {
+		//                Rand.PushState();
+		//                Rand.Seed = this.pawn.thingIDNumber;
+		//                var path = LoadAllFiles("Anneli_Face/DeadEyesTypes/").RandomElement();
+		//                var randomR = Rand.RangeInclusive(80, 255);
+		//                var randomG = Rand.RangeInclusive(80, 255);
+		//                var randomB = Rand.RangeInclusive(80, 255);
+		//                deadEyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
+		//                Rand.PopState();
+		//            }
+		//            return deadEyesGraphic;
+		//        }
+		//        else
+		//        {
+		//            if (eyesGraphic is null)
+		//            {
+		//                Rand.PushState();
+		//                Rand.Seed = this.pawn.thingIDNumber;
+		//                var path = LoadAllFiles("Anneli_Face/EyesTypes/").RandomElement();
+		//                var randomR = Rand.RangeInclusive(80, 255);
+		//                var randomG = Rand.RangeInclusive(80, 255);
+		//                var randomB = Rand.RangeInclusive(80, 255);
+		//                eyesGraphic = GraphicDatabase.Get<Graphic_Multi>(path, ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, new ColorInt(randomR, randomG, randomB).ToColor);
+		//                Rand.PopState();
+		//            }
+		//            return eyesGraphic;
+		//        }
 
-            }
-        }
+		//    }
+		//}
 
-        private HashSet<string> LoadAllFiles(string folderPath)
+		private HashSet<string> LoadAllFiles(string folderPath)
         {
             var list = new HashSet<string>();
             foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading)
@@ -160,50 +160,50 @@ namespace Annelitrice
             }
             return list;
         }
-        private Graphic rightLegGraphic;
-        public Graphic RightLegGraphic
-        {
-            get
-            {
-                if (rightLegGraphic is null)
-                {
-                    rightLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_RightLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
-                }
-                return rightLegGraphic;
-            }
-        }
-        private Graphic leftLegGraphic;
-        public Graphic LeftLegGraphic
-        {
-            get
-            {
-                if (leftLegGraphic is null)
-                {
-                    leftLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_LeftLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
-                }
-                return leftLegGraphic;
-            }
-        }
-        private void PreInit()
-        {
-            if (rightAppendagesActive is null)
-            {
-                rightAppendagesActive = new Dictionary<BodyPartDef, HediffDef>();
-            }
-            if (leftAppendagesActive is null)
-            {
-                leftAppendagesActive = new Dictionary<BodyPartDef, HediffDef>();
-            }
-            if (appendagesActive is null)
-            {
-                appendagesActive = new Dictionary<BodyPartDef, HediffDef>();
-            }
-            if (missingParts is null)
-            {
-                missingParts = new Dictionary<Hediff_MissingPart, int>();
-            }
-        }
-        public CompEvolution()
+		//private Graphic rightLegGraphic;
+		//public Graphic RightLegGraphic
+		//{
+		//    get
+		//    {
+		//        if (rightLegGraphic is null)
+		//        {
+		//            rightLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_RightLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+		//        }
+		//        return rightLegGraphic;
+		//    }
+		//}
+		//private Graphic leftLegGraphic;
+		//public Graphic LeftLegGraphic
+		//{
+		//    get
+		//    {
+		//        if (leftLegGraphic is null)
+		//        {
+		//            leftLegGraphic = GraphicDatabase.Get<Graphic_Multi>("Anneli_Body/Naked_LeftLeg", ShaderUtility.GetSkinShader(pawn.story.SkinColorOverriden), Vector2.one, pawn.story.SkinColor);
+		//        }
+		//        return leftLegGraphic;
+		//    }
+		//}
+		private void PreInit()
+		{
+			//if (rightAppendagesActive is null)
+			//{
+			//	rightAppendagesActive = new Dictionary<BodyPartDef, HediffDef>();
+			//}
+			//if (leftAppendagesActive is null)
+			//{
+			//	leftAppendagesActive = new Dictionary<BodyPartDef, HediffDef>();
+			//}
+			//if (appendagesActive is null)
+			//{
+			//	appendagesActive = new Dictionary<BodyPartDef, HediffDef>();
+			//}
+			if (missingParts is null)
+			{
+				missingParts = new Dictionary<Hediff_MissingPart, int>();
+			}
+		}
+		public CompEvolution()
         {
             PreInit();
         }
@@ -221,43 +221,45 @@ namespace Annelitrice
             }
         }
 
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref blueBilePoints, "blueBilePoints");
-            Scribe_Values.Look(ref greenBilePoints, "greenBilePoints");
-            Scribe_Values.Look(ref redBilePoints, "redBilePoints");
-            Scribe_Values.Look(ref evolutionPoints, "evolutionPoints");
-            Scribe_Values.Look(ref nextHealTick, "nextHealTick");
+		public override void PostExposeData()
+		{
+			base.PostExposeData();
+			//Scribe_Values.Look(ref blueBilePoints, "blueBilePoints");
+			//Scribe_Values.Look(ref greenBilePoints, "greenBilePoints");
+			//Scribe_Values.Look(ref redBilePoints, "redBilePoints");
+			//Scribe_Values.Look(ref evolutionPoints, "evolutionPoints");
+			Scribe_Values.Look(ref nextHealTick, "nextHealTick");
 
-            Scribe_Values.Look(ref livingFace, "livingFace");
-            Scribe_Values.Look(ref deadFace, "deadFace");
+			Scribe_Values.Look(ref livingFace, "livingFace");
+			Scribe_Values.Look(ref deadFace, "deadFace");
 
-            Scribe_Collections.Look(ref rightAppendagesActive, "rightAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys1, ref hediffDefValues1);
-            Scribe_Collections.Look(ref leftAppendagesActive, "leftAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys2, ref hediffDefValues2);
-            Scribe_Collections.Look(ref appendagesActive, "appendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys3, ref hediffDefValues3);
-            Scribe_Collections.Look(ref missingParts, "missingParts", LookMode.Reference, LookMode.Value, ref missingPartsKeys, ref intValues);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
-            {
-                PreInit();
-                missingParts.RemoveAll(x => x.Key.pawn != pawn || !pawn.health.hediffSet.hediffs.Contains(x.Key));
-            }
-        }
+			//Scribe_Collections.Look(ref rightAppendagesActive, "rightAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys1, ref hediffDefValues1);
+			//Scribe_Collections.Look(ref leftAppendagesActive, "leftAppendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys2, ref hediffDefValues2);
+			//Scribe_Collections.Look(ref appendagesActive, "appendagesActive", LookMode.Def, LookMode.Def, ref bodyPartKeys3, ref hediffDefValues3);
+			Scribe_Collections.Look(ref missingParts, "missingParts", LookMode.Reference, LookMode.Value, ref missingPartsKeys, ref intValues);
+			if (Scribe.mode == LoadSaveMode.PostLoadInit)
+			{
+				PreInit();
+				missingParts.RemoveAll(x => x.Key.pawn != pawn || !pawn.health.hediffSet.hediffs.Contains(x.Key));
+			}
+		}
 
-        private int nextHealTick;
+		//Regeneration rate
+		private int nextHealTick;
         private int GetNextHealTick
         {
             get
             {
                 var baseValue = 250;
-                if (greenBilePoints > 0)
-                {
-                    baseValue -= greenBilePoints * 6;
-                }
+                //if (greenBilePoints > 0)
+                //{
+                //    baseValue -= greenBilePoints * 6;
+                //}
                 return baseValue;
             }
         }
 
+		//CrownType change for dead alive pawns
         public static void SetAlienHead(Pawn pawn, string head)
         {
             var alienComp = ThingCompUtility.TryGetComp<AlienRace.AlienPartGenerator.AlienComp>(pawn);
@@ -279,6 +281,7 @@ namespace Annelitrice
             return sRet;
         }
 
+		//Regeneration 
         public override void CompTick()
         {
             base.CompTick();
@@ -330,43 +333,43 @@ namespace Annelitrice
             }
         }
 
-        public BodyPartRecord GetRightPart(BodyPartDef bodyPartDef)
-        {
-            var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
-            if (bodyPartDef == BodyPartDefOf.Arm)
-            {
-                return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right arm");
-            }
-            else if (bodyPartDef == BodyPartDefOf.Leg)
-            {
-                return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right leg");
-            }
-            return null;
-        }
-        public BodyPartRecord GetLeftPart(BodyPartDef bodyPartDef)
-        {
-            var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
-            if (bodyPartDef == BodyPartDefOf.Arm)
-            {
-                return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left arm");
-            }
-            else if (bodyPartDef == BodyPartDefOf.Leg)
-            {
-                return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left leg");
-            }
-            return null;
-        }
+		//public BodyPartRecord GetRightPart(BodyPartDef bodyPartDef)
+		//{
+		//    var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
+		//    if (bodyPartDef == BodyPartDefOf.Arm)
+		//    {
+		//        return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right arm");
+		//    }
+		//    else if (bodyPartDef == BodyPartDefOf.Leg)
+		//    {
+		//        return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "right leg");
+		//    }
+		//    return null;
+		//}
+		//public BodyPartRecord GetLeftPart(BodyPartDef bodyPartDef)
+		//{
+		//    var parts = pawn.health.hediffSet.GetNotMissingParts().Where(x => x.def == bodyPartDef);
+		//    if (bodyPartDef == BodyPartDefOf.Arm)
+		//    {
+		//        return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left arm");
+		//    }
+		//    else if (bodyPartDef == BodyPartDefOf.Leg)
+		//    {
+		//        return parts.FirstOrDefault(x => x.untranslatedCustomLabel == "left leg");
+		//    }
+		//    return null;
+		//}
 
-        private List<BodyPartDef> bodyPartKeys1;
-        private List<HediffDef> hediffDefValues1;
+		private List<BodyPartDef> bodyPartKeys1;
+		private List<HediffDef> hediffDefValues1;
 
-        private List<BodyPartDef> bodyPartKeys2;
-        private List<HediffDef> hediffDefValues2;
+		private List<BodyPartDef> bodyPartKeys2;
+		private List<HediffDef> hediffDefValues2;
 
-        private List<BodyPartDef> bodyPartKeys3;
-        private List<HediffDef> hediffDefValues3;
+		private List<BodyPartDef> bodyPartKeys3;
+		private List<HediffDef> hediffDefValues3;
 
-        private List<Hediff_MissingPart> missingPartsKeys;
-        private List<int> intValues;
-    }
+		private List<Hediff_MissingPart> missingPartsKeys;
+		private List<int> intValues;
+	}
 }

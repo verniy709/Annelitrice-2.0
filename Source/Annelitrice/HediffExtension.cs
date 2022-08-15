@@ -8,9 +8,9 @@ using Verse;
 
 namespace Annelitrice
 {
-    public class HediffExtension : DefModExtension
-    {
-        public bool hideFace;
-        public bool hideLegs;
-    }
+    //public class HediffExtension : DefModExtension
+    //{
+    //    public bool hideFace;
+    //    public bool hideLegs;
+    //}
 }

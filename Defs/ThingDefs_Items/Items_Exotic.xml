@@ -10,7 +10,7 @@
       <DeteriorationRate>2.0</DeteriorationRate>
       <Flammability>0.2</Flammability>
     </statBases>
-    <techLevel>Ultra</techLevel>
+    <techLevel>Medieval</techLevel>
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>

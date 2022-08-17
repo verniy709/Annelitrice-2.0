@@ -644,13 +644,16 @@ namespace Annelitrice
     [HarmonyPatch(typeof(PawnRenderer), "DrawEquipmentAiming")]
     public static class DrawEquipmentAiming_Patch
     {
-       public static float zOffset = 0.210f;
-        public static void Prefix(PawnRenderer __instance, Pawn ___pawn, Thing eq, ref Vector3 drawLoc, float aimAngle)
+        public static float zOffset = 0.195f;
+		//public static float xOffset = 0.08f;
+		//public static float angleNew = 340f;
+		//public static float drawSizeFactor = 0.85f;
+		public static void Prefix(PawnRenderer __instance, Pawn ___pawn, Thing eq, ref Vector3 drawLoc, float aimAngle)
         {
             if (___pawn.TryGetCompEvolution(out var comp))
             {
                 drawLoc.z += zOffset;
-            }
+			}
         }
     }
 

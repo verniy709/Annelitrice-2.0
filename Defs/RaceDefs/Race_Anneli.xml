@@ -55,13 +55,13 @@
 					<headOffsetDirectional>
 						<north>(0.0, 0.0735)</north>
 						<south>(0.0, 0.0735)</south>
-						<east>(-0.005, 0.0725)</east>
-						<west>(0.005, 0.0725)</west>
+						<east>(-0.01, 0.0725)</east>
+						<west>(0.01, 0.0725)</west>
 					</headOffsetDirectional>
-					<customDrawSize>(0.955, 0.99)</customDrawSize>
-					<customHeadDrawSize>(0.91, 0.91)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.955, 0.99)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.91, 0.91)</customPortraitHeadDrawSize>
+					<customDrawSize>(0.96, 0.99)</customDrawSize>
+					<customHeadDrawSize>(0.890, 0.900)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.96, 0.99)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(0.890, 0.900)</customPortraitHeadDrawSize>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -292,10 +292,10 @@
 									<layerOffset>1</layerOffset>
 								</south>
 								<north>
-									<layerOffset>1</layerOffset>
+									<layerOffset>-0.254</layerOffset>
 								</north>
 								<east>
-									<layerOffset>-0.341</layerOffset>
+									<layerOffset>-0.342</layerOffset>
 								</east>
 							</offsets>
 						</li>
@@ -316,13 +316,13 @@
 							</hiddenUnderApparelTag>
 							<offsets>
 								<south>
-									<layerOffset>-0.34</layerOffset>
+									<layerOffset>-0.291</layerOffset>
 								</south>
 								<north>
-									<layerOffset>0</layerOffset>
+									<layerOffset>-0.262</layerOffset>
 								</north>
 								<east>
-									<layerOffset>-0.34</layerOffset>
+									<layerOffset>-0.341</layerOffset>
 								</east>
 							</offsets>
 						</li>

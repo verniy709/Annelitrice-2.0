@@ -112,6 +112,16 @@
 	</HairDef>
 
 	<HairDef>
+		<defName>Front_Straight_B</defName>
+		<label>Front_Straight_B</label>
+		<styleGender>Any</styleGender>
+		<texPath>Anneli_HairFront/Front_Straight_B</texPath>
+		<styleTags>
+			<li>Anneli</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
 		<defName>Front_SideSwept_A</defName>
 		<label>Front_SideSwept_A</label>
 		<styleGender>Any</styleGender>

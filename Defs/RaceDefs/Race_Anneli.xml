@@ -59,9 +59,9 @@
 						<west>(0.01, 0.0725)</west>
 					</headOffsetDirectional>
 					<customDrawSize>(0.96, 0.99)</customDrawSize>
-					<customHeadDrawSize>(0.890, 0.900)</customHeadDrawSize>
+					<customHeadDrawSize>(0.870, 0.880)</customHeadDrawSize>
 					<customPortraitDrawSize>(0.96, 0.99)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.890, 0.900)</customPortraitHeadDrawSize>
+					<customPortraitHeadDrawSize>(0.870, 0.880)</customPortraitHeadDrawSize>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -270,6 +270,7 @@
 					</alienbodytypes>
 					<useGenderedHeads>false</useGenderedHeads>
 					<useGenderedBodies>false</useGenderedBodies>
+					<atlasScale>4</atlasScale><!--test-->
 					<getsGreyAt>1500</getsGreyAt> 
 					<bodyAddons>
 						<li> 
@@ -286,6 +287,8 @@
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<shaderType>Cutout</shaderType>
 							<hiddenUnderApparelTag>
+								<li>Anneli_FullHelmet</li>
+								<li>Anneli_Hood</li>
 							</hiddenUnderApparelTag>
 							<offsets>
 								<south>
@@ -299,7 +302,7 @@
 								</east>
 							</offsets>
 						</li>
-						<li> 
+						<!-- <li> 
 							<path>Anneli_HairMid/Mid</path>
 							<bodyPart>Head</bodyPart>
 							<linkVariantIndexWithPrevious>false</linkVariantIndexWithPrevious>
@@ -325,7 +328,7 @@
 									<layerOffset>-0.341</layerOffset>
 								</east>
 							</offsets>
-						</li>
+						</li> -->
 						<!-- <li>
                             <path>Arms_Addon/Left/ArmStraightA_Left_Naked</path>
                             <bodyPart>left arm</bodyPart>

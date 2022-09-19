@@ -53,15 +53,15 @@
 				</lovinIntervalHoursFromAge>
 				<alienPartGenerator>
 					<headOffsetDirectional>
-						<north>(0.0, 0.0735)</north>
-						<south>(0.0, 0.0735)</south>
-						<east>(-0.01, 0.0725)</east>
-						<west>(0.01, 0.0725)</west>
+						<north>(0.0, 0.108)</north>
+						<south>(0.0, 0.108)</south>
+						<east>(-0.01, 0.107)</east>
+						<west>(0.01, 0.107)</west>
 					</headOffsetDirectional>
-					<customDrawSize>(0.96, 0.99)</customDrawSize>
-					<customHeadDrawSize>(0.870, 0.880)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.96, 0.99)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.870, 0.880)</customPortraitHeadDrawSize>
+					<customDrawSize>(0.96, 0.97)</customDrawSize>
+					<customHeadDrawSize>(0.805, 0.805)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.96, 0.97)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(0.805, 0.805)</customPortraitHeadDrawSize>
 					<colorChannels>
 						<li>
 							<name>skin</name>

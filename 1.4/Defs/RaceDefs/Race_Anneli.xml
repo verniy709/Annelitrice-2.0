@@ -75,14 +75,14 @@
 					<atlasScale>4</atlasScale><!--test-->
 					<getsGreyAt>1500</getsGreyAt> 
 					<headOffsetDirectional>
-						<north>(0.0, 0.0738)</north>
-						<south>(0.0, 0.0738)</south>
-						<east>(-0.01, 0.0728)</east>
-						<west>(0.01, 0.0728)</west>
+						<north>(0.0, 0.044)</north>
+						<south>(0.0, 0.044)</south>
+						<east>(-0.01, 0.045)</east>
+						<west>(0.01, 0.045)</west>
 					</headOffsetDirectional>
-					<customDrawSize>(0.92, 1.00)</customDrawSize>
+					<customDrawSize>(0.89, 1.00)</customDrawSize>
 					<customHeadDrawSize>(0.800, 0.805)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.92, 1.00)</customPortraitDrawSize>
+					<customPortraitDrawSize>(0.89, 1.00)</customPortraitDrawSize>
 					<customPortraitHeadDrawSize>(0.800, 0.805)</customPortraitHeadDrawSize>
 					<colorChannels>
 						<li>
@@ -294,7 +294,7 @@
 									<layerOffset>-0.254</layerOffset>
 								</north>
 								<east>
-									<layerOffset>-0.342</layerOffset>
+									<layerOffset>-0.329</layerOffset>
 								</east>
 							</offsets>
 						</li>
@@ -305,8 +305,8 @@
 			<graphicPaths>
 				<body>Anneli_Body/</body>
 				<head>Anneli_Face/</head>
-				<skeleton>Anneli_Corpse/Body/</skeleton>
-				<skull>Anneli_Corpse/Head</skull>
+				<skeleton>Anneli_Corpse/Body/Dessicated_Female</skeleton>
+				<skull>Anneli_Corpse/Head/Dessicated_Head</skull>
 			</graphicPaths>
 			
 			<styleSettings>
@@ -772,6 +772,29 @@
 					<minAge>16</minAge>
 				</li>
 			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>5</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>8</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>5</BasicWorker>
+				<Warden>8</Warden>
+				<Handling>5</Handling>
+				<Cooking>5</Cooking>
+				<Hunting>5</Hunting>
+				<Construction>8</Construction>
+				<Growing>5</Growing>
+				<Mining>5</Mining>
+				<PlantCutting>5</PlantCutting>
+				<Smithing>10</Smithing>
+				<Tailoring>5</Tailoring>
+				<Art>8</Art>
+				<Crafting>5</Crafting>
+				<Hauling>2</Hauling>
+				<Cleaning>2</Cleaning>
+				<Research>10</Research>
+			</lifeStageWorkSettings>
 			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -781,22 +804,23 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(6,86)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.5,118)</li>  <!-- Exclude 9.5-10 years to avoid spawning pawns who are very close to becoming adults -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.51,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(10,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.001,122)</li><!-- End exclude -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.999,130)</li>
-                    <li>(11,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(11.001,130)</li>
-                    <li>(16,100)</li>
-                    <li>(35,100)</li>
-                    <li>(50,30)</li>
-                    <li>(120,18)</li>
-                    <li>(200,5)</li>
-                    <li>(500,0)</li>
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(6,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(9.5,118)</li> 
+					<li MayRequire="Ludeon.RimWorld.Biotech">(9.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(10,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(10.001,122)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(10.999,130)</li>
+					<li>(11,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(11.001,130)</li> -->
+					<li>(12,0)</li>
+					<li>(16,100)</li>
+					<li>(35,100)</li>
+					<li>(50,30)</li>
+					<li>(120,18)</li>
+					<li>(200,5)</li>
+					<li>(500,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<hediffGiverSets>

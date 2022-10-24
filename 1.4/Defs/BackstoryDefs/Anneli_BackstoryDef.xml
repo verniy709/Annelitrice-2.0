@@ -2,7 +2,7 @@
 <Defs>
 
 <!--Childhood-->
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_NormalWorm</defName>
 		<title>Annelitrice Normal Worm</title>
 		<titleShort>Normal Worm</titleShort>
@@ -22,9 +22,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_ActiveWorm</defName>
 		<title>Annelitrice Active Worm</title>
 		<titleShort>Active Worm</titleShort>
@@ -40,9 +40,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_FriendlyWorm</defName>
 		<title>Annelitrice Friendly Worm</title>
 		<titleShort>Friendly Worm</titleShort>
@@ -58,9 +58,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_CreativeWorm</defName>
 		<title>Annelitrice Creative Worm</title>
 		<titleShort>Creative Worm</titleShort>
@@ -76,9 +76,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_DiggingWorm</defName>
 		<title>Annelitrice Digging Worm</title>
 		<titleShort>Digging Worm</titleShort>
@@ -98,9 +98,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_FastGrowingWorm</defName>
 		<title>Annelitrice Fast-Growing Worm</title>
 		<titleShort>Fast-Growing Worm</titleShort>
@@ -116,9 +116,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_BellicoseWorm</defName>
 		<title>Annelitrice Bellicose Worm</title>
 		<titleShort>Bellicose Worm</titleShort>
@@ -138,9 +138,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_NerdyWorm</defName>
 		<title>Annelitrice Nerdy Worm</title>
 		<titleShort>Nerdy Worm</titleShort>
@@ -156,9 +156,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_ShrewdWorm</defName>
 		<title>Annelitrice Shrewd Worm</title>
 		<titleShort>Shrewd Worm</titleShort>
@@ -178,9 +178,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_ImitatingWorm</defName>
 		<title>Annelitrice Imitating Worm</title>
 		<titleShort>Imitating Worm</titleShort>
@@ -196,9 +196,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_BizarreWorm</defName>
 		<title>Annelitrice Bizarre Worm</title>
 		<titleShort>Bizarre Worm</titleShort>
@@ -214,9 +214,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_HoardingWorm</defName>
 		<title>Annelitrice Hoarding Worm</title>
 		<titleShort>Hoarding Worm</titleShort>
@@ -232,9 +232,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_CatWorm</defName>
 		<title>Annelitrice Cat Worm</title>
 		<titleShort>Cat Worm</titleShort>
@@ -254,9 +254,9 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
-	<AlienRace.BackstoryDef ParentName="Anneli_Backstory_Base">
+	<AlienRace.AlienBackstoryDef ParentName="Anneli_Backstory_Base">
 		<defName>Anneli_AutisticWorm</defName>
 		<title>Annelitrice Autistic Worm</title>
 		<titleShort>Autistic Worm</titleShort>
@@ -276,6 +276,6 @@
 			<li>Anneli_Childhood</li>
 			<li>Anneli_Story</li>
 		</spawnCategories>
-	</AlienRace.BackstoryDef>
+	</AlienRace.AlienBackstoryDef>
 
 </Defs>

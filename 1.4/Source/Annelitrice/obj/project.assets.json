@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Krafs.Rimworld.Ref/1.3.3146-beta": {
+      "Krafs.Rimworld.Ref/1.4.3525": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -82,21 +82,26 @@
           "ref/net472/UnityEngine.WindModule.dll": {},
           "ref/net472/UnityEngine.XRModule.dll": {},
           "ref/net472/UnityEngine.dll": {},
+          "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.1.1": {
+      "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Krafs.Rimworld.Ref/1.3.3146-beta": {
+      "Krafs.Rimworld.Ref/1.4.3525": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -176,21 +181,26 @@
           "ref/net472/UnityEngine.WindModule.dll": {},
           "ref/net472/UnityEngine.XRModule.dll": {},
           "ref/net472/UnityEngine.dll": {},
+          "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.1.1": {
+      "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Krafs.Rimworld.Ref/1.3.3146-beta": {
+      "Krafs.Rimworld.Ref/1.4.3525": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -270,21 +280,26 @@
           "ref/net472/UnityEngine.WindModule.dll": {},
           "ref/net472/UnityEngine.XRModule.dll": {},
           "ref/net472/UnityEngine.dll": {},
+          "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.1.1": {
+      "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         }
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Krafs.Rimworld.Ref/1.3.3146-beta": {
+      "Krafs.Rimworld.Ref/1.4.3525": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -364,31 +379,37 @@
           "ref/net472/UnityEngine.WindModule.dll": {},
           "ref/net472/UnityEngine.XRModule.dll": {},
           "ref/net472/UnityEngine.dll": {},
+          "ref/net472/com.rlabrecque.steamworks.net.dll": {},
           "ref/net472/mscorlib.dll": {}
         }
       },
-      "Lib.Harmony/2.1.1": {
+      "Lib.Harmony/2.2.2": {
         "type": "package",
         "compile": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/0Harmony.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
   },
   "libraries": {
-    "Krafs.Rimworld.Ref/1.3.3146-beta": {
-      "sha512": "3IucVlRR8S4Y8340GjplVCphwPL/0jfpcnPnbCDG0D/2ie03f5Aq4fZ7l0p2J7vG3u5Hhe2RZPIH/W4N0aJCPw==",
+    "Krafs.Rimworld.Ref/1.4.3525": {
+      "sha512": "IBYIXISCKdunri/qlbTyvdneZkgcj6Zqhf2dty2JSbTGdaTbGiNgm2ePkmzWIGCfyyFdp5XLdLkzFQ0372RU4A==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.3.3146-beta",
+      "path": "krafs.rimworld.ref/1.4.3525",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "LICENSE.txt",
+        "LICENSE.md",
+        "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.3.3146-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.4.3525.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -467,19 +488,20 @@
         "ref/net472/UnityEngine.WindModule.dll",
         "ref/net472/UnityEngine.XRModule.dll",
         "ref/net472/UnityEngine.dll",
+        "ref/net472/com.rlabrecque.steamworks.net.dll",
         "ref/net472/mscorlib.dll"
       ]
     },
-    "Lib.Harmony/2.1.1": {
-      "sha512": "CZiVcq01bVIjL2baWW5SVGZWyd6ew8adFp4BB2bzZfIGcWkTEto0G9sKu+9HDrEd75qBq3EHnZxx/gizi4NnqA==",
+    "Lib.Harmony/2.2.2": {
+      "sha512": "70KvWz+DiUELxafsYL/LHxA/jH3PDWeApLo/VwtnrpTvRWQ/eUdPfS/l5funmhZWOy41QXw6UjVv+6C57Nx77A==",
       "type": "package",
-      "path": "lib.harmony/2.1.1",
+      "path": "lib.harmony/2.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "HarmonyLogo.png",
         "LICENSE",
-        "lib.harmony.2.1.1.nupkg.sha512",
+        "lib.harmony.2.2.2.nupkg.sha512",
         "lib.harmony.nuspec",
         "lib/net35/0Harmony.dll",
         "lib/net35/0Harmony.xml",
@@ -491,6 +513,8 @@
         "lib/net48/0Harmony.xml",
         "lib/net5.0/0Harmony.dll",
         "lib/net5.0/0Harmony.xml",
+        "lib/net6.0/0Harmony.dll",
+        "lib/net6.0/0Harmony.xml",
         "lib/netcoreapp3.0/0Harmony.dll",
         "lib/netcoreapp3.0/0Harmony.xml",
         "lib/netcoreapp3.1/0Harmony.dll",
@@ -500,25 +524,25 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "Krafs.Rimworld.Ref >= 1.3.3146-beta",
-      "Lib.Harmony >= 2.1.1"
+      "Krafs.Rimworld.Ref >= 1.4.3525",
+      "Lib.Harmony >= 2.2.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\verni\\.nuget\\packages\\": {}
+    "C:\\Users\\Vova\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\1.4\\Source\\Annelitrice\\Annelitrice.csproj",
       "projectName": "Annelitrice",
-      "projectPath": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\Annelitrice.csproj",
-      "packagesPath": "C:\\Users\\verni\\.nuget\\packages\\",
-      "outputPath": "C:\\steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\Source\\Annelitrice\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\1.4\\Source\\Annelitrice\\Annelitrice.csproj",
+      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Annelitrice-2.0\\1.4\\Source\\Annelitrice\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\verni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -539,11 +563,11 @@
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",
-            "version": "[1.3.3146-beta, )"
+            "version": "[1.4.3525, )"
           },
           "Lib.Harmony": {
             "target": "Package",
-            "version": "[2.1.1, )"
+            "version": "[2.2.2, )"
           }
         }
       }

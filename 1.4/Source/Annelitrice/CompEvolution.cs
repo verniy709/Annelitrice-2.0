@@ -1,24 +1,20 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
 namespace Annelitrice
 {
-    public class CompProperties_Evolution : CompProperties
-    {
-        public CompProperties_Evolution()
-        {
-            this.compClass = typeof(CompEvolution);
-        }
-    }
-    public class CompEvolution : ThingComp
-    {
+	public class CompProperties_Evolution : CompProperties
+	{
+		public CompProperties_Evolution()
+		{
+			compClass = typeof(CompEvolution);
+		}
+	}
+	public class CompEvolution : ThingComp
+	{
 		//public const int MaxBilePoints = 20;
 		//public int blueBilePoints;
 		//public int greenBilePoints;
@@ -141,25 +137,25 @@ namespace Annelitrice
 		//}
 
 		private HashSet<string> LoadAllFiles(string folderPath)
-        {
-            var list = new HashSet<string>();
-            foreach (ModContentPack mod in LoadedModManager.RunningModsListForReading)
-            {
-                foreach (var f in ModContentPack.GetAllFilesForMod(mod, "Textures/" + folderPath))
-                {
-                    var path = f.Value.FullName;
-                    if (path.EndsWith(".png"))
-                    {
-                        path = path.Replace("\\", "/");
-                        path = path.Substring(path.IndexOf("/Textures/") + 10);
-                        path = path.Replace(".png", "");
-                        path = Regex.Replace(path, @"(.*)_.*", "$1");
-                        list.Add(path);
-                    }
-                }
-            }
-            return list;
-        }
+		{
+			var list = new HashSet<string>();
+			foreach (var mod in LoadedModManager.RunningModsListForReading)
+			{
+				foreach (var f in ModContentPack.GetAllFilesForMod(mod, "Textures/" + folderPath))
+				{
+					var path = f.Value.FullName;
+					if (path.EndsWith(".png"))
+					{
+						path = path.Replace("\\", "/");
+						path = path.Substring(path.IndexOf("/Textures/") + 10);
+						path = path.Replace(".png", "");
+						path = Regex.Replace(path, @"(.*)_.*", "$1");
+						list.Add(path);
+					}
+				}
+			}
+			return list;
+		}
 		//private Graphic rightLegGraphic;
 		//public Graphic RightLegGraphic
 		//{
@@ -204,22 +200,22 @@ namespace Annelitrice
 			}
 		}
 		public CompEvolution()
-        {
-            PreInit();
-        }
+		{
+			PreInit();
+		}
 
-        private Pawn __pawn;
-        private Pawn pawn
-        {
-            get
-            {
-                if (__pawn is null)
-                {
-                    __pawn = this.parent as Pawn;
-                }
-                return __pawn;
-            }
-        }
+		private Pawn __pawn;
+		private Pawn pawn
+		{
+			get
+			{
+				if (__pawn is null)
+				{
+					__pawn = parent as Pawn;
+				}
+				return __pawn;
+			}
+		}
 
 		public override void PostExposeData()
 		{
@@ -246,92 +242,70 @@ namespace Annelitrice
 
 		//Regeneration rate
 		private int nextHealTick;
-        private int GetNextHealTick
-        {
-            get
-            {
-                var baseValue = 250;
-                //if (greenBilePoints > 0)
-                //{
-                //    baseValue -= greenBilePoints * 6;
-                //}
-                return baseValue;
-            }
-        }
-
-		//CrownType change for dead alive pawns
-        public static void SetAlienHead(Pawn pawn, string head)
-        {
-            var alienComp = ThingCompUtility.TryGetComp<AlienRace.AlienPartGenerator.AlienComp>(pawn);
-            if (alienComp != null)
-            {
-                alienComp.crownType = head;
-            }
-        }
-
-
-        public static string GetAlienHead(Pawn pawn)
-        {
-            string sRet = "(unknown)";
-            var alienComp = ThingCompUtility.TryGetComp<AlienRace.AlienPartGenerator.AlienComp>(pawn);
-            if (alienComp != null)
-            {
-                sRet = alienComp.crownType;
-            }
-            return sRet;
-        }
+		private int GetNextHealTick
+		{
+			get
+			{
+				var baseValue = 250;
+				//if (greenBilePoints > 0)
+				//{
+				//    baseValue -= greenBilePoints * 6;
+				//}
+				return baseValue;
+			}
+		}
 
 		//Regeneration 
-        public override void CompTick()
-        {
-            base.CompTick();
-            foreach (var part in pawn.health.hediffSet.GetMissingPartsCommonAncestors())
-            {
-                if (!missingParts.ContainsKey(part))
-                {
-                    missingParts[part] = Find.TickManager.TicksGame + 1200;
-                }
-            }
-            
-            if (Find.TickManager.TicksGame >= nextHealTick)
-            {
-                nextHealTick = Find.TickManager.TicksGame + GetNextHealTick;
-                foreach (var missingPart in missingParts.InRandomOrder().ToList())
-                {
-                    if (Find.TickManager.TicksGame >= missingPart.Value)
-                    {
-                        var part = missingPart.Key.Part;
-                        pawn.health.RestorePart(part);
-                        var injury = HediffMaker.MakeHediff(AnnelitriceDefOf.Annely_Regeneration, pawn, part);
-                        injury.Severity = part.def.GetMaxHealth(pawn) - 1;
-                        pawn.health.AddHediff(injury);
-                        missingParts.Remove(missingPart.Key);
-                        return;
-                    }
-                }
+		public override void CompTick()
+		{
+			base.CompTick();
+			foreach (var part in pawn.health.hediffSet.GetMissingPartsCommonAncestors())
+			{
+				if (!missingParts.ContainsKey(part))
+				{
+					missingParts[part] = Find.TickManager.TicksGame + 1200;
+				}
+			}
+
+			if (Find.TickManager.TicksGame >= nextHealTick)
+			{
+				nextHealTick = Find.TickManager.TicksGame + GetNextHealTick;
+				foreach (var missingPart in missingParts.InRandomOrder().ToList())
+				{
+					if (Find.TickManager.TicksGame >= missingPart.Value)
+					{
+						var part = missingPart.Key.Part;
+						pawn.health.RestorePart(part);
+						var injury = HediffMaker.MakeHediff(AnnelitriceDefOf.Annely_Regeneration, pawn, part);
+						injury.Severity = part.def.GetMaxHealth(pawn) - 1;
+						pawn.health.AddHediff(injury);
+						missingParts.Remove(missingPart.Key);
+						return;
+					}
+				}
 
 
-                foreach (var part in pawn.health.hediffSet.GetInjuredParts().InRandomOrder())
-                {
-                    var curHP = pawn.health.hediffSet.GetPartHealth(part);
-                    var maxHP = part.def.GetMaxHealth(pawn);
-                    if (maxHP > curHP)
-                    {
-                        var diff = (int)Mathf.Clamp(maxHP - curHP, 1, int.MaxValue);
-                        var injuries = pawn.health.hediffSet.hediffs.Where(x => x is Hediff_Injury && x.Part == part);
-                        for (var i = 0; i < diff; i++)
-                        {
-                            var hediffs = injuries.Where(x => x.Severity > 0);
-                            if (hediffs.TryRandomElement(out var hediff))
-                            {
-                                hediff.Heal(1);
-                                return;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+				foreach (var part in pawn.health.hediffSet.GetInjuredParts().InRandomOrder())
+				{
+					var curHP = pawn.health.hediffSet.GetPartHealth(part);
+					var maxHP = part.def.GetMaxHealth(pawn);
+					if (maxHP > curHP)
+					{
+						var diff = (int)Mathf.Clamp(maxHP - curHP, 1, int.MaxValue);
+						var injuries = pawn.health.hediffSet.hediffs.Where(x => x is Hediff_Injury && x.Part == part);
+						for (var i = 0; i < diff; i++)
+						{
+							var hediffs = injuries.Where(x => x.Severity > 0);
+							if (hediffs.TryRandomElement(out var hediff))
+							{
+								hediff.Heal(1);
+								return;
+							}
+						}
+					}
+				}
+			}
+		}
 
 		//public BodyPartRecord GetRightPart(BodyPartDef bodyPartDef)
 		//{
@@ -360,14 +334,14 @@ namespace Annelitrice
 		//    return null;
 		//}
 
-		private List<BodyPartDef> bodyPartKeys1;
-		private List<HediffDef> hediffDefValues1;
+		private readonly List<BodyPartDef> bodyPartKeys1;
+		private readonly List<HediffDef> hediffDefValues1;
 
-		private List<BodyPartDef> bodyPartKeys2;
-		private List<HediffDef> hediffDefValues2;
+		private readonly List<BodyPartDef> bodyPartKeys2;
+		private readonly List<HediffDef> hediffDefValues2;
 
-		private List<BodyPartDef> bodyPartKeys3;
-		private List<HediffDef> hediffDefValues3;
+		private readonly List<BodyPartDef> bodyPartKeys3;
+		private readonly List<HediffDef> hediffDefValues3;
 
 		private List<Hediff_MissingPart> missingPartsKeys;
 		private List<int> intValues;

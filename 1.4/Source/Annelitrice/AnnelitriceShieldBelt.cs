@@ -1,9 +1,5 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -23,7 +19,7 @@ namespace Annelitrice
 
 		public AnnelyGizmo_EnergyShieldStatus()
 		{
-			order = -100f;
+			Order = -100f;
 		}
 
 		public override float GetWidth(float maxWidth)
@@ -33,16 +29,16 @@ namespace Annelitrice
 
 		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
-			Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
-			Rect rect2 = rect.ContractedBy(6f);
+			var rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+			var rect2 = rect.ContractedBy(6f);
 			Widgets.DrawWindowBackground(rect);
-			Rect rect3 = rect2;
+			var rect3 = rect2;
 			rect3.height = rect.height / 2f;
 			Text.Font = GameFont.Tiny;
 			Widgets.Label(rect3, shield.LabelCap);
-			Rect rect4 = rect2;
-			rect4.yMin = rect2.y + rect2.height / 2f;
-			float fillPercent = shield.Energy / Mathf.Max(1f, shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax));
+			var rect4 = rect2;
+			rect4.yMin = rect2.y + (rect2.height / 2f);
+			var fillPercent = shield.Energy / Mathf.Max(1f, shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax));
 			Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
 			Text.Font = GameFont.Small;
 			Text.Anchor = TextAnchor.MiddleCenter;
@@ -73,15 +69,15 @@ namespace Annelitrice
 
 		private const int JitterDurationTicks = 8;
 
-		private int StartingTicksToReset = 3200;
+		private readonly int StartingTicksToReset = 3200;
 
-		private float EnergyOnReset = 0.2f;
+		private readonly float EnergyOnReset = 0.2f;
 
-		private float EnergyLossPerDamage = 0.033f;
+		private readonly float EnergyLossPerDamage = 0.033f;
 
-		private int KeepDisplayingTicks = 1000;
+		private readonly int KeepDisplayingTicks = 1000;
 
-		private float ApparelScorePerEnergyMax = 0.25f;
+		private readonly float ApparelScorePerEnergyMax = 0.25f;
 
 		private List<Material> mats;
 		private Material FlickMat
@@ -89,7 +85,7 @@ namespace Annelitrice
 			get
 			{
 				if (mats is null)
-                {
+				{
 					mats = new List<Material>()
 					{
 						MaterialPool.MatFrom("9/POD_Bubble1", ShaderDatabase.Transparent),
@@ -117,23 +113,13 @@ namespace Annelitrice
 
 		public float Energy => energy;
 
-		public ShieldState ShieldState
-		{
-			get
-			{
-				if (ticksToReset > 0)
-				{
-					return ShieldState.Resetting;
-				}
-				return ShieldState.Active;
-			}
-		}
+		public ShieldState ShieldState => ticksToReset > 0 ? ShieldState.Resetting : ShieldState.Active;
 
 		private bool ShouldDisplay
 		{
 			get
 			{
-				Pawn wearer = base.Wearer;
+				var wearer = base.Wearer;
 				if (!wearer.Spawned || wearer.Dead || wearer.Downed)
 				{
 					return false;
@@ -150,11 +136,7 @@ namespace Annelitrice
 				{
 					return true;
 				}
-				if (Find.TickManager.TicksGame < lastKeepDisplayTick + KeepDisplayingTicks)
-				{
-					return true;
-				}
-				return false;
+				return Find.TickManager.TicksGame < lastKeepDisplayTick + KeepDisplayingTicks;
 			}
 		}
 		private int nextShieldFlicker;
@@ -179,14 +161,16 @@ namespace Annelitrice
 
 		public override IEnumerable<Gizmo> GetWornGizmos()
 		{
-			foreach (Gizmo wornGizmo in base.GetWornGizmos())
+			foreach (var wornGizmo in base.GetWornGizmos())
 			{
 				yield return wornGizmo;
 			}
 			if (Find.Selector.SingleSelectedThing == base.Wearer)
 			{
-				AnnelyGizmo_EnergyShieldStatus gizmo_EnergyShieldStatus = new AnnelyGizmo_EnergyShieldStatus();
-				gizmo_EnergyShieldStatus.shield = this;
+				var gizmo_EnergyShieldStatus = new AnnelyGizmo_EnergyShieldStatus
+				{
+					shield = this
+				};
 				yield return gizmo_EnergyShieldStatus;
 			}
 		}
@@ -205,16 +189,16 @@ namespace Annelitrice
 				curShieldInd++;
 			}
 			if (Find.TickManager.TicksGame > nextShieldFlicker)
-            {
+			{
 				nextShieldFlicker = Find.TickManager.TicksGame + Rand.RangeInclusive(60, 180);
 				flick = true;
 				flickTick = 0;
 				curShieldInd = 0;
 			}
 			if (flickTick > 40)
-            {
+			{
 				flick = false;
-            }
+			}
 			if (base.Wearer == null)
 			{
 				energy = 0f;
@@ -275,11 +259,11 @@ namespace Annelitrice
 		{
 			SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(new TargetInfo(base.Wearer.Position, base.Wearer.Map));
 			impactAngleVect = Vector3Utility.HorizontalVectorFromAngle(dinfo.Angle);
-			Vector3 loc = base.Wearer.TrueCenter() + impactAngleVect.RotatedBy(180f) * 0.5f;
-			float num = Mathf.Min(10f, 2f + dinfo.Amount / 10f);
+			var loc = base.Wearer.TrueCenter() + (impactAngleVect.RotatedBy(180f) * 0.5f);
+			var num = Mathf.Min(10f, 2f + (dinfo.Amount / 10f));
 			FleckMaker.Static(loc, base.Wearer.Map, FleckDefOf.ExplosionFlash, num);
-			int num2 = (int)num;
-			for (int i = 0; i < num2; i++)
+			var num2 = (int)num;
+			for (var i = 0; i < num2; i++)
 			{
 				FleckMaker.ThrowDustPuff(loc, base.Wearer.Map, Rand.Range(0.8f, 1.2f));
 			}
@@ -291,9 +275,9 @@ namespace Annelitrice
 		{
 			SoundDefOf.EnergyShield_Broken.PlayOneShot(new TargetInfo(base.Wearer.Position, base.Wearer.Map));
 			FleckMaker.Static(base.Wearer.TrueCenter(), base.Wearer.Map, FleckDefOf.ExplosionFlash, 12f);
-			for (int i = 0; i < 6; i++)
+			for (var i = 0; i < 6; i++)
 			{
-				FleckMaker.ThrowDustPuff(base.Wearer.TrueCenter() + Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f), base.Wearer.Map, Rand.Range(0.8f, 1.2f));
+				FleckMaker.ThrowDustPuff(base.Wearer.TrueCenter() + (Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f)), base.Wearer.Map, Rand.Range(0.8f, 1.2f));
 			}
 			energy = 0f;
 			ticksToReset = StartingTicksToReset;
@@ -314,20 +298,20 @@ namespace Annelitrice
 		{
 			if (ShieldState == ShieldState.Active && ShouldDisplay)
 			{
-				float num = Mathf.Lerp(1.8f, 2.2f, energy);
-				Vector3 drawPos = base.Wearer.Drawer.DrawPos;
+				var num = Mathf.Lerp(1.8f, 2.2f, energy);
+				var drawPos = base.Wearer.Drawer.DrawPos;
 				drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();
 				drawPos.z += 0.15f;
-				int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
+				var num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
 				if (num2 < 8)
 				{
-					float num3 = (float)(8 - num2) / 8f * 0.05f;
+					var num3 = (8 - num2) / 8f * 0.05f;
 					drawPos += impactAngleVect * num3;
 					num -= num3;
 				}
 				float angle = 0;// Rand.Range(0, 360);
-				Vector3 s = new Vector3(num, 1f, num);
-				Matrix4x4 matrix = default(Matrix4x4);
+				var s = new Vector3(num, 1f, num);
+				var matrix = default(Matrix4x4);
 				var mat = flick ? FlickMat : BubbleMat;
 				Log.Message("flick: " + flick + " - " + mat);
 
@@ -353,7 +337,7 @@ namespace Annelitrice
 
 		public AnnelyGizmo_EnergyShieldKnightAStatus()
 		{
-			order = -100f;
+			Order = -100f;
 		}
 
 		public override float GetWidth(float maxWidth)
@@ -363,16 +347,16 @@ namespace Annelitrice
 
 		public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
 		{
-			Rect rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
-			Rect rect2 = rect.ContractedBy(6f);
+			var rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+			var rect2 = rect.ContractedBy(6f);
 			Widgets.DrawWindowBackground(rect);
-			Rect rect3 = rect2;
+			var rect3 = rect2;
 			rect3.height = rect.height / 2f;
 			Text.Font = GameFont.Tiny;
 			Widgets.Label(rect3, shield.LabelCap);
-			Rect rect4 = rect2;
-			rect4.yMin = rect2.y + rect2.height / 2f;
-			float fillPercent = shield.Energy / Mathf.Max(1f, shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax));
+			var rect4 = rect2;
+			rect4.yMin = rect2.y + (rect2.height / 2f);
+			var fillPercent = shield.Energy / Mathf.Max(1f, shield.GetStatValue(StatDefOf.EnergyShieldEnergyMax));
 			Widgets.FillableBar(rect4, fillPercent, FullShieldBarTex, EmptyShieldBarTex, doBorder: false);
 			Text.Font = GameFont.Small;
 			Text.Anchor = TextAnchor.MiddleCenter;
@@ -403,15 +387,15 @@ namespace Annelitrice
 
 		private const int JitterDurationTicks = 8;
 
-		private int StartingTicksToReset = 3200;
+		private readonly int StartingTicksToReset = 3200;
 
-		private float EnergyOnReset = 0.2f;
+		private readonly float EnergyOnReset = 0.2f;
 
-		private float EnergyLossPerDamage = 0.033f;
+		private readonly float EnergyLossPerDamage = 0.033f;
 
-		private int KeepDisplayingTicks = 1000;
+		private readonly int KeepDisplayingTicks = 1000;
 
-		private float ApparelScorePerEnergyMax = 0.25f;
+		private readonly float ApparelScorePerEnergyMax = 0.25f;
 
 		private List<Material> mats;
 		private Material FlickMat
@@ -469,23 +453,13 @@ namespace Annelitrice
 
 		public float Energy => energy;
 
-		public ShieldState ShieldState
-		{
-			get
-			{
-				if (ticksToReset > 0)
-				{
-					return ShieldState.Resetting;
-				}
-				return ShieldState.Active;
-			}
-		}
+		public ShieldState ShieldState => ticksToReset > 0 ? ShieldState.Resetting : ShieldState.Active;
 
 		private bool ShouldDisplay
 		{
 			get
 			{
-				Pawn wearer = base.Wearer;
+				var wearer = base.Wearer;
 				if (!wearer.Spawned || wearer.Dead || wearer.Downed)
 				{
 					return false;
@@ -502,11 +476,7 @@ namespace Annelitrice
 				{
 					return true;
 				}
-				if (Find.TickManager.TicksGame < lastKeepDisplayTick + KeepDisplayingTicks)
-				{
-					return true;
-				}
-				return false;
+				return Find.TickManager.TicksGame < lastKeepDisplayTick + KeepDisplayingTicks;
 			}
 		}
 		private int nextShieldFlicker;
@@ -531,14 +501,16 @@ namespace Annelitrice
 
 		public override IEnumerable<Gizmo> GetWornGizmos()
 		{
-			foreach (Gizmo wornGizmo in base.GetWornGizmos())
+			foreach (var wornGizmo in base.GetWornGizmos())
 			{
 				yield return wornGizmo;
 			}
 			if (Find.Selector.SingleSelectedThing == base.Wearer)
 			{
-				AnnelyGizmo_EnergyShieldKnightAStatus gizmo_EnergyShieldStatus = new AnnelyGizmo_EnergyShieldKnightAStatus();
-				gizmo_EnergyShieldStatus.shield = this;
+				var gizmo_EnergyShieldStatus = new AnnelyGizmo_EnergyShieldKnightAStatus
+				{
+					shield = this
+				};
 				yield return gizmo_EnergyShieldStatus;
 			}
 		}
@@ -627,11 +599,11 @@ namespace Annelitrice
 		{
 			SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(new TargetInfo(base.Wearer.Position, base.Wearer.Map));
 			impactAngleVect = Vector3Utility.HorizontalVectorFromAngle(dinfo.Angle);
-			Vector3 loc = base.Wearer.TrueCenter() + impactAngleVect.RotatedBy(180f) * 0.5f;
-			float num = Mathf.Min(10f, 2f + dinfo.Amount / 10f);
+			var loc = base.Wearer.TrueCenter() + (impactAngleVect.RotatedBy(180f) * 0.5f);
+			var num = Mathf.Min(10f, 2f + (dinfo.Amount / 10f));
 			FleckMaker.Static(loc, base.Wearer.Map, FleckDefOf.ExplosionFlash, num);
-			int num2 = (int)num;
-			for (int i = 0; i < num2; i++)
+			var num2 = (int)num;
+			for (var i = 0; i < num2; i++)
 			{
 				FleckMaker.ThrowDustPuff(loc, base.Wearer.Map, Rand.Range(0.8f, 1.2f));
 			}
@@ -643,9 +615,9 @@ namespace Annelitrice
 		{
 			SoundDefOf.EnergyShield_Broken.PlayOneShot(new TargetInfo(base.Wearer.Position, base.Wearer.Map));
 			FleckMaker.Static(base.Wearer.TrueCenter(), base.Wearer.Map, FleckDefOf.ExplosionFlash, 12f);
-			for (int i = 0; i < 6; i++)
+			for (var i = 0; i < 6; i++)
 			{
-				FleckMaker.ThrowDustPuff(base.Wearer.TrueCenter() + Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f), base.Wearer.Map, Rand.Range(0.8f, 1.2f));
+				FleckMaker.ThrowDustPuff(base.Wearer.TrueCenter() + (Vector3Utility.HorizontalVectorFromAngle(Rand.Range(0, 360)) * Rand.Range(0.3f, 0.6f)), base.Wearer.Map, Rand.Range(0.8f, 1.2f));
 			}
 			energy = 0f;
 			ticksToReset = StartingTicksToReset;
@@ -666,20 +638,20 @@ namespace Annelitrice
 		{
 			if (ShieldState == ShieldState.Active && ShouldDisplay)
 			{
-				float num = Mathf.Lerp(2.2f, 2.6f, energy);
-				Vector3 drawPos = base.Wearer.Drawer.DrawPos;
+				var num = Mathf.Lerp(2.2f, 2.6f, energy);
+				var drawPos = base.Wearer.Drawer.DrawPos;
 				drawPos.y = AltitudeLayer.MoteLow.AltitudeFor();
 				drawPos.z += 0.28f;
-				int num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
+				var num2 = Find.TickManager.TicksGame - lastAbsorbDamageTick;
 				if (num2 < 8)
 				{
-					float num3 = (float)(8 - num2) / 8f * 0.05f;
+					var num3 = (8 - num2) / 8f * 0.05f;
 					drawPos += impactAngleVect * num3;
 					num -= num3;
 				}
 				float angle = 0;// Rand.Range(0, 360);
-				Vector3 s = new Vector3(num, 1f, num);
-				Matrix4x4 matrix = default(Matrix4x4);
+				var s = new Vector3(num, 1f, num);
+				var matrix = default(Matrix4x4);
 				var mat = flick ? FlickMat : BubbleMat;
 				Log.Message("flick: " + flick + " - " + mat);
 

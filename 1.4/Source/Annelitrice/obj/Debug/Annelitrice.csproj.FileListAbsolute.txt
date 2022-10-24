@@ -13,3 +13,8 @@ C:\steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\D
 C:\steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CopyComplete
 C:\steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.dll
 C:\steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\Source\Annelitrice\obj\Debug\Annelitrice.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\1.4\Source\Annelitrice\obj\Debug\Annelitrice.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\1.4\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\1.4\Source\Annelitrice\obj\Debug\Annelitrice.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\1.4\Assemblies\Annelitrice.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Annelitrice-2.0\1.4\Source\Annelitrice\obj\Debug\Annelitrice.csproj.CopyComplete

@@ -75,10 +75,10 @@
 					<atlasScale>4</atlasScale><!--test-->
 					<getsGreyAt>1500</getsGreyAt> 
 					<headOffsetDirectional>
-						<north>(0.0, 0.044)</north>
-						<south>(0.0, 0.044)</south>
-						<east>(-0.01, 0.045)</east>
-						<west>(0.01, 0.045)</west>
+						<north>(0.0, 0.032)</north>
+						<south>(0.0, 0.032)</south>
+						<east>(-0.01, 0.033)</east>
+						<west>(0.01, 0.033)</west>
 					</headOffsetDirectional>
 					<customDrawSize>(0.89, 1.00)</customDrawSize>
 					<customHeadDrawSize>(0.800, 0.805)</customHeadDrawSize>

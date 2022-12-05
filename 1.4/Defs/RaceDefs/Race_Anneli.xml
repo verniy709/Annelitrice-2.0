@@ -75,15 +75,15 @@
 					<atlasScale>4</atlasScale><!--test-->
 					<getsGreyAt>1500</getsGreyAt> 
 					<headOffsetDirectional>
-						<north>(0.0, 0.032)</north>
-						<south>(0.0, 0.032)</south>
-						<east>(-0.01, 0.033)</east>
-						<west>(0.01, 0.033)</west>
+						<north>(0.0, 0.022)</north>
+						<south>(0.0, 0.022)</south>
+						<east>(-0.01, 0.023)</east>
+						<west>(0.01, 0.023)</west>
 					</headOffsetDirectional>
-					<customDrawSize>(0.89, 1.00)</customDrawSize>
-					<customHeadDrawSize>(0.800, 0.805)</customHeadDrawSize>
-					<customPortraitDrawSize>(0.89, 1.00)</customPortraitDrawSize>
-					<customPortraitHeadDrawSize>(0.800, 0.805)</customPortraitHeadDrawSize>
+					<customDrawSize>(0.87, 1.05)</customDrawSize>
+					<customHeadDrawSize>(0.74, 0.75)</customHeadDrawSize>
+					<customPortraitDrawSize>(0.87, 1.05)</customPortraitDrawSize>
+					<customPortraitHeadDrawSize>(0.74, 0.75)</customPortraitHeadDrawSize>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -282,6 +282,7 @@
 							<alignWithHead>true</alignWithHead>
 							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
 							<shaderType>Cutout</shaderType>
+							<drawnDesiccated>false</drawnDesiccated>
 							<hiddenUnderApparelTag>
 								<li>Anneli_FullHelmet</li>
 								<li>Anneli_Hood</li>
